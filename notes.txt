@@ -1,0 +1,2 @@
+* Batik 1.8 and Rasterizer task in the lib
+

@@ -1,0 +1,25 @@
+//
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+//
+//
+// Use of this source code is subject to the terms of the Microsoft end-user
+// license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+// If you did not accept the terms of the EULA, you are not authorized to use
+// this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+// install media.
+//
+/*++ BUILD Version: 0003    // Increment this if a change has global effects
+
+
+
+    LMCONS.H (was NETCONS.H in LM 2.x)
+
+Abstract:
+
+    This file contains constants used throughout the LAN Manager
+    API header files.  It should be included in any source file
+    that is going to include other LAN Manager API header files or
+    call a LAN Manager API.
+
+    NOTE:  Lengths of strings are given as the maximum lengths of the
+    string in characters (not bytes).  This does not include space for

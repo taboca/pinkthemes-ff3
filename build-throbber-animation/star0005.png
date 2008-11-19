@@ -1,0 +1,28 @@
+%!PS-AdobeFont-1.0: URWAntiquaT-RegularCondensed 001.003
+%%CreationDate: Wed Aug 5 1992
+% Copyright URW Software, Copyright 1992 by URW
+% URW Software, Copyright 1992 by URW
+% Modified June 1, 1993 by L. Peter Deutsch (Aladdin Enterprises,
+%   Menlo Park, CA) to remove eexec encryption.
+systemdict begin
+{} FontDirectory/URWAntiquaT-RegularCondensed known
+ {/URWAntiquaT-RegularCondensed findfont dup /UniqueID known
+    { dup /UniqueID get 5019334 eq exch /FontType get 1 eq and }
+    { pop false } ifelse
+    { pop save /restore load } if
+ } if
+12 dict begin
+/FontInfo 10 dict dup begin
+/FullName(URW Antiqua T  Regular Condensed) def
+/FamilyName(URW Antiqua T) def
+/Weight(Regular) def
+/ItalicAngle 0.0 def
+/isFixedPitch false def
+/UnderlinePosition -114 def
+/UnderlineThickness 51 def
+/Copyright(Copyright URW Software, Copyright 1992 by URW) def
+/Notice(URW Software, Copyright 1992 by URW) def
+/version(001.003) def
+end readonly def
+/FontType 1 def
+/UniqueID 5019334 

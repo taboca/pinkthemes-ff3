@@ -1,0 +1,18 @@
+<browsers>
+    <browser id="WinWap" parentID="Default">
+        <identification>
+            <userAgent match="^WinWAP-(?'platform'\w*)/(?'browserMajorVersion'\w*)(?'browserMinorVersion'\.\w*)" />
+        </identification>
+
+        <capture>
+        </capture>
+
+        <capabilities>
+            <capability name="browser"                             value="WinWAP" />
+            <capability name="canRenderAfterInputOrSelectElement"  value="false" />
+            <capability name="canSendMail"                         value="false" />
+            <capability name="cookies"                             value="false" />
+            <capability name="hasBackButton"                       value="false" />
+            <capability name="inputType"                           value="virtualKeyboard" />
+            <capability name="isColor"                             value="true" />
+            <capability name="isMobi

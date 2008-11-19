@@ -1,0 +1,26 @@
+<!- Copyright (c) Microsoft Corporation. All rights reserved. -->
+<HTML DIR="LTR">
+
+<HEAD>
+	<TITLE>ATL Smart Device Project Wizard</TITLE>
+	<META NAME="vs_targetSchema" CONTENT="http://schemas.microsoft.com/intellisense/ie5">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+	<LINK ID="LINKURL" REL="stylesheet" HREF="../../../../../1033/NewStyles.css">
+	<OBJECT id="ProjWiz" classid="CLSID:D245F352-3F45-4516-B1E6-04608DA126CC" VIEWASTEXT>
+	</OBJECT>
+	<SCRIPT>
+		// Load the New Project Wizard DLL
+		var ProjWiz;
+		try 
+		{
+			ProjWiz = document.all.tags("OBJECT").item("ProjWiz");
+			ProjWiz.Init(window.external);
+		}
+		catch(e) 
+		{
+			window.external.Finish(document, 'cancel');
+		}
+	</SCRIPT>
+	<SYMBOL NAME="SAFE_PROJECT_IDENTIFIER_NAME" TYPE=text></SYMBOL>
+	<SYMBOL NAME="UPPER_CASE_SAFE_PROJE

@@ -1,0 +1,23 @@
+_inline_error_name" class="inline-error-UPPER">
+    <table width="487" cellspacing="10">
+ 	   <tr>
+		   <td width="19" height="19"><img src="./../red-crossmark.png"></td>
+		   <td width="432" class="table-content-right">Please enter a name in order to proceed with personalizing this product.</td>
+	   </tr>
+    </table>
+  </div>
+  
+  <div id="personalize_inline_error_serial" class="inline-error">
+    <table width="487" cellspacing="10">
+ 	   <tr>
+		   <td width="19"><img src="./../red-crossmark.png"></td>
+		   <td width="432" class="table-content-right">You have entered an invalid serial number.  Please correct it in order to proceed.</td>
+	   </tr>
+    </table>
+  </div>
+</div>
+
+
+<div id="personalize_rightbutton" class="rightbutton">
+ 	<form name="personalize_next_form" onsubmit="return doPersContinue();";>
+   		<input name="personalize_cancel" type="button" id="personalize_cancel" accesskey="c" tabindex="12" title="Cancel" onfocus="markName('p

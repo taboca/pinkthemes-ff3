@@ -1,0 +1,10 @@
+0.5em 0em; width:100%; margin-bottom:0.5em">
+      <tr><td class="icraPanelLink"><a href="http://www.icra.org/label/" class="icraLink">Label your site</a></td><td><a href="http://checked.icra.org" class="icraLink">ICRAchecked</a></td></tr>
+      <tr><td class="icraPanelLink"><a href="http://www.icra.org/icraplus/" class="icraLink">ICRA<em>plus</em> filter</a></td><td><a href="http://www.icra.org/support/" class="icraLink">Support</a></td></tr>
+    </table>
+  </div>
+  <div id="advertising">
+      <div style="color:#439539; padding:0.5em 0em">Advertising</div>
+
+	  <script type="text/JavaScript"><!--
+    	document.write('<scr'+'ipt language=javascript src="http://a.tribalfusion.com/j.ad?site=ICRA&amp;adSpace=ROS&amp;size=120x600&amp;type=var&amp;requestID='+((new Date()).getTime() % 2147483648) + Math.random()+'"></scr'+'ipt

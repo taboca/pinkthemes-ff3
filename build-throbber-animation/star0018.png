@@ -1,0 +1,12 @@
+nbsp;</td><td>The comment to insert. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>copy</em>&nbsp;</td><td>See above. </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> object != NULL 
+</pre></div> <div class="fragment"><pre class="fragment"> object-&gt;type == <a class="code" href="group__flac__format.html#gga113a116">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> 
+</pre></div> <div class="fragment"><pre class="fragment"> (entry.entry != NULL &amp;&amp; entry.length &gt; 0) ||
+ (entry.entry == NULL &amp;&amp; entry.length == 0 &amp;&amp; copy == <span class="keyword">false</span>) 
+</pre></div> </dd></dl>
+<dl compact><dt><b>Return values:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>FLAC__bool</em>&nbsp;</td><td><code>false</code> if memory allocation fails or <em>entry</em> does not co

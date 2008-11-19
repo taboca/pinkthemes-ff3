@@ -1,0 +1,39 @@
+=head1 NAME
+
+perltooc - Tom's OO Tutorial for Class Data in Perl
+
+=head1 DESCRIPTION
+
+When designing an object class, you are sometimes faced with the situation
+of wanting common state shared by all objects of that class.
+Such I<class attributes> act somewhat like global variables for the entire
+class, but unlike program-wide globals, class attributes have meaning only to
+the class itself.
+
+Here are a few examples where class attributes might come in handy:
+
+=over 4
+
+=item *
+
+to keep a count of the objects you've created, or how many are
+still extant.
+
+=item *
+
+to extract the name or file descriptor for a logfile used by a debugging
+method.
+
+=item *
+
+to access collective data, like the total amount of cash dispensed by
+all ATMs in a network in a given day.
+
+=item *
+
+to access the last object created by a class, or the most accessed object,
+or to retrieve a list of all objects.
+
+=back
+
+Unl

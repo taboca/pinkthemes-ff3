@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="text/ecmascript"
+   width="400"
+   zoomAndPan="magnify"
+   contentStyleType="text/css"
+   viewBox="0 0 400.0 400.0"
+   height="400"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.0"
+   id="svg6093"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   sodipodi:docname="icon-pref-lock.svg"
+   sodipodi:docbase="C:\cygwin\home\Marcio\mozilla\batik\batik-1.6\skin-build\src\preferences">
+  <metadata
+     id="metadata6176">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="540"
+     inkscape:window-width="756"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.935"
+     inkscape:cx="200"
+     inkscape:cy="200"
+     inkscape:window-x="110"
+     inkscape:window-y="110"
+     inkscape:current-layer="g6151" />
+  <defs
+     id="defs6095">
+    <filter
+       x="0"
+       y="0"
+       width="450"
+       filterUnits="userSpaceOnUse"
+       xlink:type="simple"
+       xlink:actuate="onLoad"
+       height="400"
+       id="MyFilter"
+       xlink:show="other">
+      <feGaussianBlur
+         stdDeviation="14"
+         result="blur"
+         in="SourceAlpha"
+         id="feGaussianBlur6098" />
+      <feOffset
+         dx="14"
+         dy="14"
+         result="offsetBlur"
+         in="blur"
+         id="feOffset6100" />
+      <feSpecularLighting
+         specularExponent="20"
+         specularConstant=".2"
+         result="specOut"
+         in="blur"
+         surfaceScale="5"
+         lighting-color="#bbbbbb"
+         id="feSpecularLighting6102">
+        <fePointLight
+           x="-5000"
+           y="-10000"
+           z="20000"
+           id="fePointLight6104" />
+      </feSpecularLighting>
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         result="specOut"
+         in="specOut"
+         id="feComposite6106" />
+      <feComposite
+         result="litPaint"
+         in="SourceGraphic"
+         k1="0"
+         k2="1"
+         k3="1"
+         k4="0"
+         in2="specOut"
+         operator="arithmetic"
+         id="feComposite6108" />
+      <feMerge
+         id="feMerge6110">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode6112" />
+        <feMergeNode
+           in="litPaint"
+           id="feMergeNode6114" />
+      </feMerge>
+    </filter>
+    <radialGradient
+       gradientTransform=""
+       id="radial1"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad"
+       xlink:show="other"
+       xlink:type="simple"
+       r="111%"
+       cx="7%"
+       fx="111%"
+       fy="111%"
+       cy="97%"
+       xlink:actuate="onLoad">
+      <stop
+         offset="0%"
+         style="stop-color:#ffff00;stop-opacity:1;"
+         id="stop6117" />
+      <stop
+         offset="61%"
+         style="stop-color:#ff9900;stop-opacity:1;"
+         id="stop6119" />
+    </radialGradient>
+    <radialGradient
+       gradientTransform=""
+       id="radial0"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="reflect"
+       xlink:show="other"
+       xlink:type="simple"
+       r="50%"
+       cx="92%"
+       fx="50%"
+       fy="50%"
+       cy="100%"
+       xlink:actuate="onLoad">
+      <stop
+         offset="9%"
+         style="stop-color:#0099ff;stop-opacity:1;"
+         id="stop6122" />
+      <stop
+         offset="70%"
+         style="stop-color:#ccffff;stop-opacity:1;"
+         id="stop6124" />
+    </radialGradient>
+    <radialGradient
+       gradientTransform=""
+       id="radial1_copy0"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad"
+       xlink:show="other"
+       xlink:type="simple"
+       r="111%"
+       cx="33%"
+       fx="111%"
+       cy="22%"
+       fy="111%"
+       xlink:actuate="onLoad">
+      <stop
+         offset="9%"
+         style="stop-color:#66ffff;stop-opacity:1;"
+         id="stop6127" />
+      <stop
+         offset="61%"
+         style="stop-color:#3366ff;stop-opacity:1;"
+         id="stop6129" />
+    </radialGradient>
+    <radialGradient
+       gradientTransform=""
+       id="radial2"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad"
+       xlink:show="other"
+       xlink:type="simple"
+       r="50%"
+       cx="50%"
+       fx="50%"
+       cy="50%"
+       fy="50%"
+       xlink:actuate="onLoad">
+      <stop
+         style="stop-color:#000000;stop-opacity:1.0;"
+         offset="0%"
+         id="stop6132" />
+    </radialGradient>
+    <radialGradient
+       gradientTransform=""
+       id="radial1_copy1"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad"
+       xlink:show="other"
+       xlink:type="simple"
+       r="77%"
+       cx="50%"
+       fx="55%"
+       cy="56%"
+       fy="55%"
+       xlink:actuate="onLoad">
+      <stop
+         style="stop-color:#ffcc00;stop-opacity:1;"
+         offset="16%"
+         id="stop6135" />
+      <stop
+         offset="49%"
+         style="stop-color:#ffff00;stop-opacity:1;"
+         id="stop6137" />
+      <stop
+         offset="94%"
+         style="stop-color:#ff9900;stop-opacity:1;"
+         id="stop6139" />
+    </radialGradient>
+    <radialGradient
+       gradientTransform=""
+       id="radial3"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad"
+       xlink:show="other"
+       xlink:type="simple"
+       r="50%"
+       cx="50%"
+       fx="50%"
+       cy="50%"
+       fy="50%"
+       xlink:actuate="onLoad">
+      <stop
+         style="stop-color:#000000;stop-opacity:1.0;"
+         offset="0%"
+         id="stop6142" />
+    </radialGradient>
+    <radialGradient
+       id="radial1_copy1_copy0"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad"
+       xlink:show="other"
+       xlink:type="simple"
+       r="181.72"
+       cx="215"
+       fx="226.8"
+       fy="147.8"
+       cy="150.16"
+       xlink:actuate="onLoad">
+      <stop
+         style="stop-color:#666666;stop-opacity:1;"
+         offset="26%"
+         id="stop6145" />
+      <stop
+         offset="50%"
+         style="stop-color:#ffffff;stop-opacity:1;"
+         id="stop6147" />
+      <stop
+         offset="73%"
+         style="stop-color:#666666;stop-opacity:1;"
+         id="stop6149" />
+    </radialGradient>
+  </defs>
+  <g
+     filter="url(#MyFilter)"
+     id="g6151">
+    <circle
+       r="118"
+       style="fill:url(#radial1_copy1_copy0)"
+       cx="215"
+       cy="136"
+       transform="matrix(0.90852,0.417841,-0.417841,0.90852,56.56412,-76.74219)"
+       id="circle6153"
+       sodipodi:cx="215"
+       sodipodi:cy="136"
+       sodipodi:rx="118"
+       sodipodi:ry="118" />
+    <rect
+       x="38"
+       y="141"
+       transform="matrix( 1, 0, 0, 0.9770642201834863, 0, 8.188073394495405)"
+       width="319"
+       style="fill:url(#radial1_copy1);"
+       height="214"
+       id="rect6155" />
+    <rect
+       x="53"
+       y="160"
+       transform="matrix( 1, 0, 0, 1, 0, 0)"
+       width="288"
+       style="fill:url(#radial1);"
+       height="181"
+       id="rect6157" />
+    <rect
+       x="55"
+       y="160"
+       transform="matrix( 1, 0, 0, 1, 0, 0)"
+       width="1"
+       style="fill:#ffffff;"
+       height="1"
+       id="rect6159" />
+    <rect
+       x="53"
+       y="160"
+       transform="matrix( 1, 0, 0, 1, 0, 0)"
+       width="287"
+       style="fill:#996600;"
+       height="13"
+       id="rect6161" />
+    <rect
+       x="53"
+       y="160"
+       transform="matrix( 1, 0, 0, 1, 0, 167)"
+       width="287"
+       style="fill:#996600;"
+       height="13"
+       id="0" />
+    <rect
+       x="53"
+       y="160"
+       transform="matrix( 1, 0, 0, 1, 0, 13)"
+       width="287"
+       style="fill:#ffff00;"
+       height="13"
+       id="1" />
+    <rect
+       x="187"
+       y="205"
+       transform="matrix( 1, 0, 0, 1, 0, 0)"
+       width="20"
+       style="fill:#333300;"
+       height="91"
+       id="rect6165" />
+    <rect
+       x="162"
+       y="228"
+       transform="matrix( 1, 0, 0, 1, 7, 1)"
+       width="56"
+       style="fill:#333300;"
+       height="40"
+       id="rect6167" />
+  </g>
+  <rect
+     x="206"
+     y="205"
+     transform="matrix( 1, 0, 0, 1.074074074074074, 0, -15.037037037037013)"
+     width="8"
+     style="fill:#003333;"
+     height="23"
+     id="rect6169" />
+  <rect
+     x="225"
+     width="7"
+     y="228"
+     height="41"
+     style="fill:#000000;"
+     id="rect6171" />
+  <rect
+     x="207"
+     width="7"
+     y="269"
+     height="26"
+     style="fill:#000000;"
+     id="rect6173" />
+</svg>

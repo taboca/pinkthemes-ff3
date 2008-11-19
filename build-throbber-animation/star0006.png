@@ -1,0 +1,37 @@
+rary.
+// See these sources for detailed information regarding the
+// Active Template Library product.
+
+#ifndef __ATLDEF_H__
+#define __ATLDEF_H__
+
+#pragma once
+
+#pragma warning(disable : 4619)	// there is no warning number
+
+#ifdef _WIN32_WCE
+#include <atldefce.h>
+#endif
+
+#include <atlrc.h>
+#ifndef _WIN32_WCE
+#include <errno.h>
+#include <sal.h>
+#endif
+
+#ifndef RC_INVOKED
+
+#ifndef __cplusplus
+	#error ATL requires C++ compilation (use a .cpp suffix)
+#endif
+
+// If you are mixing compilation units that are built as
+// native code with those that are built /clr, you must define
+// the symbol '_ATL_MIXED'. _ATL_MIXED must be defined for all 
+// compilation units in an executable or it must be defined for none of them.
+#if !defined(_ATL_MIXED)
+namespace Inconsistent_definition_of_symbol__ATL_MIXED
+{
+	struct _Please_define_it_the_same_throughout_your_project { };
+}
+#

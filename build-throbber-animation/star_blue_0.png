@@ -1,0 +1,31 @@
+  *pEnd
+    ) 
+{
+    TryBlockMapEntry *pEntry;
+    unsigned num_of_try_blocks = FUNC_NTRYBLOCKS(*pFuncInfo);
+
+    DEBUGCHK( num_of_try_blocks > 0 );
+    for( unsigned int index = 0; index < num_of_try_blocks; index++ ) 
+    {
+        pEntry = FUNC_PTRYBLOCK(*pFuncInfo, index);
+        if(curState >= TBME_LOW(*pEntry) && curState <= TBME_HIGH(*pEntry) ) 
+        {
+            *pStart = index;
+            //
+            // It would be better to return the end-index itself, but I don't
+            // want to change the caller's code.
+            //
+            *pEnd = TBME_CATCHHIGH(*pEntry) + 1;
+            DEBUGCHK( *pEnd <= num_of_try_blocks && *pStart < *pEnd );
+            return pEntry;
+        }
+    }
+
+    *pStart = *pEnd = 0;
+    return NULL;
+}
+
+#else // CC_OUTERTRY
+
+// _GetRangeOfTrysToCheck - determine which try blocks are of interest, given
+//  the current catch block nestin
