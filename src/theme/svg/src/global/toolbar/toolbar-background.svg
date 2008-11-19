@@ -11,15 +11,15 @@
    contentScriptType="text/ecmascript"
    zoomAndPan="magnify"
    contentStyleType="text/css"
-   width="336"
-   height="336"
+   width="336px"
+   height="120px"
    viewBox="0 0 336 120"
    preserveAspectRatio="xMidYMid meet"
    version="1.0"
    id="svg2513"
    sodipodi:version="0.32"
    inkscape:version="0.44.1"
-   sodipodi:docname="background-popup.svg"
+   sodipodi:docname="background-toolbar.svg"
    sodipodi:docbase="C:\cygwin\home\ivaldo\taboca-firefox\src\theme\svg\src\global">
   <metadata
      id="metadata2529">
@@ -44,14 +44,12 @@
      bordercolor="#666666"
      pagecolor="#ffffff"
      id="base"
-     inkscape:zoom="0.5907738"
-     inkscape:cx="119.11195"
-     inkscape:cy="62.600289"
-     inkscape:window-x="276"
-     inkscape:window-y="101"
-     inkscape:current-layer="svg2513"
-     width="336px"
-     height="336px" />
+     inkscape:zoom="2.3630952"
+     inkscape:cx="168"
+     inkscape:cy="40.400411"
+     inkscape:window-x="110"
+     inkscape:window-y="110"
+     inkscape:current-layer="svg2513" />
   <defs
      id="defs2081">
     <linearGradient
@@ -139,7 +137,7 @@
        x2="127.70457"
        y2="23.588499"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.704697,0,-106.6693)" />
+       gradientTransform="matrix(1,0,0,0.436241,0,-3.172383)" />
   </defs>
 <!--
 
@@ -147,31 +145,13 @@ Comentartios do projeto
 
 336x120 Toolbar.png
 
-1a linha - esperando - ativpo
-2a linha - mouse em cima andando
-3a linha - desativado
-4a linha - ???? 
-5a linha - mouse em cima botao apertado
-
 -->  <g
-     id="g2526"
-     transform="translate(0,-104)" />
+     id="g2526" />
   <rect
      style="fill:url(#linearGradient3424);fill-opacity:1;stroke:none;stroke-width:10.34399986;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect2531"
      width="338.11588"
-     height="88.866501"
+     height="55.012592"
      x="-1.6926953"
-     y="-107.98993" />
-  <g
-     transform="matrix(-0.169838,0,0,0.151619,302.0837,-232.1202)"
-     id="g4112"
-     style="fill:#131516;fill-opacity:0.11518327;stroke:none;stroke-opacity:1">
-   
-   
-   
-   
-   
-   
-  </g>
+     y="-3.9899244" />
 </svg>
