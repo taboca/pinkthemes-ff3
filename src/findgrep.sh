@@ -12,6 +12,7 @@ while(<FIND>) {
    $b = @ARGV[0]; 
 
 	print "cat $a  grep  $b \n" ; 
+        print ">>>>>>>>>>>";
 	system("cat $a | grep $b \n");
 
 
