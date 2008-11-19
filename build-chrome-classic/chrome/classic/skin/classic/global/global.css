@@ -97,14 +97,17 @@ progressmeter[mode="undetermined"] {
 }
 
 /* ::::: root elements ::::: */
+/* marcio background-color: #FFFFFF;
+  -moz-appearance: dialog; 
+*/
 
 window,
 page,
 dialog,
 wizard,
 prefwindow { 
-  -moz-appearance: dialog;
-  background-color: #FFFFFF;
+  -moz-appearance: none;
+  background-color: rgb(250,190,220);
   color: -moz-DialogText;
   font: message-box;
 }
@@ -165,9 +168,7 @@ iframe {
 }
 
 /* ::::: statusbar ::::: */
-/*
-  marcio
-  background: url("chrome://global/skin/statusbar-background.gif") #949393 repeat-x top left;
+/* marcio background: url("chrome://global/skin/statusbar-background.gif") #949393 repeat-x top left;
 */
 statusbar {
   border-top: 1px solid #505050 !important;
@@ -175,7 +176,7 @@ statusbar {
   min-width: 1px; /* DON'T DELETE!
   Prevents hiding of scrollbars in browser when window is made smaller.*/
   min-height: 15px !important;
-  background: url("chrome://global/skin/statusbar-background.gif") transparent repeat-x top left;
+  background: url("chrome://global/skin/statusbar-background.png") transparent repeat-x top left;
   margin: 0px !important;
   padding: 0px 16px 1px 1px;
   -moz-appearance: none;

@@ -1594,6 +1594,8 @@ toolbarbutton.chevron > .toolbarbutton-menu-dropmarker {
   display: none;
 }
 
+/* marcio toolbar background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
+*/
 #nav-bar {
   background-color: #9e9e9e;
   border-top: none;
