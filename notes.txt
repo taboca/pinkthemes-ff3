@@ -1,2 +1,9 @@
 * Batik 1.8 and Rasterizer task in the lib
 
+== Modified some toolbar graphics and statusbar ==
+
+ 2107  vi src/ff3-chrome-classic-update/skin/classic/browser/browser.css 
+ 2108  vi src/ff3-chrome-classic-update/skin/classic/global/global.css 
+
+
+
