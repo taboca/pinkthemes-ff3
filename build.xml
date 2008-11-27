@@ -26,7 +26,6 @@
           <pathelement location="./lib/batik-rasterizer.jar" />
           <pathelement location="./lib/xml-apis-ext.jar" />
           <pathelement location="./lib/RasterizerTask.jar" />
-
         </classpath>
 
 	</taskdef>
@@ -112,7 +111,7 @@
     	
 		<copy todir="build-chrome-classic/chrome/classic" 
 			overwrite="yes">
-			<fileset dir="src/ff3-chrome-classic-update" includes="**/*" />
+			<fileset dir="src/ff3-chrome-linux-classic-update" includes="**/*" />
 		</copy>
 
 	</target>
@@ -136,7 +135,7 @@
  	</target> 
 
         <target name="install" >
-                <copy todir="/Applications/Firefox.app/Contents/MacOS/chrome/" overwrite="yes">
+                <copy todir="/usr/local/firefox/chrome/" overwrite="yes">
                         <fileset dir="build-distrib" includes="**" />
                 </copy>
         </target>
