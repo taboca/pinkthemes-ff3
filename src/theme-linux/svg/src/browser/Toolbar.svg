@@ -1,0 +1,183 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="336px" height="120px"  viewBox="0 0 336 120" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+
+  <defs
+     id="defs2081">
+    <filter
+       x="0"
+       y="0"
+       width="24"
+       filterUnits="userSpaceOnUse"
+       xlink:type="simple"
+       xlink:actuate="onLoad"
+       id="minhaSombra"
+       height="24"
+       xlink:show="other">
+      <feGaussianBlur
+         stdDeviation="10"
+         in="SourceAlpha"
+         result="blur"
+         id="feGaussianBlur2084" />
+      <feOffset
+         dx="6"
+         dy="6"
+         in="blur"
+         result="offsetBlur"
+         id="feOffset2086" />
+      <feSpecularLighting
+         specularConstant=".2"
+         specularExponent="20"
+         result="specOut"
+         in="blur"
+         surfaceScale="5"
+         lighting-color="#bbbbbb"
+         id="feSpecularLighting2088">
+        <fePointLight
+           x="-5000"
+           y="-10000"
+           z="20000"
+           id="fePointLight2090" />
+      </feSpecularLighting>
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         in="specOut"
+         result="specOut"
+         id="feComposite2092" />
+      <feComposite
+         result="litPaint"
+         in="SourceGraphic"
+         k1="0"
+         k2="1"
+         k3="1"
+         k4="0"
+         in2="specOut"
+         operator="arithmetic"
+         id="feComposite2094" />
+      <feMerge
+         id="feMerge2096">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode2098" />
+        <feMergeNode
+           in="litPaint"
+           id="feMergeNode2100" />
+      </feMerge>
+    </filter>
+
+
+  </defs>
+
+
+
+
+<!--
+
+Comentartios do projeto
+
+336x120 Toolbar.png
+
+1a linha - esperando - ativpo
+2a linha - mouse em cima andando
+3a linha - desativado
+4a linha - ???? 
+5a linha - mouse em cima botao apertado
+
+-->
+<g>
+
+
+
+<image x="0" y="0" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-esquerdo.svg">
+</image>
+
+<image x="0" y="24" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-mouse-esquerdo.svg">
+</image>
+
+<image x="0" y="48" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-desativado-esquerdo.svg">
+</image>
+
+<image x="0" y="96" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-clicado-esquerdo.svg">
+</image>
+
+<!-- botoes da direita -->
+
+<image x="24" y="0" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-direito.svg">
+</image>
+
+<image x="24" y="24" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-mouse-direito.svg">
+</image>
+
+<image x="24" y="48" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-desativado-direito.svg">
+</image>
+
+<image x="24" y="96" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-clicado-direito.svg">
+</image>
+
+<!-- botoes stop -->
+
+<image x="48" y="0" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-stop.svg">
+</image>
+
+<image x="48" y="24" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-mouse-stop.svg">
+</image>
+
+<image x="48" y="48" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-desativado-stop.svg">
+</image>
+
+<image x="48" y="96" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-clicado-stop.svg">
+</image>
+
+
+<!-- botoes reload -->
+
+<image x="72" y="0" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-reload.svg">
+</image>
+
+<image x="72" y="24" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-mouse-reload.svg">
+</image>
+
+<image x="72" y="48" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-desativado-reload.svg">
+</image>
+
+<image x="72" y="96" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-clicado-reload.svg">
+</image>
+
+<!-- botoes home -->
+
+<image x="96" y="0" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-home.svg">
+</image>
+
+<image x="96" y="24" width="24px" height="24px"
+	         xlink:href="../../biblioteca/Toolbar/icone-mouse-home.svg">
+</image>
+
+<image x="96" y="48" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-desativado-home.svg">
+</image>
+
+<image x="96" y="96" width="24px" height="24px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-clicado-home.svg">
+</image>
+
+</g>
+
+
+</svg>

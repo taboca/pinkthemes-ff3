@@ -1,0 +1,64 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="48px" height="336px"  viewBox="0 0 48 336" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+
+<defs>
+ 
+</defs>
+
+
+<g>
+
+
+<!-- back ativo --> 
+
+ <image x="0" y="48" width="24px" height="24px"
+	         xlink:href="../teste/back.svg">
+    <title>My image</title>
+  </image>
+
+<!-- back direito --> 
+<g opacity=".6">
+ <image x="24" y="48" width="24px" height="24px"
+	         xlink:href="../teste/back.svg">
+    <title>My image</title>
+  </image>
+</g>
+
+<!-- forward ativo --> 
+
+ <image x="0" y="72" width="24px" height="24px"
+	         xlink:href="../teste/forward.svg">
+    <title>My image</title>
+  </image>
+
+<!-- forward direito --> 
+<g opacity=".6">
+ <image x="24" y="72" width="24px" height="24px"
+	         xlink:href="../teste/forward.svg">
+    <title>My image</title>
+  </image>
+</g>
+
+<!-- stop esquerdo --> 
+
+ <image x="0" y="144" width="24px" height="24px"
+         xlink:href="../teste/stop2.svg">
+    <title>My image</title>
+  </image>
+
+<!-- stop direito --> 
+
+<g opacity=".6">
+ <image x="24" y="144" width="24px" height="24px"
+         xlink:href="../teste/stop2.svg">
+    <title>My image</title>
+  </image>
+</g>
+
+
+</g>
+
+
+
+
+</svg>

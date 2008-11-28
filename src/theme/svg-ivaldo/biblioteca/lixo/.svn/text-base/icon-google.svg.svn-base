@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="400pt"
+   height="400pt"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   sodipodi:docname="icon-google.svg"
+   sodipodi:docbase="C:\cygwin\home\Marcio\mozilla\batik\batik-1.6\skin-build\src\extensions">
+  <metadata
+     id="metadata1681">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="651"
+     inkscape:window-width="808"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.748"
+     inkscape:cx="250"
+     inkscape:cy="298.2572"
+     inkscape:window-x="99"
+     inkscape:window-y="180"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <radialGradient
+       cx="357.70001"
+       cy="378"
+       r="394.05002"
+       fx="418.05002"
+       fy="417.05002"
+       id="radial1"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect">
+      <stop
+         style="stop-color:#ff9900;stop-opacity:1"
+         offset="0"
+         id="stop1435" />
+      <stop
+         style="stop-color:#ff6633;stop-opacity:1"
+         offset="0.58999997"
+         id="stop1437" />
+      <stop
+         style="stop-color:#ff3300;stop-opacity:1"
+         offset="1"
+         id="stop1439" />
+    </radialGradient>
+    <radialGradient
+       cx="0.07"
+       cy="0.97000003"
+       r="1.11"
+       fx="1.11"
+       fy="1.11"
+       id="radial1_copy0"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad">
+      <stop
+         style="stop-color:#66ffff;stop-opacity:1"
+         offset="0"
+         id="stop1430" />
+      <stop
+         style="stop-color:#3366ff;stop-opacity:1"
+         offset="0.61000001"
+         id="stop1432" />
+    </radialGradient>
+    <radialGradient
+       cx="0.92000002"
+       cy="1"
+       r="0.5"
+       fx="0.5"
+       fy="0.5"
+       id="radial0"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="reflect">
+      <stop
+         style="stop-color:#0099ff;stop-opacity:1"
+         offset="0.09"
+         id="stop1425" />
+      <stop
+         style="stop-color:#ccffff;stop-opacity:1"
+         offset="0.69999999"
+         id="stop1427" />
+    </radialGradient>
+    <filter
+       xlink:show="other"
+       id="MyFilter"
+       height="400"
+       xlink:actuate="onLoad"
+       xlink:type="simple"
+       filterUnits="userSpaceOnUse"
+       width="450"
+       y="0"
+       x="0">
+      <feGaussianBlur
+         id="feGaussianBlur1406"
+         in="SourceAlpha"
+         result="blur"
+         stdDeviation="18" />
+      <feOffset
+         id="feOffset1408"
+         in="blur"
+         result="offsetBlur"
+         dy="15"
+         dx="15" />
+      <feSpecularLighting
+         id="feSpecularLighting1410"
+         lighting-color="#bbbbbb"
+         surfaceScale="5"
+         in="blur"
+         result="specOut"
+         specularConstant=".2"
+         specularExponent="20">
+        <fePointLight
+           id="fePointLight1412"
+           z="20000"
+           y="-10000"
+           x="-5000" />
+      </feSpecularLighting>
+      <feComposite
+         id="feComposite1414"
+         in="specOut"
+         result="specOut"
+         operator="in"
+         in2="SourceAlpha" />
+      <feComposite
+         id="feComposite1416"
+         operator="arithmetic"
+         in2="specOut"
+         k4="0"
+         k3="1"
+         k2="1"
+         k1="0"
+         in="SourceGraphic"
+         result="litPaint" />
+      <feMerge
+         id="feMerge1418">
+        <feMergeNode
+           id="feMergeNode1420"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode1422"
+           in="litPaint" />
+      </feMerge>
+    </filter>
+    <radialGradient
+       cx="357.70001"
+       cy="378"
+       r="394.05002"
+       fx="418.05002"
+       fy="417.05002"
+       id="radialGradient2540"
+       xlink:href="#radial1"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect" />
+  </defs>
+  <rect
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:22;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect2948"
+     width="487.96793"
+     height="483.95721"
+     x="6.6844964"
+     y="8.0213776" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:22;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect2950"
+     width="458.55618"
+     height="453.87515"
+     x="21.390373"
+     y="23.386875" />
+  <text
+     xml:space="preserve"
+     style="font-size:2852.32177734px;font-style:normal;font-weight:normal;line-height:125%;fill:#0008e3;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="64.242813"
+     y="405.76776"
+     id="thegoogle"
+     filter="url(#MyFilter)"
+     transform="scale(0.993894,1.006144)"
+     sodipodi:linespacing="125%"
+     inkscape:label="#text2944"><tspan
+       sodipodi:role="line"
+       id="tspan2946"
+       x="64.242813"
+       y="405.76776"
+       style="font-size:468.62704468px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#0008e3;fill-opacity:1;font-family:Palatino Linotype">G</tspan></text>
+</svg>

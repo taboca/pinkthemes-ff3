@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="text/ecmascript"
+   width="400"
+   zoomAndPan="magnify"
+   contentStyleType="text/css"
+   height="400"
+   viewBox="0 0 400.0 400.0"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.0"
+   id="svg2079"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+   sodipodi:docname="icone-security-ativo.svg"
+   sodipodi:docbase="C:\cygwin\home\ivaldo\taboca-firefox\src\theme\svg\biblioteca\Preferences">
+  <metadata
+     id="metadata2119">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="721"
+     inkscape:window-width="1021"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.66821591"
+     inkscape:cx="-25.645665"
+     inkscape:cy="61.740302"
+     inkscape:window-x="276"
+     inkscape:window-y="17"
+     inkscape:current-layer="svg2079"
+     showguides="false" />
+  <defs
+     id="defs2081">
+    <filter
+       x="0"
+       y="0"
+       width="450"
+       filterUnits="userSpaceOnUse"
+       xlink:type="simple"
+       xlink:actuate="onLoad"
+       id="MyFilter"
+       height="400"
+       xlink:show="other">
+      <feGaussianBlur
+         stdDeviation="14"
+         in="SourceAlpha"
+         result="blur"
+         id="feGaussianBlur2084" />
+      <feOffset
+         dx="14"
+         dy="14"
+         in="blur"
+         result="offsetBlur"
+         id="feOffset2086" />
+      <feSpecularLighting
+         specularConstant=".2"
+         specularExponent="20"
+         result="specOut"
+         in="blur"
+         surfaceScale="5"
+         lighting-color="#bbbbbb"
+         id="feSpecularLighting2088">
+        <fePointLight
+           x="-5000"
+           y="-10000"
+           z="20000"
+           id="fePointLight2090" />
+      </feSpecularLighting>
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         in="specOut"
+         result="specOut"
+         id="feComposite2092" />
+      <feComposite
+         result="litPaint"
+         in="SourceGraphic"
+         k1="0"
+         k2="1"
+         k3="1"
+         k4="0"
+         in2="specOut"
+         operator="arithmetic"
+         id="feComposite2094" />
+      <feMerge
+         id="feMerge2096">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode2098" />
+        <feMergeNode
+           in="litPaint"
+           id="feMergeNode2100" />
+      </feMerge>
+    </filter>
+    <radialGradient
+       gradientTransform=""
+       id="radial0"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="repeat"
+       xlink:show="other"
+       xlink:type="simple"
+       r="50%"
+       cx="50%"
+       fx="50%"
+       cy="50%"
+       fy="50%"
+       xlink:actuate="onLoad">
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1;"
+         offset="33%"
+         id="stop2103" />
+    </radialGradient>
+    <radialGradient
+       gradientTransform=""
+       id="radial1"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="pad"
+       xlink:show="other"
+       xlink:type="simple"
+       r="111%"
+       cx="7%"
+       fx="111%"
+       cy="97%"
+       fy="111%"
+       xlink:actuate="onLoad">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0%"
+         id="stop2106" />
+      <stop
+         style="stop-color:#cccccc;stop-opacity:1;"
+         offset="61%"
+         id="stop2108" />
+    </radialGradient>
+  </defs>
+  <path
+     style="fill:black;fill-opacity:1;stroke:none;stroke-linejoin:miter"
+     d="M 88.508498,132.49314 C 89.20617,139.27602 110.65332,142.75564 115.12361,132.96401 C 125.95483,-0.95723731 258.63599,29.302161 261.56555,128.71241 C 266.04164,143.97023 323.28795,143.56303 327.7901,136.79733 C 329.33253,-55.893307 86.881144,-30.433524 88.508498,132.49314 z "
+     id="path2944"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:14.28199959;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 47.549233,266.62429 L 54.433446,141.30305 C 54.067124,127.05159 64.302404,126.14574 67.553575,124.1476 L 97.346456,112.1821 L 331.07976,182.14037 C 338.19897,186.35415 340.56337,194.00265 340.81066,203.19034 L 341.78316,324.08539 C 341.80846,335.30393 344.70223,342.80717 333.1034,353.18923 L 260.02286,393.6518 C 250.92861,398.87842 242.72685,398.07336 235.00503,394.02465 L 66.337492,292.82422 C 56.187063,287.22823 46.043695,281.17193 47.549233,266.62429 z "
+     id="path2929"
+     sodipodi:nodetypes="cccccccccccc" />
+  <path
+     sodipodi:type="arc"
+     style="fill:black;fill-opacity:1;stroke:none;stroke-linejoin:miter"
+     id="path2951"
+     sodipodi:cx="252.164"
+     sodipodi:cy="190.86101"
+     sodipodi:rx="34.420013"
+     sodipodi:ry="13.09457"
+     d="M 286.58401 190.86101 A 34.420013 13.09457 0 1 1  217.74399,190.86101 A 34.420013 13.09457 0 1 1  286.58401 190.86101 z"
+     transform="matrix(1.195652,0,0,1.342857,-47.8399,-63.94154)" />
+</svg>

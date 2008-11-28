@@ -1,0 +1,45 @@
+<svg contentScriptType="text/ecmascript" width="400" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" height="400" viewBox="0 0 400.0 400.0" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+<defs>
+ <filter x="0" y="0" width="450" filterUnits="userSpaceOnUse" xlink:type="simple" xlink:actuate="onLoad" id="MyFilter" height="400" xlink:show="other">
+      <feGaussianBlur stdDeviation="14" in="SourceAlpha" result="blur"/>
+      <feOffset dx="14" dy="14" in="blur" result="offsetBlur"/>
+      <feSpecularLighting specularConstant=".2" specularExponent="20" result="specOut" in="blur" surfaceScale="5" lighting-color="#bbbbbb">
+        <fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in2="SourceAlpha" operator="in" in="specOut" result="specOut"/>
+      <feComposite result="litPaint" in="SourceGraphic" k1="0" k2="1" k3="1" k4="0" in2="specOut" operator="arithmetic"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="litPaint"/>
+      </feMerge>
+    </filter>
+<radialGradient gradientTransform="" id="radial1" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="111%" cx="7%" fx="111%" cy="97%" fy="111%" xlink:actuate="onLoad">
+<stop style="stop-color:#ffff00;stop-opacity:1;" offset="0%"/>
+<stop style="stop-color:#ff9900;stop-opacity:1;" offset="61%"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial0" gradientUnits="objectBoundingBox" spreadMethod="reflect" xlink:show="other" xlink:type="simple" r="50%" cx="92%" fx="50%" cy="100%" fy="50%" xlink:actuate="onLoad">
+<stop style="stop-color:#0099ff;stop-opacity:1;" offset="9%"/>
+<stop style="stop-color:#ccffff;stop-opacity:1;" offset="70%"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial1_copy0" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="111%" cx="33%" fx="111%" fy="111%" cy="22%" xlink:actuate="onLoad">
+<stop style="stop-color:#66ffff;stop-opacity:1;" offset="9%"/>
+<stop style="stop-color:#3366ff;stop-opacity:1;" offset="61%"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial2" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="50%" cx="50%" fx="50%" fy="50%" cy="50%" xlink:actuate="onLoad">
+<stop offset="0%" style="stop-color:#000000;stop-opacity:1.0;"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial1_copy1" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="77%" cx="50%" fx="55%" fy="55%" cy="56%" xlink:actuate="onLoad">
+<stop offset="16%" style="stop-color:#ffcc00;stop-opacity:1;"/>
+<stop style="stop-color:#ffff00;stop-opacity:1;" offset="49%"/>
+<stop style="stop-color:#ff9900;stop-opacity:1;" offset="94%"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial3" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="50%" cx="50%" fx="50%" fy="50%" cy="50%" xlink:actuate="onLoad">
+<stop offset="0%" style="stop-color:#000000;stop-opacity:1.0;"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial1_copy1_copy0" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="77%" cx="50%" fx="55%" cy="56%" fy="55%" xlink:actuate="onLoad">
+<stop offset="26%" style="stop-color:#666666;stop-opacity:1;"/>
+<stop style="stop-color:#ffffff;stop-opacity:1;" offset="50%"/>
+<stop style="stop-color:#666666;stop-opacity:1;" offset="73%"/>
+</radialGradient>
+</defs>
+</svg>
