@@ -45,20 +45,34 @@
 
 /* ::::: menu/menuitem ::::: */
 
+/* marcio 
+
+  color: MenuText;
+
+*/
+
 menu,
 menuitem {
   -moz-appearance: menuitem !important;
   -moz-box-align: center;
-  color: MenuText;
+  color: black;
   font: -moz-pull-down-menu;
   list-style-image: none;
   -moz-image-region: auto;
 }
 
+
+/* marcio 
+
+
+  color: -moz-mac-menutextdisable;
+
+*/
+
 menu[disabled="true"], menuitem[disabled="true"],
 menu[_moz-menuactive="true"][disabled="true"],
 menuitem[_moz-menuactive="true"][disabled="true"] {
-  color: -moz-mac-menutextdisable;
+  color: gray;
 }
 
 /* ..... internal content .... */

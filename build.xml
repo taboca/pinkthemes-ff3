@@ -38,7 +38,6 @@
 	    </fileset>
       </rasterize>
 
-<!--
 
       <rasterize  
 	    result="image/png"
@@ -47,6 +46,7 @@
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
+<!--
 
       <rasterize  
 	    result="image/png"

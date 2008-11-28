@@ -50,6 +50,12 @@ toolbox {
 
 /* ::::: toolbar & menubar ::::: */
 
+/* marcio 
+
+background-color was something else
+
+*/
+
 toolbar,
 toolbarpalette {
   min-width: 1px;
@@ -57,12 +63,21 @@ toolbarpalette {
   color: #000000;
   border-top: 1px solid rgba(255,255,255,0.45);
   border-bottom: 1px solid rgba(0,0,0,0.35);
-  background-color: #9E9E9E;
+  background-color: transparent;
 }
+
+/* marcio 
+
+  min-width: 1px;
+
+added the min-height due to flickring top menu. As we fix the top menu, maybe we can remove this..
+
+*/
 
 menubar {
   -moz-appearance: toolbar;
   min-width: 1px;
+  min-height:28px;
 }
 
 .toolbar-holder {
@@ -88,8 +103,12 @@ toolbarseparator {
   width: 1px !important;
 }
 
+/*  marcio
+	min-height: 38px !important;
+*/
+
 .toolbar-primary {
-	min-height: 24px !important;
+	min-height: 38px !important;
 }
 
 
