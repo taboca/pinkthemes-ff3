@@ -21,6 +21,7 @@
  *
  * Contributor(s):
  *   Joe Hewitt (hewitt@netscape.com)
+ *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -48,16 +49,21 @@ menupopup,
 popup,
 panel {
   -moz-appearance: menupopup;
-  min-width: 1px;
+}
+
+/* ::::: popup internal box ::::: */
+
+.popup-internal-box {
+        -moz-appearance: none;
+	padding: 4px 0px 4px 0px !important;
 }
 
 /* ::::: tooltip ::::: */
 
 tooltip {
   -moz-appearance: tooltip;
-  margin-top: 21px;
-  /* GTK hardcodes this to 4px */
-  padding: 4px;
+  margin-top: 18px;
+  padding: 2px 3px;
   max-width: 40em;
   color: InfoText;
   font: message-box;
@@ -78,7 +84,5 @@ tooltip[titletip="true"] {
 
 menulist > menupopup,
 .menulist-menupopup {
-  padding: 0px;
   min-width: 0px;
 }
-

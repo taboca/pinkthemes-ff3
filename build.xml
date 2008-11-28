@@ -32,12 +32,13 @@
 	
     <target name="gera-png">
 
-<!--
       <rasterize result="image/png" destdir="build-chrome-png/classic/browser">
 	    <fileset dir="src/theme/svg/src/browser">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
+
+<!--
 
       <rasterize  
 	    result="image/png"
@@ -111,7 +112,7 @@
     	
 		<copy todir="build-chrome-classic/chrome/classic" 
 			overwrite="yes">
-			<fileset dir="src/ff3-chrome-linux-classic-update" includes="**/*" />
+			<fileset dir="src/ff3-chrome-classic-update" includes="**/*" />
 		</copy>
 
 	</target>

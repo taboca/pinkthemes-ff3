@@ -29,6 +29,10 @@ link:focus {
   border: 1px dotted black;
 }
 
+.wizard-page-box {
+  padding: 15px 10px 15px 10px;
+}
+
 /**
  * License Page
  */
@@ -51,43 +55,57 @@ license {
   list-style-image: url("chrome://global/skin/icons/loading_16.png");
 }
 .licenseLoadingThrobber[state="error"] {
-  list-style-image: url("moz-icon://stock/gtk-dialog-error?size=menu");
+  list-style-image: url("chrome://global/skin/icons/notfound.png");
 }
 
 /**
  * Update Found Page
  */
-#moreDetails {
-  margin: 1px 5px 4px 3px;
+#updatesfoundContent {
+  -moz-margin-start: 8px;
+  -moz-margin-end: 8px;
 }
 
-wizard[currentpageid="updatesfound"] .wizard-button[dlgtype="next"] {
+wizard[currentpageid="updatesfound"] .wizard-page-box {
+  margin: 0px;
+}
+
+#moreDetails {
+  margin: 1px 0px 4px 3px;
+}
+
+#updateMoreInfoURL, #updateMoreInfoURLLabel {
+  -moz-margin-start: 0px;
+  -moz-margin-end: 0px;
+}
+
+#downloadNow {
   font-weight: bold;
 }
 
-wizard[currentpageid="updatesfound"] .wizard-button[dlgtype="next"] > .button-box {
-  padding-left: 15px;
-  padding-right: 15px;  
-}
-
-#updateForMoreInfo {
-  margin-left: 5px;
+#downloadNow, #downloadLater {
+  margin: 0px;
 }
 
 #updateName, #updateFinishedName {
   font-weight: bold;
   font-size: larger;
+  -moz-margin-start: 0px;
+}
+
+#separatorGroove {
+  display: none;
 }
 
 #alertImage {
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=dnd");
+  list-style-image: url("chrome://global/skin/icons/Warning.png");
   margin-right: 5px;
 }
 
 #incompatibleWarning {
   background-color: InfoBackground;
   color: InfoText;
-  border: 1px solid ThreeDShadow;
+  border: 1px outset InfoBackground;
   padding: 3px;
   margin: 1px 5px 4px 5px;
 }
@@ -101,8 +119,8 @@ wizard[currentpageid="updatesfound"] .wizard-button[dlgtype="next"] > .button-bo
 
 #downloadStatus {
   margin-top: 6px;
-  height: 3em !important;
 }
+
 #downloadThrobber {
   margin: 5px 3px 0px 5px;
   list-style-image: url("chrome://global/skin/icons/notloading_16.png");
@@ -110,13 +128,14 @@ wizard[currentpageid="updatesfound"] .wizard-button[dlgtype="next"] > .button-bo
 #downloadThrobber[state="loading"] {
   list-style-image: url("chrome://global/skin/icons/loading_16.png");
 }
-#downloadStatusLine {
-  -moz-box-align: start;
-}
 
 #verificationFailedIcon {
-  list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=menu");
+  list-style-image: url("chrome://global/skin/icons/notfound.png");
   margin: 5px 3px 0px 5px;
+}
+
+#downloadStatusLine {
+  -moz-box-align: center;
 }
 
 /**
@@ -164,9 +183,14 @@ update {
   margin-bottom: 1px;
 }
 
+/**
+ * Advanced Preferences
+ */
 .updatePrefsInfo {
   font-size: smaller;
-  margin-left: 27px;
+  margin-top: 5px;
   margin-bottom: 10px;
+  -moz-margin-start: 22px;
+  -moz-margin-end: 10px;
 }
 

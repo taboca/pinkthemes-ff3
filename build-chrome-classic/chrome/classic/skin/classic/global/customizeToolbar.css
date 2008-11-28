@@ -20,8 +20,7 @@
  the Initial Developer. All Rights Reserved.
 
  Contributor(s):
-   Blake Ross (blaker@netscape.com)
-   Joe Hewitt (hewitt@netscape.com)
+   Kevin Gerich (webmail@kmgerich.com)
 
  Alternatively, the contents of this file may be used under the terms of
  either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -37,12 +36,36 @@
 
  ***** END LICENSE BLOCK ***** */
 
-window,
-dialog {
-  padding: 6px;
+#palette-box {
+	margin-top: 2px;
+}
+#palette-box > hbox > toolbarpaletteitem {
+	padding: 2px;
+	margin: 0px;
 }
 
+/* *** customize toolbar **** */
+
+#main-box {
+	padding: 12px;
+}
+
+#main-box > separator {
+	-moz-appearance: none;
+	border-bottom: none;
+} 
+
 #instructions {
-  font-weight: bold;
-  font-size: larger;
+	font: menu;
+	font-weight: bold;
+	line-height: 16pt;
+}
+
+hbox button {
+	font: menu;
+}
+
+#main-box > box > button {
+	min-height: 19px; /* aqua size for small buttons */
+	font: message-box;
 }

@@ -20,6 +20,7 @@
  *
  * Contributor(s):
  *   Original Author: Joe Hewitt (hewitt@netscape.com)
+ *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -43,58 +44,45 @@
 
 /* ::::: dialog ::::: */
 
+#commonDialog > image {
+  -moz-margin-end: 14px !important;
+}
+
+#commonDialog > .dialog-button-box {
+  -moz-margin-start: 80px;
+}
+
 dialog { 
-  padding-top: 8px;
-  padding-bottom: 10px;
-  -moz-padding-start: 8px;
-  -moz-padding-end: 10px;
+  -moz-appearance: dialog;
+  padding: 14px;
 }
 
 /* ::::: dialog buttons ::::: */
 
 .dialog-button {
   font: menu;
-  margin-top: 6px;
 }
 
 /* ::::: dialog header ::::: */
 
 dialogheader {
   margin: 0px 5px 5px 5px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDDarkShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDDarkShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
   padding: 5px 8px;
-  background-color: Highlight;
-  color: HighlightText;
 }
 
 .dialogheader-title {
   margin: 0px !important;
   font-size: larger;
   font-weight: bold;
+  display: none;
 }
 
 /* ::::: large dialog header ::::: */
 
 .header-large {
   -moz-box-orient: vertical;
-  margin-top: -8px;
-  margin-bottom: 0;
-  -moz-margin-start: -8px;
-  -moz-margin-end: -10px;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDShadow;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  -moz-padding-start: 25px;
-  -moz-padding-end: 5px;
-  background-color: Window;
-  color: WindowText;
+  margin: -14px -14px 0;
+  padding: 12px 5px 12px 25px;
 }
 
 .header-large > .dialogheader-title {
@@ -103,5 +91,25 @@ dialogheader {
 }
 
 .header-large > .dialogheader-description {
-  -moz-margin-start: 12px !important;
+  margin-left: 12px !important;
+}
+
+.dialogheader-description {
+	font-weight: bold !important;
+}
+
+.dialogheader-title {
+	font-weight: bold !important;
+}
+
+#loginContainer {
+	padding-top: 10px;
+}
+
+#findDialog, #findDialog > menu, #findDialog > groupbox {
+	font: menu !important;
+}
+
+#dialog.caseSensitive {
+	margin-top: 8px;
 }

@@ -14,12 +14,12 @@
  * The Original Code is mozilla.org code.
  *
  * The Initial Developer of the Original Code is
- * Håkan Waara.
+ * HÃ¥kan Waara
  * Portions created by the Initial Developer are Copyright (C) 2001
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
- *   Håkan Waara (Original Author)
+ *   HÃ¥kan Waara (Original Author)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -38,61 +38,27 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 spinbuttons {
+  height: 24px;
+  min-height: 24px;
   -moz-appearance: spinner;
   cursor: default;
 }
 
-.spinbuttons-button {
-  min-width: 13px;
-  min-height: 11px;
-  margin: 0 !important;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: ThreeDFace;
-}
-
-.spinbuttons-button > .button-box {
-  border: 0;
-}
-
-.spinbuttons-button:hover:active
-{
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
-}
-
-.spinbuttons-button[disabled="true"] {
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow !important;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow !important;
-}
-
 .spinbuttons-up {
-  -moz-appearance: spinner-upbutton;
-  background-image: url("chrome://global/skin/arrow/arrow-up.gif");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.spinbuttons-up[disabled="true"] {
-  background-image: url("chrome://global/skin/arrow/arrow-up-dis.gif");
+  -moz-appearance: none;
+  -moz-box-flex: 1;
+  min-width: 1px;
+  min-height: 1px;
+  margin: 0;
+  padding: 0;
 }
 
 .spinbuttons-down {
-  -moz-appearance: spinner-downbutton;
-  background-image: url("chrome://global/skin/arrow/arrow-dn.gif");
-  background-position: center center;
-  background-repeat: no-repeat;
+  -moz-appearance: none;
+  -moz-box-flex: 1;
+  min-width: 1px;
+  min-height: 1px;
+  margin: 0;
+  padding: 0;
 }
 
-.spinbuttons-down[disabled="true"] {
-  background-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
-}

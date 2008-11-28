@@ -120,10 +120,9 @@ td:not(:first-child) {
   -moz-margin-end: 4px;
   -moz-margin-start: -20px;
   vertical-align: middle;
-  content: url(moz-icon://stock/gtk-go-up?size=menu);
+  content: url(chrome://global/skin/dirListing/up.png);
 }
 
 .dir::before {
-  content: url(moz-icon://stock/gtk-directory?size=menu);
+  content: url(chrome://global/skin/dirListing/folder.png);
 }
-

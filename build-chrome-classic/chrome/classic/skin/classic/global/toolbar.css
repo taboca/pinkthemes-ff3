@@ -21,6 +21,7 @@
  *
  * Contributor(s):
  *   Joe Hewitt (hewitt@netscape.com)
+ *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -43,50 +44,30 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: toolbox ::::: */
-/* marcio   -moz-appearance: toolbox;
-*/
 
 toolbox {
-  -moz-appearance: none;
-  background: transparent;
 }
 
-/* ::::: menubar & toolbar ::::: */
+/* ::::: toolbar & menubar ::::: */
 
-/* marcio   -moz-appearance: toolbar;
-*/
-
-toolbar {
-  -moz-appearance: none;
+toolbar,
+toolbarpalette {
   min-width: 1px;
-  min-height: 20px;
-  padding: 2px 0px;
+  min-height: 20px !important;
+  color: #000000;
+  border-top: 1px solid rgba(255,255,255,0.45);
+  border-bottom: 1px solid rgba(0,0,0,0.35);
+  background-color: #9E9E9E;
 }
 
-menubar, toolbar[type="menubar"] {
-  -moz-appearance: menubar;
+menubar {
+  -moz-appearance: toolbar;
   min-width: 1px;
-  min-height: 20px;
-  padding: 1px 0px;
 }
 
-/* in browser.xul, the menubar is inside a toolbar... */
-toolbaritem > menubar {
-  -moz-appearance: none;
-}
-
-/* ::::: toolbar decorations ::::: */
-
-toolbarseparator {
-  -moz-appearance: separator !important;
-  margin : 0;
-  border: 0;
-  min-width: 2px;
-}
-
-toolbarspacer {
-  width: 15px;
-}
+.toolbar-holder {
+ min-width: 1px;
+}  
 
 toolbar[mode="icons"] .toolbarbutton-text {
   display: none;
@@ -96,10 +77,21 @@ toolbar[mode="text"] .toolbarbutton-icon {
   display: none;
 }
 
-toolbar[mode="text"] .toolbarbutton-text {
-  padding: 0 !important;
-  margin: 3px 5px !important;
+/* ::::: toolbarseparator ::::: */
+
+toolbarseparator {
+  -moz-appearance       : none;
+  margin: 3px 4px 3px 4px;
+  background: url("chrome://global/skin/toolbar/toolbar-separator.png") transparent repeat-y;
+  
+  padding: 0px;
+  width: 1px !important;
 }
+
+.toolbar-primary {
+	min-height: 24px !important;
+}
+
 
 /* ::::: toolbarpaletteitem ::::: */
 
@@ -107,29 +99,38 @@ toolbarpaletteitem {
   cursor: -moz-grab;
 }
 
-.toolbarpaletteitem-box[type="spacer"],
+toolbar[iconsize="small"] toolbarpaletteitem[type="spacer"] {
+	min-width: 24px !important;
+}
+
+toolbarpaletteitem[type="spacer"] {
+	min-width: 32px !important;
+}
+
+.toolbarpaletteitem-box[type="spacer"] {
+  border: 1px solid #A3A3A3;
+  background: url("chrome://global/skin/10pct_transparent_grey.png") repeat;
+  height: 32px !important;
+  width: 32px !important;
+  margin-top: 18px;
+}
+
 .toolbarpaletteitem-box[type="spring"] {
-  border: 1px solid #808080;
-  background-color: #FFF !important;
+  border: 1px solid #A3A3A3;
+  background: url("chrome://global/skin/toolbar/spring.gif") #FFFFFF no-repeat;
+  height: 32px !important;
+  width: 32px !important;
+  margin-top: 18px;
 }
 
-toolbarpaletteitem[place="toolbar"] {
-  margin-left: -2px;
-  margin-right: -2px;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-}
-
-toolbarpaletteitem[place="toolbar"] > toolbarspacer {
-  width: 11px;
+.toolbarpaletteitem-box[type="spring"][place="toolbar"] {
+  border: 1px solid #A3A3A3;
+  background: url("chrome://global/skin/10pct_transparent_grey.png") repeat;
 }
 
 .toolbarpaletteitem-box[type="spacer"][place="toolbar"],
 .toolbarpaletteitem-box[type="spring"][place="toolbar"] {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  -moz-margin-start: 0px;
-  -moz-margin-end: 2px;
+  margin: 2px;
 }
 
 .toolbarpaletteitem-box[type="separator"][place="palette"] {
@@ -144,10 +145,6 @@ toolbarpaletteitem[place="toolbar"] > toolbarspacer {
   height: 50px;
 }
 
-.toolbarpaletteitem-box[type="spring"][place="palette"] {
-  background: url("chrome://global/skin/toolbar/spring.png") no-repeat center;
-}
-
 /* ..... drag and drop feedback ..... */
 
 toolbarpaletteitem[dragover="left"] {
@@ -157,3 +154,12 @@ toolbarpaletteitem[dragover="left"] {
 toolbarpaletteitem[dragover="right"] {
   border-right-color: #000000;
 }
+
+toolbar[iconsize="small"] toolbarspacer {
+	min-width: 24px !important;
+}
+
+toolbarspacer {
+	min-width: 32px !important;
+}
+

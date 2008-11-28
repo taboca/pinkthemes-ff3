@@ -21,7 +21,7 @@
  *
  * Contributor(s):
  *   Joe Hewitt (hewitt@netscape.com)
- *   Pamela Greene (pamg.bugs@gmail.com)
+ *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -51,26 +51,9 @@ textbox {
   padding: 0;
 }
 
-textbox[enablehistory="true"] {
-  -moz-appearance: none;
-  border: 0;
-  background-color: transparent;
-}
-
 /* Used by autocomplete widgets that don't have an icon. Gross. -dwh */
 textbox.padded {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  -moz-padding-start: 2px;
-  -moz-padding-end: 0px;
-}
-
-.autocomplete-textbox-container {
-  -moz-box-align: center;
-}
-
-textbox[enablehistory="true"] > .autocomplete-textbox-container {
-  -moz-appearance: menulist-textfield;
+  padding: 1px 0px 1px 2px;
 }
 
 .textbox-input-box {
@@ -78,18 +61,26 @@ textbox[enablehistory="true"] > .autocomplete-textbox-container {
   -moz-box-align: center;
 }
 
+/* ::::: history button ::::: */
+
+.autocomplete-history-dropmarker {
+  -moz-appearance: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0px;
+  list-style-image: url("chrome://global/skin/icons/autocomplete-dropmarker.png");
+  margin: 0px;
+}
+
 /* ::::: autocomplete popups ::::: */
 
 panel[type="autocomplete"],
 panel[type="autocomplete-richlistbox"],
 .autocomplete-history-popup {
-  border-width: 1px;
-  -moz-border-top-colors: ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDDarkShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow;
-  -moz-border-left-colors: ThreeDDarkShadow;
-  padding: 0;
+  padding: 0px !important;
   background-color: -moz-Field;
+  font: icon;
+  -moz-appearance: none;
 }
 
 .autocomplete-history-popup {
@@ -102,7 +93,6 @@ panel[type="autocomplete-richlistbox"],
   -moz-appearance: none !important;
   border: none !important;
   background-color: transparent !important;
-  color: MenuText;
 }
 
 .autocomplete-treecol {
@@ -112,13 +102,12 @@ panel[type="autocomplete-richlistbox"],
   padding: 0 !important;
 }
 
-/* GTK calculates space for a sort arrow */
-.autocomplete-treecol > .treecol-sortdirection {
-  -moz-appearance: none !important;
+.autocomplete-treebody::-moz-tree-cell-text {
+  padding-left: 2px;
 }
 
-.autocomplete-treebody::-moz-tree-cell-text {
-  -moz-padding-start: 8px;
+.autocomplete-treebody::-moz-tree-row {
+  border-top: none;
 }
 
 treechildren.autocomplete-treebody::-moz-tree-row(selected) {
@@ -138,7 +127,6 @@ treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
 
 .autocomplete-richlistbox {
   margin: 0;
-  background-color: transparent;
 }
 
 .autocomplete-richlistitem[selected="true"] {
@@ -149,7 +137,6 @@ treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
 .autocomplete-richlistitem {
   padding: 1px 2px;
   border-bottom: 1px solid ThreeDLightShadow;
-  color: MenuText;
 }
 
 .ac-site-icon {
@@ -174,7 +161,7 @@ treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
 .ac-ellipsis-after {
   margin: 2px 0px 0px 0px !important;
   padding: 0; 
-  min-width: 1em;
+  min-width: 1.1em;
 }
 
 .ac-normal-text {

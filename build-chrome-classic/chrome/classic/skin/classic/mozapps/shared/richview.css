@@ -4,10 +4,18 @@ view {
   margin: 10px 10px 5px 10px;
   -moz-appearance: listbox;
   -moz-user-focus: normal;
-  background-color: Window;
 }
 
-.richviewInner {
+.richviewInner2 {
   background-image: url("chrome://mozapps/skin/shared/viewFader.png");
   padding: 0px;
 }  
+
+.richviewInner1 {
+  background-color: Window;
+  background-image: inherit;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+

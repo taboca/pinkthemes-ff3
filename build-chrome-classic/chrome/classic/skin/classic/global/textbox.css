@@ -40,22 +40,26 @@
   == Styles used by the XUL textbox element.
   ======================================================================= */
 
+@import url("chrome://global/content/autocomplete.css");
+  
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 /* ::::: textbox ::::: */
 
-textbox 
-{
+textbox {
   -moz-appearance: textfield;
   cursor: text;
-  margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  padding: 2px 2px 3px 4px;
+  margin: 4px 4px;
+  border: 3px solid;
+  -moz-border-top-colors: transparent #888888 #000000;
+  -moz-border-right-colors: transparent #FFFFFF #000000;
+  -moz-border-bottom-colors: transparent #FFFFFF #000000;
+  -moz-border-left-colors: transparent #888888 #000000;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  /*padding: 1px 0px 1px 2px ;*/
+  padding: 0px;
   background-color: -moz-Field;
   color: -moz-FieldText;
 }
@@ -74,8 +78,13 @@ html|*.textbox-textarea {
   font: inherit;
 }
 
-.textbox-input-box menupopup {
-  cursor: default;
+/* ..... focused state ..... */
+
+textbox[focused="true"] {
+  -moz-border-top-colors: -moz-mac-focusring -moz-mac-focusring #000000;
+  -moz-border-right-colors: -moz-mac-focusring -moz-mac-focusring #000000;
+  -moz-border-bottom-colors: -moz-mac-focusring -moz-mac-focusring #000000;
+  -moz-border-left-colors: -moz-mac-focusring -moz-mac-focusring #000000;
 }
 
 /* ..... readonly state ..... */
@@ -89,6 +98,10 @@ textbox[readonly="true"] {
 
 textbox[disabled="true"] {
   cursor: default;
+  -moz-border-top-colors: transparent ThreeDShadow -moz-Dialog;
+  -moz-border-right-colors: transparent ThreeDShadow -moz-Dialog;
+  -moz-border-bottom-colors: transparent ThreeDShadow -moz-Dialog;
+  -moz-border-left-colors: transparent ThreeDShadow -moz-Dialog;
   background-color: -moz-Dialog;
   color: GrayText;
 } 
@@ -102,63 +115,26 @@ textbox.plain {
   border: none !important;
 }
 
-/* ::::: textboxes inside toolbarpaletteitems ::::: */
 
-toolbarpaletteitem > toolbaritem > textbox > .textbox-input-box > html|*.textbox-input {
-  visibility: hidden;
+/* ::::: rounded search box ::::: */
+
+#search-box {
+  -moz-appearance: none;
+  border: 3px solid;
+  -moz-border-top-colors: #5F5F5F #CFCFCF -moz-Field;
+  -moz-border-bottom-colors: #9F9F9F #EEE -moz-Field;
+  -moz-border-right-colors: #7F7F7F #EEE -moz-Field;
+  -moz-border-left-colors: #7F7F7F #EFEFEF -moz-Field;
+  -moz-border-radius: 11px;
+  background: url("chrome://global/skin/icons/search-textbox.png") -moz-Field no-repeat 1px center;
+  -moz-background-clip: border !important;
+  padding: 0 8px;
+  -moz-padding-start: 17px;
 }
 
-/* ::::: context menu ::::: */
-
-menuitem:not([type]) {
-  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
-}
-
-menuitem[cmd="cmd_undo"] {
-  list-style-image: url("moz-icon://stock/gtk-undo?size=menu");
-}
-
-menuitem[cmd="cmd_undo"][disabled] {
-  list-style-image: url("moz-icon://stock/gtk-undo?size=menu&state=disabled");
-}
-
-menuitem[cmd="cmd_cut"] {
-  list-style-image: url("moz-icon://stock/gtk-cut?size=menu");
-}
-
-menuitem[cmd="cmd_cut"][disabled] {
-  list-style-image: url("moz-icon://stock/gtk-cut?size=menu&state=disabled");
-}
-
-menuitem[cmd="cmd_copy"] {
-  list-style-image: url("moz-icon://stock/gtk-copy?size=menu");
-}
-
-menuitem[cmd="cmd_copy"][disabled] {
-  list-style-image: url("moz-icon://stock/gtk-copy?size=menu&state=disabled");
-}
-
-menuitem[cmd="cmd_paste"] {
-  list-style-image: url("moz-icon://stock/gtk-paste?size=menu");
-}
-
-menuitem[cmd="cmd_paste"][disabled] {
-  list-style-image: url("moz-icon://stock/gtk-paste?size=menu&state=disabled");
-}
-
-menuitem[cmd="cmd_delete"] {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=menu");
-}
-
-menuitem[cmd="cmd_delete"][disabled] {
-  list-style-image: url("moz-icon://stock/gtk-delete?size=menu&state=disabled");
-}
-
-menuitem[cmd="cmd_selectAll"] {
-  list-style-image: url("moz-icon://stock/gtk-select-all?size=menu");
-}
-
-menuitem[cmd="cmd_selectAll"][disabled] {
-  list-style-image: url("moz-icon://stock/gtk-select-all?size=menu&state=disabled");
+#search-box[focused="true"] {
+  outline: 2px solid #4A8BC7;
+  outline-offset: -2px;
+  -moz-outline-radius: 11px;
 }
 

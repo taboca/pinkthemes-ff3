@@ -20,6 +20,7 @@
  *
  * Contributor(s):
  *   Joe Hewitt <hewitt@netscape.com>
+ *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -46,31 +47,42 @@
 progressmeter {
   -moz-appearance: progressbar;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-right-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-bottom-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-left-colors: ThreeDShadow -moz-Dialog;
-  background-color: -moz-Dialog;
   min-width: 128px;
-  min-height: 15px;
+  height: 12px;
 }
 
-.progress-bar 
-{
-  -moz-appearance: progresschunk;
-  min-width: 0px;
-  background-color: ThreeDShadow;
+
+
+.progress-remainder[flex="100"], .progress-remainder[flex="0"] {
+
+  background-image: none !important;
+  -moz-appearance: none;
 }
 
 /* ::::: statusbar progressmeter ::::: */
 
 .progressmeter-statusbar {
   margin: 0;
-  border: 0px;
-  -moz-border-top-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-right-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-bottom-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-left-colors: ThreeDHighlight -moz-Dialog;
-  min-width: 96px;
+  border-width: 1px;
+}
+
+
+.progressmeter-statusbar > .progressmeter-remainder {
+}
+/* ::::: statusbar progressmeter ::::: */
+
+
+.progressmeter-statusbar[mode="determined"]  {
+ margin: 0;
+  border-width: 1px;
+}
+
+
+/* :::::: download progress meter :::::::: */
+
+#progress, #progress0 {
+	  vertical-align: baseline !important;
+          -moz-appearance: progressbar;
+           border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
 }

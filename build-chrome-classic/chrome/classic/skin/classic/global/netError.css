@@ -3,7 +3,8 @@
  *  (see: netError.xhtml)
  *
  *  Original styling by William Price <bugzilla@mob.rice.edu>
- *  Updated by: Michael Ventnor <m.ventnor@gmail.com>
+ *  Updated by: Steven Garrity <steven@silverorange.com>
+ *              Henrik Skupin  <mozilla@hskupin.info>
  */
 
 html {
@@ -46,7 +47,7 @@ ul {
   -moz-border-radius: 10px;
   padding: 3em;
   -moz-padding-start: 30px;
-  background: url("moz-icon://stock/gtk-dialog-warning?size=dialog") left 0 no-repeat -moz-Field;
+  background: url("chrome://global/skin/icons/warning-large.png") left 0 no-repeat -moz-Field;
   -moz-background-origin: content;
 }
 
@@ -113,8 +114,7 @@ body[dir="rtl"] #brand {
 }
 
 #securityOverrideContent {
-  background-color: InfoBackground;
-  color: InfoText;
+  background-color: #FFF090; /* Pale yellow */
   padding: 10px;
   -moz-border-radius: 10px;
 }
@@ -128,7 +128,7 @@ body[dir="rtl"] #brand {
 }
 
 :root.blacklist #errorPageContainer {
-  background-image: url("chrome://global/skin/icons/blacklist_large.png");
+  background-image: url("chrome://global/skin/icons/blacklist_64.png");
   background-color: #722;
 }
 

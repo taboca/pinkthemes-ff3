@@ -21,6 +21,7 @@
  *
  * Contributor(s):
  *   Joe Hewitt (hewitt@netscape.com)
+ *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -45,19 +46,20 @@
 /* ::::: listbox ::::: */
 
 listbox {
-  -moz-appearance: listbox;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
+  border-top: 1px solid #A1A1A1;
+  border-right: 1px solid #C3C3C3;
+  border-bottom: 1px solid #DDDDDD;
+  border-left: 1px solid #C3C3C3;
+  background-color: #FFFFFF;
   color: -moz-FieldText;
 }
 
-listbox[disabled="true"] {
-  color: GrayText;
+.listcell-label {
+  margin: 0px !important;
+  padding-bottom: 1px;
+  -moz-padding-start: 4px;
+  white-space: nowrap;
 }
 
 /* ::::: listitem ::::: */
@@ -67,22 +69,16 @@ listitem {
 }
 
 listbox:focus > listitem[selected="true"][current="true"] {
-  outline: 1px dotted #F3D982;
-}
-
-listbox:focus > listitem[current="true"] {
-  outline: 1px dotted Highlight;
-  -moz-outline-offset: -1px;
 }
 
 listitem[selected="true"] {
-  background-color: -moz-cellhighlight;
-  color: -moz-cellhighlighttext;
+  background-color: -moz-mac-secondaryhighlight;
+  color: -moz-DialogText;
 }
 
-listbox:focus > listitem[selected="true"] {
-  background-color: Highlight;
-  color: HighlightText;
+listbox:focus > listitem[selected="true"] {  
+   background-color: Highlight;
+   color: HighlightText;
 }
 
 /* ::::: listheader ::::: */
@@ -97,32 +93,25 @@ listheader {
   -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
   background-color: -moz-Dialog;
   color: -moz-DialogText;
-  padding: 0 2px;
-}
-
-listheader:hover {
-  color: -moz-buttonhovertext;
+  padding: 0 4px;
 }
 
 listheader[sortable="true"]:hover:active {
-  color: ButtonText;
-  border: 2px solid;
+  border-top: 2px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 2px solid;
   -moz-border-top-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-right-colors: ThreeDShadow transparent;
-  -moz-border-bottom-colors: ThreeDShadow transparent;
+  -moz-border-right-colors: ThreeDShadow;
+  -moz-border-bottom-colors: ThreeDShadow;
   -moz-border-left-colors: ThreeDShadow -moz-Dialog;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  -moz-padding-start: 3px;
-  -moz-padding-end: 1px;
+  padding-top: 1px;
+  -moz-padding-start: 5px;
+  -moz-padding-end: 4px;
 }
 
 .listheader-icon {
   -moz-margin-end: 2px;
-}
-
-.listheader-icon[sortable="true"]:hover:active {
-  -moz-margin-end: 1px;
 }
 
 .listheader-label {
@@ -133,16 +122,23 @@ listheader[sortable="true"]:hover:active {
 
 .listheader-sortdirection {
   -moz-appearance: treeheadersortarrow;
+  list-style-image: none;
+}
+
+.listheader-sortdirection[sortDirection="ascending"] {
+  list-style-image: url("chrome://global/skin/tree/sort-asc.gif");
+}
+
+.listheader-sortdirection[sortDirection="descending"] {
+  list-style-image: url("chrome://global/skin/tree/sort-dsc.gif");
 }
 
 /* ::::: listcell ::::: */
 
 .listcell-label {
   margin: 0px !important;
-  padding-top: 0px;
   padding-bottom: 1px;
   -moz-padding-start: 4px;
-  -moz-padding-end: 0px;
   white-space: nowrap;
 }
 
@@ -163,7 +159,7 @@ listheader[sortable="true"]:hover:active {
   border: 1px solid -moz-DialogText;
   min-width: 13px;
   min-height: 13px;
-  background: -moz-Field no-repeat 50% 50%;
+  background: -moz-Field url("chrome://global/skin/checkbox/cbox.gif") no-repeat 50% 50%;
 }
 
 .listcell-check[checked="true"] {
@@ -172,7 +168,6 @@ listheader[sortable="true"]:hover:active {
 
 .listcell-check[disabled="true"] {
   border-color: GrayText;
-  background-image: url("chrome://global/skin/checkbox/cbox-dis.gif");
 }
 
 .listcell-check[disabled="true"][checked="true"] {

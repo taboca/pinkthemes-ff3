@@ -21,6 +21,7 @@
  *
  * Contributor(s):
  *   Joe Hewitt (hewitt@netscape.com)
+ *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -45,93 +46,70 @@
 /* ::::: toolbarbutton ::::: */
 
 toolbarbutton {
-  -moz-appearance: toolbarbutton;
   -moz-box-align: center;
   -moz-box-pack: center;
-  margin: 0;
-  border: 1px solid transparent;
-  padding: 3px;
+  margin: 0px 2px 0px 2px;
+  padding: 3px 1px 3px 1px;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
   background-color: transparent;
-  color: -moz-DialogText;
 }
 
 .toolbarbutton-icon {
-  -moz-margin-end: 2px;
+	padding: 1px 0px 1px 0px;
 }
 
 .toolbarbutton-text {
-  margin: 0 !important;
+  margin: 0px;
+  padding: 0px;
   text-align: center;
+  vertical-align: middle;
 }
 
-toolbarbutton.tabbable {
-  -moz-user-focus: normal !important;
+toolbarbutton:hover:active[buttonstyle="text"],
+toolbarbutton[open="true"][buttonstyle="text"] {
+  color: #2c498c;
 }
 
-toolbarbutton:hover,
-toolbarbutton[buttonover="true"] {
-  border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
-  color: -moz-buttonhovertext;
-}
 
-toolbarbutton:hover:active,
-toolbarbutton[open="true"] {
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
-  padding-top: 4px;
-  padding-bottom: 2px;
-  -moz-padding-start: 4px;
-  -moz-padding-end: 2px;
-  color: ButtonText;
-}
 
 toolbarbutton[disabled="true"],
 toolbarbutton[disabled="true"]:hover,
-toolbarbutton[disabled="true"]:hover:active,
+toolbarbutton[disabled="true"]:hover:active
 toolbarbutton[disabled="true"][open="true"] {
-  border-color: transparent;
-  padding: 3px;
-  color: GrayText;
+  color: GrayText !important;
 }
 
 /* ..... checked state ..... */
 
 toolbarbutton[checked="true"] {
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow !important;
-  padding-top: 4px !important;
-  padding-bottom: 2px !important;
-  -moz-padding-start: 4px !important;
-  -moz-padding-end: 2px !important;
-  background-image: url("chrome://global/skin/toolbar/Lighten.png");
-  color: ButtonText !important;
+    background-color: #DDDDDD;
+    background-image: none;
+    border-right: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    color: ButtonText !important;
 }
-
-toolbarbutton[checked="true"]:hover,
-toolbarbutton[checked="true"]:hover:active { 
-  color: -moz-buttonhovertext !important;
-  background-color: -moz-buttonhoverface !important;
-}
-
+    
 /* ::::: toolbarbutton menu ::::: */
 
 .toolbarbutton-menu-dropmarker {
-  -moz-appearance: toolbarbutton-dropdown !important;
-  list-style-image: none;
-  -moz-image-region: auto;
+  -moz-appearance: none !important;
   border: none !important;
   background-color: transparent !important;
-  padding: 0;
-  margin: 0;
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.png");
+  padding: 0 0 0 2px;
+  width: auto;
 }
 
 .toolbarbutton-menu-dropmarker[disabled="true"] {
-  padding: 0 !important;
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.png");
+  padding: 0 0 0 2px !important;
 }
 
 /* ::::: toolbarbutton menu-button ::::: */
 
 toolbarbutton[type="menu-button"] {
   -moz-box-align: stretch;
-  -moz-appearance: dualbutton;
   -moz-box-orient: horizontal !important;
 }
 
@@ -142,8 +120,7 @@ toolbarbutton[type="menu-button"][open="true"],
 toolbarbutton[type="menu-button"][disabled="true"],
 toolbarbutton[type="menu-button"][disabled="true"]:hover,
 toolbarbutton[type="menu-button"][disabled="true"]:hover:active {
-  border-style: none;
-  padding: 0 !important;
+  background-color: transparent;
 }
 
 .toolbarbutton-menubutton-button {
@@ -152,13 +129,24 @@ toolbarbutton[type="menu-button"][disabled="true"]:hover:active {
   -moz-box-orient: vertical;
 }
 
+
 /* .......... dropmarker .......... */
 
 .toolbarbutton-menubutton-dropmarker {
+  -moz-appearance: none !important;
   border: none !important;
   background-color: transparent !important;
-  padding: 3px;
-  -moz-appearance: toolbarbutton-dropdown !important;
-  list-style-image: none;
-  -moz-image-region: auto;
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.png");
+  width: auto;
+  padding: 0;
 }
+
+.toolbarbutton-menubutton-dropmarker[disabled="true"] {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.png") !important;
+  padding: 0 !important;
+}
+
+toolbarbutton.tabbable {
+  -moz-user-focus: normal !important;
+}
+

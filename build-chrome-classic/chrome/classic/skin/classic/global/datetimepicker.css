@@ -37,30 +37,29 @@
 /* ===== datetimepicker.css =============================================
   == Styles used by the XUL datepicker and timepicker elements.
   ======================================================================= */
-  
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 datepicker, timepicker {
-  margin: 2px 4px;
-  padding: 0;
+  padding: 0 0 1px;
+  margin: 4px;
   border: none;
-  background: none;
-  cursor: default;
 }
 
 .datetimepicker-input-box {
   -moz-appearance: textfield;
   cursor: text;
-  -moz-margin-end: 2px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  padding: 2px 0 3px 0;
-  -moz-padding-start: 4px;
-  -moz-padding-end: 2px;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  border: 3px solid;
+  -moz-border-top-colors: transparent #888888 #000000;
+  -moz-border-right-colors: transparent #FFFFFF #000000;
+  -moz-border-bottom-colors: transparent #FFFFFF #000000;
+  -moz-border-left-colors: transparent #888888 #000000;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  padding: 0px;
   background-color: -moz-Field;
   color: -moz-FieldText;
 }
@@ -73,12 +72,20 @@ html|*.datetimepicker-input {
   text-align: right;
 }
 
+html|*.datetimepicker-input[chromedir="rtl"] {
+  text-align: left;
+}
+
 .datetimepicker-separator {
   margin: 0 !important;
 }
 
 .datetimepicker-year {
   width: 3.2em;
+}
+
+.datepicker-dropmarker {
+  margin-bottom: 2px;
 }
 
 datepicker[readonly="true"],
@@ -90,6 +97,10 @@ timepicker[readonly="true"] {
 datepicker[disabled="true"],
 timepicker[disabled="true"] {
   cursor: default;
+  -moz-border-top-colors: transparent ThreeDShadow -moz-Dialog;
+  -moz-border-right-colors: transparent ThreeDShadow -moz-Dialog;
+  -moz-border-bottom-colors: transparent ThreeDShadow -moz-Dialog;
+  -moz-border-left-colors: transparent ThreeDShadow -moz-Dialog;
   background-color: -moz-Dialog;
   color: GrayText;
 } 
@@ -101,8 +112,8 @@ timepicker[disabled="true"] {
   -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
   -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
   -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  background-color: #EEEEEE;
+  color: -moz-DialogText;
 }
 
 .datepicker-popupgrid > .datepicker-mainbox {
@@ -152,28 +163,4 @@ timepicker[disabled="true"] {
 
 .datepicker-next[disabled="true"] {
   list-style-image: url("chrome://global/skin/arrow/arrow-rit-dis.gif");
-}
-
-.datepicker-previous[chromedir="rtl"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-rit.gif");
-}
-
-.datepicker-next[chromedir="rtl"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-lft.gif");
-}
-
-.datepicker-previous[chromedir="rtl"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-rit-hov.gif");
-}
-
-.datepicker-next[chromedir="rtl"]:hover {
-  list-style-image: url("chrome://global/skin/arrow/arrow-lft-hov.gif");
-}
-
-.datepicker-previous[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-rit-dis.gif");
-}
-
-.datepicker-next[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-lft-dis.gif");
 }

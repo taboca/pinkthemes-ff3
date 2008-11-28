@@ -1,62 +1,76 @@
 <?xml version="1.0"?>
 
+<!DOCTYPE bindings SYSTEM "chrome://global/locale/preferences.dtd">
+
 <bindings id="globalBindings"
-   xmlns="http://www.mozilla.org/xbl"
-   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-   xmlns:xbl="http://www.mozilla.org/xbl">
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+  <binding id="unifiedWindow">
+    <content activetitlebarcolor="#C9C9C9" inactivetitlebarcolor="#E4E4E4"/>
+  </binding>
 
-  <binding id="radio"
-           extends="chrome://global/content/bindings/radio.xml#radio">
-    <content>
-      <xul:hbox class="radio-check-box1" xbl:inherits="selected,checked,disabled">
-        <xul:hbox class="radio-check-box2" flex="1">
-          <xul:image class="radio-check" xbl:inherits="selected,checked,disabled"/>
-        </xul:hbox>
-      </xul:hbox>
-      <xul:hbox class="radio-label-box" align="center" flex="1">
-        <xul:image class="radio-icon" xbl:inherits="src"/>
-        <xul:label class="radio-label" xbl:inherits="xbl:text=label,accesskey,crop" flex="1"/>
+  <binding id="unifiedDialog"
+           extends="chrome://global/content/bindings/dialog.xml#dialog">
+    <content activetitlebarcolor="#C9C9C9" inactivetitlebarcolor="#E4E4E4">
+      <xul:vbox class="box-inherit dialog-content-box" flex="1">
+        <children/>
+      </xul:vbox>
+          
+      <xul:hbox class="dialog-button-box" anonid="buttons"
+                xbl:inherits="pack=buttonpack,align=buttonalign,dir=buttondir,orient=buttonorient">
+        <xul:button dlgtype="disclosure" class="dialog-button" hidden="true"/>
+        <xul:button dlgtype="help" class="dialog-button" hidden="true"/>
+        <xul:button dlgtype="extra2" class="dialog-button" hidden="true"/>
+        <xul:button dlgtype="extra1" class="dialog-button" hidden="true"/>
+        <xul:spacer anonid="spacer" flex="1"/>
+        <xul:button dlgtype="cancel" class="dialog-button"/>
+        <xul:button dlgtype="accept" class="dialog-button" xbl:inherits="disabled=buttondisabledaccept"/>
       </xul:hbox>
     </content>
   </binding>
 
-  <binding id="radio-with-spacing"
-           extends="chrome://global/skin/globalBindings.xml#radio">
-    <content>
-      <xul:hbox class="radio-spacer-box">
-        <xul:hbox class="radio-check-box1" xbl:inherits="selected,checked,disabled">
-          <xul:hbox class="radio-check-box2" flex="1">
-            <xul:image class="radio-check" xbl:inherits="selected,checked,disabled"/>
-          </xul:hbox>
-        </xul:hbox>
-      </xul:hbox>
-      <xul:hbox class="radio-label-center-box" flex="1">
-        <xul:hbox class="radio-label-box" flex="1">
-          <xul:image class="radio-icon" xbl:inherits="src"/>
-          <xul:label class="radio-label" xbl:inherits="xbl:text=label,accesskey,crop" flex="1"/>
-        </xul:hbox>
-      </xul:hbox>
-    </content>
-  </binding>
-
-  <binding id="toolbarpaletteitem-spacer"
-           extends="chrome://global/content/bindings/toolbar.xml#toolbarpaletteitem">
-    <content>
-      <xul:spacer class="spacer-left"/>
+  <binding id="unifiedWizard"
+           extends="chrome://global/content/bindings/wizard.xml#wizard">
+    <content activetitlebarcolor="#C9C9C9" inactivetitlebarcolor="#E4E4E4">
+      <xul:hbox class="wizard-header" anonid="Header"/>
+      <xul:deck class="wizard-page-box" flex="1" anonid="Deck">
+        <children includes="wizardpage"/>
+      </xul:deck>
       <children/>
-      <xul:spacer class="spacer-right"/>
+      <xul:hbox class="wizard-buttons" anonid="Buttons" xbl:inherits="pagestep,firstpage,lastpage"/>
     </content>
   </binding>
 
-  <binding id="menulist-compact" display="xul:menu" 
-           extends="chrome://global/content/bindings/menulist.xml#menulist">
-    <content sizetopopup="false">
-      <xul:hbox class="menulist-label-box" flex="1">
-        <xul:image class="menulist-icon" xbl:inherits="src"/>
-        <xul:label class="menulist-label" xbl:inherits="value=label,crop,accesskey" crop="right" flex="1"/>
+  <binding id="unifiedPrefwindow"
+           extends="chrome://global/content/bindings/preferences.xml#prefwindow">
+    <content dlgbuttons="accept,cancel"
+             persist="lastSelected screenX screenY"
+             closebuttonlabel="&preferencesCloseButton.label;"
+             closebuttonaccesskey="&preferencesCloseButton.accesskey;"
+             role="dialog"
+             title="&preferencesDefaultTitleMac.title;"
+             activetitlebarcolor="#BBBBBB"
+             inactivetitlebarcolor="#E4E4E4">
+      <xul:radiogroup anonid="selector" orient="horizontal" class="paneSelector chromeclass-toolbar"
+                      role="listbox"/> <!-- Expose to accessibility APIs as a listbox -->
+      <xul:hbox flex="1" class="paneDeckContainer">
+        <xul:deck anonid="paneDeck" flex="1">
+          <children includes="prefpane"/>
+        </xul:deck>
       </xul:hbox>
-      <children includes="menupopup"/>
+      <xul:hbox anonid="dlg-buttons" class="prefWindow-dlgbuttons">
+        <xul:button dlgtype="disclosure" class="dialog-button" hidden="true"/>
+        <xul:button dlgtype="help" class="dialog-button" hidden="true" icon="help"/>
+        <xul:button dlgtype="extra2" class="dialog-button" hidden="true"/>
+        <xul:button dlgtype="extra1" class="dialog-button" hidden="true"/>
+        <xul:spacer anonid="spacer" flex="1"/>
+        <xul:button dlgtype="cancel" class="dialog-button" icon="cancel"/>
+        <xul:button dlgtype="accept" class="dialog-button" icon="accept"/>
+      </xul:hbox>
+      <xul:hbox>
+        <children/>
+      </xul:hbox>
     </content>
   </binding>
-
 </bindings>

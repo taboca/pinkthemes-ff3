@@ -11,15 +11,15 @@
  * for the specific language governing rights and limitations under the
  * License.
  *
- * The Original Code is Mozilla Help CSS
+ * The Original Code is Mozilla Help CSS.
  *
  * The Initial Developer of the Original Code is
- * R.J. Keller
+ * R.J. Keller.
  * Portions created by the Initial Developer are Copyright (C) 2003
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
- * 
+ *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
  * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
@@ -37,60 +37,28 @@
 @import url("chrome://global/skin/");
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+#HelpToolbar {
+  -moz-padding-start: 5px;
+}
+
 #HelpToolbar toolbarbutton {
-  -moz-box-orient: horizontal !important;
   min-width: 0px;
-  margin: 0 !important;
-  padding: 4px 5px;
+  list-style-image: url("chrome://help/skin/Toolbar.png");
+  -moz-box-orient: horizontal !important;
 }
 
-#help-back-button {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+#HelpToolbar toolbarbutton[type="menu-button"] {
+  margin: 0px;
+  padding: 0px;
 }
 
-#help-back-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
+/* this element contains the icon and the label */
+#HelpToolbar .toolbarbutton-menubutton-button {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
 }
 
-#help-back-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar");
-}
-
-#help-back-button[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar&state=disabled");
-}
-
-#help-forward-button {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
-}
-
-#help-forward-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
-}
-
-#help-forward-button[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar");
-}
-
-#help-forward-button[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar&state=disabled");
-}
-
-#help-home-button {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar");
-}
-
-#help-home-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar&state=disabled");
-}
-
-#help-print-button {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
-}
-
-#help-print-button[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled");
-}
 
 /* Hide labels for the toolbar because we really don't need them what with the
    tooltips */
@@ -98,73 +66,112 @@
   display: none;
 }
 
-/* With no labels, we don't need the margin on the icon that separates it
-   from the label */
-#HelpToolbar .toolbarbutton-icon {
-  -moz-margin-end: 0;
-}
-
 /* Set the minimum sidebar width so the help contents aren't squeezed together.*/
 #help-sidebar { min-width: 15em; width: 20em; max-width: 25em; }
 
 #search-sidebar-closebutton {
-  list-style-image: url("moz-icon://stock/gtk-close?size=menu");
+  -moz-binding: url(chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton-image);
+  list-style-image: url("chrome://global/skin/icons/closetab.png");
+  padding-right: 4px;
+  margin: 0;
+  border: 0;
 }
 
-#context-copy[disabled="true"] {
-  display: none;
+#search-sidebar-closebutton:hover {
+  list-style-image: url("chrome://global/skin/icons/closetab-hover.png");
 }
 
-/**** menuitem stock icons ****/
-menuitem:not([type]) {
-  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+#search-sidebar-closebutton:hover:active {
+  list-style-image: url("chrome://global/skin/icons/closetab-active.png");
 }
 
-#context-back {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu");
+#help-back-button { -moz-image-region: rect(0px 24px 24px 0px); }
+#help-back-button:not([disabled="true"]):hover { -moz-image-region: rect(24px 24px 48px 0px); }
+#help-back-button[disabled="true"] { -moz-image-region: rect(48px 24px 72px 0px); }
+#help-back-button:not([disabled="true"]):hover:active { -moz-image-region: rect(72px 24px 96px 0px); }
+
+#help-forward-button { -moz-image-region: rect(0px 48px 24px 24px); }
+#help-forward-button:not([disabled="true"]):hover { -moz-image-region: rect(24px 48px 48px 24px); }
+#help-forward-button[disabled="true"] { -moz-image-region: rect(48px 48px 72px 24px); }
+#help-forward-button:not([disabled="true"]):hover:active { -moz-image-region: rect(72px 48px 96px 24px); }
+
+#help-home-button { -moz-image-region: rect(0px 72px 24px 48px); }
+#help-home-button:not([disabled="true"]):hover { -moz-image-region: rect(24px 72px 48px 48px); }
+#help-home-button[disabled="true"] { -moz-image-region: rect(48px 72px 72px 48px); }
+#help-home-button:not([disabled="true"]):hover:active { -moz-image-region: rect(72px 72px 96px 48px); }
+
+#help-print-button { -moz-image-region: rect(0px 96px 24px 72px); }
+#help-print-button:not([disabled="true"]):hover { -moz-image-region: rect(24px 96px 48px 72px); }
+#help-print-button[disabled="true"] { -moz-image-region: rect(48px 96px 72px 72px); }
+#help-print-button:not([disabled="true"]):hover:active { -moz-image-region: rect(72px 96px 96px 72px); }
+
+/* Style the back/forward dropmarks to connect them to the buttons */
+
+/* Style the back dropmark */
+
+#help-back-button .toolbarbutton-menubutton-dropmarker {
+  margin-top: 3px;
+  list-style-image: url("chrome://global/skin/toolbar/dropmark-nav.png");
+  -moz-image-region: rect(0px, 14px, 24px, 0px);
 }
 
-#context-back[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu");
+#help-back-button:hover .toolbarbutton-menubutton-dropmarker, 
+#help-back-button[buttonover="true"] > .toolbarbutton-menubutton-dropmarker {
+  -moz-image-region: rect(24px, 14px, 48px, 0px);
 }
 
-#context-back[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=menu&state=disabled");
+#help-back-button[disabled="true"] .toolbarbutton-menubutton-dropmarker {
+  list-style-image: url("chrome://global/skin/toolbar/dropmark-nav.png") !important;
+  -moz-image-region: rect(48px, 14px, 72px, 0px) !important;
 }
 
-#context-back[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=menu&state=disabled");
+#help-back-button:hover:active .toolbarbutton-menubutton-dropmarker, 
+#help-back-button[buttondown="true"] > .toolbarbutton-menubutton-dropmarker {
+  -moz-image-region: rect(72px, 14px, 96px, 0px);
 }
 
-#context-forward {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu");
+/* Style the forward dropmark */
+
+#help-forward-button .toolbarbutton-menubutton-dropmarker {
+  margin-top: 3px;
+  list-style-image: url("chrome://global/skin/toolbar/dropmark-nav.png");
+  -moz-image-region: rect(0px, 14px, 24px, 0px);
+}
+#help-forward-button:hover .toolbarbutton-menubutton-dropmarker, 
+#help-forward-button[buttonover="true"] > .toolbarbutton-menubutton-dropmarker {
+  -moz-image-region: rect(24px, 14px, 48px, 0px);
+}
+#help-forward-button[disabled="true"] .toolbarbutton-menubutton-dropmarker {
+  list-style-image: url("chrome://global/skin/toolbar/dropmark-nav.png") !important;
+  -moz-image-region: rect(48px, 14px, 72px, 0px) !important;
+}
+#help-forward-button:hover:active .toolbarbutton-menubutton-dropmarker, 
+#help-forward-button[buttondown="true"] > .toolbarbutton-menubutton-dropmarker {
+  -moz-image-region: rect(72px, 14px, 96px, 0px);
 }
 
-#context-forward[chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu");
+
+#helpsidebar-splitter {
+  border-right: 1px solid #bebebe;
 }
 
-#context-forward[disabled="true"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=menu&state=disabled");
+#helpsidebar-box toolbarbutton {
+  background-image: url("chrome://global/skin/icons/white-gray-gradient.gif");
+  background-repeat: repeat-x;
+  background-position: bottom right;
+  background-color: rgb(246, 246, 246);
+  border-bottom: 1px solid #b3b3b3;
+  border-right: 1px solid #bebebe;
+  margin: 0px;
+  text-align: left;
+  color: #505050;
 }
 
-#context-forward[disabled="true"][chromedir="rtl"] {
-  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=menu&state=disabled");
+#helpsidebar-box toolbarbutton[selected="true"] {
+  color: #000;
 }
 
-#context-copy {
-  list-style-image: url("moz-icon://stock/gtk-copy?size=menu");
+#helpsidebar-box tree {
+  margin: 0px !important;
+  padding: 0px !important;
 }
-
-#context-selectall {
-  list-style-image: url("moz-icon://stock/gtk-select-all?size=menu");
-}
-
-#zoom-in {
-  list-style-image: url("moz-icon://stock/gtk-zoom-in?size=menu");
-}
-
-#zoom-out {
-  list-style-image: url("moz-icon://stock/gtk-zoom-out?size=menu");
-}
-

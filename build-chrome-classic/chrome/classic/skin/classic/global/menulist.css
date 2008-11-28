@@ -21,7 +21,7 @@
  *
  * Contributor(s):
  *   Joe Hewitt (hewitt@netscape.com)
- *   Pierre Chanial (p_ch@verizon.net)
+ *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -38,8 +38,8 @@
  * ***** END LICENSE BLOCK ***** */
 
 /* ===== menulist.css ===================================================
-   == Styles used by the XUL menulist element.
-   ====================================================================== */
+  == Styles used by the XUL menulist element.
+  ======================================================================= */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
@@ -49,6 +49,7 @@
 menulist {
   -moz-appearance: menulist;
   margin: 2px 4px;
+  min-height: 20px !important;
   color: -moz-DialogText;
 }
 
@@ -56,30 +57,10 @@ menulist {
   -moz-appearance: menulist-text;
   -moz-box-align: center;
   -moz-box-pack: center;
-  color: inherit;
 }
 
 .menulist-label {
   margin: 1px 3px !important;
-}
-
-.menulist-dropmarker {
-  display: none;
-}
-
-menulist:hover {
-  color: -moz-buttonhovertext;
-}
-
-menulist:hover:active,
-menulist[open="true"] {
-  color: ButtonText;
-}
-
-menulist[disabled="true"],
-menulist[disabled="true"]:hover,
-menulist[disabled="true"]:hover:active {
-  color: GrayText;
 }
 
 .menulist-description {
@@ -88,76 +69,97 @@ menulist[disabled="true"]:hover:active {
   -moz-margin-start: 1ex !important;
 }
 
+/* ..... dropmarker ..... */
+
+.menulist-dropmarker {
+  display: none;
+}
+
+/* ..... disabled state ..... */
+
+menulist[disabled="true"] {
+  color: #777777 !important;
+}
+
+menulist[disabled="true"] > .menulist-dropmarker {
+  padding-left: 7px !important;
+}
+
 /* ::::: editable menulists ::::: */
 
 menulist[editable="true"] {
-  -moz-appearance: none;
-  color: -moz-FieldText;
-}
-
-.menulist-editable-box {
-  -moz-appearance: menulist-textfield;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  -moz-padding-start: 2px;
-  -moz-padding-end: 0px;
+  -moz-user-focus: normal;
 }
 
 menulist[editable="true"] > .menulist-dropmarker {
-  display: -moz-box;
-  -moz-appearance: menulist-button;
+  -moz-border-left-colors: #000000 #CCCCCC #FFFFFF;
+  -moz-border-radius: 2px;
+}
+
+menulist[editable="true"][open="true"] > .menulist-dropmarker {
+  -moz-border-left-colors: #000000 #454545 #555555;
+}
+
+.menulist-editable-box {
+  margin: -1px -1px 1px 0px;
+  padding: 0 2px;
+  border: 1px solid #CCCCCC;
+  background-color: -moz-Field;
+  color: -moz-FieldText;
+  -moz-box-align: center;
+}
+
+menulist[editable="true"][focused="true"] > .menulist-editable-box {
+  -moz-border-top-colors: -moz-mac-focusring -moz-mac-focusring #000000;
+  -moz-border-right-colors: -moz-mac-focusring -moz-mac-focusring #000000;
+  -moz-border-bottom-colors: -moz-mac-focusring -moz-mac-focusring #000000;
+  -moz-border-left-colors: -moz-mac-focusring -moz-mac-focusring #000000;
 }
 
 html|*.menulist-editable-input {
   margin: 0px !important;
   border: none !important;
   padding: 0px !important;
+  background: inherit;
   font: inherit;
 }
-
 
 /* ::::: compact menulists ::::: */
 
 .menulist-compact {
-  -moz-appearance: none;
   -moz-box-align: center;
   -moz-box-pack: center;
   margin: 0;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
+  border: 2px solid;
+  -moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
   -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
   -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: ThreeDFace;
-  color: ButtonText;
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+  -moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
+  background-color: -moz-Dialog;
 }
 
-.menulist-compact:hover {
-  color: ButtonText;
-}
-
-.menulist-compact > .menulist-label-box > .menulist-label {
+.menulist-compact > .menulist-label {
   margin: 0 3px !important;
   text-align: right;
+
 }  
 
-.menulist-compact > .menulist-label-box > .menulist-icon {
-  -moz-margin-start: 2px;
+.menulist-compact > .menulist-dropmarker {
+  margin-left: 2px;
+  border: none;
+  padding: 0 !important;
+  background: transparent;
 }
 
 .menulist-compact[open="true"] {
   -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDHighlight;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDHighlight;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
   -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
+  background-color: ThreeDShadow;
 }
 
-.menulist-compact[disabled="true"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
-}
 
-.menulist-compact:focus > .menulist-label-box {
-  border: 1px dotted;
-  background-color: transparent;
-  color: inherit;
+listbox menulist:not([disabled]) {
+  color: #000;
 }

@@ -41,10 +41,9 @@
  * Also make sure the labels are the same distance away from the icons.
  */
 .actionsMenu {
-  margin-top: -1px;
+  -moz-margin-start: -2px;
+  margin-top: 0;
   margin-bottom: -1px;
-  -moz-margin-start: -1px;
-  -moz-margin-end: 0;
 }
 
 .typeIcon,
@@ -59,7 +58,7 @@ richlistitem label {
 }
 
 richlistitem {
-  min-height: 25px;
+  min-height: 22px;
 }
 
 richlistitem[appHandlerIcon="ask"],
@@ -69,7 +68,7 @@ menuitem[appHandlerIcon="ask"] {
 
 richlistitem[appHandlerIcon="save"],
 menuitem[appHandlerIcon="save"] {
-  list-style-image: url("moz-icon://stock/gtk-save?size=menu");
+  list-style-image: url("chrome://browser/skin/preferences/saveFile.png");
 }
 
 richlistitem[appHandlerIcon="feed"],
@@ -84,15 +83,9 @@ menuitem[appHandlerIcon="plugin"] {
 
 .actionsMenu .menulist-icon {
   -moz-margin-end: 1px;
-  height: 16px;
-  width: 16px;
 }
 
 .actionsMenu > menupopup > menuitem > .menu-iconic-left {
-  -moz-padding-start: 0;
-  -moz-padding-end: 4px !important;
-}
-
-.actionsMenu > menupopup > menuitem {
   -moz-padding-start: 3px;
+  -moz-padding-end: 1px;
 }

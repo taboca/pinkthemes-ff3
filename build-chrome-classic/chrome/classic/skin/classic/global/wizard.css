@@ -1,50 +1,60 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+
+wizard {
+	padding: 14px;
+}
+
+#header { 
+	display: inline !important;
+}
 .wizard-header {
-  border-bottom: 2px groove ThreeDFace;
-  background-color: Window;
-  color: WindowText;
+	-moz-appearance: dialog;
 }
 
 .wizard-header-box-1 {
-  padding: 5px 0px 5px 0px;
+  color: #000000;
 }
 
-wizard[description=""] .wizard-header-description {
-  display: none;
-}
-
-.wizard-header-label {
-  -moz-margin-start: 23px;
+.wizard-header-box-text {
+  padding: 6px 10px 6px 10px;
+  font: menu;
   font-weight: bold;
 }
 
-.wizard-header-description {
-  -moz-margin-start: 44px;
+.wizard-header-label {
+  margin-left: 23px;
+  font-weight: bold;
+}
+
+.wizard-header-box-icon {
+  margin: 3px 20px 0 3px;
 }
 
 wizard[branded="true"] .wizard-header-icon {
   list-style-image: url("chrome://branding/content/icon48.png");
-  -moz-margin-end: 5px;
 }
 
 .wizard-page-box {
-  margin: 10px 44px;
+  padding: 15px 23px;
+    -moz-appearance: dialog;
 }
 
 .wizard-buttons-separator {
-  margin-bottom: 0px !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #FFFFFF !important;
 }
 
-.wizard-buttons-box-2 {
-  margin: 10px;
+.wizard-buttons-btm {
+  padding: 3px 6px 6px 6px;
 }
 
-.wizard-button[wizardbutton="finish"],
-.wizard-button[wizardbutton="next"] {
-  -moz-margin-start: -1px !important;
+.wizard-label-box {
+  display: none;
 }
 
-.wizard-button[wizardbutton="back"] {
-  -moz-margin-end: 0px !important;
+.wizard-button {
+  font: menu !important;
 }
+
+
