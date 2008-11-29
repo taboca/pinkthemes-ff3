@@ -1595,10 +1595,11 @@ toolbarbutton.chevron > .toolbarbutton-menu-dropmarker {
 }
 
 /* marcio toolbar background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
+  background-color: #9e9e9e;
 */
 #nav-bar {
-  background-color: #9e9e9e;
   border-top: none;
+  background-color:transparent;
   border-bottom: 1px solid rgba(0,0,0,0.35);
   background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
   background-repeat: repeat-x;
