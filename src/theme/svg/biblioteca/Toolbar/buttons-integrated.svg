@@ -56,9 +56,8 @@
        inkscape:collect="always"
        id="linearGradient3167">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
          offset="0"
-         id="stop3169" />
+         id="stopdark-blur-doublebutton" />
       <stop
          style="stop-color:#000000;stop-opacity:0;"
          offset="1"

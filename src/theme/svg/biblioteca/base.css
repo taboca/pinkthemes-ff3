@@ -8,5 +8,9 @@
  stop-color: rgb(250,250,250) ! important;
  stop-opacity:1; 
 } 
-  
+
+#stopdark-blur-doublebutton { 
+        stop-color: red ! important;
+	stop-opacity:1;
 } 
+  
