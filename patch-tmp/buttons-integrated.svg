@@ -35,7 +35,7 @@
          id="stop3186"
          offset="0" />
       <stop
-         id="stop3188"
+         id="stopwhite"
          offset="1"
          style="stop-color:#ff39fd;stop-opacity:1;" />
     </linearGradient>
@@ -182,6 +182,22 @@
        y1="-18.780472"
        x2="12.427313"
        y2="17.18342" />
+    <filter
+       inkscape:collect="always"
+       id="filter3341">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.80535879"
+         id="feGaussianBlur3343" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3417">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.80535879"
+         id="feGaussianBlur3419" />
+    </filter>
   </defs>
   <sodipodi:namedview
      inkscape:window-height="726"
@@ -206,14 +222,14 @@
   <path
      id="path3163"
      d="M 65.957465,28.100357 C 72.127857,28.100357 77.144965,23.083249 77.144965,16.912857 C 77.144965,10.742465 72.127857,5.7253567 65.957465,5.7253567 C 65.769837,5.7253577 65.580296,5.7474377 65.394965,5.7566067 L 12.644965,5.7566067 C 12.449509,5.7463997 12.249236,5.7253567 12.051215,5.7253567 C 5.8808228,5.7253567 0.8637158,10.742463 0.8637148,16.912856 C 0.8637148,23.031286 5.7960698,28.016839 11.894965,28.100357 L 12.051215,28.100357 L 65.832465,28.100357 C 65.873927,28.100811 65.915895,28.100357 65.957465,28.100357 z"
-     style="fill:url(#linearGradient3173);fill-opacity:1;stroke:none;stroke-width:1.01152658;stroke-opacity:1" />
+     style="fill:url(#linearGradient3173);fill-opacity:1;stroke:none;stroke-width:1.01152657999999995;stroke-opacity:1;filter:url(#filter3417)" />
   <path
-     style="fill:url(#linearGradient3172);stroke:none;stroke-width:1.01152657999999995;stroke-opacity:1;fill-opacity:1"
+     style="fill:url(#linearGradient3172);stroke:none;stroke-width:1.01152657999999995;stroke-opacity:1;fill-opacity:1;filter:url(#filter3341)"
      d="M 12.125 5.03125 C 5.9546077 5.03125 0.93750002 10.048358 0.9375 16.21875 C 0.9375 22.389142 5.9546075 27.40625 12.125 27.40625 C 12.312628 27.40625 12.502169 27.384169 12.6875 27.375 L 65.4375 27.375 C 65.632956 27.385207 65.833229 27.40625 66.03125 27.40625 C 72.201642 27.40625 77.218749 22.389143 77.21875 16.21875 C 77.21875 10.100321 72.286395 5.1147681 66.1875 5.03125 L 66.03125 5.03125 L 12.25 5.03125 C 12.208538 5.0307957 12.16657 5.03125 12.125 5.03125 z "
      id="path2388" />
   <image
      y="44.398548"
-     x="-494.37018"
+     x="-477.42383"
      id="image2553"
      height="165"
      width="767"

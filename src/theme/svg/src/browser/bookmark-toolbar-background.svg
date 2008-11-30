@@ -19,7 +19,7 @@
    id="svg2513"
    sodipodi:version="0.32"
    inkscape:version="0.46"
-   sodipodi:docname="toolbar-background.svg"
+   sodipodi:docname="bookmark-toolbar-background.svg"
    sodipodi:docbase="C:\cygwin\home\ivaldo\taboca-firefox\src\theme\svg\src\global"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <metadata
@@ -34,7 +34,7 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     inkscape:window-height="711"
+     inkscape:window-height="726"
      inkscape:window-width="1046"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -46,14 +46,25 @@
      pagecolor="#ffffff"
      id="base"
      inkscape:zoom="2.3630952"
-     inkscape:cx="168"
+     inkscape:cx="93.521409"
      inkscape:cy="40.400411"
      inkscape:window-x="110"
-     inkscape:window-y="110"
+     inkscape:window-y="89"
      inkscape:current-layer="svg2513"
      showgrid="false" />
   <defs
      id="defs2081">
+    <linearGradient
+       id="linearGradient3164">
+      <stop
+         id="stop3166"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop3168"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 60 : 1"
@@ -64,13 +75,9 @@
     <linearGradient
        id="linearGradient3418">
       <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
+         style="stop-color:#ff0000;stop-opacity:1;"
          offset="0"
          id="stop3420" />
-      <stop
-         id="stop3426"
-         offset="0.60000002"
-         style="stop-color:#ffffff;stop-opacity:0.49803922;" />
       <stop
          style="stop-color:#ffffff;stop-opacity:0;"
          offset="1"
@@ -139,14 +146,14 @@
     </filter>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3418"
+       xlink:href="#linearGradient3164"
        id="linearGradient3424"
-       x1="129.112"
-       y1="118.15606"
-       x2="129.112"
-       y2="13.635778"
+       x1="127.70457"
+       y1="-16.261961"
+       x2="127.70457"
+       y2="75.970978"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.5234892,0.8463476,66.850068)" />
+       gradientTransform="matrix(1,0,0,0.436241,0.4231738,-1.9028616)" />
   </defs>
 <!--
 
@@ -157,10 +164,10 @@ Comentartios do projeto
 -->  <g
      id="g2526" />
   <rect
-     style="fill:url(#linearGradient3424);fill-opacity:1;stroke:none;stroke-width:10.34399986;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:url(#linearGradient3424);fill-opacity:1;stroke:none;stroke-width:10.34399986000000027;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect2531"
      width="338.11588"
-     height="66.015114"
-     x="-0.84634763"
-     y="65.869019" />
+     height="55.012592"
+     x="-1.2695215"
+     y="-2.720403" />
 </svg>
