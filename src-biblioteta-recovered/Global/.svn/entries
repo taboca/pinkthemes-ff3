@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="126"
+   name=""
+   committed-date="2006-11-30T18:54:02.363198Z"
+   url="http://ribeirao.remotestage.net/svn/taboca/frontstage/trunk/reference/theme/svg/biblioteca/Global"
+   last-author="ivaldo"
+   kind="dir"
+   uuid="8e132c29-871a-0410-aac2-a0853f0e6bda"
+   repos="http://ribeirao.remotestage.net/svn/taboca"
+   revision="128"/>
+<entry
+   name="icons"
+   kind="dir"/>
+</wc-entries>

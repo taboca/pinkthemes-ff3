@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="text/ecmascript"
+   zoomAndPan="magnify"
+   contentStyleType="text/css"
+   width="250"
+   height="220"
+   viewBox="0 0 336 120"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.0"
+   id="svg2513"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+   sodipodi:docname="button-background.svg"
+   sodipodi:docbase="C:\home\ivaldo-skin\trunk-pink\src\theme\svg\biblioteca\Go">
+  <metadata
+     id="metadata2529">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="913"
+     inkscape:window-width="1252"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="2.3630952"
+     inkscape:cx="132.96189"
+     inkscape:cy="107.08678"
+     inkscape:window-x="1729"
+     inkscape:window-y="33"
+     inkscape:current-layer="svg2513"
+     width="250px"
+     height="220px" />
+  <defs
+     id="defs2081">
+    <linearGradient
+       id="linearGradient4568">
+      <stop
+         style="stop-color:#ffc9ff;stop-opacity:1;"
+         offset="0"
+         id="stop4570" />
+      <stop
+         style="stop-color:#ffc0ff;stop-opacity:1;"
+         offset="1"
+         id="stop4572" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3418">
+      <stop
+         style="stop-color:black;stop-opacity:1;"
+         offset="0"
+         id="stop3420" />
+      <stop
+         id="stop3426"
+         offset="0.1025641"
+         style="stop-color:black;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:white;stop-opacity:0;"
+         offset="1"
+         id="stop3422" />
+    </linearGradient>
+    <filter
+       x="0"
+       y="0"
+       width="24"
+       filterUnits="userSpaceOnUse"
+       xlink:type="simple"
+       xlink:actuate="onLoad"
+       id="minhaSombra"
+       height="24"
+       xlink:show="other">
+      <feGaussianBlur
+         stdDeviation="10"
+         in="SourceAlpha"
+         result="blur"
+         id="feGaussianBlur2084" />
+      <feOffset
+         dx="6"
+         dy="6"
+         in="blur"
+         result="offsetBlur"
+         id="feOffset2086" />
+      <feSpecularLighting
+         specularConstant=".2"
+         specularExponent="20"
+         result="specOut"
+         in="blur"
+         surfaceScale="5"
+         lighting-color="#bbbbbb"
+         id="feSpecularLighting2088">
+        <fePointLight
+           x="-5000"
+           y="-10000"
+           z="20000"
+           id="fePointLight2090" />
+      </feSpecularLighting>
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         in="specOut"
+         result="specOut"
+         id="feComposite2092" />
+      <feComposite
+         result="litPaint"
+         in="SourceGraphic"
+         k1="0"
+         k2="1"
+         k3="1"
+         k4="0"
+         in2="specOut"
+         operator="arithmetic"
+         id="feComposite2094" />
+      <feMerge
+         id="feMerge2096">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode2098" />
+        <feMergeNode
+           in="litPaint"
+           id="feMergeNode2100" />
+      </feMerge>
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3418"
+       id="linearGradient3424"
+       x1="129.38383"
+       y1="-8.2199802"
+       x2="129.28717"
+       y2="20.583975"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,2.368036,1.686443,-84.2357)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4568"
+       id="linearGradient4574"
+       x1="307.12262"
+       y1="-88.478462"
+       x2="307.12262"
+       y2="-21.362469"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+<!--
+
+Comentartios do projeto
+
+336x120 Toolbar.png
+
+1a linha - esperando - ativpo
+2a linha - mouse em cima andando
+3a linha - desativado
+4a linha - ???? 
+5a linha - mouse em cima botao apertado
+
+-->  <g
+     id="g2526" />
+  <rect
+     style="fill:url(#linearGradient3424);fill-opacity:1;stroke:none;stroke-width:10.34399986;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect2531"
+     width="338.11588"
+     height="298.62225"
+     x="-0.0063653952"
+     y="-88.674065"
+     transform="matrix(1,0,1.417087e-3,0.999999,0,0)" />
+  <path
+     style="fill:url(#linearGradient4574);fill-opacity:1.0;stroke:none;stroke-width:12;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 276.96663,-88.478461 C 309.0667,-81.656134 333.69397,-54.645517 336.90063,-21.362468 L 337.27863,-21.362468 L 337.27863,-88.478461 L 276.96663,-88.478461 z "
+     id="path2795" />
+</svg>
