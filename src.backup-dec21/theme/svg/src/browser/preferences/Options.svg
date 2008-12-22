@@ -1,0 +1,153 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="224px" height="64px"  viewBox="0 0 224 64" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+
+  <defs
+     id="defs2081">
+    <filter
+       x="0"
+       y="0"
+       width="24"
+       filterUnits="userSpaceOnUse"
+       xlink:type="simple"
+       xlink:actuate="onLoad"
+       id="minhaSombra"
+       height="24"
+       xlink:show="other">
+      <feGaussianBlur
+         stdDeviation="10"
+         in="SourceAlpha"
+         result="blur"
+         id="feGaussianBlur2084" />
+      <feOffset
+         dx="6"
+         dy="6"
+         in="blur"
+         result="offsetBlur"
+         id="feOffset2086" />
+      <feSpecularLighting
+         specularConstant=".2"
+         specularExponent="20"
+         result="specOut"
+         in="blur"
+         surfaceScale="5"
+         lighting-color="#bbbbbb"
+         id="feSpecularLighting2088">
+        <fePointLight
+           x="-5000"
+           y="-10000"
+           z="20000"
+           id="fePointLight2090" />
+      </feSpecularLighting>
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         in="specOut"
+         result="specOut"
+         id="feComposite2092" />
+      <feComposite
+         result="litPaint"
+         in="SourceGraphic"
+         k1="0"
+         k2="1"
+         k3="1"
+         k4="0"
+         in2="specOut"
+         operator="arithmetic"
+         id="feComposite2094" />
+      <feMerge
+         id="feMerge2096">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode2098" />
+        <feMergeNode
+           in="litPaint"
+           id="feMergeNode2100" />
+      </feMerge>
+    </filter>
+
+
+  </defs>
+
+
+
+
+<!--
+
+Comentartios do projeto
+(32x32)
+224x64 Options.png
+
+-->
+<g>
+
+
+
+
+<image x="0" y="0" width="32px" height="32px" opacity=".5"
+	         xlink:href="../../../biblioteca/Preferences/icone-main.svg">
+</image>
+
+<image x="0" y="32" width="32px" height="32px" 
+	         xlink:href="../../../biblioteca/Preferences/icone-main-ativo.svg">
+</image>
+
+
+<image x="32" y="0" width="32px" height="32px" opacity=".5"
+	         xlink:href="../../../biblioteca/Preferences/icone-tabs.svg">
+</image>
+
+<image x="32" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-tabs-ativo.svg">
+</image>
+
+<image x="64" y="0" width="32px" height="32px" opacity=".5"
+	         xlink:href="../../../biblioteca/Preferences/icone-content.svg">
+</image>
+
+<image x="64" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-content-ativo.svg">
+</image>
+
+<image x="96" y="0" width="32px" height="32px" opacity=".5"
+	         xlink:href="../../../biblioteca/Preferences/icone-feeds.svg">
+</image>
+
+<image x="96" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-feeds-ativo.svg">
+</image>
+
+
+
+
+<image x="128" y="0" width="32px" height="32px" opacity=".5"
+	         xlink:href="../../../biblioteca/Preferences/icone-privacy.svg">
+</image>
+
+<image x="128" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-privacy-ativo.svg">
+</image>
+
+
+
+<image x="160" y="0" width="32px" height="32px" opacity=".5"
+	         xlink:href="../../../biblioteca/Preferences/icone-security.svg">
+</image>
+
+<image x="160" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-security-ativo.svg">
+</image>
+
+
+<image x="192" y="0" width="32px" height="32px" opacity=".5"
+	         xlink:href="../../../biblioteca/Preferences/icone-advanced.svg">
+</image>
+
+<image x="192" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-advanced-ativo.svg">
+</image>
+
+
+</g>
+
+
+</svg>

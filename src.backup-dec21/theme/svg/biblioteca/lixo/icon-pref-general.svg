@@ -1,0 +1,61 @@
+<svg contentScriptType="text/ecmascript" width="400" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" height="400" viewBox="0 0 400.0 400.0" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+<defs>
+ <filter x="0" y="0" width="450" filterUnits="userSpaceOnUse" xlink:type="simple" xlink:actuate="onLoad" id="MyFilter" height="400" xlink:show="other">
+      <feGaussianBlur stdDeviation="14" in="SourceAlpha" result="blur"/>
+      <feOffset dx="14" dy="14" in="blur" result="offsetBlur"/>
+      <feSpecularLighting specularConstant=".2" specularExponent="20" result="specOut" in="blur" surfaceScale="5" lighting-color="#bbbbbb">
+        <fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in2="SourceAlpha" operator="in" in="specOut" result="specOut"/>
+      <feComposite result="litPaint" in="SourceGraphic" k1="0" k2="1" k3="1" k4="0" in2="specOut" operator="arithmetic"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="litPaint"/>
+      </feMerge>
+    </filter>
+<radialGradient gradientTransform="" id="radial1" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="111%" cx="7%" fx="111%" cy="97%" fy="111%" xlink:actuate="onLoad">
+<stop style="stop-color:#ffff00;stop-opacity:1;" offset="0%"/>
+<stop style="stop-color:#ff9900;stop-opacity:1;" offset="61%"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial0" gradientUnits="objectBoundingBox" spreadMethod="reflect" xlink:show="other" xlink:type="simple" r="50%" cx="92%" fx="50%" cy="100%" fy="50%" xlink:actuate="onLoad">
+<stop style="stop-color:#0099ff;stop-opacity:1;" offset="9%"/>
+<stop style="stop-color:#ccffff;stop-opacity:1;" offset="70%"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial2" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="50%" cx="50%" fx="50%" fy="50%" cy="50%" xlink:actuate="onLoad">
+<stop offset="0%" style="stop-color:#000000;stop-opacity:1.0;"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial1_copy1" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="77%" cx="50%" fx="55%" fy="55%" cy="56%" xlink:actuate="onLoad">
+<stop offset="16%" style="stop-color:#ffcc00;stop-opacity:1;"/>
+<stop style="stop-color:#ffff00;stop-opacity:1;" offset="49%"/>
+<stop style="stop-color:#ff9900;stop-opacity:1;" offset="94%"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial3" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="50%" cx="50%" fx="50%" fy="50%" cy="50%" xlink:actuate="onLoad">
+<stop offset="0%" style="stop-color:#000000;stop-opacity:1.0;"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial1_copy0" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="130%" cx="65%" fx="111%" fy="111%" cy="76%" xlink:actuate="onLoad">
+<stop offset="6%" style="stop-color:#999999;stop-opacity:1;"/>
+<stop style="stop-color:#ffffff;stop-opacity:1;" offset="49%"/>
+<stop offset="98%" style="stop-color:#999999;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient gradientTransform="" id="radial1_copy1_copy0" gradientUnits="objectBoundingBox" spreadMethod="pad" xlink:show="other" xlink:type="simple" r="111%" cx="100%" fx="55%" fy="55%" cy="100%" xlink:actuate="onLoad">
+<stop offset="0%" style="stop-color:#000000;stop-opacity:1;"/>
+<stop style="stop-color:#ffffff;stop-opacity:1;" offset="92%"/>
+</radialGradient>
+</defs>
+<g filter="url(#MyFilter)">
+<rect x="37" y="29" transform="matrix( 1, 0, 0, 1, -1, 0)" width="316" style="fill:#999999;" height="324" id="background"/>
+</g>
+<rect width="287" x="51" height="296" y="42" style="fill:url(#radial1_copy0);"/>
+<rect x="93" width="9" y="69" height="231" style="fill:#999999;"/>
+<rect x="93" y="69" transform="matrix( 1, 0, 0, 1, 16, 0)" width="9" style="fill:#ffffff;" id="0" height="231"/>
+<rect x="93" y="69" transform="matrix( 1, 0, 0, 1, 8, 0)" width="9" style="fill:#666666;" id="1" height="231"/>
+<g filter="url(#MyFilter)">
+<rect x="70" y="126" transform="matrix( 1, 0, 0, 1, -3, 3)" width="68" style="fill:#cccccc;" height="29" id="dragger"/>
+</g>
+<rect x="201" y="71" transform="matrix( -1, 0, 0, -1, 500, 194)" width="98" style="fill:url(#radial1_copy1_copy0);" height="52"/>
+<rect x="201" y="71" transform="matrix( -1, 0, 0, -1, 500, 288)" width="98" style="fill:url(#radial1_copy1_copy0);" id="2" height="52"/>
+<rect x="201" y="71" transform="matrix( -1, 0, 0, -1, 501, 372)" width="98" style="fill:url(#radial1_copy1_copy0);" id="3" height="52"/>
+<rect x="207" width="84" y="79" height="35" style="fill:#00cc00;"/>
+<rect x="207" y="79" transform="matrix( 1, 0, 0, 1, 1, 95)" width="84" style="fill:#0099ff;" id="4" height="35"/>
+<rect x="207" y="79" transform="matrix( 1, 0, 0, 1, 3, 180)" width="84" style="fill:#cc3300;" height="35" id="5"/>
+</svg>

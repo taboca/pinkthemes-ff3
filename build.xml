@@ -41,6 +41,14 @@
 
       <rasterize  
 	    result="image/png"
+	    destdir="build-chrome-png/classic/browser/tabbrowser">
+	    <fileset dir="src/theme/svg/src/browser/tabbrowser">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+      <rasterize  
+	    result="image/png"
 	    destdir="build-chrome-png/classic/browser/preferences">
 	    <fileset dir="src/theme/svg/src/browser/preferences">
 	        <include name="*.svg" />

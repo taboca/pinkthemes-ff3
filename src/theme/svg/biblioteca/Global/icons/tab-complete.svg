@@ -1,252 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../../base.css" type="text/css" ?>
+
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   contentScriptType="text/ecmascript"
    width="240"
-   zoomAndPan="magnify"
-   contentStyleType="text/css"
    height="750"
-   viewBox="0 0 400 400"
-   preserveAspectRatio="xMidYMid meet"
-   version="1.0"
-   id="svg2079"
-   sodipodi:version="0.32"
-   inkscape:version="0.44.1"
-   sodipodi:docname="tab-complete.svg"
-   sodipodi:docbase="C:\cygwin\home\ivaldo\taboca-firefox\src\theme\svg\biblioteca\Global\icons">
-  <metadata
-     id="metadata2119">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <sodipodi:namedview
-     inkscape:window-height="573"
-     inkscape:window-width="878"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     guidetolerance="10.0"
-     gridtolerance="10.0"
-     objecttolerance="10.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     id="base"
-     inkscape:zoom="1.5815018"
-     inkscape:cx="131.11094"
-     inkscape:cy="701.88083"
-     inkscape:window-x="154"
-     inkscape:window-y="113"
-     inkscape:current-layer="svg2079"
-     width="240px"
-     height="750px" />
-  <defs
-     id="defs2081">
-    <radialGradient
-       xlink:actuate="onLoad"
-       fy="0.5"
-       cy="0.5"
-       fx="0.5"
-       cx="0.5"
-       r="0.5"
-       xlink:type="simple"
-       xlink:show="other"
-       spreadMethod="repeat"
-       gradientUnits="objectBoundingBox"
-       id="radialGradient4685">
-      <stop
-         style="stop-color:white;stop-opacity:1;"
-         offset="0"
-         id="stop4687" />
-      <stop
-         style="stop-color:#89986f;stop-opacity:1;"
-         offset="1"
-         id="stop4689" />
-    </radialGradient>
-    <linearGradient
-       id="linearGradient3312">
-      <stop
-         style="stop-color:#dfdfe4;stop-opacity:1;"
-         offset="0"
-         id="stop3322" />
-      <stop
-         id="stop3686"
-         offset="1"
-         style="stop-color:white;stop-opacity:0.49803922;" />
-      <stop
-         style="stop-color:#050000;stop-opacity:0;"
-         offset="1"
-         id="stop3316" />
-    </linearGradient>
-    <filter
-       x="0"
-       y="0"
-       width="450"
-       filterUnits="userSpaceOnUse"
-       xlink:type="simple"
-       xlink:actuate="onLoad"
-       id="MyFilter"
-       height="400"
-       xlink:show="other">
-      <feGaussianBlur
-         stdDeviation="14"
-         in="SourceAlpha"
-         result="blur"
-         id="feGaussianBlur2084" />
-      <feOffset
-         dx="14"
-         dy="14"
-         in="blur"
-         result="offsetBlur"
-         id="feOffset2086" />
-      <feSpecularLighting
-         specularConstant=".2"
-         specularExponent="20"
-         result="specOut"
-         in="blur"
-         surfaceScale="5"
-         lighting-color="#bbbbbb"
-         id="feSpecularLighting2088">
-        <fePointLight
-           x="-5000"
-           y="-10000"
-           z="20000"
-           id="fePointLight2090" />
-      </feSpecularLighting>
-      <feComposite
-         in2="SourceAlpha"
-         operator="in"
-         in="specOut"
-         result="specOut"
-         id="feComposite2092" />
-      <feComposite
-         result="litPaint"
-         in="SourceGraphic"
-         k1="0"
-         k2="1"
-         k3="1"
-         k4="0"
-         in2="specOut"
-         operator="arithmetic"
-         id="feComposite2094" />
-      <feMerge
-         id="feMerge2096">
-        <feMergeNode
-           in="offsetBlur"
-           id="feMergeNode2098" />
-        <feMergeNode
-           in="litPaint"
-           id="feMergeNode2100" />
-      </feMerge>
-    </filter>
-    <radialGradient
-       id="radial0"
-       gradientUnits="objectBoundingBox"
-       spreadMethod="repeat"
-       xlink:show="other"
-       xlink:type="simple"
-       r="0.5"
-       cx="0.5"
-       fx="0.5"
-       cy="0.5"
-       fy="0.5"
-       xlink:actuate="onLoad">
-      <stop
-         id="stop3328"
-         offset="0"
-         style="stop-color:#f0f0f0;stop-opacity:1;" />
-      <stop
-         id="stop3324"
-         offset="1"
-         style="stop-color:#a0ac8b;stop-opacity:1;" />
-    </radialGradient>
-    <radialGradient
-       id="radial1"
-       gradientUnits="objectBoundingBox"
-       spreadMethod="pad"
-       xlink:show="other"
-       xlink:type="simple"
-       r="1.11"
-       cx="0.07"
-       fx="1.11"
-       cy="0.97000003"
-       fy="1.11"
-       xlink:actuate="onLoad">
-      <stop
-         style="stop-color:#868686;stop-opacity:0.93814433;"
-         offset="0"
-         id="stop2108" />
-      <stop
-         id="stop3684"
-         offset="0.76923078"
-         style="stop-color:#868686;stop-opacity:0.94117647;" />
-      <stop
-         id="stop3680"
-         offset="1"
-         style="stop-color:#868686;stop-opacity:0.93814433;" />
-    </radialGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#radial0"
-       id="linearGradient4148"
-       x1="119.5"
-       y1="-309.06619"
-       x2="119.5"
-       y2="875.87659"
-       gradientUnits="userSpaceOnUse"
-       spreadMethod="pad" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#radial0"
-       id="linearGradient3678"
-       x1="189.35057"
-       y1="-274.13855"
-       x2="188.59619"
-       y2="828.77197"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.984791,0,0,1,2.244613,-99.43156)" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#radial0"
-       id="radialGradient4677"
-       cx="200.60197"
-       cy="177.8851"
-       fx="200.60197"
-       fy="177.8851"
-       r="195.38564"
-       gradientTransform="matrix(1,0,0,4.500531,2.98074,-303.7489)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#radialGradient4685"
-       id="linearGradient4683"
-       gradientUnits="userSpaceOnUse"
-       spreadMethod="pad"
-       x1="119.50006"
-       y1="2.3436885"
-       x2="119.5"
-       y2="875.87659"
-       gradientTransform="matrix(1.398027,0,0,1.61434,31.05961,-389.6833)" />
-  </defs>
-  <path
-     style="fill:url(#linearGradient4148);fill-opacity:1.0;stroke:black;stroke-width:12.64399747;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 196.28125 2.34375 C 195.45751 2.34375 194.65526 2.388666 193.84375 2.4375 L 42.3125 2.4375 L 41.1875 2.4375 L 41.1875 2.46875 C 19.451172 3.0696683 1.9999997 20.868688 2 42.75 C 1.9999997 44.228253 2.0948443 45.68767 2.25 47.125 L 2.25 110.84375 L 1.8125 110.84375 L 1.8125 807.9375 L 237.1875 807.9375 L 237.1875 110.84375 L 236.71875 110.84375 L 236.71875 41.8125 L 236.5625 41.8125 C 236.09252 19.958682 218.24678 2.34375 196.28125 2.34375 z "
-     id="rect2951"
-     transform="matrix(1.666667,0,0,1.666667,0,-425)" />
-  <path
-     style="fill:url(#linearGradient4683);fill-opacity:1.0;stroke:none;stroke-width:10.34399986;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 305.46621,-385.89979 C 304.3146,-385.89979 303.19303,-385.82728 302.05852,-385.74844 L 90.213683,-385.74844 L 88.640903,-385.74844 L 88.640903,-385.698 C 58.252913,-384.72791 33.855693,-355.99424 33.855703,-320.67035 C 33.855693,-318.28394 33.988293,-315.92795 34.205203,-313.60761 L 34.205203,-210.74386 L 33.593573,-210.74386 L 33.593573,914.60271 L 362.65427,914.60271 L 362.65427,-210.74386 L 361.99895,-210.74386 L 361.99895,-322.18379 L 361.7805,-322.18379 C 361.12346,-357.46329 336.17463,-385.89979 305.46621,-385.89979 z "
-     id="path4681" />
+   viewBox="0 0 240 750"
+   version="1.1"
+   >
+<defs>
+   <linearGradient id="whitetocolor" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="tab-from-color"  />
+     <stop offset="50%" class="tab-from-color" />
+     <stop offset="100%" class="tab-to-color"  />
+   </linearGradient>
+
+   <linearGradient id="whitetoblack" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"   class="color-black" />
+     <stop offset="70%"   class="color-black" />
+     <stop offset="100%" class="color-white" />
+   </linearGradient>
+
+   <mask id="shademask">
+      <rect x="0" y="0" width="240" height="750"    style="fill:url(#whitetoblack)" />
+   </mask>
+
+</defs>
+ 
+<rect x="30" y="30" rx="30" ry="30" width="180" height="690"  style="fill:url(#whitetocolor)" />
+<rect x="20" y="20" rx="30" ry="30" width="200" height="710"  class="tab-outer" mask="url(#shademask)"/>
+
 </svg>
