@@ -2,78 +2,74 @@
 
 <g>
 
-<image x="0" y="0" width="36px" height="23px"
-	         xlink:href="../../biblioteca/Toolbar/icone-ativo-esquerdo.svg">
+<image x="0" y="0" width="36px" height="22px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-back.svg">
 </image>
 
-<image x="0" y="24" width="36px" height="23px"
-	         xlink:href="../../biblioteca/Toolbar/icone-mouse-esquerdo.svg">
+<image x="0" y="24" width="36px" height="22px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-back.svg">
 </image>
 
-<image x="0" y="48" width="36px" height="23px" opacity=".5"
-	         xlink:href="../../biblioteca/Toolbar/icone-desativado-esquerdo.svg">
+<image x="0" y="48" width="36px" height="22px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-back.svg">
 </image>
 
 <!-- botoes da direita -->
 
-<image x="36" y="0" width="36px" height="23px"
-	         xlink:href="../../biblioteca/Toolbar/icone-ativo-direito.svg">
+<image x="36" y="0" width="36px" height="22px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-forward.svg">
 </image>
 
-<image x="36" y="24" width="36px" height="23px"
-	         xlink:href="../../biblioteca/Toolbar/icone-mouse-direito.svg">
+<image x="36" y="24" width="36px" height="22px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-forward.svg">
 </image>
 
-<image x="36" y="48" width="36px" height="23px" opacity=".5"
-	         xlink:href="../../biblioteca/Toolbar/icone-desativado-direito.svg">
+<image x="36" y="48" width="36px" height="22px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-forward.svg">
 </image>
 
 <!-- botoes reload -->
 
-<image x="72" y="0" width="36px" height="23px"
+<image x="72" y="0" width="36px" height="22px"
 	         xlink:href="../../biblioteca/Toolbar/icone-ativo-reload.svg">
 </image>
 
-<image x="72" y="24" width="36px" height="23px"
-	         xlink:href="../../biblioteca/Toolbar/icone-mouse-reload.svg">
+<image x="72" y="24" width="36px" height="22px" opacity="0.5"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-reload.svg">
 </image>
 
-<image x="72" y="48" width="36px" height="23px" opacity=".5"
-	         xlink:href="../../biblioteca/Toolbar/icone-desativado-reload.svg">
+<image x="72" y="48" width="36px" height="22px"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-reload.svg">
 </image>
 
 
 <!-- botoes stop -->
 
-<image x="108" y="0" width="36px" height="23px"
+<image x="108" y="0" width="36px" height="22px"
 	         xlink:href="../../biblioteca/Toolbar/icone-ativo-stop.svg">
 </image>
 
-<image x="108" y="24" width="36px" height="23px"
-	         xlink:href="../../biblioteca/Toolbar/icone-mouse-stop.svg">
+<image x="108" y="24" width="36px" height="22px" opacity="0.5"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-stop.svg">
 </image>
 
-<image x="108" y="48" width="36px" height="23px" opacity=".5"
-	         xlink:href="../../biblioteca/Toolbar/icone-desativado-stop.svg">
+<image x="108" y="48" width="36px" height="22px" 
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-stop.svg">
 </image>
-
-
-
 
 <!-- botoes home -->
 
-<image x="144" y="0" width="36px" height="23px"
+<image x="144" y="0" width="36px" height="22px"
 	         xlink:href="../../biblioteca/Toolbar/icone-ativo-home.svg">
 </image>
 
-<image x="144" y="24" width="36px" height="23px"
-	         xlink:href="../../biblioteca/Toolbar/icone-mouse-home.svg">
+<image x="144" y="24" width="36px" height="22px" opacity="0.5"
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-home.svg">
 </image>
 
-<image x="144" y="48" width="36px" height="23px" opacity=".5"
-	         xlink:href="../../biblioteca/Toolbar/icone-desativado-home.svg">
+<image x="144" y="48" width="36px" height="22px" 
+	         xlink:href="../../biblioteca/Toolbar/icone-ativo-home.svg">
 </image>
-
 
 
 <!--  Integrated button --> 
@@ -81,17 +77,14 @@
 <image x="504" y="0" width="78px" height="33px"
 	         xlink:href="../../biblioteca/Toolbar/buttons-integrated.svg">
 </image>
-<image x="504" y="33" width="78px" height="33px"
+<image x="504" y="33" width="78px" height="33px" opacity=".5"
 	         xlink:href="../../biblioteca/Toolbar/buttons-integrated.svg">
 </image>
 <image x="504" y="66" width="78px" height="33px"
-	         xlink:href="../../biblioteca/Toolbar/buttons-integrated.svg">
+	         xlink:href="../../biblioteca/Toolbar/buttons-integrated-active.svg">
 </image>
-
- 
 
 
 </g>
-
 
 </svg>

@@ -1,3 +1,8 @@
+== To Modify Colors ==
+
+ * edit the src/.. global.css  - check the window, etc rule
+ * edit the src/theme/svg/biblioteca/base.css
+
 * Batik 1.8 and Rasterizer task in the lib
 
 == Modified some toolbar graphics and statusbar ==

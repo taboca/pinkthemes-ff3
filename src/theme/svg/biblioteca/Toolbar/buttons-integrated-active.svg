@@ -13,7 +13,7 @@
    inkscape:version="0.46"
    width="78"
    height="33"
-   sodipodi:docname="buttons-integrated.svg"
+   sodipodi:docname="buttons-integrated-active.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0">
   <metadata
@@ -647,6 +647,14 @@
        fx="205.46875"
        fy="162.03125"
        r="142.75" />
+    <filter
+       inkscape:collect="always"
+       id="filter4046">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.30503405"
+         id="feGaussianBlur4048" />
+    </filter>
   </defs>
   <sodipodi:namedview
      inkscape:window-height="726"
@@ -663,14 +671,34 @@
      showgrid="false"
      width="78px"
      inkscape:zoom="7.5107221"
-     inkscape:cx="31.880506"
-     inkscape:cy="17.349685"
+     inkscape:cx="40.717829"
+     inkscape:cy="22.610399"
      inkscape:window-x="5"
      inkscape:window-y="25"
      inkscape:current-layer="g2911" />
   <g
      transform="matrix(0.2049844,0,0,0.2049844,-122.57979,-109.88653)"
      id="g2911">
+    <path
+       transform="matrix(3.6312846,0,0,3.6312846,815.42889,603.07965)"
+       d="M 19.582433,3.4380581 A 15.251702,15.251702 0 1 1 -10.920972,3.4380581 A 15.251702,15.251702 0 1 1 19.582433,3.4380581 z"
+       sodipodi:ry="15.251702"
+       sodipodi:rx="15.251702"
+       sodipodi:cy="3.4380581"
+       sodipodi:cx="4.3307304"
+       id="path4058"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter4046)"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter4046)"
+       id="path4044"
+       sodipodi:cx="4.3307304"
+       sodipodi:cy="3.4380581"
+       sodipodi:rx="15.251702"
+       sodipodi:ry="15.251702"
+       d="M 19.582433,3.4380581 A 15.251702,15.251702 0 1 1 -10.920972,3.4380581 A 15.251702,15.251702 0 1 1 19.582433,3.4380581 z"
+       transform="matrix(4.8181926,0,0,4.8181926,672.38705,597.71577)" />
     <g
        id="g3763"
        transform="matrix(1.0932792,0,0,1.0932792,-495.11799,-59.437486)">
@@ -824,11 +852,11 @@
     </g>
     <g
        transform="matrix(0.3122074,0,0,0.3122074,588.79545,420.92923)"
-       id="g2511">
+       id="g2515">
       <path
          sodipodi:type="arc"
          style="fill:url(#linearGradient4034);fill-opacity:1;stroke:none;stroke-width:16;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3755)"
-         id="path2513"
+         id="path2517"
          sodipodi:cx="206.11757"
          sodipodi:cy="196.44289"
          sodipodi:rx="189.47455"
@@ -842,13 +870,13 @@
          sodipodi:rx="197.15594"
          sodipodi:cy="182.36032"
          sodipodi:cx="167.71057"
-         id="path2515"
+         id="path2519"
          style="opacity:0.5;fill:url(#radialGradient4036);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          sodipodi:type="arc" />
       <path
          style="opacity:0.8;fill:url(#radialGradient4038);fill-opacity:1;stroke:none;stroke-width:16;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3759)"
          d="M 1086.0396,557.80743 C 1052.0676,557.80743 1025.7062,586.3463 1025.7062,624.84456 C 1025.7062,630.0173 1026.2037,635.06162 1027.1478,639.91427 C 1026.923,637.73972 1026.811,635.52348 1026.811,633.28787 C 1026.811,599.10555 1056.1724,581.86459 1089.3826,581.86459 C 1122.5929,581.86459 1147.1391,599.10555 1147.1391,633.28787 C 1147.1391,637.85134 1146.6629,642.30327 1145.7514,646.58648 C 1147.7317,639.74537 1148.7963,632.43304 1148.7963,624.84456 C 1148.7963,586.3463 1120.0115,557.80743 1086.0396,557.80743 z"
-         id="path2517"
+         id="path2521"
          inkscape:export-filename="C:\Documents and Settings\marcio\Desktop\qqq"
          inkscape:export-xdpi="90"
          inkscape:export-ydpi="90"
@@ -858,7 +886,7 @@
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
          inkscape:export-filename="C:\Documents and Settings\marcio\Desktop\qqq"
-         id="path2519"
+         id="path2523"
          d="M 1086.0396,557.80743 C 1052.0676,557.80743 1025.7062,586.3463 1025.7062,624.84456 C 1025.7062,630.0173 1026.2037,635.06162 1027.1478,639.91427 C 1026.923,637.73972 1026.811,635.52348 1026.811,633.28787 C 1026.811,599.10555 1056.1724,581.86459 1089.3826,581.86459 C 1122.5929,581.86459 1147.1391,599.10555 1147.1391,633.28787 C 1147.1391,637.85134 1146.6629,642.30327 1145.7514,646.58648 C 1147.7317,639.74537 1148.7963,632.43304 1148.7963,624.84456 C 1148.7963,586.3463 1120.0115,557.80743 1086.0396,557.80743 z"
          style="opacity:0.8;fill:url(#radialGradient4040);fill-opacity:1;stroke:none;stroke-width:16;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3759)" />
     </g>
