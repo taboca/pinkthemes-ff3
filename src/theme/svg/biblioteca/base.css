@@ -32,5 +32,18 @@
 } 
 
 
+.popup-from-color { 
+
+	stop-color:rgb(255,255,255);
+	stop-opacity:1
+}
+
+.popup-to-color { 
+	stop-color:rgb(150,190,240); 
+ 	stop-opacity:1; 
+} 
+
+
+
 
 

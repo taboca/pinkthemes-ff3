@@ -48,13 +48,14 @@
 /* marcio 
 
   color: MenuText;
+  -moz-appearance: menuitem !important;
 
 */
 
 menu,
 menuitem {
-  -moz-appearance: menuitem !important;
   -moz-box-align: center;
+  -moz-appearance: none !important;
   color: black;
   font: -moz-pull-down-menu;
   list-style-image: none;
@@ -88,9 +89,15 @@ menuitem[_moz-menuactive="true"][disabled="true"] {
   font-weight: inherit;
 }
 
+/* marcio 
+  color: -moz-mac-menutextdisable;
+
+ */
+
+
 .menu-description {
   font-style: italic;
-  color: -moz-mac-menutextdisable;
+  color:gray;
   -moz-margin-start: 1ex !important;
 }
 
@@ -144,9 +151,16 @@ menubar > menu {
   margin: 1px 0px 1px 0px;
 }
 
-menubar > menu[_moz-menuactive="true"][open="true"] {
-  -moz-appearance: menuitem !important;
+/*
+
   color: -moz-mac-menutextselect !important
+  -moz-appearance: menuitem !important;
+*/
+
+menubar > menu[_moz-menuactive="true"][open="true"] {
+  -moz-appearance: none !important;
+  background: white;
+  color:black;
 }
 
 /* ..... internal content .... */
@@ -172,11 +186,15 @@ popup > menuitem {
   min-height: 19px;
 }
 
+/*
+  color: -moz-mac-menutextselect;
+*/
 menupopup > menu[_moz-menuactive="true"],
 menupopup > menuitem[_moz-menuactive="true"],
 popup > menu[_moz-menuactive="true"],
 popup > menuitem[_moz-menuactive="true"] {
-  color: -moz-mac-menutextselect;
+   color: black; 
+   background-color:white;
 }
 
 /* ::::: menu/menuitems in menulist popups ::::: */

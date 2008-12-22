@@ -45,10 +45,14 @@
 
 /* ::::: menupopup ::::: */
 
+/*  marcio
+
+*/ 
 menupopup,
 popup,
 panel {
-  -moz-appearance: menupopup;
+   background: rgb(250,190,240) url(chrome://global/skin/popup-bg.png) 0 0;   
+   background-color:rgb(150,190,240) !important;
 }
 
 /* ::::: popup internal box ::::: */
