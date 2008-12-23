@@ -83,12 +83,26 @@
   background-color: #e8e8e8;
 }
 
+
+/* 
+marcio  FIXME
+
+*/
 #main-window:not([active="true"]) .tabbrowser-strip {
-  background-color: #cfcfcf;
+  background: white url("chrome://browser/skin/tabstrip-background.png") repeat-x 0 0;
 }
 
+nearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="tabbrowsertabs-from-color"  />
+     <stop offset="5%" class="tabbrowsertabs-to-color"  />
+     <stop offset="100%" class="tabbrowsertabs-to-color"  />
+   </linearGradient>
+
+</defs>
+
 #main-window:not([active="true"]) .tabbrowser-tab {
-  color: #575757;
+	  color: gray;
+  background: white url("chrome://browser/skin/tabstrip-background.png") repeat-x 0 0;
 }
 
 #main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-middle,
@@ -1666,7 +1680,7 @@ toolbarbutton.chevron > .toolbarbutton-menu-dropmarker {
 .tabbrowser-tab {
   -moz-binding: url("chrome://browser/skin/browser.xml#tabbrowser-tab") !important;
   -moz-appearance: none;
-  color: #222;
+  color: black;
   -moz-box-pack: center;
   padding: 0px;
   border: none !important;
@@ -1742,17 +1756,24 @@ toolbarbutton.chevron > .toolbarbutton-menu-dropmarker {
   border: none !important;
 }
 
+/* marcio FIXME
+
+*/
+
 .tabbrowser-strip {
   margin-top: -1px;
   border-bottom: 1px solid #404040;
-  background-color: #9B9B9B;
 }
 
+/* 
+
+  background: url("chrome://browser/skin/tabbrowser/tabbrowser-tabs-bkgnd.png") repeat-x;
+*/
 .tabbrowser-tabs {
   border: none;
   -moz-box-pack: center;
   -moz-box-align: center;
-  background: url("chrome://browser/skin/tabbrowser/tabbrowser-tabs-bkgnd.png") repeat-x;
+  background: transparent url("chrome://browser/skin/tabstrip-background.png") repeat-x left top;
   height: 27px;
 }
 

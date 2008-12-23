@@ -145,10 +145,16 @@ menuitem[type="radio"] > .menu-iconic-left {
 
 /* ::::: menu/menuitems in menubar ::::: */
 
+/* marcio
+ thse moz border radius were originally placed to add smooth borders to the top menu only */
+
+
 menubar > menu {
   -moz-appearance: none !important;
-  padding: 2px 5px 2px 7px;
-  margin: 1px 0px 1px 0px;
+  padding: 1px 5px 2px 6px;
+  -moz-border-radius-topleft:4px;
+  -moz-border-radius-topright:4px;
+  margin: 3px 0px 1px 0px;
 }
 
 /*

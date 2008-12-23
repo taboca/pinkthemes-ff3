@@ -33,16 +33,32 @@
 
 
 .popup-from-color { 
-
 	stop-color:rgb(255,255,255);
 	stop-opacity:1
 }
-
 .popup-to-color { 
 	stop-color:rgb(150,190,240); 
  	stop-opacity:1; 
 } 
 
+
+.toolbar-from-color {
+        stop-color:rgb(150,190,240);
+        stop-opacity:1
+}
+.toolbar-to-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1;
+}
+
+.tabbrowsertabs-from-color {
+        stop-color:rgb(60,70,90);
+        stop-opacity:1
+}
+.tabbrowsertabs-to-color {
+        stop-color:rgb(110,140,200);
+        stop-opacity:1;
+}
 
 
 

@@ -9,10 +9,14 @@
 
 /*** TAB: TOP <tab> ***/
 
+
+/* 
+
+*/
 tab {
-  -moz-appearance: tab;
   -moz-box-align: stretch;
-  color				: #000000;
+  -moz-appearance: tab;
+  color				: #999999;
   padding: 3px;
 }
 
@@ -105,12 +109,17 @@ tabpanels {
   border-left: 2px groove #000000;
   border-right: 2px ridge #000000;
   padding: 15px 5px 5px 5px;
-  background-color		: #EEEEEE;
+  background-color		: #eeeeee;
   margin-bottom: 10px;
 }
 
-tabstrip-box {
+/*
+ marcio
+  	-moz-appearance:none; 
 	-moz-appearance: tabpanels;
+*/
+tabstrip-box {
+
         margin-top: -1px;
 }
 
