@@ -7,13 +7,13 @@
 }
 
 .tab-outer { 
-  stroke: rgb(150,190,240); 
+  stroke: rgb(250,190,240); 
   stroke-width:10; 
   fill:none;
 } 
 
 .tab-from-color { 
-   stop-color: rgb(150,190,240); 
+   stop-color: rgb(250,190,240); 
    stop-opacity: 1;
 } 
 
@@ -37,13 +37,13 @@
 	stop-opacity:1
 }
 .popup-to-color { 
-	stop-color:rgb(150,190,240); 
+	stop-color:rgb(250,190,240); 
  	stop-opacity:1; 
 } 
 
 
 .toolbar-from-color {
-        stop-color:rgb(150,190,240);
+        stop-color:rgb(250,190,240);
         stop-opacity:1
 }
 .toolbar-to-color {
@@ -52,11 +52,11 @@
 }
 
 .tabbrowsertabs-from-color {
-        stop-color:rgb(60,70,90);
+        stop-color:rgb(90,70,90);
         stop-opacity:1
 }
 .tabbrowsertabs-to-color {
-        stop-color:rgb(110,140,200);
+        stop-color:rgb(210,150,200);
         stop-opacity:1;
 }
 

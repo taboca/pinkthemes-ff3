@@ -92,14 +92,6 @@ marcio  FIXME
   background: white url("chrome://browser/skin/tabstrip-background.png") repeat-x 0 0;
 }
 
-nearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="tabbrowsertabs-from-color"  />
-     <stop offset="5%" class="tabbrowsertabs-to-color"  />
-     <stop offset="100%" class="tabbrowsertabs-to-color"  />
-   </linearGradient>
-
-</defs>
-
 #main-window:not([active="true"]) .tabbrowser-tab {
 	  color: gray;
   background: white url("chrome://browser/skin/tabstrip-background.png") repeat-x 0 0;
@@ -1662,8 +1654,12 @@ toolbarbutton.chevron > .toolbarbutton-menu-dropmarker {
   opacity: 1.0;
 }
 
-.tab-text {
+/* 
+marcio 
+
   font: message-box;
+*/
+.tab-text {
   margin-top: 0 !important;
 }
 

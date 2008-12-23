@@ -12,6 +12,7 @@
 
 /* 
 
+  -moz-appearance: tab;
 */
 tab {
   -moz-box-align: stretch;
@@ -22,7 +23,10 @@ tab {
 
 .tab-text {
   font				: menu;
-  font-weight: normal !important;
+  font-weight: normal ! important;
+  font-size:93%;
+  margin-top:2px;
+  color:#333;
 }
 
 tabs {

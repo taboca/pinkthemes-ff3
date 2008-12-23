@@ -1,7 +1,8 @@
 == To Modify Colors ==
 
- * edit the src/.. global.css  - check the window, etc rule
- * edit the src/theme/svg/biblioteca/base.css
+vi src/theme/svg/biblioteca/base.css
+vi src/ff3-chrome-classic-update/skin/classic/global/global.css 
+
 
 * Batik 1.8 and Rasterizer task in the lib
 
