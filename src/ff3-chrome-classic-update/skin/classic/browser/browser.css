@@ -140,8 +140,13 @@ marcio  FIXME
 
 /* ----- BOOKMARK BUTTONS ----- */	
 
+
+/* marcio 
+  Changed the text to normal and also the size to less
+ */
 toolbarbutton.bookmark-item {
-  font-weight: bold;
+  font-weight: normal;
+  font-size:82%;
   margin: 0 1px;
   padding: 0;
   -moz-padding-start: 7px;

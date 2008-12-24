@@ -31,7 +31,6 @@
    stop-opacity:1; 
 } 
 
-
 .popup-from-color { 
 	stop-color:rgb(255,255,255);
 	stop-opacity:1
@@ -42,6 +41,15 @@
 } 
 
 
+.toolbar-inactive-from-color {
+        stop-color:rgb(210,210,210);
+        stop-opacity:1
+}
+.toolbar-inactive-to-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1;
+}
+
 .toolbar-from-color {
         stop-color:rgb(250,190,240);
         stop-opacity:1
@@ -49,6 +57,20 @@
 .toolbar-to-color {
         stop-color:rgb(255,255,255);
         stop-opacity:1;
+}
+
+.toolbarbutton-from-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1
+}
+.toolbarbutton-to-color {
+        stop-color:rgb(250,190,240);
+        stop-opacity:1;
+}
+
+.toolbarbutton {
+  stroke: white;
+  stroke-width:2;
 }
 
 .tabbrowsertabs-from-color {
@@ -59,7 +81,4 @@
         stop-color:rgb(210,150,200);
         stop-opacity:1;
 }
-
-
-
 

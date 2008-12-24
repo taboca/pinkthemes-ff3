@@ -1,15 +1,19 @@
+
+== TODO ==
+
+ * PersonalTooolbar work in browser/browser.css. The icons for the highlight mode. 
+ * Fix the toolbar-background.svg and bookmark-toolbar-background to be simple
+ * modify browser.css bookmark-toolbar-background-inactive.gif _ _ _ to - - - and make inactive in the src browser .svg
+
+== Check ==
+
+ * personal toolbar font size is set to 82% in the browser.css check for 82 keyword in the doc. This is so that the font does not move the background. This is MacOSX works fine
+
 == To Modify Colors ==
 
 vi src/theme/svg/biblioteca/base.css
 vi src/ff3-chrome-classic-update/skin/classic/global/global.css 
 
-
-* Batik 1.8 and Rasterizer task in the lib
-
-== Modified some toolbar graphics and statusbar ==
-
- 2107  vi src/ff3-chrome-classic-update/skin/classic/browser/browser.css 
- 2108  vi src/ff3-chrome-classic-update/skin/classic/global/global.css 
 
 
 
