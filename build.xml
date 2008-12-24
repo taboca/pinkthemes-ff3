@@ -131,8 +131,7 @@
 		<!-- copy classes -->
 
  
-		<copy todir="build-chrome-classic/chrome/classic/skin/classic" 
-		overwrite="yes">
+		<copy todir="build-chrome-classic/chrome/classic/skin/classic"  overwrite="yes">
 			<fileset dir="build-chrome-png/classic" includes="**/*" />
 		</copy>
 		
@@ -148,6 +147,15 @@
                         <fileset dir="build-distrib" includes="**" />
                 </copy>
         </target>
+  
+ 	<target name="distrib"  >
+		<copy todir="build-package"  overwrite="yes">
+			<fileset dir="build-chrome-classic/chrome/classic/skin/classic" includes="**/*" />
+		</copy>
+                <zip destfile="build-package-installer/theme.jar" basedir="build-package" />
+
+ 	</target>
+
 
 	
 </project>
