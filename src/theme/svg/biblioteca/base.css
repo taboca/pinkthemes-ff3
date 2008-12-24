@@ -93,12 +93,16 @@
   stroke-width:2;
 }
 
+.tabbrowsertabs-from-color-dark {
+        stop-color:rgb(125,95,120);
+        stop-opacity:1
+}
 .tabbrowsertabs-from-color {
-        stop-color:rgb(115,85,110);
+        stop-color:rgb(210,160,209);
         stop-opacity:1
 }
 .tabbrowsertabs-to-color {
-        stop-color:rgb(230,170,220);
+        stop-color:rgb(240,184,232);
         stop-opacity:1;
 }
 
