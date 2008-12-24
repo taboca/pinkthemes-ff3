@@ -59,6 +59,26 @@
         stop-opacity:1;
 }
 
+
+.bookmarks-toolbar-from-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1
+}
+.bookmarks-toolbar-to-color {
+        stop-color:rgb(250,190,240);
+        stop-opacity:1;
+}
+
+.bookmarks-toolbar-inactive-from-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1
+}
+.bookmarks-toolbar-inactive-to-color {
+        stop-color:rgb(210,210,210);
+        stop-opacity:1;
+}
+
+
 .toolbarbutton-from-color {
         stop-color:rgb(255,255,255);
         stop-opacity:1
@@ -74,11 +94,11 @@
 }
 
 .tabbrowsertabs-from-color {
-        stop-color:rgb(90,70,90);
+        stop-color:rgb(115,85,110);
         stop-opacity:1
 }
 .tabbrowsertabs-to-color {
-        stop-color:rgb(210,150,200);
+        stop-color:rgb(230,170,220);
         stop-opacity:1;
 }
 

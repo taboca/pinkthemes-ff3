@@ -69,7 +69,7 @@
 }
 
 #main-window:not([active="true"]) > #navigator-toolbox > #PersonalToolbar {
-  background-image: url("chrome://browser/skin/bookmark_toolbar_background-inactive.png");
+  background-image: url("chrome://browser/skin/bookmark-toolbar-background-inactive.png");
 }
 
 #main-window:not([active="true"]) > #navigator-toolbox > toolbar > toolbaritem,
