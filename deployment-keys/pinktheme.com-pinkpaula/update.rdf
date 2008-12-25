@@ -2,44 +2,32 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-
-<RDF:Description about="urn:mozilla:extension:pinkpaula@pinktheme.com">
-    <em:updates>
-      <RDF:Seq>
-        <RDF:li resource="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.0"/>
-        <RDF:li resource="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.1"/>
-      </RDF:Seq>
-    </em:updates>
-    <em:signature>MIGTMA0GCSqGSIb3DQEBDQUAA4GBAAUxD11xRwy3nOFhHZcht30euuFDjusMnzE1z3L/Uo+cL/dlo0DqN15rJnCEcxO2Rt+moaAyQD5O3GhVp2IduCLR5esS5vVUngdlYXnUf6yfEy6nSEuGR+SmAy4FXq5qsd7O0F+YV1AQY6ul7sGdJgk4NDtz/OwabaLX51ziCNlR</em:signature>
-</RDF:Description>
-
-
-        <RDF:Description about="urn:mozilla:extension:foobar@developer.mozilla.org:3.0.0">
-            <em:version>3.0.0</em:version> 
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.*.*.*</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav3a.jar</em:updateLink>
-                <em:updateInfoURL></em:updateInfoURL>
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-       <RDF:Description about="urn:mozilla:extension:foobar@developer.mozilla.org:3.0.1">
-            <em:version>3.0.1</em:version> 
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.*.*.*</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav301.jar</em:updateLink>
-                <em:updateInfoURL></em:updateInfoURL>
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-
-
+  <RDF:Description RDF:about="urn:mozilla:extension:foobar@developer.mozilla.org:3.0.1"
+                   em:version="3.0.1"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBACfSQGsimyhAaZWe1PnSfmB2lcDdrRDjiUlv3XBgWamp/ApYX62Zmoz2ETwRros+fJrvFaUuKVI8IX8ZGpnyjshVDo9z+XnecL1XM52lEMUEfoXvO/US1zH/wB4ei770Xda0eBp5DDGBJjfs0wfQACXjZjrhkoFuC1RmBwwW5qxs">
+    <em:targetApplication RDF:resource="rdf:#$NA+3b2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$FA+3b2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.*.*.*"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav3a.jar" />
+  <RDF:Description RDF:about="urn:mozilla:extension:pinkpaula@pinktheme.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBABZ9Yyyt72rPVYOyhL40hlaHWFMkWcag3zsWIKqYfiQTyauxjKR4d3JbKzb+NC4bn853stqDlyQp5Mxlg5BuS/0xEFxznZyh4aWXUXeUGbwHqC/cwu4aJ1GhwAxRtYwDQM8344Ukn+gebuioAmpGxwk0qAZmSJFn6AAmrcqzFIUv">
+    <em:updates RDF:resource="rdf:#$BA+3b2"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$BA+3b2">
+    <RDF:li RDF:resource="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.0"/>
+    <RDF:li RDF:resource="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.1"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$NA+3b2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.*.*.*"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav301.jar" />
+  <RDF:Description RDF:about="urn:mozilla:extension:foobar@developer.mozilla.org:3.0.0"
+                   em:version="3.0.0"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAGmd4GKm8hqmKEK/qAEmGxBuwJK/hikAjWyXGDUC7w9Q6lG5KbzhjZFBqR1UPa7BUo17AUmehCSqqRGEauS4pb2yD1uHzyUDrVDSwIggkG6C9tni7ShZ57+Ov0HUFRq7ENFkkVAZeecKu4GGeUOnVkhzaHCbIlj9T1Cx0YagrqMG">
+    <em:targetApplication RDF:resource="rdf:#$FA+3b2"/>
+  </RDF:Description>
 </RDF:RDF>
