@@ -10,6 +10,7 @@
         <RDF:li resource="pinktheme.com:3.0.1"/>
       </RDF:Seq>
     </em:updates>
+  <em:signature>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDNWpTRE2nl13jU10iljnTvC/uZqnxpCEXlXfP/OYtCHMVVzsT0fhQIlXPmwKqIFUH3zh9RiNpiYospZObBEvoudE/5uLkAQcqolYK06/FBn6B9Sr+IZ9tFRKg+zwQ7oalO2NibJjMKA0FSwhLVreWjdnRgXoiOfyWv/q/tFSdhiwIDAQAB</em:signature>
 </RDF:Description>
 
         <RDF:Description about="pinktheme.com:3.0.0">
@@ -35,7 +36,5 @@
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>
-
-
 
 </RDF:RDF>
