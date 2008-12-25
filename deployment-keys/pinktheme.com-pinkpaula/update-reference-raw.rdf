@@ -10,9 +10,7 @@
         <RDF:li resource="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.1"/>
       </RDF:Seq>
     </em:updates>
-    <em:signature>MIGTMA0GCSqGSIb3DQEBDQUAA4GBAAUxD11xRwy3nOFhHZcht30euuFDjusMnzE1z3L/Uo+cL/dlo0DqN15rJnCEcxO2Rt+moaAyQD5O3GhVp2IduCLR5esS5vVUngdlYXnUf6yfEy6nSEuGR+SmAy4FXq5qsd7O0F+YV1AQY6ul7sGdJgk4NDtz/OwabaLX51ziCNlR</em:signature>
 </RDF:Description>
-
 
         <RDF:Description about="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.0">
             <em:version>3.0.0</em:version> 
