@@ -5,26 +5,26 @@
 
   <!-- List all the skins being supplied by this theme -->
   <Seq about="urn:mozilla:skin:root">
-    <li resource="urn:mozilla:skin:pinkskin_3.0.0"/>
+    <li resource="urn:mozilla:skin:pinkpaula_pinktheme"/>
   </Seq>
 
   <!-- classic Information -->
-  <Description about="urn:mozilla:skin:pinkskin_3.0.0"  chrome:name="pinkskin_3.0.0">
+  <Description about="urn:mozilla:skin:pinkpaula_pinktheme"  chrome:name="pinkpaula_pinktheme">
     <chrome:packages>
-      <Seq about="urn:mozilla:skin:pinkskin_3.0.0:packages">
-	<li resource="urn:mozilla:skin:pinkskin_3.0.0:global"/>
-	<li resource="urn:mozilla:skin:pinkskin_3.0.0:browser"/>
-	<li resource="urn:mozilla:skin:pinkskin_3.0.0:mozapps"/>
-	<li resource="urn:mozilla:skin:pinkskin_3.0.0:help"/>
+      <Seq about="urn:mozilla:skin:pinkpaula_pinktheme:packages">
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:global"/>
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:browser"/>
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:mozapps"/>
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:help"/>
       </Seq>
     </chrome:packages>
   </Description>
 
   <!-- Version Information.  State that we work only with major version 1 of this
        package. -->
-  <RDF:Description about="urn:mozilla:skin:pinkskin_3.0.0:global"   chrome:skinVersion="1.5"/>
-  <RDF:Description about="urn:mozilla:skin:pinkskin_3.0.0:browser"  chrome:skinVersion="1.5"/>
-  <RDF:Description about="urn:mozilla:skin:pinkskin_3.0.0:mozapps"  chrome:skinVersion="1.5"/>
-  <RDF:Description about="urn:mozilla:skin:pinkskin_3.0.0:help"     chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:global"   chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:browser"  chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:mozapps"  chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:help"     chrome:skinVersion="1.5"/>
 
 </RDF:RDF>
