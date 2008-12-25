@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:extension:foobar@developer.mozilla.org"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAGgxF0csvCmcbwp3ircj81N3xclRYLokrrrLGX4c9Gvg5WdWoIQlFduyvQjC8fYYhniS6/Ab3ZuY5OgZ4fDeyoDedBN/D5OPsf5z2C22jU7PAbSXIweWll9NJmou5DC+iMGOHkFzzrSnbhg9bMXiXxjQsHXd1yJAlbuS9/UsPDD/">
+    <em:updates RDF:resource="rdf:#$7A+3b2"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$7A+3b2">
+    <RDF:li RDF:resource="rdf:#$8A+3b2"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$bA+3b2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1.*.*"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav3a.jar"
+                   em:updateInfoURL="http://www.pinktheme.com/en/themes/pinkpaula/addoninfo.xhtml" />
+  <RDF:Description RDF:about="rdf:#$8A+3b2"
+                   em:version="3.0.0">
+    <em:targetApplication RDF:resource="rdf:#$bA+3b2"/>
+  </RDF:Description>
+</RDF:RDF>

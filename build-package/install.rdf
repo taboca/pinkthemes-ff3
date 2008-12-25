@@ -1,14 +1,9 @@
 <?xml version="1.0"?>
-
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-
   <Description about="urn:mozilla:install-manifest">
-    <em:id>{075538f3-a7a9-498a-8e0d-12f2e2ff862a}</em:id>
+    <em:id>{2D2C9C94-D29B-11DD-82B1-A0A556D89593}</em:id>
     <em:version>3.0.0</em:version>
-
-    <!-- Target Application this extension can install into,
-         with minimum and maximum supported versions. -->
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -16,15 +11,10 @@
         <em:maxVersion>3.1.*.*</em:maxVersion>
       </Description>
     </em:targetApplication>
-
-    <!-- Front End MetaData -->
     <em:name>Pink Paula / PP 3 </em:name>
     <em:description>Pink Paula Skin. By Marcio Galli. Thanks to Paula Herculano for requirements and inspiration.</em:description>
     <em:creator>www.pinktheme.com</em:creator>
     <em:homepageURL>http://www.pinktheme.com</em:homepageURL>
-
-    <!-- Front End Integration Hooks (used by Theme Manager)-->
     <em:internalName>pinkskin_3.0.0</em:internalName>
   </Description>
-
 </RDF>
