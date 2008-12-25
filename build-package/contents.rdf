@@ -1,23 +1,30 @@
 <?xml version="1.0"?>
+
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+  <!-- List all the skins being supplied by this theme -->
   <Seq about="urn:mozilla:skin:root">
-    <li resource="urn:mozilla:skin:pinkpaula@pinktheme.com"/>
+    <li resource="urn:mozilla:skin:pinkpaula_pinktheme"/>
   </Seq>
-  <Description about="urn:mozilla:skin:pinkpaula@pinktheme.com"  chrome:name="pinkpaula@pinktheme.com">
+
+  <!-- classic Information -->
+  <Description about="urn:mozilla:skin:pinkpaula_pinktheme"  chrome:name="pinkpaula_pinktheme">
     <chrome:packages>
-      <Seq about="urn:mozilla:skin:pinkpaula@pinktheme.com:packages">
-	<li resource="urn:mozilla:skin:pinkpaula@pinktheme.com:global"/>
-	<li resource="urn:mozilla:skin:pinkpaula@pinktheme.com:browser"/>
-	<li resource="urn:mozilla:skin:pinkpaula@pinktheme.com:communicator"/>
-	<li resource="urn:mozilla:skin:pinkpaula@pinktheme.com:mozapps"/>
-	<li resource="urn:mozilla:skin:pinkpaula@pinktheme.com:help"/>
+      <Seq about="urn:mozilla:skin:pinkpaula_pinktheme:packages">
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:global"/>
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:browser"/>
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:mozapps"/>
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:help"/>
       </Seq>
     </chrome:packages>
   </Description>
-  <RDF:Description about="urn:mozilla:skin:pinkpaula@pinktheme.com:global"   chrome:skinVersion="2.0"/>
-  <RDF:Description about="urn:mozilla:skin:pinkpaula@pinktheme.com:browser"  chrome:skinVersion="2.0"/>
-  <RDF:Description about="urn:mozilla:skin:pinkpaula@pinktheme.com:communicator"  chrome:skinVersion="2.0"/>
-  <RDF:Description about="urn:mozilla:skin:pinkpaula@pinktheme.com:mozapps"  chrome:skinVersion="2.0"/>
-  <RDF:Description about="urn:mozilla:skin:pinkpaula@pinktheme.com:help"     chrome:skinVersion="2.0"/>
+
+  <!-- Version Information.  State that we work only with major version 1 of this
+       package. -->
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:global"   chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:browser"  chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:mozapps"  chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:help"     chrome:skinVersion="1.5"/>
+
 </RDF:RDF>
