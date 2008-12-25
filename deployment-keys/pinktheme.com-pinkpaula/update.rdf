@@ -11,11 +11,11 @@
                    em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAMuJeL/PAgdPnfhUZhhpuVt3i8DpFvYuSFGyUlt471TrkfJN0EPNwDr+ygheyZQpITOPN8990zAXX2qhpG/KSD0iG4kJt9XWEyz0yTvjWuC9RZ749Ec20RVVdFZt+9llVBdEjnIk3Crny7gYToE0dNT9r0E6hByvvcvkrxUWuOBt">
     <em:updates RDF:resource="rdf:#$NB+3b2"/>
   </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$YB+3b2"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0"
-                   em:maxVersion="3.1b2"
-                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav301.jar" />
+  <RDF:Description RDF:about="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.1"
+                   em:version="3.0.1"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBADSb61QoVAZKESO96c6ejb3xY72CG84V+U2i1VQBGc96iYqjf67KaENhlFzYywncrReSghj3EGxjFI32AZffBxuWCEN8wGdh4tJwZaxZIyruFY+Ku6A0mAeG+b9caHrWzjYVC7ZPApjlq2A6RCkw8UHskt3rbBryID2ecna/EosK">
+    <em:targetApplication RDF:resource="rdf:#$YB+3b2"/>
+  </RDF:Description>
   <RDF:Description RDF:about="rdf:#$QB+3b2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
@@ -25,9 +25,9 @@
     <RDF:li RDF:resource="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.0"/>
     <RDF:li RDF:resource="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.1"/>
   </RDF:Seq>
-  <RDF:Description RDF:about="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.1"
-                   em:version="3.0.1"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBADSb61QoVAZKESO96c6ejb3xY72CG84V+U2i1VQBGc96iYqjf67KaENhlFzYywncrReSghj3EGxjFI32AZffBxuWCEN8wGdh4tJwZaxZIyruFY+Ku6A0mAeG+b9caHrWzjYVC7ZPApjlq2A6RCkw8UHskt3rbBryID2ecna/EosK">
-    <em:targetApplication RDF:resource="rdf:#$YB+3b2"/>
-  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$YB+3b2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav301.jar" />
 </RDF:RDF>
