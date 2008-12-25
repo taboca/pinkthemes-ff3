@@ -14,7 +14,7 @@
 </RDF:Description>
 
 
-        <RDF:Description about="urn:mozilla:extension:foobar@developer.mozilla.org:3.0.0">
+        <RDF:Description about="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.0">
             <em:version>3.0.0</em:version> 
             <em:targetApplication>
               <RDF:Description>
@@ -27,7 +27,7 @@
             </em:targetApplication>
           </RDF:Description>
 
-       <RDF:Description about="urn:mozilla:extension:foobar@developer.mozilla.org:3.0.1">
+       <RDF:Description about="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.1">
             <em:version>3.0.1</em:version> 
             <em:targetApplication>
               <RDF:Description>
