@@ -1,4 +1,8 @@
 
+== BEFORE you run ANT DISTRIB ==
+
+ Make sure you put the right install.rdf in the build-packages. You can also use signed install.rdf file if you want to deploy your extension with a nice update mechanism. If you are doing this, get your key signed ( with McCoy ). In this project case I am keeping the keys in the ./deployment-keys directory, so make sure you copied the file from ./deployment-keys  .. to the ./build-packages
+
 == TODO ==
 
  * PersonalTooolbar work in browser/browser.css. The icons for the highlight mode. 

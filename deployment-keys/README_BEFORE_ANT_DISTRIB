@@ -1,0 +1,1 @@
+Copy the  ./pinkthenme-projectname/install.rdf file to the ../package directory before you run ant-distrib
