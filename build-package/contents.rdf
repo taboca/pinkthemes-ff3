@@ -22,9 +22,9 @@
 
   <!-- Version Information.  State that we work only with major version 1 of this
        package. -->
-  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:global"   chrome:skinVersion="1.5"/>
-  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:browser"  chrome:skinVersion="1.5"/>
-  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:mozapps"  chrome:skinVersion="1.5"/>
-  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:help"     chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:global"   chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:browser"  chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:mozapps"  chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:help"     chrome:skinVersion="2.0"/>
 
 </RDF:RDF>
