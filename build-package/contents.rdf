@@ -13,6 +13,7 @@
     <chrome:packages>
       <Seq about="urn:mozilla:skin:pinkpaula_pinktheme:packages">
 	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:global"/>
+	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:communicator"/>
 	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:browser"/>
 	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:mozapps"/>
 	<li resource="urn:mozilla:skin:pinkpaula_pinktheme:help"/>
@@ -23,6 +24,7 @@
   <!-- Version Information.  State that we work only with major version 1 of this
        package. -->
   <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:global"   chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:communicator"   chrome:skinVersion="2.0"/>
   <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:browser"  chrome:skinVersion="2.0"/>
   <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:mozapps"  chrome:skinVersion="2.0"/>
   <RDF:Description about="urn:mozilla:skin:pinkpaula_pinktheme:help"     chrome:skinVersion="2.0"/>
