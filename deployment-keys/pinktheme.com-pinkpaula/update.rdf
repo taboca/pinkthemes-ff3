@@ -2,32 +2,32 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$fB+3b2"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0"
-                   em:maxVersion="3.1b2"
-                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav3a.jar" />
-  <RDF:Description RDF:about="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.1"
-                   em:version="3.0.1"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBALheoLNprBBy2/nx0a99EklaBJJiv8I7BuA1CHQRHSdVCz+cxMGuItHvvRmWzE6q7C082d44AIEw5dZFUhk3bATzvfCqqxKO0gEReUAFLJFOW09LFIuQCs4sYBAkLceR1J40d3Ukf8NnxSE7U39zg5aWQprDfdYDaDwOznAIYDNC">
-    <em:targetApplication RDF:resource="rdf:#$nB+3b2"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="urn:mozilla:extension:pinkpaula@pinktheme.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBABWy5EJcMdl+bJwTVkB9uGvUwRE+zS00Q/2BDOXziiz/GSaFceSLl9Sn+ma8L/EKilY8XTbJzy7RAZ19MB07Z2hZsp1YZCcjowQqRyNR0LvvjPAd2ZYXgE5/fH0YyGWq1rAwzkgFurAYXvhsuCl+iIWc/neJ7QvC6ByUUoK49l1G">
-    <em:updates RDF:resource="rdf:#$bB+3b2"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$nB+3b2"
+  <RDF:Description RDF:about="rdf:#$GB+3b2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
                    em:maxVersion="3.1b2"
                    em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav301.jar" />
-  <RDF:Description RDF:about="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.0"
+  <RDF:Description RDF:about="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.0"
                    em:version="3.0.0"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBABxLf9uyPZlIQgba07h/uNMfyeiv5i44rWQe9JdUJPBGUkuQmHDQcQIcC/jHTBr9Pj53m5tIrc7bd2JlsyrvML6d2bWjU+vv9iFnoAW9EhzHtzHJrznv8Fp9MdgN2B5ZlfqlpndQJbbvyh8c0pQ0aKwh948FASfewNPukz8pLOwm">
-    <em:targetApplication RDF:resource="rdf:#$fB+3b2"/>
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBABEDK0O1/INA6uEb8lSllzhpPWPnef2w2L+oD/xsCxlzd+aus7mahip823He+JmD3E6wwrEHWcUoxz9/9C280IsbzJDBOoiwvBiCyyg29+y+FCTrRs1YeQNeJ/0ATEysMZP82QalBzp/dpyHXeyJo+4Xv2BRE7R6iQUcA9ZWTdAm">
+    <em:targetApplication RDF:resource="rdf:#$yB+3b2"/>
   </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$bB+3b2">
-    <RDF:li RDF:resource="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.0"/>
-    <RDF:li RDF:resource="urn:mozilla:extension:pinkpaula@pinktheme.com:3.0.1"/>
+  <RDF:Description RDF:about="urn:mozilla:theme:pinkpaula@pinktheme.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAMuJeL/PAgdPnfhUZhhpuVt3i8DpFvYuSFGyUlt471TrkfJN0EPNwDr+ygheyZQpITOPN8990zAXX2qhpG/KSD0iG4kJt9XWEyz0yTvjWuC9RZ749Ec20RVVdFZt+9llVBdEjnIk3Crny7gYToE0dNT9r0E6hByvvcvkrxUWuOBt">
+    <em:updates RDF:resource="rdf:#$uB+3b2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$yB+3b2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav3a.jar" />
+  <RDF:Seq RDF:about="rdf:#$uB+3b2">
+    <RDF:li RDF:resource="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.0"/>
+    <RDF:li RDF:resource="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.1"/>
   </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.1"
+                   em:version="3.0.1"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBADSb61QoVAZKESO96c6ejb3xY72CG84V+U2i1VQBGc96iYqjf67KaENhlFzYywncrReSghj3EGxjFI32AZffBxuWCEN8wGdh4tJwZaxZIyruFY+Ku6A0mAeG+b9caHrWzjYVC7ZPApjlq2A6RCkw8UHskt3rbBryID2ecna/EosK">
+    <em:targetApplication RDF:resource="rdf:#$GB+3b2"/>
+  </RDF:Description>
 </RDF:RDF>
