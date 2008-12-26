@@ -1,7 +1,9 @@
 
 == BEFORE you run ANT DISTRIB ==
 
- Make sure you put the right install.rdf in the build-packages. You can also use signed install.rdf file if you want to deploy your extension with a nice update mechanism. If you are doing this, get your key signed ( with McCoy ). In this project case I am keeping the keys in the ./deployment-keys directory, so make sure you copied the file from ./deployment-keys  .. to the ./build-packages
+ * keep the install.rdf and contents.rdf files in build-package
+ * Notice that if you are hosting your extensions with the security ( keys and signature ) mechanism, you will need to edit the install.rdf with the keys in it.  
+ * This build system has the ./deployment-keys directorg with examples of install.rdf and update.rdf file 
 
 == TODO ==
 
