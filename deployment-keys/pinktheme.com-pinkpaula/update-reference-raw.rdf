@@ -6,15 +6,14 @@
 <RDF:Description about="urn:mozilla:theme:pinkpaula@pinktheme.com">
     <em:updates>
       <RDF:Seq>
-        <RDF:li resource="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.0"/>
-        <RDF:li resource="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.1"/>
+        <RDF:li resource="pinktheme.com:3.0.0"/>
+        <RDF:li resource="pinktheme.com:3.0.1"/>
       </RDF:Seq>
     </em:updates>
-    <em:signature>MIGTMA0GCSqGSIb3DQEBDQUAA4GBAAUxD11xRwy3nOFhHZcht30euuFDjusMnzE1z3L/Uo+cL/dlo0DqN15rJnCEcxO2Rt+moaAyQD5O3GhVp2IduCLR5esS5vVUngdlYXnUf6yfEy6nSEuGR+SmAy4FXq5qsd7O0F+YV1AQY6ul7sGdJgk4NDtz/OwabaLX51ziCNlR</em:signature>
+  <em:signature>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDNWpTRE2nl13jU10iljnTvC/uZqnxpCEXlXfP/OYtCHMVVzsT0fhQIlXPmwKqIFUH3zh9RiNpiYospZObBEvoudE/5uLkAQcqolYK06/FBn6B9Sr+IZ9tFRKg+zwQ7oalO2NibJjMKA0FSwhLVreWjdnRgXoiOfyWv/q/tFSdhiwIDAQAB</em:signature>
 </RDF:Description>
 
-
-        <RDF:Description about="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.0">
+        <RDF:Description about="pinktheme.com:3.0.0">
             <em:version>3.0.0</em:version> 
             <em:targetApplication>
               <RDF:Description>
@@ -22,12 +21,11 @@
                 <em:minVersion>3.0</em:minVersion>
                 <em:maxVersion>3.1b2</em:maxVersion>
                 <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav3a.jar</em:updateLink>
-                <em:updateInfoURL></em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>
 
-       <RDF:Description about="urn:mozilla:theme:pinkpaula@pinktheme.com:3.0.1">
+       <RDF:Description about="pinktheme.com:3.0.1">
             <em:version>3.0.1</em:version> 
             <em:targetApplication>
               <RDF:Description>
@@ -35,11 +33,8 @@
                 <em:minVersion>3.0</em:minVersion>
                 <em:maxVersion>3.1b2</em:maxVersion>
                 <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav301.jar</em:updateLink>
-                <em:updateInfoURL></em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>
-
-
 
 </RDF:RDF>
