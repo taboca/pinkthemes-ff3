@@ -47,6 +47,15 @@
 	    </fileset>
       </rasterize>
 
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/browser/urlbar">
+	    <fileset dir="src/theme/svg/src/browser/urlbar">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/browser/preferences">

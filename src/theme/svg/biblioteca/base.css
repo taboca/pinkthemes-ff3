@@ -12,6 +12,12 @@
   fill:none;
 } 
 
+.urlbar-outer { 
+  stroke: white; 
+  stroke-width:1; 
+  fill:none;
+} 
+
 .tab-from-color { 
    stop-color: rgb(250,190,240); 
    stop-opacity: 1;
@@ -105,4 +111,16 @@
         stop-color:rgb(240,184,232);
         stop-opacity:1;
 }
+
+
+.urlbarstart-from-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1
+}
+.urlbarstart-to-color {
+        stop-color:rgb(240,184,232);
+        stop-opacity:1;
+}
+
+
 
