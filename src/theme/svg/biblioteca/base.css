@@ -1,3 +1,11 @@
+
+/* Color table
+
+  standard light - 240,190,240
+  white - 255,255,255 
+  
+*/
+
 /* Check the global CSS background color via rgb values in global.css */
 
 .tab-outer2 { 
@@ -112,6 +120,7 @@
         stop-opacity:1;
 }
 
+/* Standard urlbar - notice this is called urlbarstart but refers to urlbar entirelly */
 
 .urlbarstart-from-color {
         stop-color:rgb(255,255,255);
@@ -122,5 +131,47 @@
         stop-opacity:1;
 }
 
+/* Urlbar focused */
+
+.urlbar-focused-top-color {
+        stop-color:rgb(250,190,240);
+        stop-opacity:1;
+}
+.urlbar-focused-bottom-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1
+}
 
 
+
+
+/* Urlbar active */ 
+
+.urlbar-active-top-color {
+        stop-color:rgb(255,124,242);
+        stop-opacity:1;
+}
+.urlbar-active-bottom-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1
+}
+
+/* Urlbar secure */
+
+.urlbarstart-secure-top-color {
+        stop-color:rgb(184,184,232);
+        stop-opacity:1
+}
+.urlbarstart-secure-bottom-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1;
+}
+
+.urlbarstart-verified-top-color {
+        stop-color:rgb(184,255,184);
+        stop-opacity:1
+}
+.urlbarstart-verified-bottom-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1;
+}
