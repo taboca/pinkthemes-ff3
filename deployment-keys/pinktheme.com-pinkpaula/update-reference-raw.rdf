@@ -9,6 +9,7 @@
         <RDF:li resource="pinktheme.com:3.0.0"/>
         <RDF:li resource="pinktheme.com:3.0.1"/>
         <RDF:li resource="pinktheme.com:3.0.2"/>
+        <RDF:li resource="pinktheme.com:3.0.3"/>
       </RDF:Seq>
     </em:updates>
 </RDF:Description>
@@ -48,6 +49,20 @@
                 <em:maxVersion>3.1b2</em:maxVersion>
                 <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav302.jar</em:updateLink>
           <em:updateHash>sha1:3a08102585bd6764b33fc035b24adca9b446dec5</em:updateHash>
+
+              </RDF:Description>
+            </em:targetApplication>
+          </RDF:Description>
+
+      <RDF:Description about="pinktheme.com:3.0.3">
+            <em:version>3.0.3</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>3.0</em:minVersion>
+                <em:maxVersion>3.1b2</em:maxVersion>
+                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav303.jar</em:updateLink>
+          <em:updateHash>sha1:5df63998fc66f9d9260c36dff655b8125ce7b3e3</em:updateHash>
 
               </RDF:Description>
             </em:targetApplication>
