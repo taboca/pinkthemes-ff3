@@ -100,7 +100,7 @@ marcio  FIXME
 #main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-middle,
 #main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-closebutton,
 #main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-close-button {
-  background-image: url("chrome://browser/skin/tabbrowser/tab-middle-inactive.png");
+  background: url("chrome://browser/skin/tabbrowser/tab-middle-inactive.png") repeat-x;
 }
 
 #main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-left,
@@ -1732,10 +1732,14 @@ marcio
   background: url("chrome://browser/skin/tabbrowser/tab-left-bkgnd.png") no-repeat;
 }
 
+/* check this marcio */
+/*
+
+*/
 .tabbrowser-tab > .tab-image-middle,
 .tabbrowser-tab > .tab-closebutton {
-  background: url("chrome://browser/skin/tabbrowser/tab-middle.png") repeat-x;
   -moz-box-pack: center;
+  background: url("chrome://browser/skin/tabbrowser/tab-middle.png") repeat-x;
 }
 
 .tabbrowser-tab:not([selected="true"]) > .tab-image-middle,
