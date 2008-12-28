@@ -2,40 +2,51 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="pinktheme.com:3.0.1"
-                   em:version="3.0.1">
-    <em:targetApplication RDF:resource="rdf:#$9wVLz3"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="pinktheme.com:3.0.0"
-                   em:version="3.0.0">
-    <em:targetApplication RDF:resource="rdf:#$2wVLz3"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$9wVLz3"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0"
-                   em:maxVersion="3.1b2"
-                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav301.jar"
-                   em:updateHash="sha1:933b1540a1d5576fccbbc9cefbacb9e649cdf30d" />
-  <RDF:Seq RDF:about="rdf:#$+vVLz3">
-    <RDF:li RDF:resource="pinktheme.com:3.0.0"/>
-    <RDF:li RDF:resource="pinktheme.com:3.0.1"/>
-    <RDF:li RDF:resource="pinktheme.com:3.0.2"/>
-  </RDF:Seq>
-  <RDF:Description RDF:about="rdf:#$hwVLz3"
+  <RDF:Description RDF:about="rdf:#$CEtZd2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
                    em:maxVersion="3.1b2"
                    em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav302.jar"
                    em:updateHash="sha1:3a08102585bd6764b33fc035b24adca9b446dec5" />
-  <RDF:Description RDF:about="urn:mozilla:theme:pinkpaula@pinktheme.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAFGaJclboULJOlPIMnMaMMcm9LPdw0PeIp4nhYKKZo9VcNhKparwyGTIEw3AXquFiQOtQjv8Svif6k0ANfIVnwucVcP3PISKmGUHdK+qetOuezLGodzTQcuKJKE0ypk8wiACcOJ+2YwInX5WoQHmdG8GJD/ihLwz2MuVYVSMVUjx">
-    <em:updates RDF:resource="rdf:#$+vVLz3"/>
+  <RDF:Description RDF:about="pinktheme.com:3.0.3"
+                   em:version="3.0.3">
+    <em:targetApplication RDF:resource="rdf:#$KEtZd2"/>
   </RDF:Description>
   <RDF:Description RDF:about="pinktheme.com:3.0.2"
                    em:version="3.0.2">
-    <em:targetApplication RDF:resource="rdf:#$hwVLz3"/>
+    <em:targetApplication RDF:resource="rdf:#$CEtZd2"/>
   </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$2wVLz3"
+  <RDF:Description RDF:about="rdf:#$uEtZd2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav301.jar"
+                   em:updateHash="sha1:933b1540a1d5576fccbbc9cefbacb9e649cdf30d" />
+  <RDF:Description RDF:about="urn:mozilla:theme:pinkpaula@pinktheme.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAAoT3nV2yu2RIBqaMZGLbuT8eNgFn76U5U6xwHBvniD+iw6DgWmij9H1ONqvTdaFm34C9lgUe/+2H3HvtZd72l5mUK7oLe+RXByIxIDX6l/616GPNzjaR6ZuXgqPaffKoI5TY7tnHCAScTGlESKnRkUdWpHI5cpiAB6pY1BdBLqt">
+    <em:updates RDF:resource="rdf:#$kEtZd2"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$kEtZd2">
+    <RDF:li RDF:resource="pinktheme.com:3.0.0"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.1"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.2"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.3"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="pinktheme.com:3.0.1"
+                   em:version="3.0.1">
+    <em:targetApplication RDF:resource="rdf:#$uEtZd2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$KEtZd2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav303.jar"
+                   em:updateHash="sha1:5df63998fc66f9d9260c36dff655b8125ce7b3e3" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.0"
+                   em:version="3.0.0">
+    <em:targetApplication RDF:resource="rdf:#$nEtZd2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$nEtZd2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
                    em:maxVersion="3.1b2"
