@@ -54,6 +54,30 @@
  	stop-opacity:1; 
 } 
 
+/* Browserr find bar */
+
+.findbar-from-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1
+}
+.findbar-to-color {
+        stop-color:rgb(250,190,240);
+        stop-opacity:1;
+}
+
+.findbar-button-from-color {
+        stop-color:rgb(195,165,185);
+        stop-opacity:1
+}
+.findbar-button-to-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1;
+}
+
+
+
+
+/* Other toolbar */
 
 .toolbar-inactive-from-color {
         stop-color:rgb(210,210,210);

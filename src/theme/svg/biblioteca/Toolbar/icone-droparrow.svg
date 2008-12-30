@@ -19,7 +19,7 @@
    id="svg2079"
    sodipodi:version="0.32"
    inkscape:version="0.46"
-   sodipodi:docname="icone-back.svg"
+   sodipodi:docname="icone-droparrow.svg"
    sodipodi:docbase="C:\home\ivaldo-skin\trunk-pink\src\theme\svg\biblioteca\Toolbar"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <metadata
@@ -45,9 +45,9 @@
      bordercolor="#666666"
      pagecolor="#ffffff"
      id="base"
-     inkscape:zoom="0.55232645"
-     inkscape:cx="6.9695295"
-     inkscape:cy="71.045736"
+     inkscape:zoom="0.78110756"
+     inkscape:cx="249.7009"
+     inkscape:cy="218.08611"
      inkscape:window-x="185"
      inkscape:window-y="25"
      inkscape:current-layer="svg2079"
@@ -56,6 +56,18 @@
      showgrid="false" />
   <defs
      id="defs2081">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3226">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3228" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3230" />
+    </linearGradient>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 200 : 1"
@@ -370,6 +382,17 @@
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
+       xlink:href="#linearGradient6065"
+       id="radialGradient6063"
+       cx="204.84375"
+       cy="193.64217"
+       fx="204.84375"
+       fy="193.64217"
+       r="121.625"
+       gradientTransform="matrix(1,-1.052607e-2,8.379972e-3,0.796116,-18.26571,39.79034)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
        xlink:href="#radial0"
        id="radialGradient6083"
        cx="229.8019"
@@ -440,37 +463,28 @@
        y2="248.82129"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0,12.67366)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3744"
+       id="linearGradient8502"
+       gradientUnits="userSpaceOnUse"
+       x1="145.74715"
+       y1="103.97942"
+       x2="159.7787"
+       y2="156.48459" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3226"
+       id="linearGradient3232"
+       x1="222.69437"
+       y1="84.968895"
+       x2="222.69438"
+       y2="136.11621"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(306.88373,47.07361)" />
   </defs>
   <path
-     transform="matrix(0,-0.7102358,0.7102358,0,94.89901,-9.0344785)"
-     d="M -152.88244,259.70389 L -298.73636,259.7039 L -444.59028,259.70389 L -371.66333,133.39068 L -298.73636,7.0774841 L -225.80939,133.39068 L -152.88244,259.70389 z"
-     inkscape:randomized="0"
-     inkscape:rounded="0"
-     inkscape:flatsided="false"
-     sodipodi:arg2="1.5707963"
-     sodipodi:arg1="0.52359878"
-     sodipodi:r2="84.208809"
-     sodipodi:r1="168.4176"
-     sodipodi:cy="175.49509"
-     sodipodi:cx="-298.73636"
-     sodipodi:sides="3"
-     id="path3244"
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:22;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     sodipodi:type="star" />
-  <path
-     sodipodi:type="star"
-     style="opacity:1;fill:#0bff00;fill-opacity:1;stroke:none;stroke-width:22;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3219"
-     sodipodi:sides="3"
-     sodipodi:cx="-298.73636"
-     sodipodi:cy="175.49509"
-     sodipodi:r1="168.4176"
-     sodipodi:r2="84.208809"
-     sodipodi:arg1="0.52359878"
-     sodipodi:arg2="1.5707963"
-     inkscape:flatsided="false"
-     inkscape:rounded="0"
-     inkscape:randomized="0"
-     d="M -152.88244,259.70389 L -298.73636,259.7039 L -444.59028,259.70389 L -371.66333,133.39068 L -298.73636,7.0774841 L -225.80939,133.39068 L -152.88244,259.70389 z"
-     transform="matrix(0,-0.5335007,0.5335007,0,126.49483,43.762745)" />
+     style="opacity:1;fill:#000080;fill-opacity:1;stroke:none;stroke-width:22;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 158.66312,175.9497 C 157.232,178.23668 157.64571,181.44155 159.81634,183.61217 L 196.8473,220.64313 C 199.3386,223.13443 203.18736,223.29814 205.45796,221.02753 L 243.28335,183.20213 C 245.17452,181.31097 245.37746,178.33076 243.94966,175.9497 L 158.66312,175.9497 z"
+     id="rect2458" />
 </svg>

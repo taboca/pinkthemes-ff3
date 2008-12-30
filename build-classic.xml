@@ -91,6 +91,8 @@
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
+
+<!--
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/global/icons">
@@ -98,8 +100,6 @@
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
-
-<!--
        
       <rasterize  
 	    result="image/png"

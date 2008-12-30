@@ -3,8 +3,8 @@
 /* ::::: find toolbar ::::: */
 
 findbar {
-  background: url("chrome://global/skin/icons/find-bar-background.png") repeat-x top center #D0D0D0;
-  border-top: 1px solid #686868;
+  background: url("chrome://global/skin/icons/find-bar-background.png") repeat-x top center transparent;
+  border-top: 1px solid rgb(225,205,220);
   border-bottom: none;
   min-width: 1px;
 }
@@ -34,13 +34,20 @@ findbar {
   list-style-image: url("chrome://global/skin/icons/closetab-active.png") !important;
 }
 
+
+/* marcio 
+
+  background: url("chrome://global/skin/icons/white-gray-gradient.gif") #A09E9D repeat-x top center;
+  
+*/
+
 .findbar-find-next,
 .findbar-find-previous,
 .findbar-highlight {
   -moz-appearance: none;
-  border: 1px solid #5F5F5F;
+  border: 1px solid rgb(210,150,190);
   -moz-border-radius: 10px;
-  background: url("chrome://global/skin/icons/white-gray-gradient.gif") #A09E9D repeat-x top center;
+  background: url("chrome://global/skin/icons/white-color-gradient.png") transparent repeat-x top center;
   margin: 0 4px 1px 4px;
   padding: 0 3px;
 }
@@ -52,13 +59,18 @@ findbar {
 
 .findbar-container > toolbarbutton[disabled],
 .findbar-container > hbox > toolbarbutton[disabled] {
-  border-color: #8F8F8F !important;
+  border-color: rgb(210,150,190) !important;
   color: graytext;
 }
 
+/* marcio
+
+  background-image: url("chrome://global/skin/icons/white-gray-gradient-active.gif");
+*/
+
 .findbar-container > toolbarbutton:not([disabled]):hover:active,
 .findbar-container > hbox > toolbarbutton:not([disabled]):hover:active {
-  background-image: url("chrome://global/skin/icons/white-gray-gradient-active.gif");
+  background-image: url("chrome://global/skin/icons/white-color-gradient-active.png");
 }
 
 
@@ -109,7 +121,7 @@ findbar {
   -moz-binding: url("chrome://global/content/bindings/findbar.xml#findbar-textbox");
   -moz-appearance: none;
   border: 3px solid;
-  -moz-border-top-colors: #5F5F5F #CFCFCF -moz-Field;
+  -moz-border-top-colors: rgb(210,150,190) #CFCFCF -moz-Field;
   -moz-border-bottom-colors: #9F9F9F #EEE -moz-Field;
   -moz-border-right-colors: #7F7F7F #EEE -moz-Field;
   -moz-border-left-colors: #7F7F7F #EFEFEF -moz-Field;
@@ -127,7 +139,7 @@ findbar {
 }
 
 findbar[flash="true"] > .findbar-container > .find-field-container > .findbar-textbox {
-  -moz-border-top-colors: #5F5F5F #F7E379 #F7E379;
+  -moz-border-top-colors: rgb(210,150,190) #F7E379 #F7E379;
   -moz-border-bottom-colors: #9F9F9F #F7E379 #F7E379;
   -moz-border-right-colors: #7F7F7F #F7E379 #F7E379;
   -moz-border-left-colors: #7F7F7F #F7E379 #F7E379;
@@ -135,7 +147,7 @@ findbar[flash="true"] > .findbar-container > .find-field-container > .findbar-te
 }
 
 .findbar-textbox[status="notfound"] {
-  -moz-border-top-colors: #5F5F5F #FD919B #FD919B;
+  -moz-border-top-colors: rgb(210,150,190) #FD919B #FD919B;
   -moz-border-bottom-colors: #9F9F9F #FD919B #FD919B;
   -moz-border-right-colors: #7F7F7F #FD919B #FD919B;
   -moz-border-left-colors: #7F7F7F #FD919B #FD919B;

@@ -1,5 +1,6 @@
 #downloadView {
   -moz-appearance: none;
+  background-color:red;
   margin: 0;
   padding: 0;
   border-width: 0;
