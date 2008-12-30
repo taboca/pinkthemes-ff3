@@ -171,7 +171,7 @@ iframe {
 /* marcio background: url("chrome://global/skin/statusbar-background.gif") #949393 repeat-x top left;
 */
 statusbar {
-  border-top: 1px solid #505050 !important;
+  border-top: 1px solid rgb(210,150,190) !important;
   
   min-width: 1px; /* DON'T DELETE!
   Prevents hiding of scrollbars in browser when window is made smaller.*/
