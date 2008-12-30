@@ -93,7 +93,123 @@
 <image x="216" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
 <image x="216" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-history.svg"> </image>
 
-<!--  Integrated button --> 
+<image x="216" y="72" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-activated.svg"> </image>
+<image x="216" y="72" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-history.svg"> </image>
+
+<image x="216" y="96" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-activated.svg"> </image>
+<image x="216" y="96" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-history.svg"> </image>
+
+
+<!-- Bookmarks button -->
+
+<image x="252" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="252" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+
+<g opacity=".5">
+<image x="252" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="252" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+</g>
+
+<image x="252" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="252" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+
+<image x="252" y="72" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-activated.svg"> </image>
+<image x="252" y="72" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+
+<image x="252" y="96" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-activated.svg"> </image>
+<image x="252" y="96" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+
+<!-- printer --> 
+
+<image x="288" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="288" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-printer.svg"> </image>
+
+<g opacity=".5">
+<image x="288" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="288" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-printer.svg"> </image>
+</g>
+
+<image x="288" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="288" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-printer.svg"> </image>
+
+
+<!-- new tab --> 
+
+
+<image x="324" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="324" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newtab.svg"> </image>
+
+<g opacity=".5">
+<image x="324" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="324" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newtab.svg"> </image>
+</g>
+
+<image x="324" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="324" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newtab.svg"> </image>
+
+
+<!-- new window --> 
+
+<image x="360" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="360" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newwindow.svg"> </image>
+
+<g opacity=".5">
+<image x="360" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="360" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newwindow.svg"> </image>
+</g>
+
+<image x="360" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="360" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newwindow.svg"> </image>
+
+
+<!-- cut --> 
+
+
+<image x="396" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="396" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-cut.svg"> </image>
+
+<g opacity=".5">
+<image x="396" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="396" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-cut.svg"> </image>
+</g>
+
+<image x="396" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="396" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-cut.svg"> </image>
+
+
+<!-- copy --> 
+
+
+<image x="432" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="432" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-copy.svg"> </image>
+
+<g opacity=".5">
+<image x="432" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="432" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-copy.svg"> </image>
+</g>
+
+<image x="432" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="432" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-copy.svg"> </image>
+
+<!-- paste --> 
+
+
+<image x="468" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="468" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-paste.svg"> </image>
+
+<g opacity=".5">
+<image x="468" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
+<image x="468" y="24" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-paste.svg"> </image>
+</g>
+
+<image x="468" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="468" y="48" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-paste.svg"> </image>
+
+
+
+
+
+
 
 <!--  Integrated button --> 
 
