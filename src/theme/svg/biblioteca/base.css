@@ -1,7 +1,8 @@
 
 /* Color table
 
-  standard light - 240,190,240
+  standard light - 250,190,240
+  standard up  -255,210,250
   white - 255,255,255 
   
 */
@@ -74,6 +75,20 @@
         stop-opacity:1;
 }
 
+/* button general */
+
+.button-from-color {
+        stop-color:rgb(255,210,250);
+        stop-opacity:1
+}
+.button-to-color {
+        stop-color:rgb(250,190,240);
+        stop-opacity:1;
+}
+.button-focused-color {
+        stop-color:rgb(255,230,255);
+        stop-opacity:1;
+}
 
 
 

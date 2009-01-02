@@ -16,7 +16,7 @@
  *
  * The Initial Developer of the Original Code is
  * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -37,60 +37,95 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-/* ===== popup.css ===================================================
-  == Styles used by the XUL popup element.
+/* ===== button.css =====================================================
+  == Styles used by the XUL button element.
   ======================================================================= */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* ::::: menupopup ::::: */
+/* :::::::::: button :::::::::: */
 
-/*  marcio
 
-*/ 
-menupopup,
-popup,
-panel {
-   background: rgb(250,190,240) url(chrome://global/skin/popup-bg.png) 0 0;   
-   border-top:1px solid white; 
-   border-left:1px solid white; 
-   border-right:1px solid #ccc; 
-   border-bottom:1px solid #ccc;
-   background-color:rgb(250,190,240) !important;
+/* 
+
+ marcio
+
+  -moz-appearance: button;
+
+*/
+
+button {
+
+  margin: 6px;
+  padding: 0 9px;
+  min-width: 79px;
+  min-height: 22px;
+  color: ButtonText;
+
+  border:1px solid;
+  -moz-border-top-colors: #dedede #dedede #dadada ;
+  -moz-border-left-colors: #dedede #dedede #dadada;
+  -moz-border-bottom-colors: #bebebe #bebebe #bababa;
+  -moz-border-right-colors: #bebebe #bebebe #bababa;
+  -moz-border-radius:10px;
+
+  background: #eeeeee url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+
 }
 
-/* ::::: popup internal box ::::: */
+button:active { 
+border:10px;
+ 	background-color:white;
+} 
+button:hover:active { 
+border:10px;
+ 	background-color:red;
+} 
 
-.popup-internal-box {
-        -moz-appearance: none;
-	padding: 4px 0px 4px 0px !important;
+button[disabled="true"] { 
+  background: white url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+} 
+
+
+.button-text {
+  margin: 0 2px 0 3px !important;
+  text-align: center;
 }
 
-/* ::::: tooltip ::::: */
-
-tooltip {
-  -moz-appearance: tooltip;
-  margin-top: 18px;
-  padding: 2px 3px;
-  max-width: 40em;
-  color: InfoText;
-  font: message-box;
+.button-icon {
+  margin-left: 1px;
 }
 
-.tooltip-label {
-  margin: 0px !important;
+button[type="default"] {
+  font: menu;
 }
 
-tooltip[titletip="true"] {
- /* See bug 32157 comment 128
-  * margin: -2px 0px 0px -3px;
-  */
-  max-width: none;
+/* .......... disabled state .......... */
+
+button[disabled="true"] {
+  color: #777777 !important;
 }
 
-/* rules for popups associated with menulists */
+/* ::::: menu/menu-button buttons ::::: */
 
-menulist > menupopup,
-.menulist-menupopup {
-  min-width: 0px;
+button[type="menu-button"] {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  margin: 0;
+  border: none;
+}
+
+.button-menu-dropmarker,
+.button-menubutton-dropmarker {
+  -moz-appearance: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  margin: 1px;
+}
+
+/* ::::: plain buttons ::::: */
+
+button.plain {
+  margin: 0 !important;
+  padding: 0 !important;
 }

@@ -20,6 +20,7 @@
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
  *   Kevin Gerich (webmail@kmgerich.com)
  *
  * Alternatively, the contents of this file may be used under the terms of
@@ -36,264 +37,95 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-/* ===== global.css =====================================================
-  == Styles that apply everywhere.
+/* ===== button.css =====================================================
+  == Styles used by the XUL button element.
   ======================================================================= */
-
-/* all localizable skin settings shall live here */
-@import url("chrome://global/locale/intl.css");
-
-@import url("chrome://global/skin/formatting.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-button[dlgtype="help"] {
-	min-width: 1px !important;
-	padding: 0px 0px 0px 0px !important;
-	-moz-appearance: none;
-	-moz-box-align: start !important;
-	height: 24px;
-	width: 24px;
-	margin: 4px;
-}
+/* :::::::::: button :::::::::: */
 
-button[dlgtype="help"][disabled] {
-  opacity: 0.5;
-}
 
-button[dlgtype="help"]:focus {
-  outline: 2px solid -moz-mac-focusring;
-  outline-offset: -2px;
-  -moz-outline-radius: 100%;
-}
+/* 
 
-button[dlgtype="help"] > .button-box > .button-icon {
-  list-style-image: url("chrome://global/skin/icons/question-mark.png");
-  -moz-image-region: rect(0 24px 24px 0); 
-  padding: 0 !important;
-  margin: 0 !important;
-}
+ marcio
 
-button[dlgtype="help"]:active > .button-box > .button-icon {
-  -moz-image-region: rect(0 48px 24px 24px); 
-}
+  -moz-appearance: button;
 
-button[dlgtype="help"] > .button-box > .button-text {
-  display: none !important;
-}
-/* ::::: XBL bindings ::::: */
-
-menulist > menupopup,
-.menulist-menupopup {
-  -moz-binding: url("chrome://global/content/bindings/popup.xml#popup-scrollbars");
-}
-
-.menulist-compact {
-  -moz-binding: url("chrome://global/content/bindings/menulist.xml#menulist-compact");
-}
-
-progressmeter[mode="undetermined"] {
-  -moz-binding: url("chrome://global/content/bindings/progressmeter.xml#progressmeter-periodic-redraw");
-}
-
-/* ::::: root elements ::::: */
-/* marcio background-color: #FFFFFF;
-  -moz-appearance: dialog; 
 */
 
-window,
-page,
-dialog,
-wizard,
-prefwindow { 
-  -moz-appearance: none;
-  background-color: rgb(250,190,240);
-  color: -moz-DialogText;
-  font: message-box;
+button {
+
+  margin: 6px;
+  padding: 0 9px;
+  min-width: 79px;
+  min-height: 22px;
+  color: ButtonText;
+
+  border:1px solid;
+  -moz-border-top-colors: rgb(255,230,255) rgb(255,230,255) rgb(255,220,247) ;
+  -moz-border-left-colors: rgb(255,230,255) rgb(255,230,255) rgb(255,220,247);
+  -moz-border-bottom-colors: rgb(125,90,120) rgb(125,90,120) rgb(200,150,195);
+  -moz-border-right-colors: rgb(125,90,120) rgb(125,90,120) rgb(200,150,195);
+  -moz-border-radius:10px;
+
+  background: rgb(250,190,240) url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+
 }
 
-prefwindow {
-  font: -moz-dialog;
-}
+/* marcio review -- take it from the -ref . css */
 
-prefwindow .paneSelector {
-  font: message-box;
-}
-prefwindow[type="child"] {
-  padding: 18px 20px 15px 18px !important;
+button:focus {
+  background: rgb(250,190,240) url("chrome://global/skin/icons/button-bg-focused.png") repeat-x 0 0;
 }
 
 
-/* deprecated */
-window.dialog { 
-  padding: 8px 10px 10px 8px;
+button:hover:active,
+button[open="true"],
+button[checked="true"] {
+  background: white url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
 }
 
-[wait-cursor] { 
-  cursor: wait !important; 
+
+.button-text {
+  margin: 0 2px 0 3px !important;
+  text-align: center;
 }
 
-/* ::::: alert icons :::::*/
-
-.message-icon,
-.alert-icon,
-.error-icon,
-.question-icon {
-  width: 64px;
-  height: 64px;
-  list-style-image: url("chrome://global/skin/icons/information-64.png");
-  margin: 6px 20px 6px 6px !important;
+.button-icon {
+  margin-left: 1px;
 }
 
-.alert-icon {
-  list-style-image: url("chrome://global/skin/icons/warning-64.png");
+button[type="default"] {
+  font: menu;
 }
 
-.error-icon {
-  list-style-image: url("chrome://global/skin/icons/error-64.png");
+/* .......... disabled state .......... */
+
+button[disabled="true"] {
+  color: #777777 !important;
 }
 
-.question-icon {
-  list-style-image: url("chrome://global/skin/icons/question-64.png");
-}
+/* ::::: menu/menu-button buttons ::::: */
 
-/* ::::: iframe ::::: */
-
-iframe {
-  border: none;
-  width: 100px;
-  height: 100px;
-  min-width: 10px;
-  min-height: 10px;
-}
-
-/* ::::: statusbar ::::: */
-/* marcio background: url("chrome://global/skin/statusbar-background.gif") #949393 repeat-x top left;
-*/
-statusbar {
-  border-top: 1px solid rgb(210,150,190) !important;
-  
-  min-width: 1px; /* DON'T DELETE!
-  Prevents hiding of scrollbars in browser when window is made smaller.*/
-  min-height: 15px !important;
-  background: url("chrome://global/skin/statusbar-background.png") transparent repeat-x top left;
-  margin: 0px !important;
-  padding: 0px 16px 1px 1px;
-  -moz-appearance: none;
-}
-
-statusbarpanel {
+button[type="menu-button"] {
   -moz-box-align: center;
   -moz-box-pack: center;
-  padding: 0 4px;
-}
-
-.statusbarpanel-iconic {
-  padding: 0px;
-}    
-
-/* ::::: miscellaneous ::::: */
-
-.toolbar-focustarget {
-  -moz-user-focus: ignore !important;
-}
-
-#info.icon {
-	margin-right: 14px;
-}
-
-#commonDialog {
-	line-height: 13px;
-}
-
-#commonDialog #infoContainer {
-	max-width: 33em !important;
-}
-
-#header {
-	display: none !important;
-}
-
-#warn1 {
-	font: menu;
-	font-weight: bold;
-	line-height: 16pt;
-	padding-bottom: 10px;
-}
-
-#ok, #cancel, #launch, #reveal, #pauseResume {
-	font: menu !important;
-}
-
-.message-icon {
-	display: none !important;
-}
-
-#panelFrame {
-	margin-top: 2px;
-	padding-left: 10px;
-}
-
-description {
-	margin-bottom: 4px;
-}
-
-browser {
-    margin: 0px;
-    padding: 0px;
-    background-color: #FFFFFF;
-}
-
-/* miscellaneous stuff */
-
-#OCSPDialog {
-  font: message-box;
-}
-
-#historyTree, #bookmarks-view {
-	border-top: 1px solid #bebebe;
-}
-
-/* notification bar buttons */
-
-notification > button {
-	-moz-appearance: none;
-  background: url("chrome://global/skin/icons/white-gray-gradient.gif") transparent repeat-x center center;
-  -moz-background-clip: padding;
-  border: 1px solid;
-  border-bottom-width: 2px;
-  -moz-border-radius: 10px;
-  -moz-border-top-colors: rgba(0,0,0,0.5);
-  -moz-border-right-colors: rgba(0,0,0,0.5);
-  -moz-border-bottom-colors: rgba(255,255,255,0.35) rgba(0,0,0,0.5);
-  -moz-border-left-colors: rgba(0,0,0,0.5);
-  padding: 0 5px;
-  min-width: 79px;
-  min-height: 17px;
-}
-
-notification > button:hover:active {
-  background-image: url("chrome://global/skin/icons/white-gray-gradient-active.gif");
-}
-
-/* :::::: autoscroll popup ::::: */
-
-#autoscroller {
-  height: 28px;
-  width: 28px;
+  margin: 0;
   border: none;
-  margin: -14px;
-  padding: 0;
-  background-image: url("chrome://global/skin/icons/autoscroll.png");
-  background-color: transparent;
-  background-position: right top;
-  -moz-appearance: none;
 }
 
-#autoscroller[scrolldir="NS"] {
-  background-position: right center;
+.button-menu-dropmarker,
+.button-menubutton-dropmarker {
+  -moz-appearance: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  margin: 1px;
 }
 
-#autoscroller[scrolldir="EW"] {
-  background-position: right bottom;
+/* ::::: plain buttons ::::: */
+
+button.plain {
+  margin: 0 !important;
+  padding: 0 !important;
 }

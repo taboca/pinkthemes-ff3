@@ -45,16 +45,47 @@
 
 /* :::::::::: button :::::::::: */
 
-button {
+
+/* 
+
+ marcio
+
   -moz-appearance: button;
-  /* The margin used here come from the Aqua Human Interface Guidelines,
-     there should be 12 pixels between two buttons. */
+
+*/
+
+button {
+
   margin: 6px;
   padding: 0 9px;
   min-width: 79px;
   min-height: 22px;
   color: ButtonText;
+
+  border:1px solid;
+  -moz-border-top-colors: #dedede #dedede #dadada ;
+  -moz-border-left-colors: #dedede #dedede #dadada;
+  -moz-border-bottom-colors: #bebebe #bebebe #bababa;
+  -moz-border-right-colors: #bebebe #bebebe #bababa;
+  -moz-border-radius:10px;
+
+  background: #eeeeee url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+
 }
+
+/* marcio review -- take it from the -ref . css */
+
+button:focus {
+  background: #eeeeee url("chrome://global/skin/icons/button-bg-focused.png") repeat-x 0 0;
+}
+
+
+button:hover:active,
+button[open="true"],
+button[checked="true"] {
+  background: white url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+}
+
 
 .button-text {
   margin: 0 2px 0 3px !important;

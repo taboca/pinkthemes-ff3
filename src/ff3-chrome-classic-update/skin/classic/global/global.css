@@ -47,6 +47,9 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+
+/* marcio */
+
 button[dlgtype="help"] {
 	min-width: 1px !important;
 	padding: 0px 0px 0px 0px !important;
@@ -55,14 +58,20 @@ button[dlgtype="help"] {
 	height: 24px;
 	width: 24px;
 	margin: 4px;
+  border:0px;
+  background: transparent;
+
 }
 
 button[dlgtype="help"][disabled] {
   opacity: 0.5;
 }
 
+/* marcio review */
+/* Wherw was white was before moz-mac focusring */
+
 button[dlgtype="help"]:focus {
-  outline: 2px solid -moz-mac-focusring;
+  outline: 2px solid white;
   outline-offset: -2px;
   -moz-outline-radius: 100%;
 }
