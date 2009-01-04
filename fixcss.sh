@@ -9,6 +9,39 @@ echo "Table - 125,90,120  - medium "
 echo "Table - 100,70,95   - dark "
 
 
+echo "========== Error console border for the toolbar elements ============"
+
+
+sed -e "s/#686868/rgb(225,170,215)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
+
+sed -e "s/#404040/rgb(225,170,215)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
+
+echo "=========  Bookmarks Dropdown menu popup ==============="
+
+
+sed -e "s/#ffffff/black/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/#464646/125,90,120/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/0,0,0/35,10,35/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/26,26,26/75,30,65/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/128,128,128/200,150,195/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/53,53,53/125,90,120/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/162,162,162/200,150,195/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
 echo "======== dark border topbar for the places ========"
 
 sed -e "s/#404040/rgb(125,90,120)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
@@ -71,16 +104,16 @@ echo "=========== button color background =============="
 sed -e "s/#eeeeee/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
 
-sed -e "s/#dadada/rgb(255,220,247)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+sed -e "s/#dadada/rgba(255,255,255,.7)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
 
-sed -e "s/#dedede/rgb(255,230,255)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+sed -e "s/#dedede/rgba(255,255,255,.9)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
 
-sed -e "s/#bababa/rgb(200,150,195)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+sed -e "s/#bababa/rgba(130,130,130,.5)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
 
-sed -e "s/#bebebe/rgb(125,90,120)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+sed -e "s/#bebebe/rgba(130,130,130,.7)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
 
 

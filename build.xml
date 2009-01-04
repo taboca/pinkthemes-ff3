@@ -72,7 +72,6 @@
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
-<!--
 
       <rasterize  
 	    result="image/png"
@@ -82,7 +81,14 @@
 	    </fileset>
       </rasterize>
 
--->
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/mozapps/extensions">
+	    <fileset dir="src/theme/svg/src/mozapps/extensions">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
   <rasterize
             result="image/png"
             destdir="build-chrome-png/classic/global">

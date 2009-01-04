@@ -63,6 +63,12 @@
  
 /* ::::: console rows ::::: */
 
+
+/* marcio 
+
+ this is the actual in content errors, row elements
+*/
+
 .console-row {
   border-bottom: 1px solid #A3A3A3;
   padding: 4px;
@@ -159,6 +165,11 @@
 
 /* ::::: toolbars ::::: */
 
+
+/* marcio
+  border-bottom: 1px solid #686868;
+*/
+
 #ToolbarEval {
   background: url("chrome://global/skin/icons/find-bar-background.png") repeat-x top center #D0D0D0;
   border-bottom: 1px solid #686868;
@@ -197,10 +208,13 @@ toolbarseparator {
 
 /* Toolbar icons */
 
+
+/* marcio changed from gif */
+
 #ToolbarMode {
   background-color: #999;
   border-bottom: 1px solid #404040;
-  background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
   background-repeat: repeat-x;
   background-position: top right;
   padding: 4px 0 8px;

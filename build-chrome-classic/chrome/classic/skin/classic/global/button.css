@@ -62,12 +62,12 @@ button {
   min-height: 22px;
   color: ButtonText;
 
-  border:1px solid;
-  -moz-border-top-colors: rgb(255,230,255) rgb(255,230,255) rgb(255,220,247) ;
-  -moz-border-left-colors: rgb(255,230,255) rgb(255,230,255) rgb(255,220,247);
-  -moz-border-bottom-colors: rgb(125,90,120) rgb(125,90,120) rgb(200,150,195);
-  -moz-border-right-colors: rgb(125,90,120) rgb(125,90,120) rgb(200,150,195);
-  -moz-border-radius:10px;
+  border:2px solid;
+  -moz-border-top-colors: rgba(255,255,255,.9) rgba(255,255,255,.7) ;
+  -moz-border-left-colors: rgba(255,255,255,.9) rgba(255,255,255,.7);
+  -moz-border-bottom-colors: rgba(130,130,130,.7) rgba(130,130,130,.5);
+  -moz-border-right-colors: rgba(130,130,130,.7) rgba(130,130,130,.5);
+  -moz-border-radius:4px;
 
   background: rgb(250,190,240) url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
 

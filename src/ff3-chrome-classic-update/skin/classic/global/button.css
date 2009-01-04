@@ -62,12 +62,12 @@ button {
   min-height: 22px;
   color: ButtonText;
 
-  border:1px solid;
-  -moz-border-top-colors: #dedede #dedede #dadada ;
-  -moz-border-left-colors: #dedede #dedede #dadada;
-  -moz-border-bottom-colors: #bebebe #bebebe #bababa;
-  -moz-border-right-colors: #bebebe #bebebe #bababa;
-  -moz-border-radius:10px;
+  border:2px solid;
+  -moz-border-top-colors: #dedede #dadada ;
+  -moz-border-left-colors: #dedede #dadada;
+  -moz-border-bottom-colors: #bebebe #bababa;
+  -moz-border-right-colors: #bebebe #bababa;
+  -moz-border-radius:4px;
 
   background: #eeeeee url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
 

@@ -9,6 +9,19 @@
 
 /* Check the global CSS background color via rgb values in global.css */
 
+
+
+.shadeselected-from-color {
+   stop-color: rgb(250,190,240);
+   stop-opacity: 1;
+}
+
+.shadeselected-to-color {
+   stop-color: rgb(255,255,255);
+   stop-opacity: 1;
+}
+
+
 .tab-outer2 { 
   stroke: white; 
   stroke-width:20; 
