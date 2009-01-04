@@ -72,10 +72,11 @@ toolbarpalette {
 
 added the min-height due to flickring top menu. As we fix the top menu, maybe we can remove this..
 
+  -moz-appearance: toolbar;
 */
 
 menubar {
-  -moz-appearance: toolbar;
+  -moz-appearance: none;
   min-width: 1px;
   min-height:28px;
 }

@@ -1,10 +1,15 @@
+
+/* marcio 
+  transparent to background 
+*/
+
 #downloadView {
   -moz-appearance: none;
-  background-color:red;
+  background-color: transparent;
   margin: 0;
   padding: 0;
   border-width: 0;
-  border-bottom: 1px solid #404040;
+  border-bottom: 1px solid rgb(100,70,95);
 }
 
 /* Download View Items */
@@ -13,8 +18,13 @@ richlistitem[type="download"] {
   min-height: 40px !important;
 }
 
-richlistitem[type="download"][alternate="true"]:not([selected="true"]) {
+
+/* marcio 
+
   background-color: -moz-oddtreerow;
+*/
+richlistitem[type="download"][alternate="true"]:not([selected="true"]) {
+  background-color: rgb(255,205,246);
 }
 
 richlistitem[type="download"] .name {
@@ -103,10 +113,15 @@ richlistitem[type="download"] button {
   -moz-padding-end: 2px;
 }
 
+/* marcio
+
+  background-color: #9f9f9f;
+  background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+*/
 #search {
   -moz-box-pack: end;
   -moz-padding-end: 4px;
-  background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
   background-color: #9f9f9f;
   background-repeat: repeat-x;
   background-position: top left;

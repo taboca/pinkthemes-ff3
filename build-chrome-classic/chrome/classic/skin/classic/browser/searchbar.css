@@ -34,6 +34,11 @@
   -moz-margin-start: 44px !important;
 }
 
+/* marcio
+
+   added border none due to new general button has a moz round etc */
+
+
 .searchbar-engine-button {
   background: url("chrome://browser/skin/urlbar/startcap.png") center center no-repeat;
   -moz-appearance: none;
@@ -43,6 +48,8 @@
   -moz-box-align: center;
   margin: 0;
   -moz-margin-start: -44px;
+  border:none;
+  -moz-border-radius:0px;
   padding: 0;
 }
 

@@ -79,13 +79,11 @@ button:focus {
   background: rgb(250,190,240) url("chrome://global/skin/icons/button-bg-focused.png") repeat-x 0 0;
 }
 
-
 button:hover:active,
 button[open="true"],
 button[checked="true"] {
-  background: white url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+  background: white url("chrome://global/skin/icons/button-bg-active.png") repeat-x 0 0;
 }
-
 
 .button-text {
   margin: 0 2px 0 3px !important;
@@ -94,6 +92,7 @@ button[checked="true"] {
 
 .button-icon {
   margin-left: 1px;
+  border:0px ! important;
 }
 
 button[type="default"] {

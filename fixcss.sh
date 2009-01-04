@@ -8,6 +8,22 @@ echo "Table - 200,150,195 - high 20% "
 echo "Table - 125,90,120  - medium "
 echo "Table - 100,70,95   - dark "
 
+
+echo "======== dark border topbar for the places ========"
+
+sed -e "s/#404040/rgb(125,90,120)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css
+
+echo "----------- background semi light for the places left tree --------------"
+
+sed -e "s/#d2d8e2/rgb(225,170,215)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css
+
+echo "-------------- in the selected element in the tree for the places,the #fff to black -----"
+
+sed -e "s/#ffffff/black/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css
+
 echo "======== medium ========"   
 
 sed -e "s/#808080/rgb(125,90,120)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css

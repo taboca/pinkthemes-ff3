@@ -57,6 +57,15 @@
       </rasterize>
 
       <rasterize  
+            result="image/png"
+            destdir="build-chrome-png/classic/browser/places">
+            <fileset dir="src/theme/svg/src/browser/places">
+                <include name="*.svg" />
+            </fileset>
+      </rasterize>
+
+
+      <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/browser/preferences">
 	    <fileset dir="src/theme/svg/src/browser/preferences">

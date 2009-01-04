@@ -91,6 +91,16 @@
 }
 
 
+.button-active-from-color {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1;
+}
+.button-active-to-color {
+        stop-color:rgb(255,230,255);
+        stop-opacity:1;
+}
+
+
 
 /* Other toolbar */
 
@@ -214,3 +224,18 @@
         stop-color:rgb(255,255,255);
         stop-opacity:1;
 }
+
+
+/* Places selected element in the tree left */
+
+
+.selectedtreeelement-to-color {
+        stop-color:rgb(160,255,170);
+        stop-opacity:1;
+}
+.selectedtreeelement-from-color {
+        stop-color:rgb(205,255,205);
+        stop-opacity:1
+}
+
+
