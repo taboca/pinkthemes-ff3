@@ -1,2 +1,3 @@
+Remove swp files
 Fix the throbber area
 
