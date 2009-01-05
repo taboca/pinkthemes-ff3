@@ -37,6 +37,7 @@
 # ***** END LICENSE BLOCK *****
 */
 
+
 #BrowserPreferences {
   -moz-binding: url("chrome://global/skin/globalBindings.xml#unifiedPrefwindow");
 }
@@ -246,6 +247,7 @@ caption {
   font: -moz-dialog;
 }
 
+
 #paneContent {
   padding-top: 8px;
 }
@@ -272,6 +274,18 @@ caption {
 #advancedPrefs {
   margin: 0 8px;
 }
+
+/* marcio hack to fit buttons in linux and windows */
+
+#advancedPrefs { 
+  margin:0px;
+} 
+
+/* marcio hack to fit buttons in linux and windows */
+#advancedPrefs button { 
+   margin:3px; 
+   padding:3px;
+} 
 
 #privacyPrefs {
   padding: 0 4px;
