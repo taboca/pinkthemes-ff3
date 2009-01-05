@@ -252,3 +252,21 @@
 }
 
 
+
+/* menu arrow icons small */
+
+
+.arrow-to-color {
+	stop-color:rgb(0,160,0);
+        stop-opacity:1;
+}
+.arrow-light-color {
+	stop-color:rgb(0,200,0);
+        stop-opacity:1;
+}
+.arrow-from-color {
+        stop-color:rgb(0,120,0);
+        stop-opacity:1
+}
+
+

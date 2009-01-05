@@ -1,2 +1,2 @@
-Fix the button of the google top area
+Fix the throbber area
 

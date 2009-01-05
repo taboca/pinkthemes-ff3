@@ -129,17 +129,17 @@ menuitem[type="radio"] > .menu-iconic-left {
 .menu-right {
   margin: 0px 8px 0px 6px;
   width: 8px;
-  list-style-image: url("chrome://global/skin/menu/menu-arrow.gif");
+  list-style-image: url("chrome://global/skin/menu/menu-arrow.png");
   -moz-image-region: auto;
 }
 
 .menu-right[_moz-menuactive="true"] {
-  list-style-image: url("chrome://global/skin/menu/menu-arrow-hov.gif");
+  list-style-image: url("chrome://global/skin/menu/menu-arrow-hov.png");
   -moz-image-region: auto;
 }
 
 .menu-right[disabled="true"] {
-  list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.gif") !important;
+  list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.png") !important;
   -moz-image-region: auto;
 }
 

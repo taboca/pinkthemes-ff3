@@ -97,6 +97,13 @@
             </fileset>
       </rasterize>
 
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/global/menu">
+	    <fileset dir="src/theme/svg/src/global/menu">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
 
 
       <rasterize  
@@ -106,6 +113,7 @@
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
+
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/global/icons">
