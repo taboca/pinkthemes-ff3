@@ -29,10 +29,16 @@
 }
 
 /* Command Bar */
+/*
+
+ marcio
+
+  -moz-appearance: dialog;
+*/
 #commandBarBottom {
   margin: 10px 10px 10px 10px;
   min-width: 1px;
-  -moz-appearance: dialog;
+  -moz-appearance: none; 
 }
 
 #commandBarBottom button,
@@ -72,9 +78,15 @@ richlistitem[newAddon="true"] {
   color: #585620;
 }
 
-richlistitem[selected="true"] {
+/* 
+  marcio
+
   background-color: Highlight;
+*/
+richlistitem[selected="true"] {
   color: HighlightText;
+  background-image: url("chrome://mozapps/skin/extensions/selectedBackground.png");
+ 
 }
 
 richlistitem[selected="true"] .text-link {
@@ -399,10 +411,13 @@ vbox[typeName="status"][type="header-recommended"] {
 }
 
 /* View buttons */
+
+/* marcio - changed from gif to png */
+
 .viewSelector {
   background-color: #969696;
   border-bottom: 1px solid #404040;
-  background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
   background-repeat: repeat-x;
   padding: 4px 0 8px;
   margin: 0;
