@@ -45,8 +45,11 @@
   -moz-binding: url("chrome://global/skin/globalBindings.xml#unifiedWindow");
 }
 
+
+/* marcio review have not removed - -just replaced the png */
+
 #JSConsoleWindow:not([active="true"]) > #console-toolbox > #ToolbarMode {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-inactive.png");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
   background-color: #cfcfcf;
   border-bottom: 1px solid rgba(0,0,0,0.35);
 }
@@ -214,7 +217,7 @@ toolbarseparator {
 #ToolbarMode {
   background-color: #999;
   border-bottom: 1px solid #404040;
-  background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
   background-repeat: repeat-x;
   background-position: top right;
   padding: 4px 0 8px;

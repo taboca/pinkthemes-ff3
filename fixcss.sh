@@ -18,6 +18,32 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/con
 sed -e "s/#404040/rgb(225,170,215)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
+
+echo "=========== pageInfo border fix ==============="
+
+sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css
+
+echo "-------------- console same thing ---------------"
+
+sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
+
+echo "=========== Browser Bbookmarks edit fields background ==============="
+
+
+sed -e "s/#666666/rgb(253,195,245)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/#333333/rgb(150,120,140)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/#b3b3b3/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/#666/rgb(253,195,245)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
 echo "=========  Bookmarks Dropdown menu popup ==============="
 
 

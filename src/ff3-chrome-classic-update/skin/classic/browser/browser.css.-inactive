@@ -51,11 +51,67 @@
 }
 
 #main-window[chromehidden~="toolbar"][chromehidden~="location"][chromehidden~="directories"] {
-  border-top: 1px solid rgba(35,10,35,0.65);
+  border-top: 1px solid rgba(0,0,0,0.65);
   -moz-appearance: none;
   background-color: #eeeeee;
 }
 
+/* ----- INACTIVE WINDOW ----- */
+
+#main-window:not([active="true"]) > #navigator-toolbox > toolbar {
+  border-top-color: rgba(255,255,255,0.45);
+  border-bottom-color: rgba(0,0,0,0.35);
+  background-color: #cfcfcf;
+}
+
+#main-window:not([active="true"]) > #navigator-toolbox > #nav-bar {
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-inactive.png");
+}
+
+#main-window:not([active="true"]) > #navigator-toolbox > #PersonalToolbar {
+  background-image: url("chrome://browser/skin/bookmark-toolbar-background-inactive.png");
+}
+
+#main-window:not([active="true"]) > #navigator-toolbox > toolbar > toolbaritem,
+#main-window:not([active="true"]) > #navigator-toolbox > toolbar > toolbarbutton,
+#main-window:not([active="true"]) > #browser-bottombox {
+  opacity: 0.75;
+}
+
+#main-window:not([active="true"]) > #browser > vbox > #sidebar,
+#main-window:not([active="true"]) > #browser > vbox > sidebarheader { 
+  background-color: #e8e8e8;
+}
+
+
+/* 
+marcio  FIXME
+
+*/
+#main-window:not([active="true"]) .tabbrowser-strip {
+  background: white url("chrome://browser/skin/tabstrip-background.png") repeat-x 0 0;
+}
+
+#main-window:not([active="true"]) .tabbrowser-tab {
+	  color: gray;
+  background: white url("chrome://browser/skin/tabstrip-background.png") repeat-x 0 0;
+}
+
+#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-middle,
+#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-closebutton,
+#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-close-button {
+  background: url("chrome://browser/skin/tabbrowser/tab-middle-inactive.png") repeat-x;
+}
+
+#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-left,
+#main-window:not([active="true"]) .tabbrowser-tab[selected="true"][chromedir="rtl"] > .tab-image-right {
+  background: url("chrome://browser/skin/tabbrowser/tab-left-inactive.png") no-repeat;
+}
+
+#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-right,
+#main-window:not([active="true"]) .tabbrowser-tab[selected="true"][chromedir="rtl"] > .tab-image-left {
+  background: url("chrome://browser/skin/tabbrowser/tab-right-inactive.png") no-repeat;
+}
 
 /* ----- SEARCH FIELD ----- */
 
@@ -72,7 +128,7 @@
   border-top: 1px solid rgba(255,255,255,0.25);
   background: url("chrome://browser/skin/bookmark_toolbar_background.gif") repeat-x center center;
   border-bottom: 2px solid;
-  -moz-border-bottom-colors: rgba(35,10,35,0.35) transparent;
+  -moz-border-bottom-colors: rgba(0,0,0,0.35) transparent;
  */
 
 #PersonalToolbar {
@@ -1061,7 +1117,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   -moz-border-radius-topright: 0px ;
   padding: 10px 8px 6px 8px;
   margin-top: 4px;
-  color: black;
+  color: #ffffff;
 }
 
 #editBookmarkPanelTitle {
@@ -1079,19 +1135,19 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 #editBookmarkPanel > hbox > vbox > hbox > button,
 #editBookmarkPanel > #editBookmarkPanelBottomButtons > button {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x 125,90,120 center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x #464646 center center;
   border-width: 3px;
   border-style: solid;
   -moz-border-radius: 20px;
-  -moz-border-top-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
-  -moz-border-right-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
-  -moz-border-bottom-colors: rgba(200,150,195,0.35) rgba(35,10,35,0.5) rgba(255,255,255,0.15);
-  -moz-border-left-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
+  -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
+  -moz-border-right-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
+  -moz-border-bottom-colors: rgba(128,128,128,0.35) rgba(0,0,0,0.5) rgba(255,255,255,0.15);
+  -moz-border-left-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
   padding: 0 9px;
   margin: 6px;
   min-width: 79px;
   min-height: 22px;
-  color: black;
+  color: #ffffff;
 }
 
 #editBookmarkPanel > hbox > vbox > hbox > button:hover:active,
@@ -1136,14 +1192,14 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   border: 0;
   -moz-border-end-width: 3px;
   border-style: solid;
-  -moz-border-right-colors: rgba(255,255,255,0.15) rgba(35,10,35,0.5) rgba(255,255,255,0.15);
-  -moz-border-left-colors: rgba(255,255,255,0.15) rgba(35,10,35,0.5) rgba(255,255,255,0.15);
+  -moz-border-right-colors: rgba(255,255,255,0.15) rgba(0,0,0,0.5) rgba(255,255,255,0.15);
+  -moz-border-left-colors: rgba(255,255,255,0.15) rgba(0,0,0,0.5) rgba(255,255,255,0.15);
   padding: 0 9px;
   margin: 0;
   min-width: 21px;
   min-height: 20px;
   height:  20px;
-  color: black;
+  color: #ffffff;
   list-style-image: url("chrome://browser/skin/hud-style-new-folder-plus-sign.png") !important;
 }
 
@@ -1163,17 +1219,17 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBookmarkPanel #editBMPanel_folderMenuList {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x 125,90,120 center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x #464646 center center;
   border: 3px solid;
   -moz-border-radius: 5px;
-  -moz-border-top-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
-  -moz-border-right-colors: rgba(125,90,120,1) rgba(125,90,120,1) rgba(200,150,195,1);
-  -moz-border-bottom-colors: rgba(200,150,195,0.35) rgba(35,10,35,0.5) rgba(255,255,255,0.15);
-  -moz-border-left-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
+  -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
+  -moz-border-right-colors: rgba(53,53,53,1) rgba(53,53,53,1) rgba(162,162,162,1);
+  -moz-border-bottom-colors: rgba(128,128,128,0.35) rgba(0,0,0,0.5) rgba(255,255,255,0.15);
+  -moz-border-left-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
   margin: 0 3px !important;
   min-height: 22px;
   -moz-padding-start: 2px;
-  color: black !important;
+  color: #ffffff !important;
 }
 
 #editBookmarkPanel #editBMPanel_folderMenuList:focus {
@@ -1208,11 +1264,11 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   border-right: 0 !important;
   border-bottom: 0 !important;
   border-left: 0 !important;
-  -moz-border-top-colors: rgba(35,10,35,0.35) rgba(255,255,255,0.15);
+  -moz-border-top-colors: rgba(0,0,0,0.35) rgba(255,255,255,0.15);
   margin: 0px;
   -moz-margin-start: -8px;
   -moz-margin-end: -8px;
-  color: black !important;
+  color: #ffffff !important;
 }
 
 #editBookmarkPanel #editBMPanel_folderTree:focus {
@@ -1251,10 +1307,10 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   border-right: 0 !important;
   border-bottom: 2px solid !important;
   border-left: 0 !important;
-  -moz-border-top-colors: rgba(35,10,35,0.35) rgba(255,255,255,0.15);
-  -moz-border-bottom-colors: rgba(255,255,255,0.30) rgba(35,10,35,0.35) ;
+  -moz-border-top-colors: rgba(0,0,0,0.35) rgba(255,255,255,0.15);
+  -moz-border-bottom-colors: rgba(255,255,255,0.30) rgba(0,0,0,0.35) ;
   margin: 6px -8px !important;
-  color: black !important;
+  color: #ffffff !important;
 }
 
 #editBookmarkPanel #editBMPanel_tagsSelector:focus {
@@ -1277,7 +1333,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-row {
-  color: black !important;
+  color: #ffffff !important;
   background-color: transparent !important;
   border: none !important;
 }
@@ -1305,20 +1361,20 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 #editBookmarkPanel .expander-up,
 #editBookmarkPanel .expander-down {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x 125,90,120 center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x #464646 center center;
   border: 3px solid;
   -moz-border-radius: 5px;
-  -moz-border-top-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
-  -moz-border-right-colors: rgba(125,90,120,1) rgba(125,90,120,1) rgba(200,150,195,1);
-  -moz-border-bottom-colors: rgba(200,150,195,0.35) rgba(35,10,35,0.5) rgba(255,255,255,0.15);
-  -moz-border-left-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
+  -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
+  -moz-border-right-colors: rgba(53,53,53,1) rgba(53,53,53,1) rgba(162,162,162,1);
+  -moz-border-bottom-colors: rgba(128,128,128,0.35) rgba(0,0,0,0.5) rgba(255,255,255,0.15);
+  -moz-border-left-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
   -moz-margin-start: 4px;
   -moz-margin-end: 2px;
   padding: 0;
   -moz-padding-start: 4px;
   min-width: 10px;
   min-height: 22px;
-  color: black !important;
+  color: #ffffff !important;
 }
 
 #editBookmarkPanel .expander-up:focus,
@@ -1352,7 +1408,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 /**** name picker ****/
 
 #editBookmarkPanel #editBMPanel_namePicker[droppable="false"] {
-  color: black;
+  color: #ffffff;
 }
 
 #editBookmarkPanel #editBMPanel_namePicker[droppable="false"] > .menulist-dropmarker {
@@ -1372,7 +1428,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   -moz-border-radius: 1px;
   padding: 0;
   background-color: #666666;
-  color: black;
+  color: #ffffff;
 }
 
 #editBookmarkPanel #editBMPanel_tagsField[empty="true"] {
@@ -1389,7 +1445,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBookmarkPanel #editBMPanel_namePicker[droppable="false"][disabled="true"] > .menulist-editable-box {
-  color: black;
+  color: #ffffff;
 }
 
 #editBookmarkPanel #editBMPanel_namePicker[droppable="false"] > .menulist-editable-box > html|*.menulist-editable-input {
@@ -1397,7 +1453,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   border: none !important;
   padding: 0px !important;
   background-color: inherit;
-  color: black;
+  color: #ffffff;
   font: inherit;
 }
 
@@ -1560,7 +1616,7 @@ toolbarbutton.chevron > .toolbarbutton-menu-dropmarker {
 /* marcio toolbar background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
   background-color: #9e9e9e;
   background-position: top right;
-  border-bottom: 1px solid rgba(35,10,35,0.35);
+  border-bottom: 1px solid rgba(0,0,0,0.35);
 */
 #nav-bar {
   border-top: none;
@@ -1574,7 +1630,7 @@ toolbarbutton.chevron > .toolbarbutton-menu-dropmarker {
 
 #nav-bar[collapsed="true"] + toolbar[customindex] {
  border-top: 2px solid;
- -moz-border-top-colors: rgba(35,10,35,0.35) rgba(255,255,255,0.45);
+ -moz-border-top-colors: rgba(0,0,0,0.35) rgba(255,255,255,0.45);
 } 
 
 .bookmark-item {
@@ -1807,7 +1863,7 @@ tabbrowser > tabbox > tabpanels {
 .tabbrowser-arrowscrollbox > .scrollbutton-down-stack > .scrollbutton-down[chromedir="rtl"] {
   border: 0;
   border-right: 2px solid;
-  -moz-border-right-colors: rgba(35,10,35,0.25) rgba(255,255,255,0.15);
+  -moz-border-right-colors: rgba(0,0,0,0.25) rgba(255,255,255,0.15);
   list-style-image: url("chrome://browser/skin/tabbrowser/tab-arrow-start.png");
   -moz-image-region: rect(0px, 7px, 11px, 0px);
   padding: 0;
@@ -1820,11 +1876,11 @@ tabbrowser > tabbox > tabpanels {
 }
 
 .tabbrowser-arrowscrollbox > .scrollbutton-up:hover {
-  background-color: rgba(35,10,35,0.10);
+  background-color: rgba(0,0,0,0.10);
 }
 
 .tabbrowser-arrowscrollbox > .scrollbutton-up:hover:active {
-  background-color: rgba(35,10,35,0.20);
+  background-color: rgba(0,0,0,0.20);
 }
 
 .tabbrowser-arrowscrollbox > .scrollbutton-up[disabled="true"],
@@ -1836,7 +1892,7 @@ tabbrowser > tabbox > tabpanels {
 .tabbrowser-arrowscrollbox .scrollbutton-down,
 .tabbrowser-arrowscrollbox > .scrollbutton-up[chromedir="rtl"] {
   border-left: 2px solid;
-  -moz-border-left-colors: rgba(35,10,35,0.25) rgba(255,255,255,0.15);
+  -moz-border-left-colors: rgba(0,0,0,0.25) rgba(255,255,255,0.15);
   list-style-image: url("chrome://browser/skin/tabbrowser/tab-arrow-end.png");
   -moz-image-region: rect(0px, 44px, 11px, 37px);
   -moz-padding-start: 2px;
@@ -1850,11 +1906,11 @@ tabbrowser > tabbox > tabpanels {
 }
 
 .tabbrowser-arrowscrollbox .scrollbutton-down:hover {
-  background-color: rgba(35,10,35,0.10);
+  background-color: rgba(0,0,0,0.10);
 }
 
 .tabbrowser-arrowscrollbox .scrollbutton-down:hover:active {
-  background-color: rgba(35,10,35,0.20);
+  background-color: rgba(0,0,0,0.20);
 }
 
 .tabbrowser-arrowscrollbox > .scrollbutton-down-stack > .scrollbutton-down[disabled="true"],
@@ -1876,18 +1932,18 @@ tabbrowser > tabbox > tabpanels {
 .tabs-alltabs-button {
   list-style-image: url("chrome://browser/skin/tabbrowser/alltabs-box-bkgnd-icon.png");
   -moz-border-start: 2px solid;
-  -moz-border-left-colors: rgba(35,10,35,0.25) rgba(255,255,255,0.15);
-  -moz-border-right-colors: rgba(35,10,35,0.25) rgba(255,255,255,0.15);
+  -moz-border-left-colors: rgba(0,0,0,0.25) rgba(255,255,255,0.15);
+  -moz-border-right-colors: rgba(0,0,0,0.25) rgba(255,255,255,0.15);
   margin: 0;
   padding-left: 0;
   padding-right: 0;
 }
 .tabs-alltabs-button:hover {
-  background-color: rgba(35,10,35,0.10);
+  background-color: rgba(0,0,0,0.10);
 }
 .tabs-alltabs-button:hover:active,
 .tabs-alltabs-button[open="true"] {
-  background-color: rgba(35,10,35,0.20);
+  background-color: rgba(0,0,0,0.20);
 }
 
 .tabs-alltabs-button  > .toolbarbutton-menu-dropmarker {
@@ -2157,7 +2213,7 @@ tabpanels.plain {
 #identity-popup-content-box > description,
 #identity-popup-encryption-label {
   white-space: pre-wrap;
-  color: black;
+  color: #ffffff;
   -moz-padding-start: 15px;
   margin: 2px 0 4px;
 }
@@ -2209,29 +2265,29 @@ tabpanels.plain {
   padding: 10px 8px 6px 8px;
   margin-top: -3px;
   -moz-margin-start: 11px;
-  color:  black;
+  color:  #ffffff;
   min-width: 280px;
 }
 
 #identity-popup-container {
   -moz-appearance: none;
-  color:  black;
+  color:  #ffffff;
 }
 
 /* Popup Buttons */
 #identity-popup-more-info-button {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x 125,90,120 center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x #464646 center center;
   border: 3px solid;
-  -moz-border-top-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
-  -moz-border-right-colors: rgba(125,90,120,1) rgba(125,90,120,1) rgba(200,150,195,1);
-  -moz-border-bottom-colors: rgba(200,150,195,0.35) rgba(35,10,35,0.5) rgba(255,255,255,0.15);
-  -moz-border-left-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
+  -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
+  -moz-border-right-colors: rgba(53,53,53,1) rgba(53,53,53,1) rgba(162,162,162,1);
+  -moz-border-bottom-colors: rgba(128,128,128,0.35) rgba(0,0,0,0.5) rgba(255,255,255,0.15);
+  -moz-border-left-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
   -moz-border-radius: 20px;
   padding: 1px 9px;
   margin: 6px;
   min-height: 0px;
-  color:  black;	
+  color:  #ffffff;	
 }
 
 #identity-popup-more-info-button > .button-box > .button-text {

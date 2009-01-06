@@ -43,10 +43,12 @@
   -moz-binding: url("chrome://global/skin/globalBindings.xml#unifiedWindow");
 }
 
+/* Workaround - marcio - not removed instead kept it here with the same background */
+
 #main-window:not([active="true"]) > #topStackBar {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-inactive.png");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
   background-color: #cfcfcf;
-  border-bottom: 1px solid rgba(0,0,0,0.35);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
 }
 
 #main-window:not([active="true"]) > #topStackBar > #viewGroup {
@@ -57,7 +59,7 @@
   display: -moz-box;
   background-color: #969696;
   border-bottom: 1px solid #404040;
-  background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
   background-repeat: repeat-x;
   background-position: top right;
   padding: 4px 0 8px;
@@ -88,6 +90,14 @@
 .viewButtonIcon {
   display: none;
 }
+
+/* marcio for the top shadow */
+
+#mainDeck { 
+
+  background: url("chrome://global/skin/toolbar/toolbar-background-topshadow.png") 0 0 repeat-x;
+
+} 
 
 deck {
   padding: 10px 10px 10px 10px;

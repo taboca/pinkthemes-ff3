@@ -1,4 +1,3 @@
-/* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
  * The contents of this file are subject to the Mozilla Public License Version
@@ -56,62 +55,6 @@
   background-color: #eeeeee;
 }
 
-/* ----- INACTIVE WINDOW ----- */
-
-#main-window:not([active="true"]) > #navigator-toolbox > toolbar {
-  border-top-color: rgba(255,255,255,0.45);
-  border-bottom-color: rgba(35,10,35,0.35);
-  background-color: #cfcfcf;
-}
-
-#main-window:not([active="true"]) > #navigator-toolbox > #nav-bar {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-inactive.png");
-}
-
-#main-window:not([active="true"]) > #navigator-toolbox > #PersonalToolbar {
-  background-image: url("chrome://browser/skin/bookmark-toolbar-background-inactive.png");
-}
-
-#main-window:not([active="true"]) > #navigator-toolbox > toolbar > toolbaritem,
-#main-window:not([active="true"]) > #navigator-toolbox > toolbar > toolbarbutton,
-#main-window:not([active="true"]) > #browser-bottombox {
-  opacity: 0.75;
-}
-
-#main-window:not([active="true"]) > #browser > vbox > #sidebar,
-#main-window:not([active="true"]) > #browser > vbox > sidebarheader { 
-  background-color: #e8e8e8;
-}
-
-
-/* 
-marcio  FIXME
-
-*/
-#main-window:not([active="true"]) .tabbrowser-strip {
-  background: white url("chrome://browser/skin/tabstrip-background.png") repeat-x 0 0;
-}
-
-#main-window:not([active="true"]) .tabbrowser-tab {
-	  color: gray;
-  background: white url("chrome://browser/skin/tabstrip-background.png") repeat-x 0 0;
-}
-
-#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-middle,
-#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-closebutton,
-#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-close-button {
-  background: url("chrome://browser/skin/tabbrowser/tab-middle-inactive.png") repeat-x;
-}
-
-#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-left,
-#main-window:not([active="true"]) .tabbrowser-tab[selected="true"][chromedir="rtl"] > .tab-image-right {
-  background: url("chrome://browser/skin/tabbrowser/tab-left-inactive.png") no-repeat;
-}
-
-#main-window:not([active="true"]) .tabbrowser-tab[selected="true"] > .tab-image-right,
-#main-window:not([active="true"]) .tabbrowser-tab[selected="true"][chromedir="rtl"] > .tab-image-left {
-  background: url("chrome://browser/skin/tabbrowser/tab-right-inactive.png") no-repeat;
-}
 
 /* ----- SEARCH FIELD ----- */
 
@@ -906,8 +849,13 @@ toolbar[iconsize="small"] #unified-back-forward-button > #back-forward-dropmarke
   padding-top: 1px;
 }
 
-.autocomplete-textbox {
+/* marcio somehow this caused problems */
+/* 
+
   background-image: inherit !important;
+*/
+
+.autocomplete-textbox {
 }
 
 #urlbar-icons {
@@ -1111,7 +1059,6 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBookmarkPanel {
   -moz-appearance: none;
-  background-color: rgba(68,68,68,0.9);
   border: 1px solid rgba(255,255,255,0.15);
   -moz-border-radius: 8px;
   -moz-border-radius-topright: 0px ;
@@ -1155,15 +1102,18 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   background-color: #86888B;
 }
 
+/* marcio review
+  outline: 2px solid -moz-mac-focusring;
+*/
 #editBookmarkPanel > hbox > vbox > hbox > button:focus,
 #editBookmarkPanel > #editBookmarkPanelBottomButtons > button:focus {
-  outline: 2px solid -moz-mac-focusring;
+  outline: 2px solid white;
   outline-offset: -2px;
   -moz-outline-radius: 100%;
 }
 
 #editBookmarkPanel > #editBookmarkPanelBottomButtons > button[default="true"] {
-  background-color: #666;
+  background-color: rgb(253,195,245);
 }
 
 #editBookmarkPanel > #editBookmarkPanelContent {
@@ -1207,8 +1157,13 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   background-color: #86888B;
 }
 
-#editBookmarkPanel #editBMPanel_newFolderButton:focus {
+
+/* marcio - fixed from the mac proprietary to general 
   outline: 2px solid -moz-mac-focusring;
+
+*/
+#editBookmarkPanel #editBMPanel_newFolderButton:focus {
+  outline: 2px solid blue;
   outline-offset: -2px;
   -moz-outline-radius: 1px;
 }
@@ -1219,7 +1174,6 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBookmarkPanel #editBMPanel_folderMenuList {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x 125,90,120 center center;
   border: 3px solid;
   -moz-border-radius: 5px;
   -moz-border-top-colors: rgba(35,10,35,0.35) rgba(75,30,65,0.5) rgba(255,255,255,0.4);
@@ -1232,8 +1186,14 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   color: black !important;
 }
 
-#editBookmarkPanel #editBMPanel_folderMenuList:focus {
+/*
+
+  marcio 
   outline: 2px solid -moz-mac-focusring;
+
+*/
+#editBookmarkPanel #editBMPanel_folderMenuList:focus {
+  outline: 2px solid white;
   outline-offset: -2px;
   -moz-outline-radius: 5px;
 }
@@ -1259,7 +1219,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 /**** folder tree ****/
 
 #editBookmarkPanel #editBMPanel_folderTree {
-  background-color: #333333;
+  background-color: rgb(150,120,140);
   border-top: 2px solid !important;
   border-right: 0 !important;
   border-bottom: 0 !important;
@@ -1271,8 +1231,12 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   color: black !important;
 }
 
-#editBookmarkPanel #editBMPanel_folderTree:focus {
+/* marcio
+
   outline: 2px solid -moz-mac-focusring;
+*/
+#editBookmarkPanel #editBMPanel_folderTree:focus {
+  outline: 2px solid white;
   outline-offset: -1px;
   -moz-outline-radius: 1px;
 }
@@ -1302,7 +1266,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBookmarkPanel #editBMPanel_tagsSelector {
   -moz-appearance: none;
-  background-color: #333333;
+  background-color: rgb(150,120,140);
   border-top: 2px solid !important;
   border-right: 0 !important;
   border-bottom: 2px solid !important;
@@ -1313,8 +1277,15 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   color: black !important;
 }
 
-#editBookmarkPanel #editBMPanel_tagsSelector:focus {
+/* 
+ marcio review
+
+
   outline: 2px solid -moz-mac-focusring;
+*/
+
+#editBookmarkPanel #editBMPanel_tagsSelector:focus {
+  outline: 2px solid white;
   outline-offset: -2px;
   -moz-outline-radius: 1px;
 }
@@ -1339,7 +1310,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-row(selected) {
-  background-color: #b3b3b3 !important;
+  background-color: rgb(250,190,240) !important;
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-cell-text(selected),
@@ -1348,12 +1319,12 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-row(selected, focus) {
-  background-color: #b3b3b3 !important;
+  background-color: rgb(250,190,240) !important;
 }
 
 #editBookmarkPanel #editBMPanel_tagsSelector > listitem[selected="true"] {
   color: #222222;
-  background-color: #b3b3b3;
+  background-color: rgb(250,190,240);
 }
 
 /**** expanders ****/
@@ -1377,9 +1348,13 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   color: black !important;
 }
 
+/* marcio review
+  outline: 2px solid -moz-mac-focusring;
+
+*/
 #editBookmarkPanel .expander-up:focus,
 #editBookmarkPanel .expander-down:focus {
-  outline: 2px solid -moz-mac-focusring;
+  outline: 2px solid white;
   outline-offset: -2px;
   -moz-outline-radius: 5px;
 }
@@ -1427,7 +1402,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   -moz-border-left-colors: #1c1c1c #636363;
   -moz-border-radius: 1px;
   padding: 0;
-  background-color: #666666;
+  background-color: rgb(253,195,245);
   color: black;
 }
 
@@ -1435,9 +1410,15 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   color: #bbbbbb;
 }
 
+
+/* marcio review 
+
+  outline: 2px solid -moz-mac-focusring;
+*/
+
 #editBookmarkPanel #editBMPanel_tagsField[focused="true"],
 #editBookmarkPanel #editBMPanel_namePicker[droppable="false"][focused="true"] > .menulist-editable-box {
-  outline: 2px solid -moz-mac-focusring;
+  outline: 2px solid white;
   outline-offset: -1px;
   -moz-outline-radius: 1px;
   background-color: #eeeeee;
@@ -1579,9 +1560,11 @@ sidebarheader > .tabs-closebutton > .toolbarbutton-text {
   border: none !important;
   padding: 0;
   min-width: 0;
+  background:none;
   background-color: transparent;
   height: 16px;
   width: 17px;  
+  -moz-border-radius:0px;
 }
 
 /* XXXmano: hack until we figure out why the throbber uses a button instead
@@ -2210,6 +2193,9 @@ tabpanels.plain {
 }
 
 /* Popup Body Text */
+
+/* marcio changed the text to black  review warning this only works for light themes */
+
 #identity-popup-content-box > description,
 #identity-popup-encryption-label {
   white-space: pre-wrap;
@@ -2258,16 +2244,18 @@ tabpanels.plain {
 /* Popup Bounding Box */
 #identity-popup {
   -moz-appearance: none;
-  background-color: rgba(68,68,68,0.9);
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 3px solid rgba(255,255,255,1);
   -moz-border-radius: 8px;
   -moz-border-radius-topleft: 0px;
   padding: 10px 8px 6px 8px;
   margin-top: -3px;
   -moz-margin-start: 11px;
-  color:  black;
+  color: black; 
   min-width: 280px;
 }
+
+
+/* warning marcio review this is set to black */
 
 #identity-popup-container {
   -moz-appearance: none;
