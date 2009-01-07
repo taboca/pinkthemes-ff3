@@ -1,0 +1,83 @@
+#title 
+{
+	
+	 background: white url(title.jpg) no-repeat 50%;
+	 height:60px;
+}
+
+
+#pinksearch-main
+{
+	background-color:white ! important;
+}
+
+#pinksearch-main tabbox 
+{
+	margin:1em ! important;
+}
+
+#pinksearch-main tabbox *, tabpanels * *
+{
+
+
+}
+
+#bemvindo 
+{
+	background:url(bem-vindo.png) no-repeat 50%;
+	height:45px ! important;
+}
+
+#demo 
+{
+	list-style-image:url(button-demo.png);
+	border:0px ! important;
+	-moz-appearance:none ! important;
+}
+
+#pinksearch-main description 
+{
+   margin:1em ! important;
+}
+
+#pinksearch-main label 
+{
+	font-weight:bold;
+	font-size:110%;
+}
+
+#descfield2 
+{
+	-moz-opacity:0;
+}
+
+#buttonselectdemo 
+{	
+	-moz-opacity:0;
+	list-style-image:url(button-select.png);
+	border:0px ! important;
+	-moz-appearance:none ! important;
+
+}
+
+#buttonenable 
+{
+	list-style-image:url(button-enable.png);
+	border:0px ! important;
+	-moz-appearance:none ! important;
+}
+
+#suggestion-plain 
+{
+	background:url(chrome://pinksearch/skin/tab-i1.jpg);
+	height:30px;
+	margin:2px;
+}
+
+#suggestion-stars 
+{
+	background:url(chrome://pinksearch/skin/tab-i2.jpg);
+	height:30px;
+	margin:2px;
+}
+

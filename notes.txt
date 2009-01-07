@@ -4,12 +4,7 @@
  * keep the install.rdf and contents.rdf files in build-package
  * Notice that if you are hosting your extensions with the security ( keys and signature ) mechanism, you will need to edit the install.rdf with the keys in it.  
  * This build system has the ./deployment-keys directorg with examples of install.rdf and update.rdf file 
-
-== TODO ==
-
- * PersonalTooolbar work in browser/browser.css. The icons for the highlight mode. 
- * Fix the toolbar-background.svg and bookmark-toolbar-background to be simple
- * modify browser.css bookmark-toolbar-background-inactive.gif _ _ _ to - - - and make inactive in the src browser .svg
+ * we are using sha1deep to extract the file sum 
 
 == Check ==
 
@@ -17,9 +12,11 @@
 
 == To Modify Colors ==
 
-vi src/theme/svg/biblioteca/base.css
-vi src/ff3-chrome-classic-update/skin/classic/global/global.css 
+CHange the fixcss.s - check for variations of this file
 
+== Modify colors of the SVG Elements ==
+
+Change the src/theme/bibliteca/base.css file
 
 
 

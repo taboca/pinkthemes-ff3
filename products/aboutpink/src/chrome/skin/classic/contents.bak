@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+    <RDF:Seq about="urn:mozilla:package:root"> 
+      <RDF:li resource="urn:mozilla:package:pinksearch"/>
+    </RDF:Seq>
+
+    <RDF:Description about="urn:mozilla:package:pinksearch"
+          chrome:displayName="Pink Tabs 1.0"
+          chrome:author="Taboca Inc." 
+          chrome:name="tabbitd"
+          chrome:extension="true"
+          chrome:description="Allows images and meta-information to be associated with Tabs - Sematabs Project">
+    </RDF:Description>
+
+
+	<RDF:Seq about="urn:mozilla:overlays">
+		<RDF:li resource="chrome://browser/content/browser.xul"/>
+		<RDF:li resource="chrome://global/content/customizeToolbar.xul"/>
+	</RDF:Seq>
+
+</RDF:RDF>
