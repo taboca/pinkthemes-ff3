@@ -3,9 +3,14 @@
 
   standard light - 250,190,240
   standard up  -255,210,250
-  white - 255,255,255 
+  white - 255,240,255 
   
 */
+
+.progress-background {
+   fill: rgb(250,190,240);
+   stop-opacity: 1;
+}
 
 /* Check the global CSS background color via rgb values in global.css */
 
@@ -17,7 +22,7 @@
 }
 
 .shadeselected-to-color {
-   stop-color: rgb(255,255,255);
+   stop-color: rgb(255,240,255);
    stop-opacity: 1;
 }
 
@@ -46,12 +51,12 @@
 } 
 
 .tab-to-color { 
-   stop-color: rgb(255,255,255); 
+   stop-color: rgb(255,240,255); 
    stop-opacity: 1;
 } 
 
 .color-white { 
-   stop-color: rgb(255,255,255);
+   stop-color: rgb(255,240,255);
    stop-opacity:1; 
 } 
 .color-black { 
@@ -60,7 +65,7 @@
 } 
 
 .popup-from-color { 
-	stop-color:rgb(255,255,255);
+	stop-color:rgb(255,240,255);
 	stop-opacity:1
 }
 .popup-to-color { 
@@ -71,7 +76,7 @@
 /* Browserr find bar */
 
 .findbar-from-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1
 }
 .findbar-to-color {
@@ -84,7 +89,7 @@
         stop-opacity:1
 }
 .findbar-button-to-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 
@@ -99,17 +104,17 @@
         stop-opacity:1;
 }
 .button-focused-color {
-        stop-color:rgb(255,230,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 
 
 .button-active-from-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 .button-active-to-color {
-        stop-color:rgb(255,230,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 
@@ -122,7 +127,7 @@
         stop-opacity:1
 }
 .toolbar-inactive-to-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 
@@ -141,13 +146,13 @@
         stop-opacity:1;
 }
 .toolbar-to-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 
 
 .bookmarks-toolbar-from-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 .bookmarks-toolbar-to-color {
@@ -156,7 +161,7 @@
 }
 
 .bookmarks-toolbar-inactive-from-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 .bookmarks-toolbar-inactive-to-color {
@@ -166,7 +171,7 @@
 
 
 .toolbarbutton-from-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 .toolbarbutton-to-color {
@@ -195,7 +200,7 @@
 /* Standard urlbar - notice this is called urlbarstart but refers to urlbar entirelly */
 
 .urlbarstart-from-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 .urlbarstart-to-color {
@@ -210,7 +215,7 @@
         stop-opacity:1;
 }
 .urlbar-focused-bottom-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 
@@ -221,7 +226,7 @@
         stop-opacity:1;
 }
 .urlbar-active-bottom-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 
@@ -232,7 +237,7 @@
         stop-opacity:1;
 }
 .urlbarstart-secure-bottom-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 
@@ -241,7 +246,7 @@
         stop-opacity:1;
 }
 .urlbarstart-verified-bottom-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 

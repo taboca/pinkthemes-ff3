@@ -37,15 +37,20 @@ richlistitem[type="download"] .status {
   color: #555;
 }
 
+/* 
+
+  color: highlighttext;
+*/
 richlistbox:focus > richlistitem[selected="true"][type="download"] .dateTime,
 richlistbox:focus > richlistitem[selected="true"][type="download"] .status {
-  color: highlighttext;
+  color:black; 
 }
 
 /* marcio added this whole item */
 
 richlistbox:focus > richlistitem[selected="true"][type="download"] {
 
+  color:black; 
   background: url(chrome://mozapps/skin/downloads/selectedBackground.png) repeat-x 0 0 ;
 
 }

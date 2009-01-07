@@ -18,9 +18,7 @@ richlistitem[type="download"] {
   min-height: 40px !important;
 }
 
-
 /* marcio 
-
   background-color: -moz-oddtreerow;
 */
 richlistitem[type="download"][alternate="true"]:not([selected="true"]) {
@@ -37,20 +35,24 @@ richlistitem[type="download"] .status {
   color: #555;
 }
 
+/* 
+
+  color: highlighttext;
+*/
 richlistbox:focus > richlistitem[selected="true"][type="download"] .dateTime,
 richlistbox:focus > richlistitem[selected="true"][type="download"] .status {
-  color: highlighttext;
+  color:black; 
 }
 
 /* marcio added this whole item */
 
 richlistbox:focus > richlistitem[selected="true"][type="download"] {
 
+  color:black; 
   background: url(chrome://mozapps/skin/downloads/selectedBackground.png) repeat-x 0 0 ;
 
 }
 
-
 richlistitem[type="download"] button {
   -moz-appearance: none;
   min-height: 16px;
@@ -59,26 +61,9 @@ richlistitem[type="download"] button {
   max-width: 16px;
   padding: 0;
   margin: 0 1px 0 1px;
-}
-
-/**
- * Images for buttons in the interface
- */
-richlistitem[type="download"] button {
-  list-style-image: url(chrome://mozapps/skin/downloads/buttons.png);
-}
-.cancel {
-  -moz-image-region: rect(0px, 16px, 16px, 0px);
-
-
-richlistitem[type="download"] button {
-  -moz-appearance: none;
-  min-height: 16px;
-  min-width: 16px;
-  max-height: 16px;
-  max-width: 16px;
-  padding: 0;
-  margin: 0 1px 0 1px;
+  background:none;
+  -moz-border-radius:0px;
+  border:0px;
 }
 
 /**
