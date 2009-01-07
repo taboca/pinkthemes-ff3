@@ -29,6 +29,12 @@ echo "-------------- console same thing ---------------"
 sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
+echo "-------------- extensions same thing ---------------"
+
+sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css
+
+
 echo "=========== Browser Bbookmarks edit fields background ==============="
 
 

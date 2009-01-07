@@ -19,7 +19,7 @@
 
 </defs>
 
-<rect x="0" y="0" width="520" height="300"  style="fill:url(#popupshade)" />
-<image x="0" y="0" width="520px" height="300px" xlink:href="../../../biblioteca/Widgets/stars.svg" opacity=".5" > </image>
+<rect x="0" y="0" width="520" height="300"  style="fill:url(#popupshade);opacity: .5"/>
+<image x="0" y="0" width="520px" height="300px" xlink:href="../../../biblioteca/Widgets/stars.svg" opacity=".3" > </image>
 
 </svg>

@@ -2,8 +2,10 @@
   -moz-binding: url("chrome://global/skin/globalBindings.xml#unifiedWindow");
 }
 
+/* marcio review inactive is the same of the normal - so it does not look inactive */
+
 #extensionsManager:not([active="true"]) > #topStackBar > #viewGroup {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-inactive.png");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
   background-color: #cfcfcf;
   border-bottom: 1px solid rgba(0,0,0,0.35);
 }
@@ -69,6 +71,11 @@ richlistitem[isDisabled="true"] .addonIcon {
   opacity: 0.3;
 }
 
+
+/* review this marcio */
+ /* maybe this background needs to be opacity 50% */
+/* the background line was not here */
+
 richlistitem[isDisabled="true"] {
   color: GrayText;
 }
@@ -82,19 +89,25 @@ richlistitem[newAddon="true"] {
   marcio
 
   background-color: Highlight;
+  color: HighlightText;
+
 */
 richlistitem[selected="true"] {
-  color: HighlightText;
-  background-image: url("chrome://mozapps/skin/extensions/selectedBackground.png");
+  color: black;
+  background: transparent url("chrome://mozapps/skin/extensions/selectedBackground.png") 0 0 ;
  
 }
 
 richlistitem[selected="true"] .text-link {
   color: inherit;
 }
+/* marcio 
 
-richlistitem[selected="true"][isDisabled="true"] {
   background-image: url("chrome://mozapps/skin/extensions/itemDisabledFader.png");
+*/
+richlistitem[selected="true"][isDisabled="true"] {
+  background: transparent url("chrome://mozapps/skin/extensions/inactiveBackground.png") 0 0 ;
+
 }
 
 .descriptionWrap {
@@ -293,8 +306,12 @@ richlistitem[opType="needs-uninstall"] .notifyBadge {
   margin-bottom: 4px;
 }
 
+/* marcio review check    
+
+  removed the -moz-box which was failing on linux */
+
 .addonRating[rating] {
-  display: -moz-box;
+  display: block;
   width: 78px;
   height: 18px;
   list-style-image: url("chrome://mozapps/skin/extensions/ratings.png");
@@ -392,6 +409,7 @@ vbox[typeName="status"][type="header-recommended"] {
   height: 16px;
   min-width: 16px;
   min-height: 16px;
+  background:none;   
 }
 
 .searchbox-search {
@@ -417,7 +435,7 @@ vbox[typeName="status"][type="header-recommended"] {
 .viewSelector {
   background-color: #969696;
   border-bottom: 1px solid #404040;
-  background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
   background-repeat: repeat-x;
   padding: 4px 0 8px;
   margin: 0;
