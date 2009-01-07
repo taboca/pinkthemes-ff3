@@ -1,6 +1,1 @@
-Fix the extensions area
- 
- Active and non active panels
-
-Fix the basic promotion graphic 
 
