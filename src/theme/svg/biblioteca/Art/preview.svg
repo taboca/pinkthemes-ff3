@@ -2751,9 +2751,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
      inkscape:cx="34.798903"
-     inkscape:cy="134.21544"
+     inkscape:cy="53.403237"
      inkscape:document-units="px"
-     inkscape:current-layer="g6334"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1160"
      inkscape:window-height="726"
@@ -2776,6 +2776,15 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:1;fill:#fabef0;fill-opacity:1;stroke:#000000;stroke-width:2.2198174;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3005"
+       width="258.88431"
+       height="326.05945"
+       x="-22.113453"
+       y="-34.248032"
+       rx="16.895702"
+       ry="13.726809" />
     <rect
        style="opacity:1;fill:url(#linearGradient6126);fill-opacity:1;stroke:none;stroke-width:22;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect6118"
