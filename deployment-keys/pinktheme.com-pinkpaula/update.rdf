@@ -2,170 +2,122 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-
-<RDF:Description about="urn:mozilla:theme:pinkpaula@pinktheme.com">
-    <em:updates>
-      <RDF:Seq>
-        <RDF:li resource="pinktheme.com:3.0.0"/>
-        <RDF:li resource="pinktheme.com:3.0.1"/>
-        <RDF:li resource="pinktheme.com:3.0.2"/>
-        <RDF:li resource="pinktheme.com:3.0.3"/>
-        <RDF:li resource="pinktheme.com:3.0.4"/>
-        <RDF:li resource="pinktheme.com:3.0.5"/>
-        <RDF:li resource="pinktheme.com:3.0.6"/>
-        <RDF:li resource="pinktheme.com:3.0.7"/>
-        <RDF:li resource="pinktheme.com:3.0.8"/>
-        <RDF:li resource="pinktheme.com:3.0.9"/>
-      </RDF:Seq>
-    </em:updates>
-</RDF:Description>
-
-        <RDF:Description about="pinktheme.com:3.0.0">
-            <em:version>3.0.0</em:version> 
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav3a.jar</em:updateLink>
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-       <RDF:Description about="pinktheme.com:3.0.1">
-            <em:version>3.0.1</em:version> 
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav301.jar</em:updateLink>
-	  <em:updateHash>sha1:933b1540a1d5576fccbbc9cefbacb9e649cdf30d</em:updateHash>
-	
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-      <RDF:Description about="pinktheme.com:3.0.2">
-            <em:version>3.0.2</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav302.jar</em:updateLink>
-          <em:updateHash>sha1:3a08102585bd6764b33fc035b24adca9b446dec5</em:updateHash>
-
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-      <RDF:Description about="pinktheme.com:3.0.3">
-            <em:version>3.0.3</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav303.jar</em:updateLink>
-          <em:updateHash>sha1:5df63998fc66f9d9260c36dff655b8125ce7b3e3</em:updateHash>
-
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-
-   <RDF:Description about="pinktheme.com:3.0.4">
-            <em:version>3.0.4</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav304.jar</em:updateLink>
-          <em:updateHash>sha1:a8568093eb7f90e5fa2312fc0bb9311c3cc2c3e5</em:updateHash>
-
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-   <RDF:Description about="pinktheme.com:3.0.5">
-            <em:version>3.0.5</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav305.jar</em:updateLink>
-          <em:updateHash>sha1:698743a1403a573e08a9e6b1683ae9aae3571e44</em:updateHash>
-
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-
-  <RDF:Description about="pinktheme.com:3.0.6">
-            <em:version>3.0.6</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav306.jar</em:updateLink>
-          <em:updateHash>sha1:2536f28fe3ec753a8160bd477b49556930f7ed78</em:updateHash>
-
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-  <RDF:Description about="pinktheme.com:3.0.7">
-            <em:version>3.0.7</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav307.jar</em:updateLink>
-		<em:updateInfoURL>http://www.pinktheme.com/downloads/pinkpaula.html</em:updateInfoURL>
-          <em:updateHash>sha1:f17d0ac0e0b1489aee2213486ed80133e26424f6</em:updateHash>
-
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-  <RDF:Description about="pinktheme.com:3.0.8">
-            <em:version>3.0.8</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav308.jar</em:updateLink>
-		<em:updateInfoURL>http://www.pinktheme.com/downloads/pinkpaula.html</em:updateInfoURL>
-          <em:updateHash>sha1:8f8bcad0d56f02a4f72b8cad4ed4e52950bc4f47</em:updateHash>
-
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-  <RDF:Description about="pinktheme.com:3.0.9">
-            <em:version>3.0.9</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/pinkpaulav309.jar</em:updateLink>
-		<em:updateInfoURL>http://www.pinktheme.com/downloads/pinkpaula.html</em:updateInfoURL>
-          <em:updateHash>sha1:f163ec4137ca7f607ca5c2da556927d5c8d68576</em:updateHash>
-
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-
-
-
-
-
+  <RDF:Description RDF:about="rdf:#$cUIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav306.jar"
+                   em:updateHash="sha1:2536f28fe3ec753a8160bd477b49556930f7ed78" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.4"
+                   em:version="3.0.4">
+    <em:targetApplication RDF:resource="rdf:#$YTIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$kUIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav307.jar"
+                   em:updateInfoURL="http://www.pinktheme.com/downloads/pinkpaula.html"
+                   em:updateHash="sha1:f17d0ac0e0b1489aee2213486ed80133e26424f6" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.2"
+                   em:version="3.0.2">
+    <em:targetApplication RDF:resource="rdf:#$ITIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$QTIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav303.jar"
+                   em:updateHash="sha1:5df63998fc66f9d9260c36dff655b8125ce7b3e3" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.3"
+                   em:version="3.0.3">
+    <em:targetApplication RDF:resource="rdf:#$QTIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="pinktheme.com:3.0.9"
+                   em:version="3.0.9">
+    <em:targetApplication RDF:resource="rdf:#$CUIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="pinktheme.com:3.0.1"
+                   em:version="3.0.1">
+    <em:targetApplication RDF:resource="rdf:#$ATIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$YTIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav304.jar"
+                   em:updateHash="sha1:a8568093eb7f90e5fa2312fc0bb9311c3cc2c3e5" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.5"
+                   em:version="3.0.5">
+    <em:targetApplication RDF:resource="rdf:#$4UIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$ITIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav302.jar"
+                   em:updateHash="sha1:3a08102585bd6764b33fc035b24adca9b446dec5" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.7"
+                   em:version="3.0.7">
+    <em:targetApplication RDF:resource="rdf:#$kUIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$CUIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav309.jar"
+                   em:updateInfoURL="http://www.pinktheme.com/downloads/pinkpaula.html"
+                   em:updateHash="sha1:f163ec4137ca7f607ca5c2da556927d5c8d68576" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.6"
+                   em:version="3.0.6">
+    <em:targetApplication RDF:resource="rdf:#$cUIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$tUIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav308.jar"
+                   em:updateInfoURL="http://www.pinktheme.com/downloads/pinkpaula.html"
+                   em:updateHash="sha1:8f8bcad0d56f02a4f72b8cad4ed4e52950bc4f47" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.0"
+                   em:version="3.0.0">
+    <em:targetApplication RDF:resource="rdf:#$tTIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$tTIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav3a.jar" />
+  <RDF:Seq RDF:about="rdf:#$qTIQ7">
+    <RDF:li RDF:resource="pinktheme.com:3.0.0"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.1"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.2"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.3"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.4"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.5"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.6"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.7"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.8"/>
+    <RDF:li RDF:resource="pinktheme.com:3.0.9"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$4UIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav305.jar"
+                   em:updateHash="sha1:698743a1403a573e08a9e6b1683ae9aae3571e44" />
+  <RDF:Description RDF:about="urn:mozilla:theme:pinkpaula@pinktheme.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAHYyKifYpPF6dq2Vz8K+dz3hnnESNgYjxDhSBy0I3hYIKjKD7mQGW0TxcbVauQXbAfpySGNCCAl+6Kc1fmCev5iNF4JsHQUDjV96GUSo27Gnc2duGJm1zz2nEBOeISjnZ1A/TKDCDiGnF6l3EoqDe5JeLcQ52Ja7A2nXDo0Wie7O">
+    <em:updates RDF:resource="rdf:#$qTIQ7"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$ATIQ7"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.1b2"
+                   em:updateLink="http://www.pinktheme.com/downloads/pinkpaulav301.jar"
+                   em:updateHash="sha1:933b1540a1d5576fccbbc9cefbacb9e649cdf30d" />
+  <RDF:Description RDF:about="pinktheme.com:3.0.8"
+                   em:version="3.0.8">
+    <em:targetApplication RDF:resource="rdf:#$tUIQ7"/>
+  </RDF:Description>
 </RDF:RDF>
