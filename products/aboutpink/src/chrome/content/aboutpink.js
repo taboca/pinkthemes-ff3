@@ -1,7 +1,13 @@
 ////
-//// About Pink Extra Modules
-//  by Marcio Galli / Taboca Inc. 
+//// About Pink supports Pink Paula in the Pink Paula Pack edition. This brings the about:pink experience where the end-user 
+//// can customize their pink experience to something beyond the basic theme. At this point the about:pink offers
+
+// Ability to add the PinkTheme Pink custom Search 
+// Release notes 
+// Link to support pages
 //
+
+// Copyright (C) 2008 Taboca Inc and PinkTheme.com 
 
 var enableStyle = false;
 var gPrefBackground = "chrome://aboutpink/skin/suggestion-1.jpg";
@@ -138,12 +144,7 @@ function pinkSearchCheckFirstTime() {
 			prefService.setBoolPref("extensions.aboutpink.installed",true);
 			prefService.setCharPref("extensions.aboutpink.background","chrome://aboutpink/skin/suggestion-1.jpg");
 
-
-aboutURI = makeURI("about:pink"); 
-
-setTimeout(" pinkTheme_pinkTab = Application.activeWindow.open( aboutURI )",3000);
-setTimeout(" pinkTheme_pinkTab.focus(); ",4000);
-
+			pinkSearchTryLaunchAboutPink(); 
 
                         gPrefBackground = "chrome://aboutpink/skin/suggestion-1.jpg";
 
@@ -159,6 +160,23 @@ setTimeout(" pinkTheme_pinkTab.focus(); ",4000);
 	catch(e) { alert(e) }
 	
 }
+
+
+function pinkSearchTryLaunchAboutPink() { 
+
+	aboutURI = makeURI("about:pink"); 
+	try { 
+	pinkTheme_pinkTab = Application.activeWindow.open( aboutURI );
+
+	alert(pinkTheme_pinkTab);
+	pinkTheme_pinkTab.focus();
+
+	} catch (i) { 
+		alert(" not possible yet" );
+	 	setTimeout("pinkSearchTryLaunchAboutPink()",2000);	
+	} 
+
+} 
 
 function pinkSearchStartup() {
 
@@ -184,7 +202,7 @@ function pinkSearchOpenSidebar() {
 
 function pinkSearchInstallSearch() {
 
-    testaddsearch();
+    pinkSearchAddSearch();
     
 }
 
@@ -193,7 +211,7 @@ function pinkSearchTest(URL) {
     gBrowser.loadOneTab(URL,undefined,undefined,undefined,false)
     
 }
-var testaddsearch = function() {
+var pinkSearchAddSearch = function() {
 
 
 	var ss = Components.classes["@mozilla.org/browser/search-service;1"]
