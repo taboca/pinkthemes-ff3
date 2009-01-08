@@ -12,6 +12,20 @@
    stop-opacity: 1;
 }
 
+.downloadbar-color {
+   stop-color: rgb(250,190,240);
+   stop-opacity: 1;
+}
+
+.downloadbar-highlight {
+   stop-color: rgb(255,255,255);
+   stop-opacity: 1;
+}
+
+.downloadbar-dark {
+   stop-color: rgb(120,80,110);
+   stop-opacity: 1;
+}
 /* Check the global CSS background color via rgb values in global.css */
 
 
