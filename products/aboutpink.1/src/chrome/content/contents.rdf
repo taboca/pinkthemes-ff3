@@ -9,11 +9,11 @@
   
   <!-- Package information -->
   <RDF:Description about="urn:mozilla:package:aboutpink"
-        chrome:displayName="AboutPink 0.4"
+        chrome:displayName="AboutPink 0.1"
         chrome:author="Taboca Inc."
         chrome:authorURL="http://www.taboca.com"
         chrome:name="aboutpink"
-        chrome:description="AboutPink Welcome Page conforms with new guidelines for first run experience " 
+        chrome:description="AboutPink Extras "
         chrome:extension="true">
   </RDF:Description>		   
 		   
