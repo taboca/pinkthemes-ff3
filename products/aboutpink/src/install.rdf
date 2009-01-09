@@ -11,10 +11,10 @@
                    em:homepageURL="http://www.pinktheme.com/"
                    em:optionsURL="chrome://aboutpink/content/options.xul"
                    em:iconURL="chrome://aboutpink/skin/icon.png"
-                   em:internalName="aboutpink_pinktheme"
+		em:type="2"
+                   em:internalName="aboutpink"
                    em:updateURL="http://www.pinktheme.com/downloads/aboutpink_update.rdf"
-                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDNWpTRE2nl13jU10iljnTvC/uZqnxpCEXlXfP/OYtCHMVVzsT0fhQIlXPmwKqIFUH3zh9RiNpiYospZObBEvoudE/5uLkAQcqolYK06/FBn6B9Sr+IZ9tFRKg+zwQ7oalO2NibJjMKA0FSwhLVreWjdnRgXoiOfyWv/q/tFSdhiwIDAQAB">
-
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCYO4laEGYGJ2tJf/dscfEa4SuesAa9b8k6hReNmOUZfOnIMV0wIcy3q2BIEvTJ0i71QIkmtuAJb2lY+GmD1lFbEHL3Kn8Szy2lxTfyU4Xr7HlZO5rTqWR+QQfo7NZQPjcCM4QmGKbT58EjEnODLuQX3kdLCizSOlNF/4zYUix8KQIDAQAB">
     <em:targetApplication RDF:resource="rdf:#$1oL67"/>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$1oL67"

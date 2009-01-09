@@ -5,8 +5,8 @@ xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          >
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="pinkpaula-combo@pinktheme.com"
-                   em:version="0.4"
-                   em:description="AboutPink 0.4 and PinkPaula 3.0.9"
+                   em:version="0.5"
+                   em:description="AboutPink 0.6 and PinkPaula 3.0.9"
                    em:type="32"
                    em:name="Pink Pack Combo ">
 
