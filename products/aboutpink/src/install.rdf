@@ -3,7 +3,7 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="aboutpink@taboca.com"
+                   em:id="aboutpink@pinktheme.com"
                    em:name="AboutPink"
                    em:version="0.5"
                    em:description="AboutPink"
