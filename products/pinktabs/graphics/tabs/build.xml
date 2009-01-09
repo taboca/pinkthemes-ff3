@@ -35,7 +35,7 @@
       <rasterize
             result="image/png"
             destdir="output">
-            <fileset dir="input">
+            <fileset dir="tabs">
                 <include name="*.svg" />
             </fileset>
       </rasterize>
