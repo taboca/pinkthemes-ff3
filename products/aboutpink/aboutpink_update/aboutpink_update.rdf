@@ -42,7 +42,7 @@
           </RDF:Description>
 
   <RDF:Description about="aboutpink.pinktheme.com:0.6">
-            <em:version>0.5</em:version>
+            <em:version>0.6</em:version>
             <em:targetApplication>
               <RDF:Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -50,10 +50,8 @@
                 <em:maxVersion>3.1b2</em:maxVersion>
                 <em:updateLink>http://www.pinktheme.com/downloads/aboutpinkv06.xpi</em:updateLink>
 		<em:updateInfoURL>http://www.pinktheme.com/downloads/aboutpink.html</em:updateInfoURL>
-          <em:updateHash>sha1:4329e3e313c91d5952e779e1f349390dac57a397</em:updateHash>
+          <em:updateHash>sha1:ce9c1425e18e9cddf2e138e4d62a1b6db244092d</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
-
-
 
 </RDF:RDF>
