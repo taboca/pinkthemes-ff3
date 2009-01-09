@@ -2,46 +2,34 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$jWIQ7"
+  <RDF:Description RDF:about="rdf:#$TXIQ7"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
                    em:maxVersion="3.1b2"
                    em:updateLink="http://www.pinktheme.com/downloads/aboutpinkv06.xpi"
                    em:updateInfoURL="http://www.pinktheme.com/downloads/aboutpink.html"
                    em:updateHash="sha1:ce9c1425e18e9cddf2e138e4d62a1b6db244092d" />
-  <RDF:Seq RDF:about="rdf:#$.VIQ7">
-    <RDF:li RDF:resource="aboutpink.pinktheme.com:0.4"/>
-    <RDF:li RDF:resource="aboutpink.pinktheme.com:0.5"/>
-    <RDF:li RDF:resource="aboutpink.pinktheme.com:0.6"/>
-  </RDF:Seq>
-  <RDF:Description RDF:about="aboutpink.pinktheme.com:0.5"
-                   em:version="0.5">
-    <em:targetApplication RDF:resource="rdf:#$aWIQ7"/>
+  <RDF:Description RDF:about="urn:mozilla:extension:aboutpink@pinktheme.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBADs8hh1MDU+mtn8/P95pmxnKHKP8pzifoaAab8+lsD76Chkl8Xuhw5aVDK5H+kBnRcO48WlmwAOX2t02BiDraQqsMPIcOZ0PdqKwVkPNKrSJ5ZTNYECSkCLASgI02HzKFyMpQmcIjhSKOV9Gr4BR4k0ao56Wba+MAas2fVyUtIrQ">
+    <em:updates RDF:resource="rdf:#$HXIQ7"/>
   </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$1WIQ7"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0"
-                   em:maxVersion="3.1b2"
-                   em:updateLink="http://www.pinktheme.com/downloads/aboutpinkv04.xpi"
-                   em:updateInfoURL="http://www.pinktheme.com/downloads/aboutpink.html"
-                   em:updateHash="sha1:d151b5d35836d92cb5d37ad4dfa1258e197fcc73" />
-  <RDF:Description RDF:about="aboutpink.pinktheme.com:0.6"
+  <RDF:Description RDF:about="pinktheme.com:0.6"
                    em:version="0.6">
-    <em:targetApplication RDF:resource="rdf:#$jWIQ7"/>
+    <em:targetApplication RDF:resource="rdf:#$TXIQ7"/>
   </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$aWIQ7"
+  <RDF:Description RDF:about="pinktheme.com:0.5"
+                   em:version="0.5">
+    <em:targetApplication RDF:resource="rdf:#$KXIQ7"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$HXIQ7">
+    <RDF:li RDF:resource="pinktheme.com:0.5"/>
+    <RDF:li RDF:resource="pinktheme.com:0.6"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$KXIQ7"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
                    em:maxVersion="3.1b2"
                    em:updateLink="http://www.pinktheme.com/downloads/aboutpinkv05.xpi"
                    em:updateInfoURL="http://www.pinktheme.com/downloads/aboutpink.html"
                    em:updateHash="sha1:4329e3e313c91d5952e779e1f349390dac57a397" />
-  <RDF:Description RDF:about="urn:mozilla:extension:aboutpink@pinktheme.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBABt7OaEd6iVmtvtqU9XMx5usrCyO6FL9l+nO2avaDPiGkHpRO5L/HwuyLV0b0S8tYHekCQ7gRZ4Wxqbk3p2BwJ8OovLUfkay0BeevdgHlsub+NRhQGhDRtsNuRYMryL2GZ0NLrwy7sA8xoO6iv5P0gWHhsfjLLNLR/dwrj1BtkR3">
-    <em:updates RDF:resource="rdf:#$.VIQ7"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="aboutpink.pinktheme.com:0.4"
-                   em:version="0.4">
-    <em:targetApplication RDF:resource="rdf:#$1WIQ7"/>
-  </RDF:Description>
 </RDF:RDF>

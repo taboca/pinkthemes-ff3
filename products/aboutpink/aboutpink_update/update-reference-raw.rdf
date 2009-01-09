@@ -6,28 +6,13 @@
 <RDF:Description about="urn:mozilla:extension:aboutpink@pinktheme.com">
     <em:updates>
       <RDF:Seq>
-        <RDF:li resource="aboutpink.pinktheme.com:0.4"/>
-        <RDF:li resource="aboutpink.pinktheme.com:0.5"/>
-        <RDF:li resource="aboutpink.pinktheme.com:0.6"/>
+        <RDF:li resource="pinktheme.com:0.5"/>
+        <RDF:li resource="pinktheme.com:0.6"/>
       </RDF:Seq>
     </em:updates>
 </RDF:Description>
 
-  <RDF:Description about="aboutpink.pinktheme.com:0.4">
-            <em:version>0.4</em:version>
-            <em:targetApplication>
-              <RDF:Description>
-                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>3.1b2</em:maxVersion>
-                <em:updateLink>http://www.pinktheme.com/downloads/aboutpinkv04.xpi</em:updateLink>
-		<em:updateInfoURL>http://www.pinktheme.com/downloads/aboutpink.html</em:updateInfoURL>
-          <em:updateHash>sha1:d151b5d35836d92cb5d37ad4dfa1258e197fcc73</em:updateHash>
-              </RDF:Description>
-            </em:targetApplication>
-          </RDF:Description>
-
-  <RDF:Description about="aboutpink.pinktheme.com:0.5">
+  <RDF:Description about="pinktheme.com:0.5">
             <em:version>0.5</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -41,7 +26,7 @@
             </em:targetApplication>
           </RDF:Description>
 
-  <RDF:Description about="aboutpink.pinktheme.com:0.6">
+  <RDF:Description about="pinktheme.com:0.6">
             <em:version>0.6</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -53,5 +38,6 @@
           <em:updateHash>sha1:ce9c1425e18e9cddf2e138e4d62a1b6db244092d</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
+          </RDF:Description>
 
 </RDF:RDF>
