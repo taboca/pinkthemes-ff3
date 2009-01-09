@@ -35,7 +35,7 @@
                 <em:maxVersion>3.1b2</em:maxVersion>
                 <em:updateLink>http://www.pinktheme.com/downloads/aboutpinkv05.xpi</em:updateLink>
 		<em:updateInfoURL>http://www.pinktheme.com/downloads/aboutpink.html</em:updateInfoURL>
-          <em:updateHash>sha1:0ac160141d9f6b81b7d86a0cd1fdd7c27c7cc04c</em:updateHash>
+          <em:updateHash>sha1:4329e3e313c91d5952e779e1f349390dac57a397</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>
