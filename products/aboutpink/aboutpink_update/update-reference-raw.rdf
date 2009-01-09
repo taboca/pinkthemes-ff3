@@ -8,6 +8,7 @@
       <RDF:Seq>
         <RDF:li resource="pinktheme.com:0.5"/>
         <RDF:li resource="pinktheme.com:0.6"/>
+        <RDF:li resource="pinktheme.com:0.7"/>
       </RDF:Seq>
     </em:updates>
 </RDF:Description>
@@ -39,5 +40,20 @@
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>
+
+  <RDF:Description about="pinktheme.com:0.7">
+            <em:version>0.7</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>3.0</em:minVersion>
+                <em:maxVersion>3.1b2</em:maxVersion>
+                <em:updateLink>http://www.pinktheme.com/downloads/aboutpinkv07.xpi</em:updateLink>
+		<em:updateInfoURL>http://www.pinktheme.com/downloads/aboutpink.html</em:updateInfoURL>
+          <em:updateHash>sha1:f42996602bbbc87dcbfc56a2f1d807d049ff3747</em:updateHash>
+              </RDF:Description>
+            </em:targetApplication>
+          </RDF:Description>
+
 
 </RDF:RDF>
