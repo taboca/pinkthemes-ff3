@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://pinktabs/skin/pinktabs.css" type="text/css"?>
+<?xml-stylesheet href="chrome://pinktabs/skin/pinktabs-button.css" type="text/css"?>
+
+<overlay id="pinktabstasksOverlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<statusbar id="status-bar">
+	<stringbundle id="pinktabs-localizedstrings" src="chrome://pinktabs/locale/extensionstrings.properties" />
+</statusbar>
+
+<script type="application/x-javascript" src="pinktabs.js"/>
+
+</overlay>

@@ -1,0 +1,187 @@
+@import url("chrome://global/skin/");
+@import url("chrome://browser/skin/browser.css");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.mainPanel {
+ background-color:white;
+ background:white url(images/bgtop.jpg) repeat-x 0 -40px; 
+}
+
+.apptitle {
+ margin:0px; padding:0px;
+ background:transparent url(images/pinktabs.jpg) no-repeat 50% -40px;
+ width:250px;
+ height:110px;
+}
+#pinkcombo {
+	background-color: white;
+	text-align: center;
+}
+
+#pinkcombo tabbox {
+  margin:.6em;
+  text-align: center;
+  max-width: 500px;
+}
+
+
+#pinkcombo tab {
+}
+
+.pinkbase {
+
+   background:transparent ! important;
+   border-bottom:1px solid gray ! important;
+   background-position: 5 5% ! important;
+   margin:3px ! important;
+   margin-right:2px ! important;
+   margin-left:1px ! important;
+   margin-bottom:0px !important;
+
+}
+
+.pinkdemo .tab-icon {
+	display: none;
+}
+
+.pinkdemo:hover, .pinkdemo label { 
+	cursor: pointer ! important;
+}
+
+.pinkdemo[selected="true"] {
+	font-weight: normal;
+
+}
+
+.pinkstyle-default {
+ 
+   background:transparent url(chrome://pinktabs/skin/tab-i1.jpg)  ! important;
+
+}
+
+.pinkstyle-pinkhearts {
+ 
+   background:transparent url(chrome://pinktabs/skin/tab-i1.jpg)  ! important;
+
+}
+
+.pinkstyle-stars {
+ 
+   background:rgb(255,150,240) url(chrome://pinktabs/skin/tab-stars-a.png)  ! important;
+
+}
+
+.pinkstyle-galaxy {
+ 
+   background:rgb(255,99,240) url(chrome://pinktabs/skin/tab-galaxy.png)  ! important;
+
+}
+
+.pinkstyle-colorflowers {
+ 
+   background:rgb(255,99,240) url(chrome://pinktabs/skin/tab-colorflowers.png)  ! important;
+
+}
+
+.pinkstyle-heartsnew{
+ 
+   background:rgb(255,180,242) url(chrome://pinktabs/skin/tab-hearts-alpha.png)  ! important;
+
+}
+
+.pinkstyle-diagonal { 
+
+   background:rgb(255,180,242) url(chrome://pinktabs/skin/tab-i4.jpg)  ! important;
+
+}
+
+.pinkstyle-stargreen{
+ 
+   background:rgb(210,255,210) url(chrome://pinktabs/skin/tab-stars-green.png)  ! important;
+
+}
+
+.previewTabItem {
+
+	border:1px solid white;
+      padding:2px;
+      margin:2px;
+
+}
+
+menuitem.popupmenu {
+	height: 30px;
+	margin: 0px 3px;
+}
+
+menuitem.popupmenu:hover {
+	border: 1px solid #474;
+}
+
+menuitem.menuclassic {
+	background-color: -moz-dialog ! important;
+	background: url("chrome://global/skin/icons/tab-middle.png") repeat-x;
+}
+
+menuitem.menuclassic:hover {
+	color: black;
+}
+
+.pinkbase .tab-image-middle {
+background: transparent ! important; 
+background-image: url("chrome://pinktabs/skin/tab-middle-bkgnd.png") ! important;
+}
+
+.pinkbase:hover > .tab-image-middle, .pinkbase[selected="true"] > .tab-image-middle {
+  border-top:1px solid white;
+  background: url("chrome://global/skin/icons/tab-middle-hover.png") repeat-x ! important;
+}
+
+.pinkbase .tab-image-left {
+background: transparent ! important;
+background-image: url("chrome://pinktabs/skin/tab-left-bkgnd.png") ! important;
+}
+
+.pinkbase:hover > .tab-image-left, .pinkbase[selected="true"] > .tab-image-left {
+  border-top:1px solid white;
+  background: url("chrome://global/skin/icons/tab-left-hover.png") no-repeat ! important;
+}
+
+
+.pinkbase .tab-image-right {
+background: transparent ! important;
+background-image: url("chrome://pinktabs/skin/tab-right-bkgnd.png") ! important;
+}
+
+.pinkbase:hover > .tab-image-right, .pinkbase[selected="true"] > .tab-image-right {
+  border-top:1px solid white;
+background: url("chrome://global/skin/icons/tab-right-hover.png") no-repeat ! important;
+}
+
+.pinkbase .tab-close-button {
+background: transparent;
+background-image: url("chrome://pinktabs/skin/tab-middle-bkgnd.png") ! important;
+} 
+
+.pinkbase:hover > .tab-close-button, .pinkbase[selected="true"] > .tab-close-button {
+	background: url("chrome://global/skin/icons/tab-middle-hover.png") repeat-x ! important;
+}
+
+.pinkpopup {
+	-moz-appearance: none;
+}
+
+
+.tabbrowser-tabs { 
+   height:30px;
+   padding-top:2px;
+}
+
+.tabbrowser-tab { 
+   height:30px;
+}
+ 
+.tab-text { 
+  padding-top:2px;
+} 
+

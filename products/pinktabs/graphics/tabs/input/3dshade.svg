@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="base.css"  type="text/css" ?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800" height="110" view=" 0 0 800 110"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+<defs>
+	<filter id="blurbasic" filterRes="300">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+	</filter>
+  <mask id="mask1">
+        <rect x="0" y="0" width="780" height="100" style="fill:url(#whiteblack)"/>
+   </mask>
+  <mask id="mask2">
+        <rect x="0" y="0" width="780" height="100" style="fill:url(#blackwhite)"/>
+   </mask>
+<linearGradient id="blackwhite" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%"   style="stop-color:black" />
+<stop offset="100%" style="stop-color:white" />
+</linearGradient>
+<linearGradient id="whiteblack" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" style="stop-color:white" />
+<stop offset="100%"   style="stop-color:black" />
+</linearGradient>
+
+
+</defs> 
+<rect   x="0" y="0" rx="10" ry="10" width="780" height="100" class="linewhite"  filter="url(#blurbasic)" mask="url(#mask1)"/>
+<rect   x="0" y="0" rx="10" ry="10" width="780" height="100" class="linewhite"  filter="url(#blurbasic)" mask="url(#mask1)"/>
+<rect   x="0" y="0" rx="10" ry="10" width="780" height="100" class="linedark"  filter="url(#blurbasic)" mask="url(#mask2)"/>
+ 
+
+</svg>

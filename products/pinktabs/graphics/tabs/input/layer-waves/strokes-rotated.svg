@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../base.css"  type="text/css" ?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800" height="120" view=" 0 0 2000 100"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g transform="translate(-180 -30)">
+<g transform="rotate(18 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" stroke="white" fill="none" style="stroke-width:2px; opacity:.6"/> </g>
+<g transform="rotate(20 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" stroke="white" fill="none" style="stroke-width:2px; opacity:.5"/> </g>
+<g transform="rotate(23 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" stroke="white" fill="none" style="stroke-width:2px; opacity:.4"/> </g>
+<g transform="rotate(26 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" stroke="white" fill="none" style="stroke-width:2px; opacity:.3"/> </g>
+<g transform="rotate(30 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" stroke="white" fill="none" style="stroke-width:2px; opacity:.2"/> </g>
+<g transform="rotate(34 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" stroke="white" fill="none" style="stroke-width:2px; opacity:.1"/> </g>
+
+</g>
+</svg>

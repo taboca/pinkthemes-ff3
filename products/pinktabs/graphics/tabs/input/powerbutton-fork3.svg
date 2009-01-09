@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="base.css"  type="text/css" ?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="150" height="140"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<defs>
+  <filter id="filter" filterRes="300" x="0" y="0">
+              <feGaussianBlur stdDeviation="2 2"/>
+              <feOffset dx="1" dy="2"/>
+  </filter>
+        <g id="powerbutton">
+	<rect x="0" y="0" rx="14" ry="14" width="130" height="80" fill="black" />
+        </g>
+
+</defs> 
+
+<use xlink:href="#powerbutton" filter="url(#filter)" />
+<rect x="0" y="0" rx="14" ry="14" width="130" height="80" fill="rgb(240,250,240)" />
+<image x="0" y="-14" width="140px" height="120px"  xlink:href="fork3.svg" />
+
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../base.css"  type="text/css" ?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800" height="710" view=" 0 0 800 710"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g transform="rotate(1 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" class="layer-waves-stroke" opacity="1" /> </g>
+<g transform="rotate(4 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" class="layer-waves-stroke" opacity=".8" /> </g>
+<g transform="rotate(6 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" class="layer-waves-stroke" opacity=".6"/> </g>
+<g transform="rotate(8 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" class="layer-waves-stroke" opacity=".4"/> </g>
+<g transform="rotate(12 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" class="layer-waves-stroke" opacity=".2"/> </g>
+<g transform="rotate(14 500 100)"  > <path d="M-450,80 Q200,185 500,80 T1300,110 T1850,50" class="layer-waves-stroke" opacity=".1"/> </g>
+
+</svg>

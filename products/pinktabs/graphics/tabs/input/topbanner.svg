@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="base.css"  type="text/css" ?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800" height="140"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+<defs>
+  <filter id="filter" filterRes="500" x="0" y="0">
+               <feGaussianBlur stdDeviation="2 2"/>
+              <feOffset dx="0" dy="0"/>
+  </filter>
+   	<mask id="outermask">
+	<rect x="0" y="0" rx="0" ry="0" width="100%" height="100%" style="fill:black;" />
+	<rect x="5%" y="5%" rx="20" ry="20" width="90%" height="90%" style="fill: white; "/>
+	</mask>
+</defs> 
+
+<rect  id="whitebackground"   x="0" y="0" rx="20" ry="20" width="100%" height="100%" class="bannertop" opacity=".5"  />
+
+<g mask="url(#outermask)">
+
+<image id="backgroundImage2" x="0" y="0" width="800" height="600"  xlink:href="fullbackground.svg" />
+<image id="backgroundImage3" x="0" y="0" width="100%" height="100%"  xlink:href="layer-shades/linear-top-transparent.svg" />
+<image id="backgroundImage" x="0" y="0"  width="800" height="600"  xlink:href="layer-waves/waves-rotated.svg" />
+
+<image  x="0" y="0" width="100%" height="100%"  xlink:href="toptext.svg" />
+<image  x="0" y="0" width="100%" height="100%"  xlink:href="toptext.svg" />
+
+</g>
+
+</svg>

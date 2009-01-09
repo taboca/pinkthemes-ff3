@@ -1,0 +1,20 @@
+* {
+	margin:0px; padding:0px;
+}
+
+body {
+  font-family:verdana;
+
+  font-size:76%;
+  padding:1em;
+}
+
+.panel {
+
+margin:.5em;
+padding:.5em;
+
+
+}
+
+ul { padding:.5em } 

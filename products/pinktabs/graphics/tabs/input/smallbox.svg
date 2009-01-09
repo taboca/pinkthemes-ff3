@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="base.css"  type="text/css" ?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="310" height="310" view=" 0 0 310 310"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+<defs>
+   	<mask id="Mask">
+	<rect x="0" y="0" rx="0" ry="0" width="310" height="310" style="fill: white;  "/>
+	<rect x="0" y="0" rx="7" ry="7" width="300" height="300" style="fill: black;  "/>
+	</mask>
+        <g id="rectwhite">
+	<rect   x="0" y="0" rx="0" ry="0" width="310" height="310" class="smallbox" />
+        </g>
+
+</defs> 
+
+
+<use xlink:href="#rectwhite" mask="url(#Mask)" />
+<rect   x="0" y="0" rx="7" ry="7" width="300" height="300" class="smallboxborder"/>
+
+ 
+
+</svg>

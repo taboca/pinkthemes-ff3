@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-
-<project name="aboutpink" default="distrib" basedir=".">
-	
- 	<target name="distrib"  >
-                <zip destfile="build-package-installer/aboutpink.xpi" basedir="src" />
- 	</target>
-	
-</project>

@@ -1,0 +1,12 @@
+
+#pinktabs-button {
+  list-style-image: url("chrome://pinktabs/skin/toolbar.png");
+}
+
+.pinktabs-button {
+  list-style-image: url("chrome://pinktabs/skin/toolbar.png");
+}
+
+toolbar[iconsize="small"] #quicknote-button {
+  list-style-image: url("chrome://pinktabs/skin/toolbar_small.png");
+}

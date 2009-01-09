@@ -1,0 +1,35 @@
+<!-- Configuration Tab -->
+<!ENTITY config.title "PinkTabs configuration">
+<!ENTITY config.welcome "Welcome! You can use this configuration panel to customize the the tabs you like. To quickly access this configuration screen right-click over an existing Tab and the choose the pinkTabs option in the context menu.">
+<!ENTITY config.tip "tip: right-click over an existing tab and pick the pinkTabs options to choose style to your tabs.">
+<!ENTITY config.tabs "Tabs">
+<!ENTITY config.help "Help">
+<!ENTITY config.search "Search">
+<!ENTITY config.about "About">
+<!ENTITY config.instruction "Use the checkboxes to enable the Tab decoration you like.">
+
+<!-- Help tab (opens welcome/welcome.xhtml) -->
+<!ENTITY help.title "Welcome and Initial Help">
+<!ENTITY help.welcome "Welcome!">
+<!ENTITY help.p1 "You can quick access the Configuration settings menu if you click the right mouse button over any tab, then select the pinkTabs options.">
+<!ENTITY help.howto_title "How to Set Tabs">
+<!ENTITY help.howto_p "If you set the checkboxes before a pink decoration, it marks the decoration as active. It will be displayed randomly. You can also mark it per Web site. To set per web site check the above section.">
+<!ENTITY help.feedback "Feedback">
+<!ENTITY help.feedbackwelcome "We welcome feedback, please write it to pinktabs@taboca.com">
+
+<!--  Search tab (opens pinksearch.xhtml) -->
+<!ENTITY more.title "More Panel">
+<!ENTITY more.pinksearch "pinkSearch">
+<!ENTITY more.pinksearch_p "PinkSearch is integrated in pinkTabs as this panel, and it's not enabled. If you want to enable pinkSearch, use the following link, it will take you to the Web site.">
+<!ENTITY more.pinksearch_a "Customize the PinkSearch widget">
+
+<!-- About Tab (opens about.xhtml) -->
+<!ENTITY about.title "About Panel">
+<!ENTITY about.project "Project Information">
+<!ENTITY about.visit "Visit pinktheme.com">
+<!ENTITY about.broughtby "This project is brought to you by Taboca Labs in association with the service published at pinkTheme.com. Developers team:">
+<!ENTITY about.felipe "Felipe Gomes ( Lead Engineer - Firefox Extension Engineer -- felipc@gmail.com )">
+<!ENTITY about.marcio "Marcio Galli ( Producer )">
+<!ENTITY about.paula "Paula Herculano ( QA and original PinkPaula works )">
+<!ENTITY about.legal "Legal">
+<!ENTITY about.legal_p "The software, documentation, and any related material is provided by TabocaInc ( www.taboca.com represented by Marcio Galli ), the Software Developer, in an 'as-is' form with no warranties of any kind. The purpose of the software is to support users on leasure activities and should not be used in mission critical applications. Under no circumstances the said software developer, or any other contributors, shall be liable for any direct or indirect use, or the inability to use this software or any related material. The software may use or connect with external Web site service and the user should check on the web site if there are any terms of use or conditions associated.">

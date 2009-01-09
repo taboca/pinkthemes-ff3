@@ -1,0 +1,11 @@
+
+.from { 
+ 	stop-color:rgb(40,150,170);
+	stop-opacity:.5;
+} 
+
+.to { 
+	stop-color:rgb(255,255,255);
+	stop-opacity:0;
+}
+

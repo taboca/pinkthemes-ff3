@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../layer-background.css"  type="text/css" ?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800" height="710" view=" 0 0 800 710"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<defs>
+<linearGradient id="fromto" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" class="from" />
+<stop offset="100%" class="to" />
+</linearGradient>
+</defs>
+
+<path d="M0,0 2000,0 2000,300 0,300" style="fill:url(#fromto)" opacity=".2" />
+
+</svg>

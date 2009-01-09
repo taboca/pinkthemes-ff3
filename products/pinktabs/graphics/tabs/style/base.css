@@ -1,0 +1,82 @@
+.footertable { 
+ 	width:800px;
+	margin:auto;
+} 
+html { 
+ 	font-family:verdana; 
+	font-size:90%;
+} 
+h3 { 
+ 	color:blue;
+} 
+
+.dotted { 
+ 	background: url(../output/dotted.png) repeat-x 0 0;
+	margin:auto; 
+        height:6px;
+	margin-top:.2em;
+  	margin-bottom:2em;
+   
+} 
+
+            html, body {
+                        padding:0px;
+                        margin:0px;
+                }
+                #topheader {
+                        width:100%;
+                        padding-top:1em;
+                        margin:0px;
+                        height:160px;
+                        background:url(../output/wavebackground-super.png) 0 0 repeat-x;
+                }
+                #header {
+                        margin:auto;
+                        background:url(../output/topbanner.png) 0 0 no-repeat;
+                        width:800px;
+                        height:140px;
+                }
+
+
+.t {background: url(../output/boxshade.png) 0 0 repeat-x; width: 100%; }
+.b {background: url(../output/dot.png) 0 100% repeat-x}
+.l {background: url(../output/dot.png) 0 0 repeat-y}
+.r {background: url(../output/dot.png) 100% 0 repeat-y}
+.bl {background: url(../output/q5.png) 0 100% no-repeat}
+.br {background: url(../output/q4.png) 100% 100% no-repeat}
+.tl {background: url(../output/q1.png) 0 0 no-repeat}
+.tr {background: url(../output/q3.png) 100% 0 no-repeat; padding:10px}
+
+
+h2 { 
+  color:darkred;
+  font-family:verdana; 
+  font-size:95%;
+  margin-top:.1em;
+} 
+
+ul { 
+ margin:0px;
+ padding:1em;
+} 
+
+#content { 
+ 	width:800px;
+	margin:auto;
+ 	padding:.2em;	
+} 
+
+.footercontent { 
+ 	width:800px;
+	margin:auto;
+	padding:1em;
+} 
+
+#footer { 
+ 	color:gray;
+	font-spacing:2px;
+	font-size:77%;
+	width:790px;
+	margin:auto;
+	margin-top:2em;
+} 
