@@ -2,46 +2,74 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="urn:mozilla:extension:aboutpink@pinktheme.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBACM+Wzf/Mz7usU7gth4VG0ILC7ZjSIAbE3szi0Tsgfw0q3zREUNF87VyADku6rBN9UfyC/F31JXu+4NrS5oWWJTmTSfKZ13IZ0/xZn13aD7qcsM0wWyl4TzoUKw83oj2fKsyWBhD5K1+qNXtWlbxlyh4Gt+dSIbIQzH9qym4K0hW">
-    <em:updates RDF:resource="rdf:#$jYIQ7"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="pinktheme.com:0.7"
-                   em:version="0.7">
-    <em:targetApplication RDF:resource="rdf:#$EYIQ7"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="pinktheme.com:0.6"
-                   em:version="0.6">
-    <em:targetApplication RDF:resource="rdf:#$vYIQ7"/>
-  </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$jYIQ7">
-    <RDF:li RDF:resource="pinktheme.com:0.5"/>
-    <RDF:li RDF:resource="pinktheme.com:0.6"/>
-    <RDF:li RDF:resource="pinktheme.com:0.7"/>
-  </RDF:Seq>
-  <RDF:Description RDF:about="pinktheme.com:0.5"
-                   em:version="0.5">
-    <em:targetApplication RDF:resource="rdf:#$mYIQ7"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$mYIQ7"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0"
-                   em:maxVersion="3.1b2"
-                   em:updateLink="http://www.pinktheme.com/downloads/aboutpinkv05.xpi"
-                   em:updateInfoURL="http://www.pinktheme.com/downloads/aboutpink.html"
-                   em:updateHash="sha1:4329e3e313c91d5952e779e1f349390dac57a397" />
-  <RDF:Description RDF:about="rdf:#$EYIQ7"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0"
-                   em:maxVersion="3.1b2"
-                   em:updateLink="http://www.pinktheme.com/downloads/aboutpinkv07.xpi"
-                   em:updateInfoURL="http://www.pinktheme.com/downloads/aboutpink.html"
-                   em:updateHash="sha1:f42996602bbbc87dcbfc56a2f1d807d049ff3747" />
-  <RDF:Description RDF:about="rdf:#$vYIQ7"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0"
-                   em:maxVersion="3.1b2"
-                   em:updateLink="http://www.pinktheme.com/downloads/aboutpinkv06.xpi"
-                   em:updateInfoURL="http://www.pinktheme.com/downloads/aboutpink.html"
-                   em:updateHash="sha1:17fc572217a3e355dec7b2f099a572733bcf6848" />
+
+<RDF:Description about="urn:mozilla:extension:aboutpink@pinktheme.com">
+    <em:updates>
+      <RDF:Seq>
+        <RDF:li resource="pinktheme.com:0.5"/>
+        <RDF:li resource="pinktheme.com:0.6"/>
+        <RDF:li resource="pinktheme.com:0.7"/>
+        <RDF:li resource="pinktheme.com:0.8"/>
+      </RDF:Seq>
+    </em:updates>
+</RDF:Description>
+
+  <RDF:Description about="pinktheme.com:0.5">
+            <em:version>0.5</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>3.0</em:minVersion>
+                <em:maxVersion>3.1b2</em:maxVersion>
+                <em:updateLink>http://www.pinktheme.com/downloads/aboutpinkv05.xpi</em:updateLink>
+		<em:updateInfoURL>http://www.pinktheme.com/downloads/aboutpink.html</em:updateInfoURL>
+          <em:updateHash>sha1:4329e3e313c91d5952e779e1f349390dac57a397</em:updateHash>
+              </RDF:Description>
+            </em:targetApplication>
+          </RDF:Description>
+
+  <RDF:Description about="pinktheme.com:0.6">
+            <em:version>0.6</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>3.0</em:minVersion>
+                <em:maxVersion>3.1b2</em:maxVersion>
+                <em:updateLink>http://www.pinktheme.com/downloads/aboutpinkv06.xpi</em:updateLink>
+		<em:updateInfoURL>http://www.pinktheme.com/downloads/aboutpink.html</em:updateInfoURL>
+          <em:updateHash>sha1:17fc572217a3e355dec7b2f099a572733bcf6848</em:updateHash>
+              </RDF:Description>
+            </em:targetApplication>
+          </RDF:Description>
+
+  <RDF:Description about="pinktheme.com:0.7">
+            <em:version>0.7</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>3.0</em:minVersion>
+                <em:maxVersion>3.1b2</em:maxVersion>
+                <em:updateLink>http://www.pinktheme.com/downloads/aboutpinkv07.xpi</em:updateLink>
+		<em:updateInfoURL>http://www.pinktheme.com/downloads/aboutpink.html</em:updateInfoURL>
+          <em:updateHash>sha1:f42996602bbbc87dcbfc56a2f1d807d049ff3747</em:updateHash>
+              </RDF:Description>
+            </em:targetApplication>
+          </RDF:Description>
+
+  <RDF:Description about="pinktheme.com:0.8">
+            <em:version>0.8</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>3.0</em:minVersion>
+                <em:maxVersion>3.1b2</em:maxVersion>
+                <em:updateLink>http://www.pinktheme.com/downloads/aboutpinkv08.xpi</em:updateLink>
+		<em:updateInfoURL>http://www.pinktheme.com/downloads/aboutpink.html</em:updateInfoURL>
+          <em:updateHash>sha1:ea38f4640fe4cd750fb7a026da4979b760e15405</em:updateHash>
+              </RDF:Description>
+            </em:targetApplication>
+          </RDF:Description>
+
+
+
 </RDF:RDF>
