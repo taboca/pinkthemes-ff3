@@ -3,7 +3,8 @@
 
 <svg width="113" height="44"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-<image id="image" x="-20" y="-20" width="113" height="44"  xlink:href="../input/installbutton.svg" />
+<rect x="0" y="0" width="113" height="44" style="fill:rgb(250,190,240)" />
+<image preserveAspectRatio="xMinYMin meet" id="image" x="0" y="0" width="113" height="44"  xlink:href="../references/balls.svg" />
 <rect x="0" y="0" width="113" height="44" style="fill:white;opacity:.5" />
 
 
