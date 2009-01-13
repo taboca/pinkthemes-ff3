@@ -79,7 +79,6 @@ panel[type="autocomplete-richlistbox"],
 .autocomplete-history-popup {
   padding: 0px !important;
   background-color: -moz-Field;
-  font: icon;
   -moz-appearance: none;
 }
 
