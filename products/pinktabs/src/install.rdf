@@ -5,11 +5,11 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="pinktabs@taboca.com"
                    em:name="PinkTabs"
-                   em:version="0.6"
+                   em:version="0.7"
                    em:description="A Tab Decoration Extension"
                    em:creator="Taboca pinkTabs"
                    em:homepageURL="http://www.pinktheme.com/"
-                   em:optionsURL="chrome://pinktabs/content/pinktabs.xul?about"
+                   em:optionsURL="chrome://pinktabs/content/optionsproxy.xul"
                    em:iconURL="">
     <em:targetApplication RDF:resource="rdf:#$1oL67"/>
   </RDF:Description>

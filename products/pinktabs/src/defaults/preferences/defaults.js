@@ -14,4 +14,4 @@ pref('extensions.pinktabs.themes.pinkhearts.domains', '');
 pref('extensions.pinktabs.themes.classic.domains', '');
 pref('extensions.pinktabs.themes.diagonal.domains', '');
 
-pref('extensions.pinktabs.isinstalled', false);
+pref('extensions.pinktabs.pinksearch_version', -1);

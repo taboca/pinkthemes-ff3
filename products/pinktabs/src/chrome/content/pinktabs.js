@@ -1,12 +1,46 @@
 
-const nsIWebProgress           = Components.interfaces.nsIWebProgress;
-const nsIWebProgressListener   = Components.interfaces.nsIWebProgressListener;
+if(!com) var com={};
+if(!com.taboca) com.taboca={};
+if(!com.taboca.pinkTabs) com.taboca.pinkTabs={};
 
-var taboca_pinktabs = {
+com.taboca.pinkTabs = {
+
+	nsIWebProgress           : Components.interfaces.nsIWebProgress,
+	version			 : 7, 
+	nsIWebProgressListener   : Components.interfaces.nsIWebProgressListener,
+	nsIXULBrowserWindow      : Components.interfaces.nsIXULBrowserWindow,
+	nsISupportsWeakReference : Components.interfaces.nsISupportsWeakReference,
+	nsISupports		 : Components.interfaces.nsISupports,
+        obsSvc: Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService),
+        searchService: Components.classes["@mozilla.org/browser/search-service;1"].getService(Components.interfaces.nsIBrowserSearchService),
+	welcomePageLaunched : false,
+	appBrowserStatusHandler  : null,
+	st_BrowserStatusHandler  : function () {},
+
+	////
+        ///
+        //
+        pinkSearchAddSearch:function() {
+                try {
+                        this.searchService.addEngineWithDetails("Pink Search", "http://www.pinktheme.com/p/start/en/icon.png", "","", "GET", "http://www.pinktheme.com/p/start/en/link.html");
+                } catch(e) {
+                }
+                var addedEngine = this.searchService.getEngineByName("Pink Search");
+                addedEngine.addParam("q", "{searchTerms}", null);
+                try {
+                        var origEngineObj = addedEngine.wrappedJSObject;
+                        origEngineObj._searchForm = "http://www.pinktheme.com/p/start/en/link.html";
+                        origEngineObj._queryCharset = "UTF-8";
+                        origEngineObj._serializeToFile();
+                } catch (i) {  }
+                this.searchService.currentEngine = addedEngine;
+        },
+
+
+	taboca_pinktabs : {
 
 	gWin: null,
 	gst_classList: ["galaxy","heartsnew","stars","colorflowers","pinkhearts","diagonal"],
-
 	gst_ArrayDefaultAll: null,
 	gst_defaultNewTabTheme: "#random",
 	gst_arrayPriorityRulesbyURI: null,
@@ -14,14 +48,14 @@ var taboca_pinktabs = {
 
 	st_setInitialTabs: function() {  //former getTabs
 
-		if (taboca_pinktabs.gWin) {
+		if (com.taboca.pinkTabs.taboca_pinktabs.gWin) {
 
-			gBrowser = taboca_pinktabs.gWin.gBrowser;
+			gBrowser = com.taboca.pinkTabs.taboca_pinktabs.gWin.gBrowser;
 
 			var picked;
 			for (var i = 0; i < gBrowser.mPanelContainer.childNodes.length; i++) {
 				tabItem = gBrowser.mTabContainer.childNodes[i];
-				picked = taboca_pinktabs.st_randomGetFromList();
+				picked = com.taboca.pinkTabs.taboca_pinktabs.st_randomGetFromList();
 				if (picked == 'classic') {
 					tabItem.setAttribute("class", "tabbrowser-tab");
 				} else {
@@ -33,12 +67,12 @@ var taboca_pinktabs = {
 	},
 
 	st_RefreshSelectedTab: function() {
-		taboca_pinktabs.st_RefreshTab(taboca_pinktabs.gWin.gBrowser.selectedTab,false);
+		com.taboca.pinkTabs.taboca_pinktabs.st_RefreshTab(com.taboca.pinkTabs.taboca_pinktabs.gWin.gBrowser.selectedTab,false);
 	},
 
 	st_RefreshTab: function(tabItem, forceRefresh) {
 
-		var gBrowser = taboca_pinktabs.gWin.gBrowser;
+		var gBrowser = com.taboca.pinkTabs.taboca_pinktabs.gWin.gBrowser;
 		var refBrowser = gBrowser.getBrowserForTab(tabItem);
 		var refBrowserURI;
 
@@ -60,8 +94,7 @@ var taboca_pinktabs = {
 
 		if(tabItem.paintedOld!=refBrowserURI || forceRefresh) {
 
-			var forcedClass = taboca_pinktabs.st_matchRule(refBrowserURI);
-
+			var forcedClass = com.taboca.pinkTabs.taboca_pinktabs.st_matchRule(refBrowserURI);
 			if(forcedClass != -1) {
 			
 				if (forcedClass == "pinkstyle-classic") {
@@ -78,9 +111,9 @@ var taboca_pinktabs = {
 					return refBrowserURI;
 				}
 		
-				if(taboca_pinktabs.gst_defaultNewTabTheme == "#random") {
+				if(com.taboca.pinkTabs.taboca_pinktabs.gst_defaultNewTabTheme == "#random") {
 
-					var proposedClass = taboca_pinktabs.st_randomGetFromList();
+					var proposedClass = com.taboca.pinkTabs.taboca_pinktabs.st_randomGetFromList();
 
 					if (proposedClass && proposedClass != "classic") {
 						tabItem.className="tabbrowser-tab pinkbase pinkstyle-"+proposedClass;
@@ -89,28 +122,24 @@ var taboca_pinktabs = {
 					}
 
 				} else {
-					tabItem.className="tabbrowser-tab pinkbase pinkstyle-"+taboca_pinktabs.gst_defaultNewTabTheme;
+					tabItem.className="tabbrowser-tab pinkbase pinkstyle-"+com.taboca.pinkTabs.taboca_pinktabs.gst_defaultNewTabTheme;
 				}
-
 			}
-
 			tabItem.paintedOld=refBrowserURI ;
-
 		}
-
 		return refBrowserURI;
 	},
 
 	st_matchRule: function(refURI) {
 
-		for ( keyValue in taboca_pinktabs.gst_arrayPriorityRulesbyURI) {
+		for ( keyValue in com.taboca.pinkTabs.taboca_pinktabs.gst_arrayPriorityRulesbyURI) {
 
 			if (keyValue.length == 0) {
 				continue;
 			}
 
 			if (refURI.substr(0,keyValue.length) == keyValue) {
-				return "pinkstyle-"+taboca_pinktabs.gst_arrayPriorityRulesbyURI[keyValue];
+				return "pinkstyle-"+com.taboca.pinkTabs.taboca_pinktabs.gst_arrayPriorityRulesbyURI[keyValue];
 			}
 			
 			/*var regExpFineString = keyValue.replace(/\./g,"\.");
@@ -129,12 +158,12 @@ var taboca_pinktabs = {
 
 	st_setupTabPriorityList: function() {
 
-		taboca_pinktabs.gst_arrayPriorityRulesbyURI = new Array();
+		com.taboca.pinkTabs.taboca_pinktabs.gst_arrayPriorityRulesbyURI = new Array();
 
 		var classes = new Array();
 
-		for (var i = 0; i < taboca_pinktabs.gst_classList.length; i++) {
-			classes.push (taboca_pinktabs.gst_classList[i]);
+		for (var i = 0; i < com.taboca.pinkTabs.taboca_pinktabs.gst_classList.length; i++) {
+			classes.push (com.taboca.pinkTabs.taboca_pinktabs.gst_classList[i]);
 		}
 		classes.push("classic");
 
@@ -144,25 +173,22 @@ var taboca_pinktabs = {
 
 			try
 			{
-				domainsForThisClass = taboca_pinktabs.prefBranch.getCharPref("themes." + classes[i] + ".domains").split("\n");
+				domainsForThisClass = com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getCharPref("themes." + classes[i] + ".domains").split("\n");
 			}
 			catch (e) {
 				domainsForThisClass = new Array();
 			}
 			
-
 			for (var ii = 0; ii < domainsForThisClass.length; ii++ ) {
-				
 				if (domainsForThisClass[ii].length > 0) {
-
 					
 					//set the rule for this domain
-					taboca_pinktabs.gst_arrayPriorityRulesbyURI[domainsForThisClass[ii]]= classes[i];
+					com.taboca.pinkTabs.taboca_pinktabs.gst_arrayPriorityRulesbyURI[domainsForThisClass[ii]]= classes[i];
 
 
 					//and remove the rule for other domains
-					/*if(taboca_pinktabs.gst_ArrayDefaultAll[classReference]) {      try {
-						taboca_pinktabs.gst_ArrayDefaultAll[classReference] = null;        } catch (i) {}
+					/*if(com.taboca.pinkTabs.taboca_pinktabs.gst_ArrayDefaultAll[classReference]) {      try {
+						com.taboca.pinkTabs.taboca_pinktabs.gst_ArrayDefaultAll[classReference] = null;        } catch (i) {}
 					}*/
 
 				}
@@ -179,9 +205,9 @@ var taboca_pinktabs = {
 		var electedArray = new Array();
 		var counter = 0;
 
-		for(keyValue in taboca_pinktabs.gst_ArrayDefaultAll) {
+		for(keyValue in com.taboca.pinkTabs.taboca_pinktabs.gst_ArrayDefaultAll) {
 
-			var verify = taboca_pinktabs.gst_ArrayDefaultAll[keyValue];
+			var verify = com.taboca.pinkTabs.taboca_pinktabs.gst_ArrayDefaultAll[keyValue];
 			if(verify) {
 
 				electedArray[counter]=keyValue;
@@ -208,12 +234,12 @@ var taboca_pinktabs = {
 		   * Defines the full list 
 		   */
 
-		taboca_pinktabs.gst_ArrayDefaultAll = {};
+		com.taboca.pinkTabs.taboca_pinktabs.gst_ArrayDefaultAll = {};
 
-		for(var i=0;i<taboca_pinktabs.gst_classList.length;i++) {
+		for(var i=0;i<com.taboca.pinkTabs.taboca_pinktabs.gst_classList.length;i++) {
 	
-			if ( taboca_pinktabs.prefBranch.getBoolPref("themes." + taboca_pinktabs.gst_classList[i] + ".enabled") ) {
-				taboca_pinktabs.gst_ArrayDefaultAll[taboca_pinktabs.gst_classList[i]]=1;
+			if ( com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getBoolPref("themes." + com.taboca.pinkTabs.taboca_pinktabs.gst_classList[i] + ".enabled") ) {
+				com.taboca.pinkTabs.taboca_pinktabs.gst_ArrayDefaultAll[com.taboca.pinkTabs.taboca_pinktabs.gst_classList[i]]=1;
 			}
 		
 		}
@@ -234,7 +260,7 @@ var taboca_pinktabs = {
 			var insertPos = tabMenu.lastChild.previousSibling;
 
 			menu_entry.setAttribute("id", "pinktabs-menuentry");
-			menu_entry.setAttribute("label", taboca_pinktabs.getLocalizedString('pinktabs.popupmenuentry'));
+			menu_entry.setAttribute("label", com.taboca.pinkTabs.taboca_pinktabs.getLocalizedString('pinktabs.popupmenuentry'));
 			menu_entry.setAttribute("accesskey", "K");
 
 			menu_entry.appendChild(menupopup_main);
@@ -244,29 +270,29 @@ var taboca_pinktabs = {
 			menupopup_main.appendChild(menuitemconfig);
 			
 			menuitemconfig.setAttribute("id", "pinktabs-config");
-			menuitemconfig.setAttribute("label", taboca_pinktabs.getLocalizedString('pinktabs.configure'));
-			menuitemconfig.setAttribute("oncommand", "taboca_pinktabs.st_openConfigTab(false)");
+			menuitemconfig.setAttribute("label", com.taboca.pinkTabs.taboca_pinktabs.getLocalizedString('pinktabs.configure'));
+			menuitemconfig.setAttribute("oncommand", "com.taboca.pinkTabs.taboca_pinktabs.st_openConfigTab(false)");
 
 			menu_select.setAttribute("id", "pinktabs-menuselect");
-			menu_select.setAttribute("label", taboca_pinktabs.getLocalizedString('pinktabs.selectart'));
+			menu_select.setAttribute("label", com.taboca.pinkTabs.taboca_pinktabs.getLocalizedString('pinktabs.selectart'));
 			menu_select.appendChild(menupopup_select);
 
 			var tmp;
 
-			for(var i=0;i<taboca_pinktabs.gst_classList.length;i++) {
+			for(var i=0;i<com.taboca.pinkTabs.taboca_pinktabs.gst_classList.length;i++) {
 				tmp = document.createElement("menuitem");
-				tmp.setAttribute("id", taboca_pinktabs.gst_classList[i]);
-				//tmp.setAttribute("label", taboca_pinktabs.gst_classList[i]);
-				tmp.setAttribute("class", "popupmenu pinkpopup pinkstyle-" + taboca_pinktabs.gst_classList[i]);
-				tmp.setAttribute("oncommand","var origin = this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.mContextTab; taboca_pinktabs.st_chooseThisDecoration(origin, "+i+");");
+				tmp.setAttribute("id", com.taboca.pinkTabs.taboca_pinktabs.gst_classList[i]);
+				//tmp.setAttribute("label", com.taboca.pinkTabs.taboca_pinktabs.gst_classList[i]);
+				tmp.setAttribute("class", "popupmenu pinkpopup pinkstyle-" + com.taboca.pinkTabs.taboca_pinktabs.gst_classList[i]);
+				tmp.setAttribute("oncommand","var origin = this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.mContextTab; com.taboca.pinkTabs.taboca_pinktabs.st_chooseThisDecoration(origin, "+i+");");
 				menupopup_select.appendChild(tmp);
 			}
 
 			tmp = document.createElement("menuitem");
 			tmp.setAttribute("id", "classic");
-			tmp.setAttribute("label", taboca_pinktabs.getLocalizedString('pinktabs.classictab'));
+			tmp.setAttribute("label", com.taboca.pinkTabs.taboca_pinktabs.getLocalizedString('pinktabs.classictab'));
 			tmp.setAttribute("class", "popupmenu menuclassic");
-			tmp.setAttribute("oncommand","var origin = this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.mContextTab; taboca_pinktabs.st_chooseThisDecoration(origin, 'classic');");
+			tmp.setAttribute("oncommand","var origin = this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.mContextTab; com.taboca.pinkTabs.taboca_pinktabs.st_chooseThisDecoration(origin, 'classic');");
 			menupopup_select.appendChild(tmp);
 
 
@@ -274,8 +300,8 @@ var taboca_pinktabs = {
 			
 			tmp = document.createElement("menuitem");
 			tmp.setAttribute("id", "randomitem");
-			tmp.setAttribute("label", taboca_pinktabs.getLocalizedString('pinktabs.random'));
-			tmp.setAttribute("oncommand","var origin = this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.mContextTab; taboca_pinktabs.st_chooseThisDecoration(origin, 'random');");
+			tmp.setAttribute("label", com.taboca.pinkTabs.taboca_pinktabs.getLocalizedString('pinktabs.random'));
+			tmp.setAttribute("oncommand","var origin = this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.mContextTab; com.taboca.pinkTabs.taboca_pinktabs.st_chooseThisDecoration(origin, 'random');");
 
 			menupopup_select.appendChild(tmp);
 
@@ -284,11 +310,23 @@ var taboca_pinktabs = {
 		}
 	},
 
+	welcomeTry: function () { 
+		com.taboca.pinkTabs.taboca_pinktabs.st_openConfigTab(true);
+	}, 
+	welcomeTryAgain: function () { 
+		if(!com.taboca.pinkTabs.welcomePageLaunched) { 
+
+			alert("Launched via second launcher");
+			com.taboca.pinkTabs.taboca_pinktabs.st_openConfigTab(true);
+		} 
+	},
 	st_openConfigTab: function(firstrun) {
+
 		if (firstrun) {
-			taboca_pinktabs.gWin.gBrowser.loadOneTab("chrome://pinktabs/content/pinktabs.xul?welcome",undefined,undefined,undefined,false);
+			com.taboca.pinkTabs.taboca_pinktabs.gWin.gBrowser.loadOneTab("chrome://pinktabs/content/pinktabs.xul?welcome",undefined,undefined,undefined,false);
+			com.taboca.pinkTabs.welcomePageLaunched=true;
 		} else {
-			taboca_pinktabs.gWin.gBrowser.loadOneTab("chrome://pinktabs/content/pinktabs.xul",undefined,undefined,undefined,false);
+			com.taboca.pinkTabs.taboca_pinktabs.gWin.gBrowser.loadOneTab("chrome://pinktabs/content/pinktabs.xul",undefined,undefined,undefined,false);
 		}
 	},
 
@@ -297,8 +335,8 @@ var taboca_pinktabs = {
 		var removed;
 		
 		// first check if this domain is already assigned to another decoration. if so, remove it
-		for (i=0; i < taboca_pinktabs.gst_classList.length; i++) {
-			var domains = taboca_pinktabs.prefBranch.getCharPref("themes." + taboca_pinktabs.gst_classList[i] + ".domains").split("\n");
+		for (i=0; i < com.taboca.pinkTabs.taboca_pinktabs.gst_classList.length; i++) {
+			var domains = com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getCharPref("themes." + com.taboca.pinkTabs.taboca_pinktabs.gst_classList[i] + ".domains").split("\n");
 			removed = false;
 			for (ii=0; ii<domains.length; ii++) {
 				if (domains[ii] == URI) {
@@ -308,13 +346,13 @@ var taboca_pinktabs = {
 				}
 			}
 			if (removed) {
-				taboca_pinktabs.prefBranch.setCharPref("themes." + taboca_pinktabs.gst_classList[i] + ".domains",domains.join("\n"));
+				com.taboca.pinkTabs.taboca_pinktabs.prefBranch.setCharPref("themes." + com.taboca.pinkTabs.taboca_pinktabs.gst_classList[i] + ".domains",domains.join("\n"));
 			}
 
 		}
 		
 		// or check if this domain is assign to 'classic' decoration. if so, remove too.
-		var domains = taboca_pinktabs.prefBranch.getCharPref("themes.classic.domains").split("\n");
+		var domains = com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getCharPref("themes.classic.domains").split("\n");
 		removed = false;
 		for (ii=0; ii<domains.length; ii++) {
 			if (domains[ii] == URI) {
@@ -324,268 +362,161 @@ var taboca_pinktabs = {
 			}
 		}
 		if (removed) {
-			taboca_pinktabs.prefBranch.setCharPref("themes.classic.domains",domains.join("\n"));
+			com.taboca.pinkTabs.taboca_pinktabs.prefBranch.setCharPref("themes.classic.domains",domains.join("\n"));
 		}
 
 
 		if (b == 'random') {
-			taboca_pinktabs.st_RefreshTab(a,true);
+			com.taboca.pinkTabs.taboca_pinktabs.st_RefreshTab(a,true);
 			// Selecting Random just removes the domain from any possible assignment, so we can stop here.
 			return;
 		}
 		//now we set the new rule
-		var decorationName = (b == 'classic') ? 'classic' : taboca_pinktabs.gst_classList[b];
+		var decorationName = (b == 'classic') ? 'classic' : com.taboca.pinkTabs.taboca_pinktabs.gst_classList[b];
 
-		var rulesplusnew = taboca_pinktabs.prefBranch.getCharPref("themes." + decorationName + ".domains");
+		var rulesplusnew = com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getCharPref("themes." + decorationName + ".domains");
 		if (rulesplusnew) {
 			rulesplusnew += "\n" + URI;
 		} else {
 			rulesplusnew = URI;
 		}
-		taboca_pinktabs.prefBranch.setCharPref("themes." + decorationName + ".domains", rulesplusnew);
-		taboca_pinktabs.gst_arrayPriorityRulesbyURI[URI]=decorationName;
-		taboca_pinktabs.st_RefreshTab(a,true);
+		com.taboca.pinkTabs.taboca_pinktabs.prefBranch.setCharPref("themes." + decorationName + ".domains", rulesplusnew);
+		com.taboca.pinkTabs.taboca_pinktabs.gst_arrayPriorityRulesbyURI[URI]=decorationName;
+		com.taboca.pinkTabs.taboca_pinktabs.st_RefreshTab(a,true);
 
 	},
 
 	catchNewTab: function(tab, count) {
 		
 		//hack to decorate new tabs opened in background
-		var j = taboca_pinktabs.st_RefreshTab(tab,false);
+		var j = com.taboca.pinkTabs.taboca_pinktabs.st_RefreshTab(tab,false);
 		if ((j == 'about:blank') && count < 5) {
-			window.setTimeout(function(){taboca_pinktabs.catchNewTab(tab,count+1);},1000);
+			window.setTimeout(function(){com.taboca.pinkTabs.taboca_pinktabs.catchNewTab(tab,count+1);},1000);
 		}
 	},
 
 	Init: function() {
 
-		taboca_pinktabs.prefBranch = Components.classes["@mozilla.org/preferences-service;1"]
+		com.taboca.pinkTabs.taboca_pinktabs.prefBranch = Components.classes["@mozilla.org/preferences-service;1"]
 							.getService(Components.interfaces.nsIPrefService)
 							.getBranch("extensions.pinktabs.");
 
 
-		 taboca_pinktabs.stringBundle = document.getElementById("pinktabs-localizedstrings");
+		 com.taboca.pinkTabs.taboca_pinktabs.stringBundle = document.getElementById("pinktabs-localizedstrings");
 
-		 taboca_pinktabs.gWin = window;
-		 taboca_pinktabs.st_populateThemeArray();
-		 taboca_pinktabs.st_setupTabPriorityList();
+		 com.taboca.pinkTabs.taboca_pinktabs.gWin = window;
+		 com.taboca.pinkTabs.taboca_pinktabs.st_populateThemeArray();
+		 com.taboca.pinkTabs.taboca_pinktabs.st_setupTabPriorityList();
 
 		 /* 
 		  * Hook our status Handler withthe main TabBrowser 
 		  */
 
-		appBrowserStatusHandler = new st_BrowserStatusHandler();
-		appBrowserStatusHandler.init();
-		taboca_pinktabs.gWin.gBrowser.addProgressListener(appBrowserStatusHandler, nsIWebProgress.NOTIFY_ALL);
-		
-		taboca_pinktabs.st_setInitialTabs();
-		taboca_pinktabs.st_createPopupMenu();
+
+		com.taboca.pinkTabs.appBrowserStatusHandler = new com.taboca.pinkTabs.st_BrowserStatusHandler();
+
+		com.taboca.pinkTabs.appBrowserStatusHandler.init();
+		com.taboca.pinkTabs.taboca_pinktabs.gWin.gBrowser.addProgressListener(com.taboca.pinkTabs.appBrowserStatusHandler, com.taboca.pinkTabs.nsIWebProgress.NOTIFY_ALL);
+
+		com.taboca.pinkTabs.taboca_pinktabs.st_setInitialTabs();
+		com.taboca.pinkTabs.taboca_pinktabs.st_createPopupMenu();
 
 
-		if (!taboca_pinktabs.prefBranch.prefHasUserValue("isinstalled") || taboca_pinktabs.prefBranch.getBoolPref("isinstalled") == false) {
+		if (!com.taboca.pinkTabs.taboca_pinktabs.prefBranch.prefHasUserValue("pinksearch_version") || com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getIntPref("pinksearch_version") < com.taboca.pinkTabs.version) {
 			//first run
-			taboca_pinktabs.st_openConfigTab(true);
-			taboca_pinktabs.prefBranch.setBoolPref("isinstalled",true);
+			com.taboca.pinkTabs.taboca_pinktabs.prefBranch.setIntPref("pinksearch_version",com.taboca.pinkTabs.version);
+
+			sessionRestoreObserve =  {
+		                observe: function(subject, topic, data) {
+		                 try {  com.taboca.pinkTabs.taboca_pinktabs.welcomeTry() ; } catch(e) { } }
+
+	                };
+
+	                com.taboca.pinkTabs.obsSvc.addObserver( sessionRestoreObserve,  "sessionstore-windows-restored" , false);
+			/* This might not be necessary because I think the sessionstore always restore */
+
+			setTimeout("com.taboca.pinkTabs.welcomeTryAgain()",5000);
+
 		}
 
-
-
-		taboca_pinktabs.gWin.gBrowser.mTabContainer.addEventListener("DOMNodeInserted",
+		com.taboca.pinkTabs.taboca_pinktabs.gWin.gBrowser.mTabContainer.addEventListener("DOMNodeInserted",
 			function(e){
 		
-				window.setTimeout(function(){taboca_pinktabs.catchNewTab(e.originalTarget,1);},10);
+				window.setTimeout(function(){com.taboca.pinkTabs.com.taboca.pinkTabs.taboca_pinktabs.catchNewTab(e.originalTarget,1);},10);
 
 
 			},
 			true);
 
 	
-		//gBrowser.mPanelContainer.addEventListener("DOMNodeRemoved", taboca_pinktabs.st_removeNewTab, false);
+		//gBrowser.mPanelContainer.addEventListener("DOMNodeRemoved", com.taboca.pinkTabs.taboca_pinktabs.st_removeNewTab, false);
 	  
  
 	},
 
 	Destruct: function() {
-		var ObserverService = Components.classes["@mozilla.org/observer-service;1"].getService();
-		ObserverService = ObserverService.QueryInterface(Components.interfaces.nsIObserverService);
-		if (ObserverService && macroZillaObserver) {
-			ObserverService.removeObserver(macroZillaObserver, "EndDocumentLoad");
-			macroZillaObserver = null;
-		}
 	},
 
 	getLocalizedString: function(strName) {
 		try
 		{
-			return taboca_pinktabs.stringBundle.getString(strName);
+			return com.taboca.pinkTabs.taboca_pinktabs.stringBundle.getString(strName);
 		} catch (e) {
 			return '';
 		}
 	}
 
-}
+  	} // end of pink_tabs inner object
+} // com.taboca.pinkTabs
 
 
-/*
- * FIM do objeto taboca_pinktabs
- *
- * daqui pra baixo vai pra namespace global
- *
- *
- *
- */
-
-function getPrefPopulate() {
-
-	var prefService = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
-
-	try
-		{
-		fadedeg = prefService.getCharPref("extensions.pinktabs.listgrep");
-		}
-
-	catch(e) {}
-	
-}
-
-function setPrefPopulate() {
-
-}
-
-addEventListener("load", taboca_pinktabs.Init, false);
-addEventListener("unload", taboca_pinktabs.Destruct, false);
-
-var linkIDCounter;
-var macroZillaObserver = null;
-var macroZillaObserver2 = null;
-var __contentDocument=null;
-var annotaiontext=null;
-var appBrowserStatusHandler=null;
-
-/////
-//// Observers
-///
-
-function NavObserver(ContentWindow) {
-	  this.ContentWindow = ContentWindow;
-}
-
-function NavObserver2(ContentWindow) {
-	  this.ContentWindow = ContentWindow;
-}
-
-NavObserver.prototype.observe = function (Subject) {
-	  try  {
-		    if (this.ContentWindow == Subject) 
-			  var ContentWindow = macroZillaObserver.ContentWindow;
-			__contentDocument=ContentWindow.document;
-
-			pageLoaded();	  
-	  }
-	  catch (e)  {
-	  }
-}
-
-NavObserver2.prototype.observe = function (Subject) {
-	  try {
-		    if (this.ContentWindow == Subject)
-		      pageUnloaded();
-	  }
-	  catch (e) {
-	  }
-}
-
-
-/////
-//// unload and load
-///
-
-function pageUnloaded() {
-
-
-}
-
-
-function pageLoaded(e) {
-
-	contentframe=window._content;
-	var url = contentframe.location.href;
-	if (url == "" || url == "about:blank") {
-		return;
-	} else {
-
- 		// contentframe.addEventListener("mousedown",canvasDragUpdate,false);
-
-		//canvasUpdate();
-		
-	}
-	
-
-}
-
-
-
-
-/* 
- * Browser Loader Handler 
- */
-
-
-function st_BrowserStatusHandler() {};
-
-st_BrowserStatusHandler.prototype = 
+com.taboca.pinkTabs.st_BrowserStatusHandler.prototype =
 {
   QueryInterface : function(aIID)
   {
-    if (aIID.equals(nsIWebProgressListener) ||
-        aIID.equals(nsIXULBrowserWindow) ||
-        aIID.equals(nsISupportsWeakReference) ||
-        aIID.equals(nsISupports))
+    if (aIID.equals(com.taboca.pinkTabs.nsIWebProgressListener) ||
+        aIID.equals(com.taboca.pinkTabs.nsIXULBrowserWindow) ||
+        aIID.equals(com.taboca.pinkTabs.nsISupportsWeakReference) ||
+        aIID.equals(com.taboca.pinktabs.nsISupports))
     {
       return this;
     }
     throw Components.results.NS_NOINTERFACE;
   },
-  
+
   init : function()
   {
     this.currentTotalProgress = 0;
     this.maxTotalProgress     = 0;
   },
-  
+
   destroy : function()
   {
   },
-  
+
   onStateChange : function(aWebProgress, aRequest, aStateFlags, aStatus)
   {
     var refBrowser=null;
     var tabItem=null;
-
-
-    if (aStateFlags & nsIWebProgressListener.STATE_IS_NETWORK)
+    if (aStateFlags & com.taboca.pinkTabs.nsIWebProgressListener.STATE_IS_NETWORK)
     {
-      if (aStateFlags & nsIWebProgressListener.STATE_START)
+      if (aStateFlags & com.taboca.pinkTabs.nsIWebProgressListener.STATE_START)
       {
         return;
       }
-      if (aStateFlags & nsIWebProgressListener.STATE_STOP)
+      if (aStateFlags & com.taboca.pinkTabs.nsIWebProgressListener.STATE_STOP)
       {
         return;
       }
       return;
     }
-    
-    if (aStateFlags & nsIWebProgressListener.STATE_IS_DOCUMENT)
-    { 
-      if (aStateFlags & nsIWebProgressListener.STATE_START)
+    if (aStateFlags & com.taboca.pinkTabs.nsIWebProgressListener.STATE_IS_DOCUMENT)    {
+      if (aStateFlags & com.taboca.pinkTabs.nsIWebProgressListener.STATE_START)
       {
         return;
       }
-      
-      if (aStateFlags & nsIWebProgressListener.STATE_STOP)
-      {        
-
+      if (aStateFlags & com.taboca.pinkTabs.nsIWebProgressListener.STATE_STOP)
+      {
         return;
       }
       return;
@@ -593,56 +524,19 @@ st_BrowserStatusHandler.prototype =
   },
   onProgressChange : function(aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress)
   {
-	/*
-    this.currentTotalProgress = aCurTotalProgress;
-    this.maxTotalProgress     = aMaxTotalProgress;
-
-    var percentage = parseInt((aCurTotalProgress/aMaxTotalProgress)*parseInt(gURLBarBoxObject.width));
-    if(percentage<0) percentage=10;
-
-	*/
   },
   onLocationChange : function(aWebProgress, aRequest, aLocation)
   {
-    
-//	alert("onLocationChange");
       domWindow = aWebProgress.DOMWindow;
-
-
       if (domWindow == domWindow.top) {
-        //this.urlBar.value = aLocation.spec;
-//	alert("oLC");
-	   taboca_pinktabs.st_RefreshSelectedTab();
-        
+           com.taboca.pinkTabs.taboca_pinktabs.st_RefreshSelectedTab();
       }
-    
   },
-  
-  onStatusChange : function(aWebProgress, aRequest, aStatus, aMessage)
-  {
-//	  alert ("aStatus: " + aStatus);
-  },
-  startDocumentLoad : function(aRequest)
-  {
-  },
-  endDocumentLoad : function(aRequest, aStatus)
-  {
-	  //alert("endDocumentLoad");
-  },
-  onSecurityChange : function(aWebProgress, aRequest, aState)
-  {
-  },
-  setJSStatus : function(status)
-  {
-  },
-  setJSDefaultStatus : function(status)
-  {
-  },
-  setDefaultStatus : function(status)
-  {
-  },
-  setOverLink : function(link, b)
-  {
-  }
+
+  onStatusChange : function(aWebProgress, aRequest, aStatus, aMessage) { }, startDocumentLoad : function(aRequest) { }, endDocumentLoad : function(aRequest, aStatus) { }, onSecurityChange : function(aWebProgress, aRequest, aState) { }, setJSStatus : function(status) { }, setJSDefaultStatus : function(status) { }, setDefaultStatus : function(status) { }, setOverLink : function(link, b) { }
 }
 
+
+
+addEventListener("load", com.taboca.pinkTabs.taboca_pinktabs.Init, false);
+addEventListener("unload", com.taboca.pinkTabs.taboca_pinktabs.Destruct, false);

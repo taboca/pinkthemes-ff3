@@ -1,4 +1,5 @@
 pinkTabs 0.5
+pinkTabs 0.6
 
 Copyright (c) taboca . com 
 Check at web site www.pinktheme.com - this is provided under "as-is" form with no warranties of any kind. Besides, it's also beta software so use it for leisure and non mission critical applications, at your own risk. In no event the developer ( marcio or its associated partners or systems or providers ) should be liable for any direct use, indirect use, or the inability to use this software or any other related material. Contact adm@taboca.com if you have questions

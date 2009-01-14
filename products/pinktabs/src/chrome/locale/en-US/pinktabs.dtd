@@ -4,7 +4,9 @@
 <!ENTITY config.tip "tip: right-click over an existing tab and pick the pinkTabs options to choose style to your tabs.">
 <!ENTITY config.tabs "Tabs">
 <!ENTITY config.help "Help">
-<!ENTITY config.search "Search">
+<!ENTITY config.search "Pink Search">
+<!ENTITY config.aboutoptionsmessage "The about:pinktabs configuration window was opened in the main browser">
+<!ENTITY config.aboutpinktabs "You can type ( in the address bar ) about:pinktabs to access this panel">
 <!ENTITY config.about "About">
 <!ENTITY config.instruction "Use the checkboxes to enable the Tab decoration you like.">
 
@@ -15,12 +17,17 @@
 <!ENTITY help.howto_title "How to Set Tabs">
 <!ENTITY help.howto_p "If you set the checkboxes before a pink decoration, it marks the decoration as active. It will be displayed randomly. You can also mark it per Web site. To set per web site check the above section.">
 <!ENTITY help.feedback "Feedback">
-<!ENTITY help.feedbackwelcome "We welcome feedback, please write it to pinktabs@taboca.com">
+<!ENTITY help.feedbackwelcome "We welcome feedback, please write it to pinktheme@taboca.com">
 
 <!--  Search tab (opens pinksearch.xhtml) -->
 <!ENTITY more.title "More Panel">
 <!ENTITY more.pinksearch "pinkSearch">
-<!ENTITY more.pinksearch_p "PinkSearch is integrated in pinkTabs as this panel, and it's not enabled. If you want to enable pinkSearch, use the following link, it will take you to the Web site.">
+<!ENTITY more.pinksearch_install "Install Pink Search">
+<!ENTITY more.pinksearch_searchadded "Pink Search added">
+
+<!ENTITY more.pinksearch_tip "TIP">
+<!ENTITY more.pinksearch_explanation "Use CTRL + K to quick access the search instantly everytime you want to do a search.">
+<!ENTITY more.pinksearch_p "PinkSearch adds a Google-based search engine with a pink touch - you can even customize your own style. Click the button to install pink search. The results are provided by Google web services via PinkTheme site. Results are preserved and not modified by the web site.">
 <!ENTITY more.pinksearch_a "Customize the PinkSearch widget">
 
 <!-- About Tab (opens about.xhtml) -->

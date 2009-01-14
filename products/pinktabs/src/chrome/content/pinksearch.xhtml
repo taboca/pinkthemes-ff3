@@ -1,10 +1,31 @@
 <?xml version="1.0"?>
 
 <?xml-stylesheet href="chrome://pinktabs/skin/more.css" type="text/css"?>
+<?xml-stylesheet href="chrome://pinktabs/skin/base-fork3.css" type="text/css"?>
 
 <!DOCTYPE window SYSTEM "chrome://pinktabs/locale/pinktabs.dtd">
 
+
+
 <more xmlns="http://www.w3.org/1999/xhtml" >
+
+<script>
+	function installPinkSearch() { 
+
+  var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+                     .getService(Components.interfaces.nsIWindowMediator);
+  openerWindow = wm.getMostRecentWindow("navigator:browser");
+	openerWindow.com.taboca.pinkTabs.pinkSearchAddSearch();
+
+
+		setTimeout("afterAdd()",1000);
+	} 
+
+	function afterAdd() { 
+		document.getElementById("searchadded").style.display="block";
+		document.getElementById("info").style.display="none";
+	} 
+</script>
 
 <head>
 <title>&more.title;</title>
@@ -13,10 +34,24 @@
 <body >
 <h3>&more.pinksearch;</h3>
 
-<div class="panel" >
+<div class="panel" style="display:block" id="info" >
 <p>&more.pinksearch_p;</p>
 <p>
-<a href="http://searchstyle.pinktheme.com/custom.html#pt" target="_blank">&more.pinksearch_a;</a>
+<div style="" class="installbutton" ><img class="fixverticalalign" src="chrome://pinktabs/content/graphics/transparent.png" /><a href="javascript:" onclick="installPinkSearch();return false" >&more.pinksearch_install;</a> </div>
+</p>
+<p>
+<b>&more.pinksearch_tip;:</b> &more.pinksearch_explanation; 
+<img src="chrome://pinktabs/skin/pinksearch.png" />
+</p> 
+</div>
+
+
+<div id="searchadded" class="panel" style="display:none">
+<p style="padding:1em">
+<h2>&more.pinksearch_searchadded;</h2>
+
+<b>&more.pinksearch_tip;:</b> &more.pinksearch_explanation; 
+
 </p>
 </div>
 

@@ -7,6 +7,7 @@
  background:white url(images/bgtop.jpg) repeat-x 0 -40px; 
 }
 
+
 .apptitle {
  margin:0px; padding:0px;
  background:transparent url(images/pinktabs.jpg) no-repeat 50% -40px;
@@ -21,7 +22,7 @@
 #pinkcombo tabbox {
   margin:.6em;
   text-align: center;
-  max-width: 500px;
+  max-width:700px; 
 }
 
 
@@ -133,8 +134,7 @@ background-image: url("chrome://pinktabs/skin/tab-middle-bkgnd.png") ! important
 }
 
 .pinkbase:hover > .tab-image-middle, .pinkbase[selected="true"] > .tab-image-middle {
-  border-top:1px solid white;
-  background: url("chrome://global/skin/icons/tab-middle-hover.png") repeat-x ! important;
+  background: url("chrome://pinktabs/skin/tab-middle-hover.png") repeat-x ! important;
 }
 
 .pinkbase .tab-image-left {
@@ -143,8 +143,7 @@ background-image: url("chrome://pinktabs/skin/tab-left-bkgnd.png") ! important;
 }
 
 .pinkbase:hover > .tab-image-left, .pinkbase[selected="true"] > .tab-image-left {
-  border-top:1px solid white;
-  background: url("chrome://global/skin/icons/tab-left-hover.png") no-repeat ! important;
+  background: url("chrome://pinktabs/skin/tab-left-hover.png") no-repeat ! important;
 }
 
 
@@ -154,8 +153,7 @@ background-image: url("chrome://pinktabs/skin/tab-right-bkgnd.png") ! important;
 }
 
 .pinkbase:hover > .tab-image-right, .pinkbase[selected="true"] > .tab-image-right {
-  border-top:1px solid white;
-background: url("chrome://global/skin/icons/tab-right-hover.png") no-repeat ! important;
+background: url("chrome://pinktabs/skin/tab-right-hover.png") no-repeat ! important;
 }
 
 .pinkbase .tab-close-button {

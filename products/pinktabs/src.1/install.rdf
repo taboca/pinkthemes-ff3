@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="pinktabs@taboca.com"
+                   em:name="PinkTabs"
+                   em:version="0.6"
+                   em:description="A Tab Decoration Extension"
+                   em:creator="Taboca pinkTabs"
+                   em:homepageURL="http://www.pinktheme.com/"
+                   em:optionsURL="chrome://pinktabs/content/pinktabs.xul?about"
+                   em:iconURL="">
+    <em:targetApplication RDF:resource="rdf:#$1oL67"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$1oL67"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="3.1b2" />
+</RDF:RDF>

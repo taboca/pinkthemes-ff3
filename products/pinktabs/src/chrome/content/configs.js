@@ -1,6 +1,6 @@
 var openerWindow = null;
 
-if(document.location.href.indexOf("about")>-1) {
+if(document.location.href.indexOf("options")>-1) {
 
   var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
                      .getService(Components.interfaces.nsIWindowMediator);
@@ -23,13 +23,13 @@ var st_ui_tabrule_checkbox = function(refId) {
 	var splitName = refId.split("ref-")[1];
 	if(!document.getElementById("checkbox-"+splitName).checked) {
 
-		openerWindow.taboca_pinktabs.gst_ArrayDefaultAll[splitName]=null;
-		openerWindow.taboca_pinktabs.prefBranch.setBoolPref("themes." + splitName + ".enabled", false);
+		openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_ArrayDefaultAll[splitName]=null;
+		openerWindow.com.taboca.pinkTabs.taboca_pinktabs.prefBranch.setBoolPref("themes." + splitName + ".enabled", false);
 
 	} else {
 		
-		openerWindow.taboca_pinktabs.gst_ArrayDefaultAll[splitName]=1;
-		openerWindow.taboca_pinktabs.prefBranch.setBoolPref("themes." + splitName + ".enabled", true);
+		openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_ArrayDefaultAll[splitName]=1;
+		openerWindow.com.taboca.pinkTabs.taboca_pinktabs.prefBranch.setBoolPref("themes." + splitName + ".enabled", true);
 
 	}
 };
@@ -82,9 +82,9 @@ var st_createUItabRules = function() {
 		document.getElementById("aboutpanel").collapsed=false;
 	}
 
-	for(var ii=0;ii<openerWindow.taboca_pinktabs.gst_classList.length;ii++) {
+	for(var ii=0;ii<openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList.length;ii++) {
 
-		var ruleElementId = "ref-"+openerWindow.taboca_pinktabs.gst_classList[ii];
+		var ruleElementId = "ref-"+openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii];
 
 		var __vbox = document.createElement("vbox");
 			__vbox.setAttribute("class","previewTabItem");
@@ -93,9 +93,9 @@ var st_createUItabRules = function() {
 			__hbox.setAttribute("id",ruleElementId);
 
 		var __checkbox = document.createElement("checkbox");
-			__checkbox.setAttribute("id","checkbox-"+openerWindow.taboca_pinktabs.gst_classList[ii]);
+			__checkbox.setAttribute("id","checkbox-"+openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii]);
 			
-			if (openerWindow.taboca_pinktabs.prefBranch.getBoolPref("themes." + openerWindow.taboca_pinktabs.gst_classList[ii] + ".enabled") ) {
+			if (openerWindow.com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getBoolPref("themes." + openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii] + ".enabled") ) {
 			
 				__checkbox.setAttribute("checked","true"); 
 			} else {
@@ -106,7 +106,7 @@ var st_createUItabRules = function() {
 	
 		var __bbox = document.createElement("tab");
 
-			__bbox.className="tabbrowser-tab pinkbase pinkdemo pinkstyle-"+openerWindow.taboca_pinktabs.gst_classList[ii];
+			__bbox.className="tabbrowser-tab pinkbase pinkdemo pinkstyle-"+openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii];
 			__bbox.setAttribute("flex","1");
 			__bbox.setAttribute("height","28");
 			__bbox.setAttribute("width","28");
@@ -114,7 +114,7 @@ var st_createUItabRules = function() {
 
 		var __ttb = document.createElement("toolbarbutton");
 			__ttb.setAttribute("label","[+]");
-			__ttb.setAttribute("id","moreless-"+openerWindow.taboca_pinktabs.gst_classList[ii]);
+			__ttb.setAttribute("id","moreless-"+openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii]);
 			__ttb.setAttribute("oncommand","st_ui_tabrule_advanced('"+ruleElementId+"')");
 
 
@@ -140,19 +140,19 @@ var st_createUItabRules = function() {
 		__vbox.appendChild(__hbox);
 
 
-		var ruleElementId = "advanced-"+openerWindow.taboca_pinktabs.gst_classList[ii];
+		var ruleElementId = "advanced-"+openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii];
 
 		var __hbox = document.createElement("hbox");
 			__hbox.setAttribute("id",ruleElementId);
 			__hbox.setAttribute("collapsed","true");
 
 		var __textbox = document.createElement("textbox");
-			__textbox.setAttribute("id","textbox-"+openerWindow.taboca_pinktabs.gst_classList[ii]);
+			__textbox.setAttribute("id","textbox-"+openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii]);
 			__textbox.setAttribute("flex","1");
 			__textbox.setAttribute("onchange","st_saveTextBoxes()");	
 			__textbox.setAttribute("multiline","true");
 			__textbox.setAttribute("tooltiptext", getLocalizedString('config.maintooltip'));
-			__textbox.setAttribute("value", openerWindow.taboca_pinktabs.prefBranch.getCharPref("themes." + openerWindow.taboca_pinktabs.gst_classList[ii] + ".domains"));
+			__textbox.setAttribute("value", openerWindow.com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getCharPref("themes." + openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii] + ".domains"));
 	
 		__hbox.appendChild(__textbox);
 		__vbox.appendChild(__hbox);
@@ -174,15 +174,15 @@ var st_saveTextBoxes = function() {
 
 	try { 
 
-	for (var ii = 0; ii < openerWindow.taboca_pinktabs.gst_classList.length; ii++ ) {
-		var sites = document.getElementById("textbox-" + openerWindow.taboca_pinktabs.gst_classList[ii]).value;
-		openerWindow.taboca_pinktabs.prefBranch.setCharPref("themes." + openerWindow.taboca_pinktabs.gst_classList[ii] + ".domains", sites);
+	for (var ii = 0; ii < openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList.length; ii++ ) {
+		var sites = document.getElementById("textbox-" + openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii]).value;
+		openerWindow.com.taboca.pinkTabs.taboca_pinktabs.prefBranch.setCharPref("themes." + openerWindow.com.taboca.pinkTabs.taboca_pinktabs.gst_classList[ii] + ".domains", sites);
 	}
 
 	sites = document.getElementById("textbox-classic").value;
-	openerWindow.taboca_pinktabs.prefBranch.setCharPref("themes.classic.domains", sites);
+	openerWindow.com.taboca.pinkTabs.taboca_pinktabs.prefBranch.setCharPref("themes.classic.domains", sites);
 	
-	openerWindow.taboca_pinktabs.st_setupTabPriorityList();
+	openerWindow.com.taboca.pinkTabs.taboca_pinktabs.st_setupTabPriorityList();
 	} catch(i) { } 
 }
 
@@ -201,7 +201,7 @@ var st_addClassicTheme = function() {
 		/* var __checkbox = document.createElement("checkbox");
 			__checkbox.setAttribute("id","checkbox-classic");
 			
-			if (openerWindow.taboca_pinktabs.prefBranch.getBoolPref("themes.classic.enabled") ) {
+			if (openerWindow.com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getBoolPref("themes.classic.enabled") ) {
 				__checkbox.setAttribute("checked","true"); 
 			} else {
 				__checkbox.setAttribute("checked","false"); 
@@ -265,7 +265,7 @@ var st_addClassicTheme = function() {
 			__textbox.setAttribute("onchange","st_saveTextBoxes()");	
 			__textbox.setAttribute("multiline","true");
 			__textbox.setAttribute("tooltiptext", getLocalizedString('config.classictooltip'));
-			__textbox.setAttribute("value", openerWindow.taboca_pinktabs.prefBranch.getCharPref("themes.classic.domains"));
+			__textbox.setAttribute("value", openerWindow.com.taboca.pinkTabs.taboca_pinktabs.prefBranch.getCharPref("themes.classic.domains"));
 	
 		__hbox.appendChild(__textbox);
 		__vbox.appendChild(__hbox);

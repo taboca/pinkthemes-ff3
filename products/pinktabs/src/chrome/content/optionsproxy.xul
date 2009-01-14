@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://pinktabs/skin/more.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://pinktabs/locale/pinktabs.dtd">
+
+<window xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      title="&config.title;" style="overflow:scroll-vertical"
+      windowtype="PinkTabs"
+      id="pinkoptions">	
+
+<script type="application/x-javascript"><![CDATA[
+
+
+	function kickOptionsTab() { 
+
+		  var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+                     		.getService(Components.interfaces.nsIWindowMediator);
+		  openerWindow = wm.getMostRecentWindow("navigator:browser");
+
+		openerWindow.gBrowser.loadOneTab("about:pinktabs",undefined,undefined,undefined,false);
+
+	} 
+
+	window.addEventListener("load", kickOptionsTab, false);
+
+]]></script>
+
+<description flex="1" style="text-align:left;font-size:120%;font-weight:bold;padding:2em" id="welcomepanel" >
+&config.aboutoptionsmessage;
+
+</description>
+
+</window>

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/browser.css" type="text/css"?>
+<?xml-stylesheet href="chrome://pinktabs/skin/pinktabs.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://pinktabs/locale/pinktabs.dtd">
+
+<window xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      title="&config.title;" style="overflow:scroll-vertical"
+      windowtype="PinkTabs"
+      id="pinkcombo">	
+
+<stringbundleset>
+	<stringbundle id="pinktabs-localizedstrings" src="chrome://pinktabs/locale/extensionstrings.properties" />
+</stringbundleset>
+
+<!-- popup menu -->
+<commandset id="maincommands"/>
+<keyset id="mainkeys"/>
+<popupset>
+  <popup id="clipmenu"/>
+</popupset>
+
+<script type="application/x-javascript" src="configs.js"/>
+
+<script type="application/x-javascript"><![CDATA[
+
+	addEventListener("load", st_createUItabRules, false);
+
+]]></script>
+
+
+<scrollbox id="scroller" style="overflow:-moz-scrollbars-vertical" flex="1">
+
+<hbox flex="1" class="mainPanel">
+
+<spacer flex="1" />
+
+<vbox style="width:900px" >
+<label class="apptitle" value="" />
+<description style="text-align:left" collapsed="true" id="welcomepanel" >
+&config.welcome;
+</description>
+<description style="text-align:left;padding:1em;" collapsed="true" id="aboutpanel" >
+&config.tip;
+</description>
+
+<tabbox id="tabbox" flex="1" context="clipmenu" >
+  <tabs orient="horizontal">
+      <tab id="oneTab" label="&config.tabs;" class="tabbrowser-tab pinkdemo"/>
+      <tab id="twoTab" label="&config.help;" class="tabbrowser-tab pinkdemo"/>
+      <tab id="threeTab" label="&config.search;" class="tabbrowser-tab pinkdemo"/>
+      <tab id="fourTab" label="&config.about;" class="tabbrowser-tab pinkdemo"/>
+  </tabs>
+    
+    <tabpanels id="tabpanels" flex="1">
+
+      <vbox id="panelTwo" orient="vertical" flex="1">
+
+	<vbox id="container">
+
+	</vbox>
+
+
+	<vbox id="containerTabs" flex="1">
+
+		<!-- this is js populated --> 
+
+	</vbox>
+	<description>&config.instruction;</description>
+      
+
+
+      </vbox>
+
+
+      <vbox id="panelHelp" orient="vertical" flex="1" style="padding:0" >
+	<html:iframe style="border:0px" flex="1" src="chrome://pinktabs/content/welcome/welcome.xhtml">
+
+	</html:iframe>	
+
+      </vbox>
+      
+    
+      <vbox id="panelMore" orient="vertical" flex="1" style="padding:0" >
+	<html:iframe style="border:0px" flex="1" src="chrome://pinktabs/content/pinksearch.xhtml">
+
+	</html:iframe>	
+
+      </vbox>
+
+      <vbox id="panelAbout" orient="vertical" flex="1" style="padding:0" >
+	<html:iframe style="border:0px" flex="1" src="chrome://pinktabs/content/about.xhtml">
+
+	</html:iframe>	
+
+	</vbox>
+
+
+	
+	
+   </tabpanels>
+
+</tabbox>
+</vbox>
+
+
+<spacer flex="1" />
+</hbox>
+
+</scrollbox>
+
+</window>

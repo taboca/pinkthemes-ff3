@@ -1,0 +1,35 @@
+<!-- Configuration Tab -->
+<!ENTITY config.title "Configurar PinkTabs">
+<!ENTITY config.welcome "Bem-vindo! Você pode usar este painel de configuração para personalizar as abas que você gostar. Para acessar essa tela de configuração rapidamente, você pode clicar com o botão direito sobre alguma aba e escolher a opção PinkTabs no menu">
+<!ENTITY config.tip "dica: clique com o botão direito sobre alguma aba e entre no menu PinkTabs para personalizar suas abas.">
+<!ENTITY config.tabs "Tabs">
+<!ENTITY config.help "Ajuda">
+<!ENTITY config.search "Busca">
+<!ENTITY config.about "Sobre">
+<!ENTITY config.instruction "Use as checkboxes para habilitar as decorações que você gostar.">
+
+<!-- Help tab (opens welcome/welcome.xhtml) -->
+<!ENTITY help.title "Bem-vindo e ajuda inicial">
+<!ENTITY help.welcome "Bem-vindo!">
+<!ENTITY help.p1 "Você pode acessar rapidamente o menu de configurações clicando com o botão direito do mouse sobre qualquer aba e escolhendo a opção PinkTabs.">
+<!ENTITY help.howto_title "Como configurar as abas">
+<!ENTITY help.howto_p "Ao marcar a checkbox que fica ao lado de cada decoração, você está ativando-a. Com isso, ela será sorteada aleatoriamente para os sites que você entrar. Você também pode personalizar seus sites preferidos com decorações específicas. Para isso, leia a seção anterior.">
+<!ENTITY help.feedback "Opinião">
+<!ENTITY help.feedbackwelcome "Sugestões, críticas e comentários são bem-vindos. Para enviar-nos sua opinião, por favor escreva para pinktabs@taboca.com">
+
+<!--  Search tab (opens pinksearch.xhtml) -->
+<!ENTITY more.title "Painel de Busca">
+<!ENTITY more.pinksearch "Busca PinkSearch">
+<!ENTITY more.pinksearch_p "A busca PinkSearch pode ser integrada à PinkTabs. Para habilitá-la, utilize o link abaixo:">
+<!ENTITY more.pinksearch_a "Personalizar a busca PinkSearch">
+
+<!-- About Tab (opens about.xhtml) -->
+<!ENTITY about.title "Painel Sobre">
+<!ENTITY about.project "Informações do Projeto">
+<!ENTITY about.visit "Visite pinktheme.com">
+<!ENTITY about.broughtby "Este projeto foi produzido por Taboca Labs em conjunto com o serviço disponível em pinkTheme.com. Desenvolvedores:">
+<!ENTITY about.felipe "Felipe Gomes ( Desenvolvedor Líder - Desenvolvedor de Extensões Firefox -- felipc@gmail.com )">
+<!ENTITY about.marcio "Marcio Galli ( Produtor )">
+<!ENTITY about.paula "Paula Herculano ( Garantia de Qualidade e trabalhos originais PinkPaula )">
+<!ENTITY about.legal "Legal">
+<!ENTITY about.legal_p "O software, documentação, e qualquer material relacionado é dispobinilizado por TabocaInc ( www.taboca.com representado por Marcio Galli ), o Desenvolvedor do Software, numa forma 'as-is' sem nenhuma garantia de qualquer tipo. O propósito deste software é apoiar os usuários em atividades cotidianas e não deve ser usado em aplicações críticas. Em nenhuma circunstância o Desenvolvedor de Software, ou qualquer outro contribuidor, pode ser responsabilizado pelo uso direto ou indireto do software, ou impossibilidade de usá-lo. O software pode usar ou se conectar à serviços externos na web e o usuário deve verificar no website se há termos ou condições de uso associadas.">

@@ -24,7 +24,7 @@
   <popup id="clipmenu"/>
 </popupset>
 
-<script type="application/x-javascript" src="configs.js"/>
+<script type="application/x-javascript" src="chrome://pinktabs/content/configs.js"/>
 
 <script type="application/x-javascript"><![CDATA[
 
@@ -44,6 +44,9 @@
 <description style="text-align:left" collapsed="true" id="welcomepanel" >
 &config.welcome;
 </description>
+<description style="text-align:left;font-weight:bold;margin:1em" >
+&config.aboutpinktabs;
+</description>
 <description style="text-align:left;padding:1em;" collapsed="true" id="aboutpanel" >
 &config.tip;
 </description>
@@ -51,8 +54,8 @@
 <tabbox id="tabbox" flex="1" context="clipmenu" >
   <tabs orient="horizontal">
       <tab id="oneTab" label="&config.tabs;" class="tabbrowser-tab pinkdemo"/>
-      <tab id="twoTab" label="&config.help;" class="tabbrowser-tab pinkdemo"/>
-      <tab id="threeTab" label="&config.search;" class="tabbrowser-tab pinkdemo"/>
+      <tab id="twoTab" label="&config.search;" class="tabbrowser-tab pinkdemo"/>
+      <tab id="threeTab" label="&config.help;" class="tabbrowser-tab pinkdemo"/>
       <tab id="fourTab" label="&config.about;" class="tabbrowser-tab pinkdemo"/>
   </tabs>
     
@@ -76,6 +79,10 @@
 
       </vbox>
 
+      <vbox id="panelMore" orient="vertical" flex="1" style="padding:0" >
+	<html:iframe style="border:0px" flex="1" src="chrome://pinktabs/content/pinksearch.xhtml">
+	</html:iframe>	
+      </vbox>
 
       <vbox id="panelHelp" orient="vertical" flex="1" style="padding:0" >
 	<html:iframe style="border:0px" flex="1" src="chrome://pinktabs/content/welcome/welcome.xhtml">
@@ -85,12 +92,6 @@
       </vbox>
       
     
-      <vbox id="panelMore" orient="vertical" flex="1" style="padding:0" >
-	<html:iframe style="border:0px" flex="1" src="chrome://pinktabs/content/pinksearch.xhtml">
-
-	</html:iframe>	
-
-      </vbox>
 
       <vbox id="panelAbout" orient="vertical" flex="1" style="padding:0" >
 	<html:iframe style="border:0px" flex="1" src="chrome://pinktabs/content/about.xhtml">
