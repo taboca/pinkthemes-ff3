@@ -8,36 +8,36 @@
 */
 
 .progress-background {
-   fill: rgb(230,230,230);
-   stop-opacity: .8;
+   fill: rgb(250,190,240);
+   stop-opacity: 1;
 }
 
 .downloadbar-color {
-   stop-color: rgb(255,255,255);
-   stop-opacity: .0;
+   stop-color: rgb(250,190,240);
+   stop-opacity: 1;
 }
 
 .downloadbar-highlight {
    stop-color: rgb(255,255,255);
-   stop-opacity: .6;
+   stop-opacity: 1;
 }
 
 .downloadbar-dark {
-   stop-color: rgb(0,0,0);
-   stop-opacity: .5;
+   stop-color: rgb(120,80,110);
+   stop-opacity: 1;
 }
 /* Check the global CSS background color via rgb values in global.css */
 
 
 
 .shadeselected-from-color {
-   stop-color: rgb(255,255,255);
-   stop-opacity: .1;
+   stop-color: rgb(250,190,240);
+   stop-opacity: 1;
 }
 
 .shadeselected-to-color {
-   stop-color: rgb(255,255,255);
-   stop-opacity: .6;
+   stop-color: rgb(255,240,255);
+   stop-opacity: 1;
 }
 
 
@@ -49,90 +49,87 @@
 
 .tab-outer { 
   stroke: rgb(250,190,240); 
-  stroke-opacity:0;
   stroke-width:10; 
   fill:none;
 } 
 
 .urlbar-outer { 
   stroke: white; 
-
-  stroke-opacity:.5;
   stroke-width:1; 
   fill:none;
 } 
 
 .tab-from-color { 
    stop-color: rgb(250,190,240); 
-   stop-opacity: 0;
+   stop-opacity: 1;
 } 
 
 .tab-to-color { 
-   stop-color: rgb(255,255,255); 
-   stop-opacity: .1;
+   stop-color: rgb(255,240,255); 
+   stop-opacity: 1;
 } 
 
 .color-white { 
-   stop-color: rgb(255,255,255);
-   stop-opacity:.6; 
+   stop-color: rgb(255,240,255);
+   stop-opacity:1; 
 } 
 .color-black { 
    stop-color: rgb(0,0,0);
-   stop-opacity:.1; 
+   stop-opacity:1; 
 } 
 
 .popup-from-color { 
-	stop-color:rgb(255,255,255);
-	stop-opacity:.6
+	stop-color:rgb(255,240,255);
+	stop-opacity:1
 }
 .popup-to-color { 
 	stop-color:rgb(250,190,240); 
- 	stop-opacity:.0; 
+ 	stop-opacity:1; 
 } 
 
 /* Browserr find bar */
 
 .findbar-from-color {
-        stop-color:rgb(255,255,255);
-        stop-opacity:.6;
+        stop-color:rgb(255,240,255);
+        stop-opacity:1
 }
 .findbar-to-color {
         stop-color:rgb(250,190,240);
-        stop-opacity:.0;
+        stop-opacity:1;
 }
 
 .findbar-button-from-color {
-        stop-color:rgb(0,0,0);
-        stop-opacity:.2;
+        stop-color:rgb(195,165,185);
+        stop-opacity:1
 }
 .findbar-button-to-color {
-        stop-color:rgb(255,255,255);
-        stop-opacity:.6;
+        stop-color:rgb(255,240,255);
+        stop-opacity:1;
 }
 
 /* button general */
 
 .button-from-color {
-        stop-color:rgb(255,255,255);
-        stop-opacity:.4;
+        stop-color:rgb(255,210,250);
+        stop-opacity:1;
 }
 .button-to-color {
-        stop-color:rgb(0,0,0);
-        stop-opacity:.1;
+        stop-color:rgb(250,190,240);
+        stop-opacity:1;
 }
 .button-focused-color {
-        stop-color:rgb(255,255,255);
-        stop-opacity:.7;
+        stop-color:rgb(255,240,255);
+        stop-opacity:1;
 }
 
 
 .button-active-from-color {
-        stop-color:rgb(0,0,0);
-        stop-opacity:.3;
+        stop-color:rgb(255,240,255);
+        stop-opacity:1;
 }
 .button-active-to-color {
-        stop-color:rgb(255,255,255);
-        stop-opacity:.7;
+        stop-color:rgb(255,240,255);
+        stop-opacity:1;
 }
 
 
@@ -141,7 +138,7 @@
 
 .toolbar-inactive-from-color {
         stop-color:rgb(210,210,210);
-        stop-opacity:1;
+        stop-opacity:1
 }
 .toolbar-inactive-to-color {
         stop-color:rgb(255,240,255);
@@ -149,8 +146,8 @@
 }
 
 .toolbar-from-color-dark {
-        stop-color:rgb(0,0,0);
-        stop-opacity:.6;
+        stop-color:rgb(100,70,95);
+        stop-opacity:.8;
 }
 
 .toolbar-from-color-dark-transparent {
@@ -160,10 +157,10 @@
 
 .toolbar-from-color {
         stop-color:rgb(250,190,240);
-        stop-opacity:0;
+        stop-opacity:1;
 }
 .toolbar-to-color {
-        stop-color:rgb(255,255,255);
+        stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 

@@ -9,6 +9,15 @@ echo "Table - 125,90,120  - medium "
 echo "Table - 100,70,95   - dark "
 
 
+
+echo "=============== general all ================"
+
+sed -e "s/#eaeaea/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+
+
+
 echo "========== Error console border for the toolbar elements ============"
 
 
@@ -117,12 +126,6 @@ echo "statusbar top border fixing ... "
 
 
 sed -e "s/#505050/rgb(210,150,190)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
-
-echo "=============== general all ================"
-
-sed -e "s/#eaeaea/rgb(10,150,190)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
-
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
 
 

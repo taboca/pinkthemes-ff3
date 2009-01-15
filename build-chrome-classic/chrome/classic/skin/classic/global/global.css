@@ -116,7 +116,7 @@ dialog,
 wizard,
 prefwindow { 
   -moz-appearance: none;
-  background-color: rgb(10,150,190);
+  background-color: rgb(250,190,240);
   color: -moz-DialogText;
   font: message-box;
 }
