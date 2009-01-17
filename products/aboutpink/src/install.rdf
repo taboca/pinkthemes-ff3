@@ -5,7 +5,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="aboutpink@pinktheme.com"
                    em:name="AboutPink"
-                   em:version="0.8"
+                   em:version="0.9"
                    em:description="AboutPink welcomes you to PinkTheme pack edition and allows custom advanced options and access to project customization information."
                    em:creator="Taboca Inc - Taboca.com / pinkTheme.com"
                    em:homepageURL="http://www.pinktheme.com/"
