@@ -9,6 +9,10 @@
 		</copy>
 		<copy todir="src" 
 			overwrite="yes">
+			<fileset dir="src-base" includes="**/*" />
+		</copy>
+		<copy todir="src" 
+			overwrite="yes">
 			<fileset dir="../aboutpink/release-latest" includes="**/*" />
 		</copy>
 	</target>
