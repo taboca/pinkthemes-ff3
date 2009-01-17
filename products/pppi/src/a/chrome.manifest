@@ -1,8 +1,0 @@
-content aboutpink chrome/content/
-overlay	chrome://browser/content/browser.xul	chrome://aboutpink/content/overlay.xul
-
-skin global classic/1.0 jar:classic.jar!/global/
-skin browser classic/1.0 jar:classic.jar!/browser/
-skin communicator classic/1.0 jar:classic.jar!/communicator/
-skin mozapps classic/1.0 jar:classic.jar!/mozapps/
-

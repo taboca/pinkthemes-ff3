@@ -1,2 +1,4 @@
-ant 
-ant distrib
+./pink.sh
+./aboutpink.sh
+./mix.sh
+
