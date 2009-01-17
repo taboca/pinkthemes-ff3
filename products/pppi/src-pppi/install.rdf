@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="pinkpaula-combo@pinktheme.com"
+                   em:name="PinkPaulaPack"
+                   em:version="1.0"
+                   em:description="Welcome to PinkPaula Pack Edition. Type about:pink allows you to configure settings for this theme and pink experience. "
+                   em:creator="Taboca Inc - Taboca.com / pinkTheme.com"
+                   em:homepageURL="http://www.pinktheme.com/"
+                   em:optionsURL="chrome://aboutpink/content/options.xul"
+                   em:iconURL="chrome://aboutpink/skin/icon.png"
+		   em:type="2"
+                   em:internalName="aboutpink" >
+    <em:targetApplication RDF:resource="rdf:#$1oL67"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$1oL67"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="3.1b2" />
+</RDF:RDF>
