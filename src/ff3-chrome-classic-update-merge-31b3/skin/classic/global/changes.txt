@@ -11,6 +11,10 @@ menu.css - done marcio
 toolbar.css
 
 
+viewbuttons.css { 
+
+	fixcss is parsing and changed FFF to rgb 0,0,0
+} 
 
 global.css changes check 
 ===

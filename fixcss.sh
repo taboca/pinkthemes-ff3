@@ -13,9 +13,13 @@ echo "Table - 100,70,95   - dark "
 echo "=============== general all ================ 3.1b3"
 
 sed -e "s/#FFFFFF/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
-
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
 
+
+echo "==============view buttons 3.1b3 ================ " 
+
+sed -e "s/#FFF/rgb(0,0,0)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css
 
 
 echo "------------- global.css --moz-appearance: dialog to -moz-appearance: none;  "  

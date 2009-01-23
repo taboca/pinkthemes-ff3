@@ -1,0 +1,33 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.controlBar {
+    height: 24px;
+    background-color: rgba(35,31,32,0.74);
+}
+
+.playButton {
+    background: url(chrome://global/skin/media/pauseButton.png) no-repeat center;
+    /* Remove the native button appearance and styling */
+    -moz-appearance: none;
+    margin: 0px;
+    padding: 0px;
+    min-height: 24px;
+    min-width: 24px;
+}
+.playButton[paused="true"] {
+    background: url(chrome://global/skin/media/playButton.png) no-repeat center;
+}
+
+.muteButton {
+    background: url(chrome://global/skin/media/muteButton.png) no-repeat center;
+    /* Remove the native button appearance and styling */
+    -moz-appearance: none;
+    margin: 0px;
+    padding: 0px;
+    min-height: 24px;
+    min-width: 24px;
+}
+.muteButton[muted="true"] {
+    background: url(chrome://global/skin/media/unmuteButton.png) no-repeat center;
+}
+

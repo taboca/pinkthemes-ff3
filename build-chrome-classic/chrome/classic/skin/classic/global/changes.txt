@@ -1,0 +1,29 @@
+button.css
+global.css
+ 	{ 
+
+
+		Added the whole button dlgtype = help section at the top
+
+	} 
+popup.css
+menu.css - done marcio
+toolbar.css
+
+
+
+global.css changes check 
+===
+
+review the global.css add the button type help dlgtype
+review the notification > button shadow stuff. 
+
+
+TODO
+=== 
+console/console.css
+
+REVIEW 
+===
+We need to check if the lack of the XBL definitions at the very top of th efine is fine. Notice we completelly removed this - probably a big trouble	
+	+ notice this XBL files were the ones causes some trouble when this theme was installed on FF3.1b2, possibly FF 3.0

@@ -21,11 +21,25 @@
   visibility: visible;
 }
 
+
+/* marcio added */  
+
+#extensionsManager:not([active="true"]) > #topStackBar > #viewGroup {
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
+  background-color: #cfcfcf;
+  border-bottom: 1px solid rgba(0,0,0,0.35);
+}
+
 /* Command Bar */
+
+/* marcio 
+
+  -moz-appearance: dialog;
+*/
 #commandBarBottom {
   margin: 10px 10px 10px 10px;
   min-width: 1px;
-  -moz-appearance: dialog;
+  -moz-appearance: none;
 }
 
 #commandBarBottom button,
@@ -65,17 +79,28 @@ richlistitem[newAddon="true"] {
   color: #585620;
 }
 
-richlistitem[selected="true"] {
-  background-color: Highlight;
+
+/* 
+  marcio
   color: HighlightText;
+  background-color: Highlight;
+*/
+richlistitem[selected="true"] {
+  background: transparent url("chrome://mozapps/skin/extensions/selectedBackground.png") 0 0 ;
+  color: black;
 }
 
 richlistitem[selected="true"] .text-link {
   color: inherit;
 }
 
-richlistitem[selected="true"][isDisabled="true"] {
+/* marcio 
+
   background-image: url("chrome://mozapps/skin/extensions/itemDisabledFader.png");
+*/
+
+richlistitem[selected="true"][isDisabled="true"] {
+  background: transparent url("chrome://mozapps/skin/extensions/inactiveBackground.png") 0 0 ;
 }
 
 .descriptionWrap {
@@ -285,6 +310,12 @@ richlistitem[opType="needs-uninstall"] .notifyBadge {
   margin-bottom: 4px;
 }
 
+
+/* marcio - note 
+   Once we needed to remove the display -moz-box which was failing in linux 
+   With 3.1b3 seems to be working just fine
+*/
+
 .addonRating[rating] {
   display: -moz-box;
   width: 78px;
@@ -413,3 +444,18 @@ richlistitem[selected="true"] .includeUpdate {
   text-align: justify;
   margin: 0 0 0.7em 0;
 }
+
+
+/* temporary test - this dates from3.1b2 */
+
+.viewSelector {
+  background-color: #969696;
+  border-bottom: 1px solid rgb(100,70,95);
+  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
+  background-repeat: repeat-x;
+  padding: 4px 0 8px;
+  margin: 0;
+  -moz-box-pack: center;
+}
+
+

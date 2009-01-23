@@ -34,8 +34,15 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-#viewGroup {
+
+/* marcio 
+
   -moz-appearance: -moz-mac-unified-toolbar;
+
+*/
+
+#viewGroup {
+  -moz-appearance: none;
   padding: 4px 0 8px;
   margin: 0;
   -moz-box-pack: center;

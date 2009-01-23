@@ -47,30 +47,26 @@
 
 
 /* marcio 
+   --------------------------------------------- Check this in case buttons gives big trouble ------------
 
 	Added this bunch of button defintions to try to hide the borders from certain buttons like the ones
   	at the preferences panel */
 
-
 button[dlgtype="help"] {
-        min-width: 1px !important;
-        padding: 0px 0px 0px 0px !important;
-        -moz-appearance: none;
-        -moz-box-align: start !important;
-        height: 24px;
-        width: 24px;
-        margin: 4px;
+  min-width: 1px !important;
+  padding: 0px 0px 0px 0px !important;
+  -moz-appearance: none;
+  -moz-box-align: start !important;
+  height: 24px;
+  width: 24px;
+  margin: 4px;
   border:0px;
   background: transparent;
-
 }
 
 button[dlgtype="help"][disabled] {
   opacity: 0.5;
 }
-
-/* marcio review */
-/* Wherw was white was before moz-mac focusring */
 
 button[dlgtype="help"]:focus {
   outline: 2px solid white;
