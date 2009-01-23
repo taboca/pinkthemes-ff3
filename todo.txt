@@ -1,1 +1,19 @@
+3.1b3 changes
+===
+
+See the changes.txt files in global/changes.txt
+and
+browser/changes.txt
+
+You may also find backup files as .1 , .2 etc
+
+
+TODO
+
+in browser/browser.css modified partially 
+
+
+CHECK THE CERT ERROR
+
+	https://www.gidforums.com
 

@@ -10,9 +10,17 @@ echo "Table - 100,70,95   - dark "
 
 
 
-echo "=============== general all ================"
+echo "=============== general all ================ 3.1b3"
 
-sed -e "s/#eaeaea/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+sed -e "s/#FFFFFF/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+
+
+
+echo "------------- global.css --moz-appearance: dialog to -moz-appearance: none;  "  
+
+sed -e "s/-moz-appearance: dialog;/-moz-appearance: none;/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
 
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
 
@@ -43,6 +51,12 @@ echo "-------------- extensions same thing ---------------"
 sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css
 
+
+
+echo "============ Browser.css the nav-bar background color ================ 3.1b3"
+
+sed -e "s/#9e9e9e/transparent/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
 echo "=========== Browser Bbookmarks edit fields background ==============="
 

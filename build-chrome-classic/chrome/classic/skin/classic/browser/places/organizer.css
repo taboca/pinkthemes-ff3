@@ -1,16 +1,4 @@
-/* Unified toolbar */
-
-#places {
-  -moz-binding: url("chrome://global/skin/globalBindings.xml#unifiedWindow");
-}
-
 /* Inactive Window */
-
-#places:not([active="true"]) > #placesToolbox > #placesToolbar {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-inactive.png");
-  background-color: #cfcfcf;
-  border-bottom: 1px solid rgba(0,0,0,0.35);
-}
 
 #places:not([active="true"]) > #placesToolbox > #placesToolbar > toolbarbutton,
 #places:not([active="true"]) > #placesToolbox > #placesToolbar > #searchFilter {
@@ -73,26 +61,13 @@
   margin: 0 10px;
 }
 
-/* marcio fixcss */
-
 #placesList treechildren::-moz-tree-cell-text(selected) {  
-
   font-weight: bold !important;
   color: black !important;
 }
 
-
-/* marcio */
-/* This is post fixed parsed - dont change the 404040 */
-
 #placesToolbar {
-  background-color: transparent;
-  border-bottom: 1px solid rgb(125,90,120);
-  background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
-  background-repeat: repeat-x;
-  background-position: 3px 0px;
-  margin-top: -3px;
-  padding: 0 4px;
+  padding: 0 4px 3px;
 }
 
 #placesView {
@@ -259,18 +234,9 @@
   margin: 0px;
 }
 
-
-/* fixcss applies her
-   marcio
-   added background png */
-
-/* This is the left bg panel for the 3 element */
-
 #placesList {
   -moz-appearance: none;
   background-color: rgb(225,170,215);
-  background: rgb(225,170,215) url(chrome://global/skin/popup-bg.png) 0 0;
-  
   width: 160px;
   margin: 0px;
   border: 0px;
@@ -316,37 +282,6 @@
   border-color: transparent;
 }
 
-/* Search Bar */
-#searchbar {
-  margin-top: 6px;
-  -moz-margin-start: 2px;
-  -moz-margin-end: -4px;
-}
-
-.textbox-input-closebutton {
-  -moz-appearance: none;
-  margin: -2px 0;
-  -moz-margin-end: -2px;
-  min-width: 0;
-  background-color: transparent;
-  border: none;
-  padding: 0 !important;
-  list-style-image: url("chrome://global/skin/icons/closetab.png");
-  width: 16px;
-  height: 16px;
-  cursor: default;
-}
-
-.textbox-input-closebutton > .button-box {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.textbox-input-closebutton:hover:active {
-  list-style-image: url("chrome://global/skin/icons/closetab-active.png");
-}
-
 .small {
   font-size: x-small;
   min-width: 0px;
@@ -359,31 +294,6 @@
 .small .button-box {
   padding: 0px;
   border: 0px;
-}
-
-#searchFilter {
-  -moz-appearance: none;
-  border: 3px solid;
-  -moz-border-top-colors: #676767 #C5C5C5 -moz-Field;
-  -moz-border-bottom-colors: #C2C2C2 #A4A4A4 -moz-Field;
-  -moz-border-right-colors: #969696 #C5C5C5 -moz-Field;
-  -moz-border-left-colors: #969696 #C5C5C5 -moz-Field;
-  -moz-border-radius: 12px;
-  background: url("chrome://global/skin/icons/search-textbox.png") -moz-Field no-repeat 1px center;
-  -moz-background-clip: border !important;
-  padding: 0;
-  -moz-padding-start: 14px;
-}
-
-#searchFilter[focused="true"] {
-  outline: 2px solid #4F8EC9;
-  -moz-outline-radius: 12px;
-  -moz-outline-offset: -2px;
-}
-
-#searchFilter > .textbox-input-box {
-  padding: 2px;
-  border-left: 2px solid transparent;
 }
 
 .filterList {
@@ -419,6 +329,7 @@
 }
 
 #organizerScopeBar {
+  -moz-appearance: none;
   background: url("chrome://global/skin/icons/find-bar-background.png") repeat-x top center #D0D0D0;
   color: #474747;
   font-size: 105%;
@@ -568,11 +479,7 @@ menulist[open="true"] > .menulist-label-box  .menulist-label {
 }
 
 
-
 /**** expanders ****/
-
-/* marcio - added border none and background none due to new button.css definitions */
-
 
 .expander-up,
 .expander-down {
@@ -580,8 +487,6 @@ menulist[open="true"] > .menulist-label-box  .menulist-label {
   margin-left: 8px;
   padding: 0;
   min-width: 0;
-  border:none;
-  background:none;
 }
 
 .expander-up {

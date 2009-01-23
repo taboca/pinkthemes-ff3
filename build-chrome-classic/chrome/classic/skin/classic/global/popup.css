@@ -45,18 +45,26 @@
 
 /* ::::: menupopup ::::: */
 
-/*  marcio
 
-*/ 
+/* marcio modified - this also depends in fixcss */
+
+/* 
+  -moz-appearance: menupopup;
+*/
 menupopup,
 popup,
 panel {
-   background: rgb(250,190,240) url(chrome://global/skin/popup-bg.png) 0 0;   
-   border-top:1px solid white; 
-   border-left:1px solid white; 
-   border-right:1px solid #ccc; 
+   background: rgb(250,190,240) url(chrome://global/skin/popup-bg.png) 0 0;
+   border-top:1px solid white;
+   border-left:1px solid white;
+   border-right:1px solid #ccc;
    border-bottom:1px solid #ccc;
    background-color:rgb(250,190,240) !important;
+}
+
+menupopup > menu > menupopup,
+popup > menu > menupopup {
+  margin-top: -4px;
 }
 
 /* ::::: popup internal box ::::: */
@@ -75,10 +83,6 @@ tooltip {
   max-width: 40em;
   color: InfoText;
   font: message-box;
-}
-
-.tooltip-label {
-  margin: 0px !important;
 }
 
 tooltip[titletip="true"] {
