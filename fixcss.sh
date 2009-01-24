@@ -9,8 +9,11 @@ echo "Table - 125,90,120  - medium "
 echo "Table - 100,70,95   - dark "
 
 
+echo "******************** Initiatind patches to Global  CSS *********************** "
 
-echo "=============== general all ================ 3.1b3"
+
+
+echo "====== FFFFFF Color... Global 3.1b3"
 
 sed -e "s/#FFFFFF/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
@@ -19,13 +22,26 @@ echo "Expect 250,190,240:"
 cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "rgb(250,190,240)"
 
 
-echo "============== status bar changing the statusbar-background ========== 3.1b3"
 
+
+
+
+echo "====== Global statusbar  3.1b3"
+
+echo "Found:"
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "statusbar-background"
 sed -e "s/statusbar-background\.gif/statusbar-background\.png/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+echo "Modified:"
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "statusbar-background"
 
-echo " -------------- statusbar changing background color -------------------- 3.1b3"
 
+
+
+
+echo "====== Global statusbar background color 3.1b3"
+
+echo "Found:"
 cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "#949393"
 echo "Changed to: "
 sed -e "s/#949393/transparent/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
@@ -33,36 +49,64 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/glo
 cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "transparent" | grep "statusbar-background"
 
 
- echo "--- Global.css adding the whole buttons hack ---" 
-cat ./patches/cat-global.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css  
+
+
+echo "====== Global window, page, dialog, wizard... 3.1b3 "  
+
+echo "Found: "
+cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "moz-app" | grep "dialog"
+sed -e "s/-moz-appearance: dialog;/-moz-appearance: none;/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+echo "Changed to: "
+cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "moz-ap" | grep  "none"
+
+
+
+echo "++++++ Added patch ./patches/cat-global.css to global.css ... " 
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css ./patches/cat-global.css > ./temp/temp.css  
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
 
 echo "Expect marcio in the global: "
 cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "marcio"
 
 
-echo "==============view buttons 3.1b3 ================ " 
 
+
+
+
+
+echo "***************************** viewbuttons . css *************************** 3.1b3" 
+
+echo "Found: "
+cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css | grep "#FFF"
 sed -e "s/#FFF/rgb(0,0,0)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css
+cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css | grep "rgb(0,0,0)"
 
 
-echo "------------- global.css --moz-appearance: dialog to -moz-appearance: none;  "  
 
-sed -e "s/-moz-appearance: dialog;/-moz-appearance: none;/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
 
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+
+
 
 
 
 echo "========== Error console border for the toolbar elements ============"
 
 
+echo "Found: 686868? " 
+cat  ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css  | grep "#686868"
+
 sed -e "s/#686868/rgb(225,170,215)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
-sed -e "s/#404040/rgb(225,170,215)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
+echo "Changed to: "
+cat  ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css  | grep "rgb(225"
+
+
+
+
+
 
 
 echo "=========== pageInfo border fix ==============="
@@ -75,11 +119,25 @@ echo "-------------- console same thing ---------------"
 sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
-echo "-------------- extensions same thing ---------------"
+echo "******************* Extensions.css under mozapps extensions **************************"
+
+
+echo "Patching the top toolbar background which will also dump a 404040 code to be posfixed... "
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css ./patches/cat-extensions.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css
+
+echo "Checking for 404040:" 
+cat ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css | grep "404040" 
+
+echo "Now replacing 404040 with color: "
 
 sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css
 
+echo "color changed to: "
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css | grep "100,70,95" 
 
 
 echo "============ Browser.css the nav-bar background color ================ 3.1b3"
@@ -200,4 +258,8 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/but
 sed -e "s/#bebebe/rgba(130,130,130,.7)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
 
+
+
+echo "******************************* Final manual something? *****************************"
+echo "You may need to remove the XBL bindings in the beginning of the global.css file ... "   
 

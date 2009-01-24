@@ -22,13 +22,6 @@
 }
 
 
-/* marcio added */  
-
-#extensionsManager:not([active="true"]) > #topStackBar > #viewGroup {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
-  background-color: #cfcfcf;
-  border-bottom: 1px solid rgba(0,0,0,0.35);
-}
 
 /* Command Bar */
 
@@ -446,16 +439,5 @@ richlistitem[selected="true"] .includeUpdate {
 }
 
 
-/* temporary test - this dates from3.1b2 */
-
-.viewSelector {
-  background-color: #969696;
-  border-bottom: 1px solid #404040;
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
-  background-repeat: repeat-x;
-  padding: 4px 0 8px;
-  margin: 0;
-  -moz-box-pack: center;
-}
 
 

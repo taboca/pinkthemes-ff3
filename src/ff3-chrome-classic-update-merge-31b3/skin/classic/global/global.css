@@ -45,9 +45,7 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-
-/* marcio 
-   removed 
+/* ::::: XBL bindings ::::: */
 
 menulist > menupopup,
 .menulist-menupopup {
@@ -76,7 +74,7 @@ windowdragbox {
   -moz-binding: url("chrome://global/content/bindings/general.xml#windowdragbox");
 }
 
-*/
+
 
 /* ::::: root elements ::::: */
 

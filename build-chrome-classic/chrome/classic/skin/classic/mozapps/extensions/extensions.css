@@ -22,13 +22,6 @@
 }
 
 
-/* marcio added */  
-
-#extensionsManager:not([active="true"]) > #topStackBar > #viewGroup {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
-  background-color: #cfcfcf;
-  border-bottom: 1px solid rgba(0,0,0,0.35);
-}
 
 /* Command Bar */
 
@@ -444,6 +437,8 @@ richlistitem[selected="true"] .includeUpdate {
   text-align: justify;
   margin: 0 0 0.7em 0;
 }
+
+
 
 
 /* temporary test - this dates from3.1b2 */
