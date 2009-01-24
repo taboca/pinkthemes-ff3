@@ -29,5 +29,6 @@ console/console.css
 
 REVIEW 
 ===
+global.css remove the xml bindings dragrable elements
 We need to check if the lack of the XBL definitions at the very top of th efine is fine. Notice we completelly removed this - probably a big trouble	
 	+ notice this XBL files were the ones causes some trouble when this theme was installed on FF3.1b2, possibly FF 3.0

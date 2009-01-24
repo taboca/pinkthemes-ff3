@@ -1,6 +1,5 @@
 browser.css  { 
 	the tabs back to images 
-
 	fixed the toolbar background
 } 
 

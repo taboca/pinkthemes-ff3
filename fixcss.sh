@@ -15,6 +15,31 @@ echo "=============== general all ================ 3.1b3"
 sed -e "s/#FFFFFF/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
 
+echo "Expect 250,190,240:" 
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "rgb(250,190,240)"
+
+
+echo "============== status bar changing the statusbar-background ========== 3.1b3"
+
+sed -e "s/statusbar-background\.gif/statusbar-background\.png/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+
+echo " -------------- statusbar changing background color -------------------- 3.1b3"
+
+cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "#949393"
+echo "Changed to: "
+sed -e "s/#949393/transparent/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "transparent" | grep "statusbar-background"
+
+
+ echo "--- Global.css adding the whole buttons hack ---" 
+cat ./patches/cat-global.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+
+echo "Expect marcio in the global: "
+cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "marcio"
+
 
 echo "==============view buttons 3.1b3 ================ " 
 
