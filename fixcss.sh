@@ -1,4 +1,6 @@
 
+echo "New model just  regexp rules on top of 3.1b3 ... and aims to find compatibility with 3.0 "
+
 echo "============================================="
 echo "Table - 255,230,255 - high up "
 echo "Table - 255,210,250 - high up "
@@ -12,57 +14,18 @@ echo "Table - 100,70,95   - dark "
 echo "******************** Initiatind patches to Global  CSS *********************** "
 
 
+echo "++++++ Added patch ./patches/cat-global2.css to global.css ... " 
 
-echo "====== FFFFFF Color... Global 3.1b3"
+echo "+++++ Added patch for statubar "
+echo "+++++ Added patch for 50,50,50 -> 210,150,190 "
 
-sed -e "s/#FFFFFF/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css ./patches/cat-global2.css > ./temp/temp.css  
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
-
-echo "Expect 250,190,240:" 
-cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "rgb(250,190,240)"
-
+echo "Expect marcio "
+cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "marcio"
 
 
-
-
-
-echo "====== Global statusbar  3.1b3"
-
-echo "Found:"
-cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "statusbar-background"
-sed -e "s/statusbar-background\.gif/statusbar-background\.png/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
-echo "Modified:"
-cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "statusbar-background"
-
-
-
-
-
-echo "====== Global statusbar background color 3.1b3"
-
-echo "Found:"
-cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "#949393"
-echo "Changed to: "
-sed -e "s/#949393/transparent/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
-cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "transparent" | grep "statusbar-background"
-
-
-
-
-echo "====== Global window, page, dialog, wizard... 3.1b3 "  
-
-echo "Found: "
-cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "moz-app" | grep "dialog"
-sed -e "s/-moz-appearance: dialog;/-moz-appearance: none;/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
-echo "Changed to: "
-cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | grep "moz-ap" | grep  "none"
-
-
-
-echo "++++++ Added patch ./patches/cat-global.css to global.css ... " 
+echo "++++++ Added patch ./patches/cat-global.css to global.css ( buttons stuff )  ... " 
 cat ./build-chrome-classic/chrome/classic/skin/classic/global/global.css ./patches/cat-global.css > ./temp/temp.css  
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
 
@@ -71,6 +34,14 @@ cat   ./build-chrome-classic/chrome/classic/skin/classic/global/global.css | gre
 
 
 
+echo "******************** Patches to toolbar.css ****************************"
+
+echo "++++++ Added patch ./patches/cat-toolbar.css to toolbar.css ... " 
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/toolbar.css ./patches/cat-toolbar.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/toolbar.css
+
+echo "Expect marcio "
+cat   ./build-chrome-classic/chrome/classic/skin/classic/global/toolbar.css | grep "marcio"
 
 
 
@@ -85,8 +56,12 @@ cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css |
 
 
 
+echo "------ Removing line -moz-appearance: -moz-mac-unified-toolbar .. from viewbuttons.css "
 
-
+cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css | grep "-moz-appearance: -moz-mac-unified-toolbar;" 
+sed -e "s/-moz-mac-unified-toolbar/none/g" ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css > ./temp/temp.css
+echo "Expect: moz appearance: none" 
+cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css | grep "-moz-appearance: none;" 
 
 
 
@@ -221,13 +196,6 @@ echo "=========== high top ========="
 sed -e "s/#dedede/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css
 
-
-echo "========== status top high ============" 
-echo "statusbar top border fixing ... "
-
-
-sed -e "s/#505050/rgb(210,150,190)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
 
 
 echo "--------------------------------------------------"

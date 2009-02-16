@@ -1,0 +1,21 @@
+
+/*  marcio  */
+
+window,
+page,
+dialog,
+wizard,
+prefwindow {
+  -moz-appearance: none;
+  background-color: rgb(250,190,240);
+}
+
+
+/* Review the text-shadow element taht was here */
+
+statusbar {
+  border-top: 1px solid rgb(210,150,190) !important;
+  background: url("chrome://global/skin/statusbar-background.png") transparent repeat-x top left;
+}
+
+

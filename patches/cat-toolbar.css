@@ -1,0 +1,19 @@
+
+/************ Patch Toolbar.css *************/
+
+/* marcio */ 
+
+
+menubar { 
+	min-height:28px; 
+}
+
+toolbar { 
+	-moz-appearance: none; 
+} 
+
+menubar { 
+	-moz-appearance: none; 
+} 
+
+

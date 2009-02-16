@@ -1,0 +1,513 @@
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/browser/browser.css ff3-chrome-classic-update-merge-31b3/skin/classic/browser/browser.css
+98,99c98
+< #PersonalToolbar {
+<   -moz-appearance: none;
+---
+> /* marcio 
+102a102,107
+> */
+> 
+> #PersonalToolbar {
+>   -moz-appearance: none;
+>   background: url("chrome://browser/skin/bookmark-toolbar-background.png") repeat-x 0 0 ;
+> 
+1489a1495,1502
+> /* marcio 
+>   background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+>   background-position: top right;
+> 
+>   added 
+>   border-top:none;
+>   border-bottom:none;
+> */
+1492c1505
+<   background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+---
+>   background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
+1494c1507
+<   background-position: top right;
+---
+>   background-position: bottom right;
+1495a1509,1510
+>   border-top:none;
+>   border-bottom:none;
+1537a1553,1556
+> 
+> /* marcio review 
+>    do we need to remove the font message box?  
+> */
+1546c1565,1567
+< .tabbrowser-tab {
+---
+> /* 
+>   marcio
+> 
+1561a1583,1594
+> 
+> */
+> .tabbrowser-tab {
+>   -moz-binding: url("chrome://browser/skin/marcio-override-tabs.xml#tabbrowser-tab") !important;
+>   -moz-appearance: none;
+>   color: black;
+>   -moz-box-pack: center;
+>   padding: 0px;
+>   border: none !important;
+>   min-width: 1px !important;
+>   text-align: center;
+>   height: 27px;
+1568,1571c1601,1602
+< .tabbrowser-tab[selected="true"] {
+<   -moz-user-focus: normal;
+<   padding: 0 6px 1px;
+<   border-width: 2px;
+---
+> /*  marcio 
+>   background-color: -moz-mac-chrome-active;
+1575a1607,1611
+> */
+> .tabbrowser-tab[selected="true"] {
+>   -moz-user-focus: normal;
+>   padding: 0 6px 1px;
+>   border-width: 2px;
+1588a1625,1684
+> /* The tab images chunk is here. Note this has to do with the extended definitions for tabbrowser-tabs in marcio-override-tabs xml binding XBL */
+> 
+> /* marcio 
+>    added height 27px 
+> */
+> .tab-image-left,
+> .tab-image-right {
+>   width: 8px;
+>   height:27px;
+>   margin: 0px;
+>   padding: 0px;
+> }
+> 
+> .tabbrowser-tab > .tab-image-right,
+> .tabbrowser-tab[chromedir="rtl"] > .tab-image-left {
+>   background: url("chrome://browser/skin/tabbrowser/tab-right.png") no-repeat;
+> }
+> 
+> .tabbrowser-tab:not([selected="true"]) > .tab-image-right,
+> .tabbrowser-tab:not([selected="true"])[chromedir="rtl"] > .tab-image-left {
+>   background: url("chrome://browser/skin/tabbrowser/tab-right-bkgnd.png") no-repeat;
+> }
+> 
+> .tabbrowser-tab > .tab-image-left,
+> .tabbrowser-tab[chromedir="rtl"] > .tab-image-right {
+>   background: url("chrome://browser/skin/tabbrowser/tab-left.png") no-repeat;
+> }
+> 
+> .tabbrowser-tab:not([selected="true"]) > .tab-image-left,
+> .tabbrowser-tab:not([selected="true"])[chromedir="rtl"] > .tab-image-right {
+>   background: url("chrome://browser/skin/tabbrowser/tab-left-bkgnd.png") no-repeat;
+> }
+> 
+> /* check this marcio */
+> 
+> /* marcio 
+>    modified added height:27px to make sure the tab selected connects with the above bar */
+> 
+> .tabbrowser-tab > .tab-image-middle,
+> .tabbrowser-tab > .tab-close-button {
+>   -moz-box-pack: center;
+>   height:27px;
+>   background: url("chrome://browser/skin/tabbrowser/tab-middle.png") repeat-x ;
+> }
+> 
+> .tabbrowser-tab:not([selected="true"]) > .tab-image-middle,
+> .tabbrowser-tab:not([selected="true"]) > .tab-close-button {
+>   background: url("chrome://browser/skin/tabbrowser/tab-middle-bkgnd.png");
+> }
+> 
+> 
+> 
+> /* end of trhe image tabs inserted chunk - we are regressing FF */
+> 
+> 
+> 
+> /* marcio 
+>   background-color: #9B9B9B;
+> */
+> 
+1592d1687
+<   background-color: #9B9B9B;
+1594a1690,1693
+> /* marcio 
+> background: url("chrome://browser/skin/tabbrowser/tabbrowser-tabs-bkgnd.png") repeat-x;
+> */
+> 
+1599c1698
+<   background: url("chrome://browser/skin/tabbrowser/tabbrowser-tabs-bkgnd.png") repeat-x;
+---
+>   background: transparent url("chrome://browser/skin/tabstrip-background.png") repeat-x left top;
+1646a1746,1750
+> /* marcio 
+>    moved margin to connnec to top bar 
+>   margin: 1px 0 0;
+> */
+> 
+1652c1756
+<   margin: 1px 0 0;
+---
+>   margin: 0;
+1672a1777,1778
+> 
+> 
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/browser/browser.css.1 ff3-chrome-classic-update-merge-31b3/skin/classic/browser/browser.css.1
+1489a1490,1492
+> /* marcio 
+>   background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+> */
+1492c1495
+<   background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
+---
+>   background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
+1537a1541,1544
+> 
+> /* marcio review 
+>    do we need to remove the font message box?  
+> */
+1546c1553,1555
+< .tabbrowser-tab {
+---
+> /* 
+>   marcio
+> 
+1561a1571,1583
+> 
+> */
+> .tabbrowser-tab {
+>   -moz-binding: url("chrome://browser/skin/browser.xml#tabbrowser-tab") !important;
+>   -moz-appearance: none;
+>   color: black;
+>   -moz-box-pack: center;
+>   padding: 0px;
+>   border: none !important;
+>   min-width: 1px !important;
+>   text-align: center;
+>   height: 27px;
+> 
+1568,1571c1590,1591
+< .tabbrowser-tab[selected="true"] {
+<   -moz-user-focus: normal;
+<   padding: 0 6px 1px;
+<   border-width: 2px;
+---
+> /*  marcio 
+>   background-color: -moz-mac-chrome-active;
+1575a1596,1600
+> */
+> .tabbrowser-tab[selected="true"] {
+>   -moz-user-focus: normal;
+>   padding: 0 6px 1px;
+>   border-width: 2px;
+1588a1614,1664
+> /* Letś put the chunk for the image tabs back here */
+> 
+> .tab-image-left,
+> .tab-image-right {
+>   width: 8px;
+>   margin: 0px;
+>   padding: 0px;
+> }
+> 
+> .tabbrowser-tab > .tab-image-right,
+> .tabbrowser-tab[chromedir="rtl"] > .tab-image-left {
+>   background: url("chrome://browser/skin/tabbrowser/tab-right.png") no-repeat;
+> }
+> 
+> .tabbrowser-tab:not([selected="true"]) > .tab-image-right,
+> .tabbrowser-tab:not([selected="true"])[chromedir="rtl"] > .tab-image-left {
+>   background: url("chrome://browser/skin/tabbrowser/tab-right-bkgnd.png") no-repeat;
+> }
+> 
+> .tabbrowser-tab > .tab-image-left,
+> .tabbrowser-tab[chromedir="rtl"] > .tab-image-right {
+>   background: url("chrome://browser/skin/tabbrowser/tab-left.png") no-repeat;
+> }
+> 
+> .tabbrowser-tab:not([selected="true"]) > .tab-image-left,
+> .tabbrowser-tab:not([selected="true"])[chromedir="rtl"] > .tab-image-right {
+>   background: url("chrome://browser/skin/tabbrowser/tab-left-bkgnd.png") no-repeat;
+> }
+> 
+> /* check this marcio */
+> .tabbrowser-tab > .tab-image-middle,
+> .tabbrowser-tab > .tab-closebutton {
+>   -moz-box-pack: center;
+>   background: url("chrome://browser/skin/tabbrowser/tab-middle.png") repeat-x;
+> }
+> 
+> .tabbrowser-tab:not([selected="true"]) > .tab-image-middle,
+> .tabbrowser-tab:not([selected="true"]) > .tab-close-button {
+>   background: url("chrome://browser/skin/tabbrowser/tab-middle-bkgnd.png");
+> }
+> 
+> 
+> 
+> /* end of trhe image tabs inserted chunk - we are regressing FF */
+> 
+> 
+> 
+> /* marcio 
+>   background-color: #9B9B9B;
+> */
+> 
+1592d1667
+<   background-color: #9B9B9B;
+1594a1670,1673
+> /* marcio 
+> background: url("chrome://browser/skin/tabbrowser/tabbrowser-tabs-bkgnd.png") repeat-x;
+> */
+> 
+1599c1678
+<   background: url("chrome://browser/skin/tabbrowser/tabbrowser-tabs-bkgnd.png") repeat-x;
+---
+>   background: transparent url("chrome://browser/skin/tabstrip-background.png") repeat-x left top;
+Only in ff3-chrome-classic-update-merge-31b3/skin/classic/browser: changes.txt
+Only in ff3-chrome-classic-update-merge-31b3/skin/classic/browser: marcio-override-tabs.xml
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/global/button.css ff3-chrome-classic-update-merge-31b3/skin/classic/global/button.css
+47a48,52
+> 
+> /* Override marcio */
+> /* Fix css will pass here */
+> /* Removed the whole button rule */ 
+> 
+49,51d53
+<   -moz-appearance: button;
+<   /* The margin used here come from the Aqua Human Interface Guidelines,
+<      there should be 12 pixels between two buttons. */
+56a59,69
+>   border:2px solid;
+>   -moz-border-top-colors: #dedede #dadada ;
+>   -moz-border-left-colors: #dedede #dadada;
+>   -moz-border-bottom-colors: #bebebe #bababa;
+>   -moz-border-right-colors: #bebebe #bababa;
+>   -moz-border-radius:4px;
+>   background: #eeeeee url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+> }
+> 
+> button:focus {
+>   background: #eeeeee url("chrome://global/skin/icons/button-bg-focused.png") repeat-x 0 0;
+58a72,79
+> button:hover:active,
+> button[open="true"],
+> button[checked="true"] {
+>   background: white url("chrome://global/skin/icons/button-bg-active.png") repeat-x 0 0;
+> }
+> 
+> /* ------- previews stuff ----------*/
+> 
+Only in ff3-chrome-classic-update-merge-31b3/skin/classic/global: button.css.1
+Only in ff3-chrome-classic-update-merge-31b3/skin/classic/global: changes.txt
+Only in ff3-chrome-classic-update-merge-31b3/skin/classic/global/console: changes.txt
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/global/global.css ff3-chrome-classic-update-merge-31b3/skin/classic/global/global.css
+76a77,78
+> 
+> 
+151a154,160
+> 
+> /* marcio 
+>  
+> Reverted to fixcss mode 
+> 
+> */
+> 
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/global/menu.css ff3-chrome-classic-update-merge-31b3/skin/classic/global/menu.css
+47a48,54
+> 
+> /* marcio 
+>   color: MenuText;
+>   -moz-appearance: menuitem !important;
+> 
+>   This can be great problem - we need to change thiese default -moz values instead 
+> */
+50c57
+<   -moz-appearance: menuitem !important;
+---
+>   -moz-appearance: none !important;
+52c59
+<   color: MenuText;
+---
+>   color: black;
+57a65,70
+> /* marcio
+> 
+>   color: -moz-mac-menutextdisable;
+> 
+> */
+> 
+61c74
+<   color: -moz-mac-menutextdisable;
+---
+>   color: gray;
+76a90,94
+> 
+> /* marcio 
+>   color: -moz-mac-menutextdisable;
+> */
+> 
+79c97
+<   color: -moz-mac-menutextdisable;
+---
+> 	color:gray;
+107a126,128
+> 
+> /*  marcio png */
+> 
+111c132
+<   list-style-image: url("chrome://global/skin/menu/menu-arrow.gif");
+---
+>   list-style-image: url("chrome://global/skin/menu/menu-arrow.png");
+114a136,137
+> /*  marcio png */
+> 
+116c139
+<   list-style-image: url("chrome://global/skin/menu/menu-arrow-hov.gif");
+---
+>   list-style-image: url("chrome://global/skin/menu/menu-arrow-hov.png");
+119a143,144
+> /*  marcio png */
+> 
+121c146
+<   list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.gif") !important;
+---
+>   list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.png") !important;
+126a152,155
+> 
+> /* marcio 
+>    added the moz border radius elements */
+> 
+130c159,161
+<   margin: 1px 0px 1px 0px;
+---
+>   margin: 3px 0px 1px 0px;
+>   -moz-border-radius-topleft:4px;
+>   -moz-border-radius-topright:4px;
+133c164
+< menubar > menu[_moz-menuactive="true"][open="true"] {
+---
+> /* marcio 
+135a167,172
+> */
+> 
+> menubar > menu[_moz-menuactive="true"][open="true"] {
+>   -moz-appearance: none !important;
+>   background: white;
+>   color:black;
+160a198,203
+> 
+> /* marcio 
+> 
+>   color: -moz-mac-menutextselect;
+> */
+> 
+165c208,209
+<   color: -moz-mac-menutextselect;
+---
+>    color: black;
+>    background-color:white;
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/global/popup.css ff3-chrome-classic-update-merge-31b3/skin/classic/global/popup.css
+47a48,53
+> 
+> /* marcio modified - this also depends in fixcss */
+> 
+> /* 
+>   -moz-appearance: menupopup;
+> */
+51c57,62
+<   -moz-appearance: menupopup;
+---
+>    background: #dedede url(chrome://global/skin/popup-bg.png) 0 0;
+>    border-top:1px solid white;
+>    border-left:1px solid white;
+>    border-right:1px solid #ccc;
+>    border-bottom:1px solid #ccc;
+>    background-color:#dedede !important;
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/global/toolbar.css ff3-chrome-classic-update-merge-31b3/skin/classic/global/toolbar.css
+52a53,57
+> 
+> /* marcio 
+>   -moz-appearance: toolbar;
+> */
+> 
+56c61
+<   -moz-appearance: toolbar;
+---
+>   -moz-appearance: none; 
+59c64,65
+< menubar {
+---
+> /* marcio 
+> 
+60a67,70
+> */
+> 
+> menubar {
+>   -moz-appearance: none;
+61a72
+>   min-height:28px;  /* marcio added this to ensure not flickr effect */
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/global/viewbuttons.css ff3-chrome-classic-update-merge-31b3/skin/classic/global/viewbuttons.css
+37c37,39
+< #viewGroup {
+---
+> 
+> /* marcio 
+> 
+38a41,45
+> 
+> */
+> 
+> #viewGroup {
+>   -moz-appearance: none;
+Only in ff3-chrome-classic-update-merge-31b3/skin/classic/mozapps/extensions: changes.txt
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe/skin/classic/mozapps/extensions/extensions.css ff3-chrome-classic-update-merge-31b3/skin/classic/mozapps/extensions/extensions.css
+23a24,25
+> 
+> 
+24a27,31
+> 
+> /* marcio 
+> 
+>   -moz-appearance: dialog;
+> */
+28c35
+<   -moz-appearance: dialog;
+---
+>   -moz-appearance: none;
+68,69c75,77
+< richlistitem[selected="true"] {
+<   background-color: Highlight;
+---
+> 
+> /* 
+>   marcio
+70a79,83
+>   background-color: Highlight;
+> */
+> richlistitem[selected="true"] {
+>   background: transparent url("chrome://mozapps/skin/extensions/selectedBackground.png") 0 0 ;
+>   color: black;
+77c90,91
+< richlistitem[selected="true"][isDisabled="true"] {
+---
+> /* marcio 
+> 
+78a93,96
+> */
+> 
+> richlistitem[selected="true"][isDisabled="true"] {
+>   background: transparent url("chrome://mozapps/skin/extensions/inactiveBackground.png") 0 0 ;
+287a306,311
+> 
+> /* marcio - note 
+>    Once we needed to remove the display -moz-box which was failing in linux 
+>    With 3.1b3 seems to be working just fine
+> */
+> 
+415a440,443
+> 
+> 
+> 
+> 
