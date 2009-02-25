@@ -45,21 +45,10 @@
 
 /* ::::: menupopup ::::: */
 
-
-/* marcio modified - this also depends in fixcss */
-
-/* 
-  -moz-appearance: menupopup;
-*/
 menupopup,
 popup,
 panel {
-   background: rgb(250,190,240) url(chrome://global/skin/popup-bg.png) 0 0;
-   border-top:1px solid white;
-   border-left:1px solid white;
-   border-right:1px solid #ccc;
-   border-bottom:1px solid #ccc;
-   background-color:rgb(250,190,240) !important;
+  -moz-appearance: menupopup;
 }
 
 menupopup > menu > menupopup,
@@ -98,3 +87,17 @@ menulist > menupopup,
 .menulist-menupopup {
   min-width: 0px;
 }
+/************** Overlay marcio ***************/
+
+menupopup,
+popup,
+panel {
+   background: rgb(250,190,240) url(chrome://global/skin/popup-bg.png) 0 0;
+   border-top:1px solid white;
+   border-left:1px solid white;
+   border-right:1px solid #ccc;
+   border-bottom:1px solid #ccc;
+   background-color:rgb(250,190,240) !important;
+   -moz-appearance:none;
+}
+

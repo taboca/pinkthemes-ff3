@@ -1,27 +1,3 @@
-browser.css  { 
-	the tabs back to images 
-	fixed the toolbar background
-} 
-
-
-added marcio-override-tabs.xml
-browser.css { 
-	added marcio-override-tabs xml binding to recover the tab images 
-} 
-
-browser.css { 
-	fixed the tab image left right and close images 
-} 
-
-DONE
-
-
-FIXED - removed the double shadow text - if you want to style the text in the tab, check the class name at the xml binding file. Check the double text and shadow effect. notice the duplicated text is in the new marcio- * xml file I think
-
-TODO 
-
-Need to remove the toolbar browser.css inactive stuff
-Check the whole browser.css tabtext stuff
 
 
 

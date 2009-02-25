@@ -1,0 +1,50 @@
+/* NOTE 
+
+	the searchbox element is gone from the end of the file 3.1b1.. 
+
+*/
+
+
+/* marcio override download panel stuff */
+
+#downloadView {
+  background-color: transparent;
+}
+
+richlistitem[type="download"][alternate="true"]:not([selected="true"]) {
+  background-color: #cecece;
+}
+
+
+richlistbox:focus > richlistitem[selected="true"][type="download"] .dateTime,
+richlistbox:focus > richlistitem[selected="true"][type="download"] .status {
+  color:black;
+}
+
+/* this whole chunk was added */
+
+richlistbox:focus > richlistitem[selected="true"][type="download"] {
+  color:black;
+  background: url(chrome://mozapps/skin/downloads/selectedBackground.png) repeat-x 0 0 ;
+}
+
+
+richlistitem[type="download"] button {
+  -moz-appearance: none;
+  min-height: 16px;
+  min-width: 16px;
+  max-height: 16px;
+  max-width: 16px;
+  padding: 0;
+  margin: 0 1px 0 1px;
+  background:none;
+  -moz-border-radius:0px;
+  border:0px;
+}
+
+
+#search {
+  background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
+}
+
+

@@ -1,0 +1,89 @@
+
+
+/**************** Browser marcio override *****************/
+
+#PersonalToolbar {
+  -moz-appearance: none;
+  background: url("chrome://browser/skin/bookmark-toolbar-background.png") repeat-x 0 0 ;
+  padding: 2px 0 3px;
+  border:0px;
+}
+
+
+#nav-bar {
+  background-color: transparent;
+  background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
+  background-repeat: repeat-x;
+  background-position: bottom right;
+  padding: 0 4px;
+  border-top:none;
+  border-bottom:none;
+}
+
+
+/*
+  marcio
+
+  -moz-appearance: none;
+  -moz-border-radius: 0 0 6px 6px;
+  color: #222;
+  margin-bottom: 1px;
+  -moz-margin-end: 1px;
+  padding: 0 5px;
+  border-style: none solid solid;
+  border-width: 3px;
+  -moz-border-right-colors: rgba(0, 0, 0, .08) rgba(0, 0, 0, .17) rgba(180, 180, 180, .29);
+  -moz-border-bottom-colors: rgba(0, 0, 0, .08) rgba(0, 0, 0, .17) rgba(180, 180, 180, .29);
+  -moz-border-left-colors: rgba(0, 0, 0, .08) rgba(0, 0, 0, .17) rgba(180, 180, 180, .29);
+  -moz-background-clip: padding;
+  min-width: 1px !important;
+  text-align: center;
+  height: 24px;
+
+*/
+.tabbrowser-tab {
+  -moz-binding: url("chrome://browser/skin/marcio-override-tabs.xml#tabbrowser-tab") !important;
+  -moz-appearance: none;
+  color: black;
+  -moz-box-pack: center;
+  padding: 0px;
+  border: none !important;
+  min-width: 1px !important;
+  text-align: center;
+  height: 27px;
+}
+
+
+
+/*  marcio
+  background-color: -moz-mac-chrome-active;
+  -moz-border-left-colors: rgba(0, 0, 0, .1) rgba(0, 0, 0, .2);
+  -moz-border-bottom-colors: rgba(0, 0, 0, .1) rgba(0, 0, 0, .2);
+  -moz-border-right-colors: rgba(0, 0, 0, .1) rgba(0, 0, 0, .2);
+  background-color: -moz-mac-chrome-active;
+*/
+
+.tabbrowser-tab[selected="true"] {
+  -moz-user-focus: normal;
+  background-color: transparent; 
+  padding: 0 6px 1px;
+  border-color:transparent; 
+  border-width: 2px;
+}
+
+
+
+/* Strip fix */
+
+.tabbrowser-strip {
+	 background-color: transparent; 
+}
+
+/* Strip graphics */
+
+.tabbrowser-tabs {
+  background: transparent url("chrome://browser/skin/tabstrip-background.png") repeat-x left top;
+}
+
+
+

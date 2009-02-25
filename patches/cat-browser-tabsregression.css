@@ -1,0 +1,57 @@
+
+/* TODO - we might need to review the text shadow use in the tab-text element */
+
+
+/* The tab images chunk is here. Note this has to do with the extended definitions for tabbrowser-tabs in marcio-override-tabs xml binding XBL */
+
+/* marcio
+   added height 27px
+*/
+.tab-image-left,
+.tab-image-right {
+  width: 8px;
+  height:27px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tabbrowser-tab > .tab-image-right,
+.tabbrowser-tab[chromedir="rtl"] > .tab-image-left {
+  background: url("chrome://browser/skin/tabbrowser/tab-right.png") no-repeat;
+}
+
+.tabbrowser-tab:not([selected="true"]) > .tab-image-right,
+.tabbrowser-tab:not([selected="true"])[chromedir="rtl"] > .tab-image-left {
+  background: url("chrome://browser/skin/tabbrowser/tab-right-bkgnd.png") no-repeat;
+}
+
+.tabbrowser-tab > .tab-image-left,
+.tabbrowser-tab[chromedir="rtl"] > .tab-image-right {
+  background: url("chrome://browser/skin/tabbrowser/tab-left.png") no-repeat;
+}
+
+.tabbrowser-tab:not([selected="true"]) > .tab-image-left,
+.tabbrowser-tab:not([selected="true"])[chromedir="rtl"] > .tab-image-right {
+  background: url("chrome://browser/skin/tabbrowser/tab-left-bkgnd.png") no-repeat;
+}
+
+/* check this marcio */
+
+/* marcio
+   modified added height:27px to make sure the tab selected connects with the above bar */
+
+.tabbrowser-tab > .tab-image-middle,
+.tabbrowser-tab > .tab-close-button {
+  -moz-box-pack: center;
+  height:27px;
+  background: url("chrome://browser/skin/tabbrowser/tab-middle.png") repeat-x ;
+}
+
+.tabbrowser-tab:not([selected="true"]) > .tab-image-middle,
+.tabbrowser-tab:not([selected="true"]) > .tab-close-button {
+  background: url("chrome://browser/skin/tabbrowser/tab-middle-bkgnd.png");
+}
+
+
+
+

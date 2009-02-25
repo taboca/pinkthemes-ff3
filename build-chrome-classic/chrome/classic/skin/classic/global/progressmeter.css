@@ -86,3 +86,18 @@ progressmeter {
            border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
 }
+/* override marcio */
+
+progressmeter {
+  -moz-appearance: none;
+  background: white url("chrome://global/skin/progress-background.png") 0 0 repeat-x;
+}
+
+.progress-bar
+{
+  -moz-appearance: none;
+  min-width: 0px;
+  background: green url("chrome://global/skin/progress-downloading.png") 0 0 repeat-x;
+}
+
+

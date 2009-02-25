@@ -34,15 +34,8 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-
-/* marcio 
-
-  -moz-appearance: -moz-mac-unified-toolbar;
-
-*/
-
 #viewGroup {
-  -moz-appearance: none;
+  -moz-appearance: -moz-mac-unified-toolbar;
   padding: 4px 0 8px;
   margin: 0;
   -moz-box-pack: center;
@@ -198,5 +191,11 @@
 :root:not([active]) #viewGroup[chromedir=rtl] > toolbarbutton:first-child[checked=true],
 :root:not([active]) #viewGroup[chromedir=rtl] > toolbarbutton[first-visible][checked=true] {
   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-selected-inactive.png") 0 6 0 5 repeat;
+}
+
+/****************** marcio overlay ***************/
+
+#viewGroup {
+  -moz-appearance: none;
 }
 

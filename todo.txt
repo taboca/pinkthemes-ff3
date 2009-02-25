@@ -1,9 +1,38 @@
 
 
-Need to push this to github
+TODO 
 
-============
+	found in the mozapps/extensions - b3 initial work 
+	it says
 
+		TODO - do the global/toolbar has viewbutton-left, right and stuff to do
+
+
+TODO 
+	look old tabbox.css in global
+
+---
+
+NOTE 
+
+	mozapps donwloads 
+		downloads.css
+
+		searchbox elements are gone from the bottom 
+
+
+---
+
+
+TODO - check the patches - check-autocomplete.browser.css
+
+---
+
+
+Need to remove the toolbar browser.css inactive stuff
+Check the whole browser.css tabtext stuff
+
+==============================================
 
 3.1b3 changes
 ===

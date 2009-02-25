@@ -11,3 +11,34 @@
 }
 
 
+/* marcio
+  -moz-appearance: dialog;
+*/
+#commandBarBottom {
+  -moz-appearance: none;
+}
+
+/*
+  marcio
+  color: HighlightText;
+  background-color: Highlight;
+*/
+richlistitem[selected="true"] {
+  background: transparent url("chrome://mozapps/skin/extensions/selectedBackground.png") 0 0 ;
+  color: black;
+}
+
+
+
+/* marcio
+
+  background-image: url("chrome://mozapps/skin/extensions/itemDisabledFader.png");
+*/
+
+richlistitem[selected="true"][isDisabled="true"] {
+  background: transparent url("chrome://mozapps/skin/extensions/inactiveBackground.png") 0 0 ;
+}
+
+
+
+

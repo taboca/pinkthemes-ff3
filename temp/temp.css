@@ -1,121 +1,201 @@
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
- * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Mozilla Communicator client code, released
- * March 31, 1998.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1998-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Joe Hewitt (hewitt@netscape.com)
- *   Kevin Gerich (webmail@kmgerich.com)
- *
- * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
-
-/* ===== button.css =====================================================
-  == Styles used by the XUL button element.
-  ======================================================================= */
-
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* :::::::::: button :::::::::: */
+/* ::::: find toolbar ::::: */
 
-
-/* Override marcio */
-/* Fix css will pass here */
-/* Removed the whole button rule */ 
-
-button {
-  margin: 6px;
-  padding: 0 9px;
-  min-width: 79px;
-  min-height: 22px;
-  color: ButtonText;
-  border:2px solid;
-  -moz-border-top-colors: rgba(255,255,255,.9) rgba(255,255,255,.7) ;
-  -moz-border-left-colors: rgba(255,255,255,.9) rgba(255,255,255,.7);
-  -moz-border-bottom-colors: rgba(130,130,130,.7) rgba(130,130,130,.5);
-  -moz-border-right-colors: rgba(130,130,130,.7) rgba(130,130,130,.5);
-  -moz-border-radius:4px;
-  background: rgb(250,190,240) url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+findbar {
+  background: url("chrome://global/skin/icons/find-bar-background.png") repeat-x top center #D0D0D0;
+  border-top: 1px solid #686868;
+  border-bottom: none;
+  min-width: 1px;
 }
 
-button:focus {
-  background: rgb(250,190,240) url("chrome://global/skin/icons/button-bg-focused.png") repeat-x 0 0;
+.findbar-container > label,
+.findbar-container > description {
+  font-weight: bold;
 }
 
-button:hover:active,
-button[open="true"],
-button[checked="true"] {
-  background: white url("chrome://global/skin/icons/button-bg-active.png") repeat-x 0 0;
+.findbar-find-fast {
+  color: #6D6D6D;
 }
 
-/* ------- previews stuff ----------*/
-
-.button-text {
-  margin: 0 2px 0 3px !important;
-  text-align: center;
-}
-
-.button-icon {
-  margin-left: 1px;
-}
-
-button[type="default"] {
-  font: menu;
-}
-
-/* .......... disabled state .......... */
-
-button[disabled="true"] {
-  color: #777777 !important;
-}
-
-/* ::::: menu/menu-button buttons ::::: */
-
-button[type="menu-button"] {
-  -moz-box-align: center;
-  -moz-box-pack: center;
-  margin: 0;
+.findbar-closebutton {
+  padding-right: 4px;
+  list-style-image: url("chrome://global/skin/icons/closetab.png");
   border: none;
-}
-
-.button-menu-dropmarker,
-.button-menubutton-dropmarker {
-  -moz-appearance: none !important;
-  border: none !important;
+  background-image: none !important;
   background-color: transparent !important;
-  margin: 1px;
 }
 
-/* ::::: plain buttons ::::: */
+.findbar-closebutton:hover {
+  list-style-image: url("chrome://global/skin/icons/closetab-hover.png") !important;
+}
 
-button.plain {
-  margin: 0 !important;
-  padding: 0 !important;
+.findbar-closebutton:hover:active {
+  list-style-image: url("chrome://global/skin/icons/closetab-active.png") !important;
+}
+
+.findbar-find-next,
+.findbar-find-previous,
+.findbar-highlight {
+  -moz-appearance: none;
+  border: 1px solid rgb(100,70,95);
+  -moz-border-radius: 10px;
+  background: url("chrome://global/skin/icons/white-gray-gradient.gif") #A09E9D repeat-x top center;
+  margin: 0 4px 1px 4px;
+  padding: 0 3px;
+}
+
+.findbar-container > toolbarbutton > .toolbarbutton-text,
+.findbar-container > hbox > toolbarbutton > .toolbarbutton-text {
+  margin: 1px 6px !important;
+}
+
+.findbar-container > toolbarbutton[disabled],
+.findbar-container > hbox > toolbarbutton[disabled] {
+  border-color: rgb(125,90,120) !important;
+  color: graytext;
+}
+
+.findbar-container > toolbarbutton:not([disabled]):hover:active,
+.findbar-container > hbox > toolbarbutton:not([disabled]):hover:active {
+  background-image: url("chrome://global/skin/icons/white-gray-gradient-active.gif");
+}
+
+
+.findbar-closebutton > .toolbarbutton-text {
+  display: none;  
+}
+
+.findbar-container > checkbox {
+   list-style-image: url("chrome://global/skin/icons/checkbox.png");
+   -moz-image-region: rect(0px 16px 16px 0px);
+   -moz-appearance: none;
+   -moz-margin-start: 7px;
+   padding-top: 2px;
+}
+
+.findbar-container > checkbox:hover:active {
+   -moz-image-region: rect(0px 32px 16px 16px);
+}
+
+.findbar-container > checkbox[checked] {
+   -moz-image-region: rect(0px 48px 16px 32px);
+}
+
+.findbar-container > checkbox[checked]:hover:active {
+   -moz-image-region: rect(0px 64px 16px 48px);
+}
+
+.findbar-container > checkbox > .checkbox-check {
+  display: none; 
+}
+
+.findbar-container > checkbox > .checkbox-label-box > .checkbox-label {
+  margin: 1px 0 !important;
+}
+
+.findbar-container > checkbox > .checkbox-label-box > .checkbox-icon {
+  -moz-padding-start: 1px;
+  padding-bottom: 1px;
+}
+
+.findbar-container > checkbox:focus > .checkbox-label-box > .checkbox-icon {
+  outline: 2px solid #4F8EC9;
+  outline-offset: -2px;
+  -moz-outline-radius: 4px;
+}
+
+.findbar-textbox {
+  -moz-binding: url("chrome://global/content/bindings/findbar.xml#findbar-textbox");
+  -moz-appearance: none;
+  border: 3px solid;
+  -moz-border-top-colors: rgb(100,70,95) #CFCFCF -moz-Field;
+  -moz-border-bottom-colors: #9F9F9F #EEE -moz-Field;
+  -moz-border-right-colors: #7F7F7F #EEE -moz-Field;
+  -moz-border-left-colors: #7F7F7F #EFEFEF -moz-Field;
+  -moz-border-radius: 11.5px;
+  background: url("chrome://global/skin/icons/search-textbox.png") -moz-Field no-repeat 1px center;
+  -moz-background-clip: border !important;
+  padding: 0 8px;
+  -moz-padding-start: 17px;
+}
+
+.findbar-textbox[focused="true"] {
+  outline: 2px solid #4A8BC7;
+  outline-offset: -2px;
+  -moz-outline-radius: 11px;
+}
+
+findbar[flash="true"] > .findbar-container > .find-field-container > .findbar-textbox {
+  -moz-border-top-colors: rgb(100,70,95) #F7E379 #F7E379;
+  -moz-border-bottom-colors: #9F9F9F #F7E379 #F7E379;
+  -moz-border-right-colors: #7F7F7F #F7E379 #F7E379;
+  -moz-border-left-colors: #7F7F7F #F7E379 #F7E379;
+  background-color: #F7E379;
+}
+
+.findbar-textbox[status="notfound"] {
+  -moz-border-top-colors: rgb(100,70,95) #FD919B #FD919B;
+  -moz-border-bottom-colors: #9F9F9F #FD919B #FD919B;
+  -moz-border-right-colors: #7F7F7F #FD919B #FD919B;
+  -moz-border-left-colors: #7F7F7F #FD919B #FD919B;
+  background-color: #FD919B;
+  color: #FFF;
+}
+
+/* find-next button */
+
+.findbar-find-next {
+  -moz-border-end: none;
+  -moz-margin-end: 0 !important;
+}
+
+.findbar-find-next[chromedir="ltr"],
+.findbar-find-previous[chromedir="rtl"] {
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+}
+
+/* find-previous button */
+
+.findbar-find-previous {
+  -moz-margin-start: 0 !important;
+}
+
+.findbar-find-previous[chromedir="ltr"],
+.findbar-find-next[chromedir="rtl"] {
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
+}
+
+/* highlight button */
+
+.findbar-highlight {
+  -moz-margin-start: 8px;
+}
+
+.findbar-highlight > .toolbarbutton-icon {
+  width: 13px;
+  height: 8px;
+  margin: 4px;
+  -moz-margin-end: 0;
+  border: 1px solid #818181;
+  -moz-border-radius: 4px;
+  background-color: #F4F4F3;
+}
+
+
+.findbar-highlight[checked="true"] > .toolbarbutton-icon {
+  background-color: #FFFF00;
+  border-color: #818100;
+}
+
+.find-status-icon {
+  display: none;
+}
+
+.findbar-find-status {
+  color: #436599 !important;
+  margin: 1px;
+  -moz-margin-start: 12px;
 }

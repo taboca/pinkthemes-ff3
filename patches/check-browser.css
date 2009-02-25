@@ -1,0 +1,14 @@
+/* 
+
+	Check this overlay 
+	autocomplete was inherit important 
+
+  background-image: inherit !important;
+
+*/
+
+.autocomplete-textbox {
+	background-image:none;
+}
+
+

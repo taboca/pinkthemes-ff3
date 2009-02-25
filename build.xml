@@ -152,8 +152,8 @@
     	
 		<copy todir="build-chrome-classic/chrome/classic" 
 			overwrite="yes">
-			<fileset dir="src/ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16" includes="**/*" />
-			<!-- fileset dir="src/ff3-chrome-classic-update-merge-31b3" includes="**/*" /> --> 
+			<fileset dir="src/ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16" includes="**/*" /> 
+			<!-- <fileset dir="src/ff3-chrome-classic-update-merge-31b3" includes="**/*" /> -->
 		</copy>
 
 	</target>
@@ -180,6 +180,9 @@
                         <fileset dir="build-distrib" includes="**" />
                 </copy>
                 <copy todir="/usr/local/firefox-3.1b3/firefox/chrome/" overwrite="yes">
+                        <fileset dir="build-distrib" includes="**" />
+                </copy>
+                <copy todir="/usr/local/firefox-3.1b3-feb17/chrome/" overwrite="yes">
                         <fileset dir="build-distrib" includes="**" />
                 </copy>
         </target>

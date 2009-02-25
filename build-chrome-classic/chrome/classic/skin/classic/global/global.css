@@ -74,8 +74,6 @@ windowdragbox {
   -moz-binding: url("chrome://global/content/bindings/general.xml#windowdragbox");
 }
 
-
-
 /* ::::: root elements ::::: */
 
 window,
@@ -83,8 +81,8 @@ page,
 dialog,
 wizard,
 prefwindow { 
-  -moz-appearance: none;
-  background-color: rgb(250,190,240);
+  -moz-appearance: dialog;
+  background-color: #FFFFFF;
   color: -moz-DialogText;
   font: message-box;
 }
@@ -151,20 +149,13 @@ iframe {
 
 /* ::::: statusbar ::::: */
 
-
-/* marcio 
- 
-Reverted to fixcss mode 
-
-*/
-
 statusbar {
-  border-top: 1px solid rgb(210,150,190) !important;
+  border-top: 1px solid #505050 !important;
   
   min-width: 1px; /* DON'T DELETE!
   Prevents hiding of scrollbars in browser when window is made smaller.*/
   min-height: 15px !important;
-  background: url("chrome://global/skin/statusbar-background.png") transparent repeat-x top left;
+  background: url("chrome://global/skin/statusbar-background.gif") #949393 repeat-x top left;
   margin: 0px !important;
   padding: 0px 16px 1px 1px;
   -moz-appearance: none;
@@ -363,6 +354,27 @@ notification > button:hover:active {
 #autoscroller[scrolldir="EW"] {
   background-position: right bottom;
 }
+
+/*  marcio  */
+
+window,
+page,
+dialog,
+wizard,
+prefwindow {
+  -moz-appearance: none;
+  background-color: rgb(250,190,240);
+}
+
+
+/* Review the text-shadow element taht was here */
+
+statusbar {
+  border-top: 1px solid rgb(210,150,190) !important;
+  background: url("chrome://global/skin/statusbar-background.png") transparent repeat-x top left;
+}
+
+
 /* We took this from the 3.1b2 */
 /* We may need to review this */
 

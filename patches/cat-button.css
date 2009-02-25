@@ -1,0 +1,29 @@
+
+/********** marcio s overlay **********/
+
+button {
+  margin: 6px;
+  padding: 0 9px;
+  min-width: 79px;
+  min-height: 22px;
+  color: ButtonText;
+  border:2px solid;
+  -moz-border-top-colors: #dedede #dadada ;
+  -moz-border-left-colors: #dedede #dadada;
+  -moz-border-bottom-colors: #bebebe #bababa;
+  -moz-border-right-colors: #bebebe #bababa;
+  -moz-border-radius:4px;
+  background: #eeeeee url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+}
+
+button:focus {
+  background: #eeeeee url("chrome://global/skin/icons/button-bg-focused.png") repeat-x 0 0;
+}
+
+button:hover:active,
+button[open="true"],
+button[checked="true"] {
+  background: white url("chrome://global/skin/icons/button-bg-active.png") repeat-x 0 0;
+}
+
+

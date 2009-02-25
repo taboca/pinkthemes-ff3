@@ -11,6 +11,38 @@ echo "Table - 125,90,120  - medium "
 echo "Table - 100,70,95   - dark "
 
 
+
+echo "******************** Feb 17th - global/menu.css ******************************************"
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/menu.css ./patches/cat-menu.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/menu.css
+
+echo "******************** Feb 17th - global/progressmeter.css *********************************"
+
+
+echo "+++ Patch cat-progressmeter.css "
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/progressmeter.css ./patches/cat-progressmeter.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/progressmeter.css
+
+
+echo "******************** Feb 17th - mozapps/downloads/downloads.css **************************"
+
+echo "+++ Patch cat-downloads.css ... "
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css ./patches/cat-downloads.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
+
+echo "Download panel border fixes .. "
+
+sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
+
+echo "!!! Replacing cecece - required from the cat-downloads.css "
+
+sed -e "s/#cecece/rgb(255,205,246)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
+
 echo "******************** Initiatind patches to Global  CSS *********************** "
 
 
@@ -44,30 +76,23 @@ echo "Expect marcio "
 cat   ./build-chrome-classic/chrome/classic/skin/classic/global/toolbar.css | grep "marcio"
 
 
-
-
 echo "***************************** viewbuttons . css *************************** 3.1b3" 
+
+echo "++++ Patched cat-viewbuttons.css "
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css ./patches/cat-viewbuttons.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css
 
 echo "Found: "
 cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css | grep "#FFF"
 sed -e "s/#FFF/rgb(0,0,0)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css
+echo "Expect rgb 0,0,0"
 cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css | grep "rgb(0,0,0)"
 
+echo "********************* Feb 17 console work ************************ "
 
-
-echo "------ Removing line -moz-appearance: -moz-mac-unified-toolbar .. from viewbuttons.css "
-
-cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css | grep "-moz-appearance: -moz-mac-unified-toolbar;" 
-sed -e "s/-moz-mac-unified-toolbar/none/g" ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css > ./temp/temp.css
-echo "Expect: moz appearance: none" 
-cat  ./build-chrome-classic/chrome/classic/skin/classic/global/viewbuttons.css | grep "-moz-appearance: none;" 
-
-
-
-
-echo "========== Error console border for the toolbar elements ============"
-
+echo "Doing regexp on console.css - we might consider moving this to the new cat-patch model "
 
 echo "Found: 686868? " 
 cat  ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css  | grep "#686868"
@@ -78,21 +103,16 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/con
 echo "Changed to: "
 cat  ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css  | grep "rgb(225"
 
+echo " !!!! todo console "
 
-
-
-
-
+sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
 echo "=========== pageInfo border fix ==============="
 
 sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css
 
-echo "-------------- console same thing ---------------"
-
-sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
 echo "******************* Extensions.css under mozapps extensions **************************"
 
@@ -115,13 +135,36 @@ echo "color changed to: "
 cat ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css | grep "100,70,95" 
 
 
-echo "============ Browser.css the nav-bar background color ================ 3.1b3"
+echo "************************** Feb 17th Browser.css *****************************"
 
-sed -e "s/#9e9e9e/transparent/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+
+echo "Cropping the whole INACTIVE WINDOW section "
+echo "Expect: INACTIVE WINDOW"
+cat ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css  | grep "INACTIVE"
+sed -e "s/INACTIVE\ WINDOW\ ----- \*\//\ overlay comment marcio /g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+sed -e "s/.* SEARCH//g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
-echo "=========== Browser Bbookmarks edit fields background ==============="
 
+echo "Pathching +++ cat-browser "
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css ./patches/cat-browser.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+
+echo "Pathching +++ cat-browser-tabsregressionn - compatible with marcio tabs XBL "
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css ./patches/cat-browser-tabsregression.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+
+echo "Copying the xml definition to the browser directory ... "
+
+cp ./patches/marcio*.xml ./build-chrome-classic/chrome/classic/skin/classic/browser/ 
+
+
+echo "!!! Color settings .... " 
 
 sed -e "s/#666666/rgb(253,195,245)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
@@ -135,7 +178,7 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/br
 sed -e "s/#666/rgb(253,195,245)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
-echo "=========  Bookmarks Dropdown menu popup ==============="
+echo "!!! Bookmarks Dropdown menu popup ...."
 
 
 sed -e "s/#ffffff/black/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
@@ -158,6 +201,59 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/br
 
 sed -e "s/162,162,162/200,150,195/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+
+echo "************************ Feb 17th - global popup.css ******************************"
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css ./patches/cat-popup.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css
+
+
+echo "!!! doing dedede changes on top of cat-popup.css... "
+sed -e "s/#dedede/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css
+
+
+
+
+
+
+
+echo "*************** Feb 17th, buttons.css ***********************************"
+
+echo "Catch the new rules "
+
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/button.css ./patches/cat-button.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
+
+
+echo "Color changes... "
+
+
+sed -e "s/#eeeeee/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
+
+sed -e "s/#dadada/rgba(255,255,255,.7)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
+
+sed -e "s/#dedede/rgba(255,255,255,.9)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
+
+sed -e "s/#bababa/rgba(130,130,130,.5)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
+
+sed -e "s/#bebebe/rgba(130,130,130,.7)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
+
+
+echo "--------------------------------------------------"
+echo "--------------------------------------------------"
+echo "--------------------------------------------------"
+echo "               Review                             "
+echo "--------------------------------------------------"
+echo "--------------------------------------------------"
+
+
 
 echo "======== dark border topbar for the places ========"
 
@@ -192,41 +288,6 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/fin
 
 
 echo "=========== high top ========="
-
-sed -e "s/#dedede/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css
-
-
-
-echo "--------------------------------------------------"
-echo "Download panel border .. "
-
-sed -e "s/#404040/rgb(100,70,95)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
-
-echo "=========== odd tree row download =============="
-
-sed -e "s/#cecece/rgb(255,205,246)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
-
-echo "=========== button color background =============="
-
-sed -e "s/#eeeeee/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
-
-sed -e "s/#dadada/rgba(255,255,255,.7)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
-
-sed -e "s/#dedede/rgba(255,255,255,.9)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
-
-sed -e "s/#bababa/rgba(130,130,130,.5)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
-
-sed -e "s/#bebebe/rgba(130,130,130,.7)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
-cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
-
-
 
 echo "******************************* Final manual something? *****************************"
 echo "You may need to remove the XBL bindings in the beginning of the global.css file ... "   

@@ -21,18 +21,11 @@
   visibility: visible;
 }
 
-
-
 /* Command Bar */
-
-/* marcio 
-
-  -moz-appearance: dialog;
-*/
 #commandBarBottom {
   margin: 10px 10px 10px 10px;
   min-width: 1px;
-  -moz-appearance: none;
+  -moz-appearance: dialog;
 }
 
 #commandBarBottom button,
@@ -72,28 +65,17 @@ richlistitem[newAddon="true"] {
   color: #585620;
 }
 
-
-/* 
-  marcio
-  color: HighlightText;
-  background-color: Highlight;
-*/
 richlistitem[selected="true"] {
-  background: transparent url("chrome://mozapps/skin/extensions/selectedBackground.png") 0 0 ;
-  color: black;
+  background-color: Highlight;
+  color: HighlightText;
 }
 
 richlistitem[selected="true"] .text-link {
   color: inherit;
 }
 
-/* marcio 
-
-  background-image: url("chrome://mozapps/skin/extensions/itemDisabledFader.png");
-*/
-
 richlistitem[selected="true"][isDisabled="true"] {
-  background: transparent url("chrome://mozapps/skin/extensions/inactiveBackground.png") 0 0 ;
+  background-image: url("chrome://mozapps/skin/extensions/itemDisabledFader.png");
 }
 
 .descriptionWrap {
@@ -303,12 +285,6 @@ richlistitem[opType="needs-uninstall"] .notifyBadge {
   margin-bottom: 4px;
 }
 
-
-/* marcio - note 
-   Once we needed to remove the display -moz-box which was failing in linux 
-   With 3.1b3 seems to be working just fine
-*/
-
 .addonRating[rating] {
   display: -moz-box;
   width: 78px;
@@ -437,10 +413,6 @@ richlistitem[selected="true"] .includeUpdate {
   text-align: justify;
   margin: 0 0 0.7em 0;
 }
-
-
-
-
 /* temporary test - this dates from3.1b2 */
 
 .viewSelector {
@@ -452,5 +424,36 @@ richlistitem[selected="true"] .includeUpdate {
   margin: 0;
   -moz-box-pack: center;
 }
+
+
+/* marcio
+  -moz-appearance: dialog;
+*/
+#commandBarBottom {
+  -moz-appearance: none;
+}
+
+/*
+  marcio
+  color: HighlightText;
+  background-color: Highlight;
+*/
+richlistitem[selected="true"] {
+  background: transparent url("chrome://mozapps/skin/extensions/selectedBackground.png") 0 0 ;
+  color: black;
+}
+
+
+
+/* marcio
+
+  background-image: url("chrome://mozapps/skin/extensions/itemDisabledFader.png");
+*/
+
+richlistitem[selected="true"][isDisabled="true"] {
+  background: transparent url("chrome://mozapps/skin/extensions/inactiveBackground.png") 0 0 ;
+}
+
+
 
 
