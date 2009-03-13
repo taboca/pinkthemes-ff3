@@ -38,10 +38,21 @@ menubar > menu {
 }
 
 
+
+/* this is new appraoch in the f 3.1b4 march 13 build verified... 
+
+menubar > menu[_moz-menuactive="true"][open="true"] {
+  -moz-appearance: menuitem !important;
+  color: -moz-mac-menutextselect !important
+}
+
+*/
+
+
 menubar > menu[_moz-menuactive="true"][open="true"] {
   -moz-appearance: none !important;
   background: white;
-  color:black;
+  color:black !important;
 }
 
 menupopup > menu[_moz-menuactive="true"],
