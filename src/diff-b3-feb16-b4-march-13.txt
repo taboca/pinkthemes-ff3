@@ -1,0 +1,184 @@
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/browser/browser.css ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/browser/browser.css
+1101,1103c1101,1102
+<   margin: 0;
+<   -moz-margin-start: -8px;
+<   -moz-margin-end: -8px;
+---
+>   margin-left: 4px;
+>   margin-right: 4px;
+1187,1189d1185
+<   margin: 0px;
+<   -moz-margin-start: -8px;
+<   -moz-margin-end: -8px;
+1190a1187,1188
+>   /* Implements editBookmarkPanel resizing on folderTree un-collapse. */
+>   min-width: 27em;
+1231d1228
+<   margin: 6px -8px !important;
+1496a1494,1497
+> toolbarbutton.chevron[chromedir="rtl"] {
+>   list-style-image: url("chrome://global/skin/icons/chevron-rtl.png") !important;
+> }
+> 
+1544,1545c1545
+< .tabbrowser-tab:not(:hover):not([selected="true"]) > .tab-icon-image,
+< .tabbrowser-arrowscrollbox > .tabs-newtab-button:not(:hover) > .toolbarbutton-icon {
+---
+> .tabbrowser-tab:not(:hover):not([selected="true"]) > .tab-icon-image {
+1576a1577,1581
+> .tabbrowser-arrowscrollbox > .tabs-newtab-button {
+>   width: 34px;
+>   padding-top: 1px;
+> }
+> 
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/browser/places/editBookmarkOverlay.css ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/browser/places/editBookmarkOverlay.css
+60,65d59
+< /**** folder tree ****/
+< 
+< #editBMPanel_folderTree {
+<    margin: 6px 0;
+< }
+< 
+70a65
+>   margin: 0;
+91a87,94
+> #editBookmarkPanelContent {
+>   min-width: 23em;
+> }
+> 
+> #editBMPanel_folderTree {
+>   margin: 6px 4px 0 4px;
+> }
+> 
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/browser/places/organizer.css ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/browser/places/organizer.css
+460,461c460
+<   padding: 4px 0 3px 0;
+<   -moz-padding-start: 7px;
+---
+>   padding: 4px 0 3px 8px;
+472c471
+<   padding: 2px 8px 2px 1px !important;
+---
+>   padding: 2px 8px 2px 0 !important;
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/browser/preferences/preferences.css ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/browser/preferences/preferences.css
+76c76
+<   -moz-border-image: url("chrome://browser/skin/preferences/panebutton-active.png") 0 2 repeat;
+---
+>   -moz-border-image: url("chrome://browser/skin/preferences/panebutton-active.png") 0 2 repeat stretch;
+80c80
+<   -moz-border-image: url("chrome://browser/skin/preferences/panebutton-inactive.png") 0 2 repeat;
+---
+>   -moz-border-image: url("chrome://browser/skin/preferences/panebutton-inactive.png") 0 2 repeat stretch;
+Binary files ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/browser/tabbrowser/newtab.png and ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/browser/tabbrowser/newtab.png differ
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/global/button.css ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/global/button.css
+60c60,62
+<   margin: 0 2px 0 3px !important;
+---
+>   margin: 0 !important;
+>   -moz-margin-start: 3px !important;
+>   -moz-margin-end: 2px !important;
+65c67
+<   margin-left: 1px;
+---
+>   -moz-margin-start: 1px;
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/global/console/console.css ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/global/console/console.css
+214c214
+<   -moz-border-image: url("chrome://global/skin/toolbar/roundrectbutton.png") 0 6 repeat !important;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/roundrectbutton.png") 0 6 repeat stretch !important;
+218c218
+<   -moz-border-image: url("chrome://global/skin/toolbar/roundrectbutton-down.png") 0 6 repeat !important;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/roundrectbutton-down.png") 0 6 repeat stretch !important;
+223c223
+<   -moz-border-image: url("chrome://global/skin/toolbar/roundrectbutton-inactive.png") 0 6 repeat !important;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/roundrectbutton-inactive.png") 0 6 repeat stretch !important;
+Only in ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/global/icons: chevron-rtl.png
+Only in ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/global/media: throbber.png
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/global/media/videocontrols.css ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/global/media/videocontrols.css
+81a82,92
+> 
+> .throbberOverlay {
+>     background-color: rgba(0,0,0,0.55);
+> }
+> 
+> .throbber {
+>     background: url(chrome://global/skin/media/throbber.png) no-repeat center;
+>     height: 36px;
+>     width: 36px;
+>     margin-bottom: 28px; /* same height as .controlBar, to keep throbber centered above it */
+> }
+diff -r ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16/skin/classic/global/viewbuttons.css ff3-chrome-classic-reference-3.1b4-march-13/skin/classic/global/viewbuttons.css
+56c56
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle.png") 0 4 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle.png") 0 4 0 5 repeat stretch;
+60c60
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-down.png") 0 4 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-down.png") 0 4 0 5 repeat stretch;
+67c67
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-selected.png") 0 4 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-selected.png") 0 4 0 5 repeat stretch;
+72c72
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-selected-down.png") 0 4 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-selected-down.png") 0 4 0 5 repeat stretch;
+77c77
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-inactive.png") 0 4 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-inactive.png") 0 4 0 5 repeat stretch;
+83c83
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-selected-inactive.png") 0 4 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-middle-selected-inactive.png") 0 4 0 5 repeat stretch;
+91c91
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left.png") 0 4 0 6 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left.png") 0 4 0 6 repeat stretch;
+98c98
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-down.png") 0 4 0 6 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-down.png") 0 4 0 6 repeat stretch;
+109c109
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-selected.png") 0 4 0 6 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-selected.png") 0 4 0 6 repeat stretch;
+120c120
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-selected-down.png") 0 4 0 6 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-selected-down.png") 0 4 0 6 repeat stretch;
+127c127
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-inactive.png") 0 4 0 6 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-inactive.png") 0 4 0 6 repeat stretch;
+138c138
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-selected-inactive.png") 0 4 0 6 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-left-selected-inactive.png") 0 4 0 6 repeat stretch;
+146c146
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right.png") 0 6 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right.png") 0 6 0 5 repeat stretch;
+153c153
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-down.png") 0 6 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-down.png") 0 6 0 5 repeat stretch;
+164c164
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-selected.png") 0 6 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-selected.png") 0 6 0 5 repeat stretch;
+175c175
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-selected-down.png") 0 6 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-selected-down.png") 0 6 0 5 repeat stretch;
+182c182
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-inactive.png") 0 6 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-inactive.png") 0 6 0 5 repeat stretch;
+193c193
+<   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-selected-inactive.png") 0 6 0 5 repeat;
+---
+>   -moz-border-image: url("chrome://global/skin/toolbar/viewbutton-right-selected-inactive.png") 0 6 0 5 repeat stretch;
