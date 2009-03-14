@@ -2249,6 +2249,14 @@ tabpanels.plain {
 }
 
 
+#editBookmarkPanel {
+  background: transparent none !important;
+  -moz-border-image: url(chrome://browser/skin/hud-panel.png) 26 50 22 18 / 26px 50px 22px 18px repeat;
+  
+}
+
+
+
 /* TODO - we might need to review the text shadow use in the tab-text element */
 
 

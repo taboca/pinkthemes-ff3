@@ -96,3 +96,11 @@
   -moz-border-radius:4px; 
 }
 
+
+#editBookmarkPanel {
+  background: transparent none !important;
+  -moz-border-image: url(chrome://browser/skin/hud-panel.png) 26 50 22 18 / 26px 50px 22px 18px repeat;
+  
+}
+
+
