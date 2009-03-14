@@ -10,7 +10,6 @@ In fact fix the image SVG - something diffferent between the reference image hud
 Merge the Bookmark ~ lines in the patches - brosser.css 
 
 
-
 ============================== QA CHECK =================================
 
 TODO CHECK PAULA 

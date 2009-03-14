@@ -27,3 +27,8 @@ button[checked="true"] {
 }
 
 
+/* Buttons not anymore the default */
+
+button { 
+	-moz-appearance:none;
+} 

@@ -1,4 +1,10 @@
 
+== Changes ==
+
+
+buttons - check the patches/cat-button.css - added a -moz-appearance none to removed the default OS setting
+
+
 == BEFORE you run ANT DISTRIB ==
 
  * keep the install.rdf and contents.rdf files in build-package
