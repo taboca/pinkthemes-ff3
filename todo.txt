@@ -1,5 +1,31 @@
 
 
+============================== TODO =================================
+
+Merge the Bookmark ~ lines in the patches - brosser.css 
+
+
+
+============================== QA CHECK =================================
+
+TODO CHECK PAULA 
+{ 
+
++++ IN browser.css - this was the workaround to solve ( or we belive maybe it solved the autocomplete trouble we have caused +++
+
+/* marcio somehow this caused problems */
+/*
+  background-image: inherit !important;
+*/
+
+.autocomplete-textbox {
+	/* We just removed */
+}
+
+} 
+
+=======================================================================
+
 TODO 
 
 	found in the mozapps/extensions - b3 initial work 
