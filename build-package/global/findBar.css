@@ -3,8 +3,8 @@
 /* ::::: find toolbar ::::: */
 
 findbar {
-  background: url("chrome://global/skin/icons/find-bar-background.png") repeat-x top center transparent;
-  border-top: 1px solid rgb(125,90,120);
+  background: url("chrome://global/skin/icons/find-bar-background.png") repeat-x top center #D0D0D0;
+  border-top: 1px solid #686868;
   border-bottom: none;
   min-width: 1px;
 }
@@ -34,20 +34,13 @@ findbar {
   list-style-image: url("chrome://global/skin/icons/closetab-active.png") !important;
 }
 
-
-/* marcio 
-
-  background: url("chrome://global/skin/icons/white-gray-gradient.gif") #A09E9D repeat-x top center;
-  
-*/
-
 .findbar-find-next,
 .findbar-find-previous,
 .findbar-highlight {
   -moz-appearance: none;
   border: 1px solid rgb(100,70,95);
   -moz-border-radius: 10px;
-  background: url("chrome://global/skin/icons/white-color-gradient.png") transparent repeat-x top center;
+  background: url("chrome://global/skin/icons/white-gray-gradient.gif") #A09E9D repeat-x top center;
   margin: 0 4px 1px 4px;
   padding: 0 3px;
 }
@@ -63,14 +56,9 @@ findbar {
   color: graytext;
 }
 
-/* marcio
-
-  background-image: url("chrome://global/skin/icons/white-gray-gradient-active.gif");
-*/
-
 .findbar-container > toolbarbutton:not([disabled]):hover:active,
 .findbar-container > hbox > toolbarbutton:not([disabled]):hover:active {
-  background-image: url("chrome://global/skin/icons/white-color-gradient-active.png");
+  background-image: url("chrome://global/skin/icons/white-gray-gradient-active.gif");
 }
 
 

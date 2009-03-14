@@ -45,35 +45,20 @@
 
 /* ::::: menu/menuitem ::::: */
 
-/* marcio 
-
-  color: MenuText;
-  -moz-appearance: menuitem !important;
-
-*/
-
 menu,
 menuitem {
+  -moz-appearance: menuitem !important;
   -moz-box-align: center;
-  -moz-appearance: none !important;
-  color: black;
+  color: MenuText;
   font: -moz-pull-down-menu;
   list-style-image: none;
   -moz-image-region: auto;
 }
 
-
-/* marcio 
-
-
-  color: -moz-mac-menutextdisable;
-
-*/
-
 menu[disabled="true"], menuitem[disabled="true"],
 menu[_moz-menuactive="true"][disabled="true"],
 menuitem[_moz-menuactive="true"][disabled="true"] {
-  color: gray;
+  color: -moz-mac-menutextdisable;
 }
 
 /* ..... internal content .... */
@@ -89,15 +74,9 @@ menuitem[_moz-menuactive="true"][disabled="true"] {
   font-weight: inherit;
 }
 
-/* marcio 
-  color: -moz-mac-menutextdisable;
-
- */
-
-
 .menu-description {
   font-style: italic;
-  color:gray;
+  color: -moz-mac-menutextdisable;
   -moz-margin-start: 1ex !important;
 }
 
@@ -129,44 +108,31 @@ menuitem[type="radio"] > .menu-iconic-left {
 .menu-right {
   margin: 0px 8px 0px 6px;
   width: 8px;
-  list-style-image: url("chrome://global/skin/menu/menu-arrow.png");
+  list-style-image: url("chrome://global/skin/menu/menu-arrow.gif");
   -moz-image-region: auto;
 }
 
 .menu-right[_moz-menuactive="true"] {
-  list-style-image: url("chrome://global/skin/menu/menu-arrow-hov.png");
+  list-style-image: url("chrome://global/skin/menu/menu-arrow-hov.gif");
   -moz-image-region: auto;
 }
 
 .menu-right[disabled="true"] {
-  list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.png") !important;
+  list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.gif") !important;
   -moz-image-region: auto;
 }
 
 /* ::::: menu/menuitems in menubar ::::: */
 
-/* marcio
- thse moz border radius were originally placed to add smooth borders to the top menu only */
-
-
 menubar > menu {
   -moz-appearance: none !important;
-  padding: 1px 5px 2px 6px;
-  -moz-border-radius-topleft:4px;
-  -moz-border-radius-topright:4px;
-  margin: 3px 0px 1px 0px;
+  padding: 2px 5px 2px 7px;
+  margin: 1px 0px 1px 0px;
 }
 
-/*
-
-  color: -moz-mac-menutextselect !important
-  -moz-appearance: menuitem !important;
-*/
-
 menubar > menu[_moz-menuactive="true"][open="true"] {
-  -moz-appearance: none !important;
-  background: white;
-  color:black;
+  -moz-appearance: menuitem !important;
+  color: -moz-mac-menutextselect !important
 }
 
 /* ..... internal content .... */
@@ -192,15 +158,11 @@ popup > menuitem {
   min-height: 19px;
 }
 
-/*
-  color: -moz-mac-menutextselect;
-*/
 menupopup > menu[_moz-menuactive="true"],
 menupopup > menuitem[_moz-menuactive="true"],
 popup > menu[_moz-menuactive="true"],
 popup > menuitem[_moz-menuactive="true"] {
-   color: black; 
-   background-color:white;
+  color: -moz-mac-menutextselect;
 }
 
 /* ::::: menu/menuitems in menulist popups ::::: */
@@ -270,3 +232,71 @@ menulist > menupopup {
   list-style-image: url("chrome://global/skin/columnselect.gif");
   -moz-image-region: auto;
 }
+
+/* marcio
+
+  color: MenuText;
+  -moz-appearance: menuitem !important;
+
+	Shall we change this moz pul down menu font?
+
+*/
+
+menu,
+menuitem {
+  -moz-appearance: none !important;
+  color: black;
+  font: -moz-pull-down-menu;
+}
+
+
+
+menu[disabled="true"], menuitem[disabled="true"],
+menu[_moz-menuactive="true"][disabled="true"],
+menuitem[_moz-menuactive="true"][disabled="true"] {
+  color: gray;
+}
+
+
+.menu-description {
+  color:gray;
+}
+
+
+menubar > menu {
+  -moz-appearance: none !important;
+  padding: 1px 5px 2px 6px;
+  -moz-border-radius-topleft:4px;
+  -moz-border-radius-topright:4px;
+  margin: 3px 0px 1px 0px;
+}
+
+
+
+/* this is new appraoch in the f 3.1b4 march 13 build verified... 
+
+menubar > menu[_moz-menuactive="true"][open="true"] {
+  -moz-appearance: menuitem !important;
+  color: -moz-mac-menutextselect !important
+}
+
+*/
+
+
+menubar > menu[_moz-menuactive="true"][open="true"] {
+  -moz-appearance: none !important;
+  background: white;
+  color:black !important;
+}
+
+menupopup > menu[_moz-menuactive="true"],
+menupopup > menuitem[_moz-menuactive="true"],
+popup > menu[_moz-menuactive="true"],
+popup > menuitem[_moz-menuactive="true"] {
+   color: black;
+   background-color:white;
+}
+
+
+
+

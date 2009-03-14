@@ -44,25 +44,12 @@
 
 /* ::::: progressmeter ::::: */
 
-/*
-
-  -moz-appearance: progressbar;
-*/
 progressmeter {
-  -moz-appearance: none;
+  -moz-appearance: progressbar;
   margin: 2px 4px;
   min-width: 128px;
-  background: white url("chrome://global/skin/progress-background.png") 0 0 repeat-x;
   height: 12px;
 }
-
-.progress-bar
-{
-  -moz-appearance: none;
-  min-width: 0px;
-  background: green url("chrome://global/skin/progress-downloading.png") 0 0 repeat-x;
-}
-
 
 
 
@@ -93,14 +80,24 @@ progressmeter {
 
 /* :::::: download progress meter :::::::: */
 
-/* 
-          -moz-appearance: progressbar;
-*/
 #progress, #progress0 {
 	  vertical-align: baseline !important;
-          -moz-appearance: none;
-  background: green url("chrome://global/skin/progress-downloading.png") 0 0 repeat-x;
-  
+          -moz-appearance: progressbar;
            border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
 }
+/* override marcio */
+
+progressmeter {
+  -moz-appearance: none;
+  background: white url("chrome://global/skin/progress-background.png") 0 0 repeat-x;
+}
+
+.progress-bar
+{
+  -moz-appearance: none;
+  min-width: 0px;
+  background: green url("chrome://global/skin/progress-downloading.png") 0 0 repeat-x;
+}
+
+

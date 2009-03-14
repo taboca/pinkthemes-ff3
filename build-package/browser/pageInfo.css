@@ -39,65 +39,14 @@
 
 @import "chrome://global/skin/";
 
-#main-window {
-  -moz-binding: url("chrome://global/skin/globalBindings.xml#unifiedWindow");
-}
-
-/* Workaround - marcio - not removed instead kept it here with the same background */
-
-#main-window:not([active="true"]) > #topStackBar {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
-  background-color: #cfcfcf;
-  border-bottom: 1px solid rgba(0,0,0,0.25);
-}
-
-#main-window:not([active="true"]) > #topStackBar > #viewGroup {
-  opacity: 0.7;
-}
-
-#topStackBar {
-  display: -moz-box;
-  background-color: #969696;
-  border-bottom: 1px solid rgb(100,70,95);
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-topshade.png");
-  background-repeat: repeat-x;
-  background-position: top right;
-  padding: 4px 0 8px;
-  -moz-box-pack: center;
-}
-
 /* View buttons */
-
-#viewGroup {
-  border: 1px solid rgb(100,70,95);
-  border-bottom: 2px solid;
-  -moz-border-bottom-colors: #C2C2C2 rgb(100,70,95);
-  -moz-border-radius: 4px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  background-image: url("chrome://global/skin/icons/white-gray-gradient.gif");
-  background-repeat: repeat-x;
-}
-
-#viewGroup radio {
-  -moz-box-orient: vertical;
-  -moz-box-align: center;
-  -moz-appearance: none;
-}
+@import "chrome://global/skin/viewbuttons.css";
 
 /* Extensions will provide icons because the view buttons have icons
    on the winstripe and gnomestripe themes. We don't want to display them */
 .viewButtonIcon {
   display: none;
 }
-
-/* marcio for the top shadow */
-
-#mainDeck { 
-
-  background: url("chrome://global/skin/toolbar/toolbar-background-topshadow.png") 0 0 repeat-x;
-
-} 
 
 deck {
   padding: 10px 10px 10px 10px;

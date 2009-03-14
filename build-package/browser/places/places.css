@@ -30,15 +30,9 @@ tree.sidebar-placesTree treechildren::-moz-tree-row {
   border: none;
 }
 
-
-/* 
-  marcio 
-
-  background-color: #6f81a9;
-*/
 #bookmarks-view treechildren::-moz-tree-row(selected), 
 #historyTree treechildren::-moz-tree-row(selected) {  
-  background-color: red;
+  background-color: #6f81a9;
   background-image: url("chrome://browser/skin/places/selected-gradient.png");
   background-repeat: repeat-x;
   background-position: bottom left;
@@ -48,6 +42,11 @@ tree.sidebar-placesTree treechildren::-moz-tree-row {
 tree.sidebar-placesTree treechildren::-moz-tree-separator {
   border-top: 1px solid #505d6d;
   margin: 0 10px;
+}
+
+#historyTree,
+#bookmarks-view {
+  border-top: 1px solid #bebebe;
 }
 
 #bookmarks-view treechildren::-moz-tree-row(selected,focus),
@@ -151,7 +150,7 @@ treechildren::-moz-tree-image(query) {
 }
 
 treechildren::-moz-tree-image(title, query, tagContainer),
-treechildren::-moz-tree-image(container, OrganizerQuery_Tags) {
+treechildren::-moz-tree-image(query, OrganizerQuery_Tags) {
   list-style-image: url("chrome://mozapps/skin/places/tagContainerIcon.png");
 }
 

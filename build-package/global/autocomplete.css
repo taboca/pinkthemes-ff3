@@ -46,18 +46,21 @@
 
 /* ::::: autocomplete ::::: */
 
-textbox {
+/* .padded is used by autocomplete widgets that don't have an icon. Gross. -dwh */
+textbox:not(.padded) {
   cursor: default;
   padding: 0;
 }
 
-/* Used by autocomplete widgets that don't have an icon. Gross. -dwh */
-textbox.padded {
-  padding: 1px 0px 1px 2px;
+textbox[nomatch="true"][highlightnonmatches="true"] {
+  color: red;
+}
+
+textbox:not(.padded) .textbox-input-box {
+  margin: 0 3px;
 }
 
 .textbox-input-box {
-  margin: 0 3px;
   -moz-box-align: center;
 }
 
@@ -79,6 +82,7 @@ panel[type="autocomplete-richlistbox"],
 .autocomplete-history-popup {
   padding: 0px !important;
   background-color: -moz-Field;
+  font: icon;
   -moz-appearance: none;
 }
 
@@ -195,13 +199,3 @@ toolbarpaletteitem > toolbaritem > textbox > hbox > hbox > html|*.textbox-input 
 toolbarpaletteitem > toolbaritem > * > textbox > hbox > hbox > html|*.textbox-input {
   visibility: hidden;
 }
-
-/* Fixing the autocomplete problem which mac causes - this is from linux skin */
-.autocomplete-treecol > .treecol-sortdirection {
-  -moz-appearance: none !important;
-}
-
-
-
-
-

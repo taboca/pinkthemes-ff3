@@ -6,7 +6,7 @@
   height: 26px;
   width: 5em;
   margin-top: 3px;
-  -moz-margin-start: 5px;
+  -moz-margin-start: 4px;
   min-width: 5em;
   border: none;
   background-color: transparent;
@@ -34,11 +34,6 @@
   -moz-margin-start: 44px !important;
 }
 
-/* marcio
-
-   added border none due to new general button has a moz round etc */
-
-
 .searchbar-engine-button {
   background: url("chrome://browser/skin/urlbar/startcap.png") center center no-repeat;
   -moz-appearance: none;
@@ -48,8 +43,6 @@
   -moz-box-align: center;
   margin: 0;
   -moz-margin-start: -44px;
-  border:none;
-  -moz-border-radius:0px;
   padding: 0;
 }
 
