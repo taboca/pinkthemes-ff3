@@ -1,5 +1,5 @@
 
-echo "New model just  regexp rules on top of 3.1b3 ... and aims to find compatibility with 3.0 "
+echo "Update b4..."
 
 echo "============================================="
 echo "Table - 255,230,255 - high up "
@@ -12,8 +12,15 @@ echo "Table - 100,70,95   - dark "
 
 
 
-echo "******************** Feb 17th - global/menu.css ******************************************"
+echo "******************** March 14th - global/tabbox.css ******************************************"
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/tabbox.css ./patches/cat-tabbox.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/tabbox.css
 
+echo "******************** March 14 - browser/preferences/preferences.css ******************************************"
+cat ./build-chrome-classic/chrome/classic/skin/classic/browser/preferences/preferences.css ./patches/cat-preferences.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/preferences/preferences.css
+
+echo "******************** Feb 17th - global/menu.css ******************************************"
 cat ./build-chrome-classic/chrome/classic/skin/classic/global/menu.css ./patches/cat-menu.css > ./temp/temp.css  
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/menu.css
 

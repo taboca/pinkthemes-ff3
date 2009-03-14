@@ -1,0 +1,30 @@
+/*
+ marcio
+
+  -moz-appearance: tabpanels;
+  border-top: 0px;
+  border-bottom: 2px ridge #000000;
+  border-left: 2px groove #000000;
+  border-right: 2px ridge #000000;
+*/
+
+tabpanels {
+  background: url(chrome://global/skin/popup-bg.png) 0 0;
+  padding: 15px 5px 5px 5px;
+  border:1px solid white;
+  background-color              : #eeeeee;
+  margin-bottom: 10px;
+  -moz-appearance: none;
+}
+
+/*
+ marcio
+        -moz-appearance:none;
+        -moz-appearance: tabpanels;
+tabstrip-box {
+
+        margin-top: -1px;
+}
+
+*/
+

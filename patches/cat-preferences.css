@@ -1,0 +1,14 @@
+
+/* marcio hack to fit buttons in linux and windows */
+
+#advancedPrefs {
+  margin:0px;
+}
+
+/* marcio hack to fit buttons in linux and windows */
+#advancedPrefs button {
+   margin:3px;
+   padding:3px;
+}
+
+
