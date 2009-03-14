@@ -1,4 +1,9 @@
 
+============================== POLISH ===============================
+
+fix the browser/browser.css hud-panel.png 
+
+In fact fix the image SVG - something diffferent between the reference image hud-panel.png and the implemnetation here. Noticed the original is indexed and our new png is RGB. This could be the reason the image does not show the transparent background? 
 
 ============================== TODO =================================
 
