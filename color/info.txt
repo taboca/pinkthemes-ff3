@@ -1,0 +1,6 @@
+How to use
+
+cp fixcss.sh to fixcss.1.sh to apply the sedcolor high. GHenerate the sedcolorhigh table with the geerators
+colorhigh 200 200 200 5       
+
+5 steps
