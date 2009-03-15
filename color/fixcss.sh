@@ -299,3 +299,9 @@ echo "=========== high top ========="
 echo "******************************* Final manual something? *****************************"
 echo "You may need to remove the XBL bindings in the beginning of the global.css file ... "   
 
+
+
+sed -e "s/rgb(250,190,240)/colorhighnormal/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
+
+

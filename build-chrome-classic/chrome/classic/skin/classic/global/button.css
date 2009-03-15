@@ -112,8 +112,8 @@ button {
   border:2px solid;
   -moz-border-top-colors: rgba(255,255,255,.9) rgba(255,255,255,.7) ;
   -moz-border-left-colors: rgba(255,255,255,.9) rgba(255,255,255,.7);
-  -moz-border-bottom-colors: rgba(130,130,130,.7) rgba(130,130,130,.5);
-  -moz-border-right-colors: rgba(130,130,130,.7) rgba(130,130,130,.5);
+  -moz-border-bottom-colors: rgb(225,171,216) rgb(200,152,192);
+  -moz-border-right-colors: rgb(225,171,216) rgb(200,152,192);
   -moz-border-radius:4px;
   background: rgb(250,190,240) url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
 }
@@ -131,6 +131,8 @@ button[checked="true"] {
 
 /* Buttons not anymore the default */
 
-button { 
+/*
 	-moz-appearance:none;
+*/
+button { 
 } 
