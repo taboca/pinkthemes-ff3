@@ -1,5 +1,5 @@
-clean
-ant
-deplouy 
+10_clean
+20 ant
+30 deplouy 
 
 sync the release latest in the releases. 

@@ -2,11 +2,11 @@
 
 cp fixcss.sh replace.sh
 
-./colorhigh.py $1 $2 $3 $4 
-./colorlow.py $1 $2 $3 $5 
+./_colorhigh.py $1 $2 $3 $4 
+./_colorlow.py $1 $2 $3 $5 
 
-./sedcolorhigh.sh 
-./sedcolorlow.sh 
+./_sedcolorhigh.sh 
+./_sedcolorlow.sh 
 
 
 mkdir base-$1-$2-$3
@@ -14,8 +14,8 @@ mkdir base-$1-$2-$3
 cp replace.sh base-$1-$2-$3/fixcss.sh
 
 cp base.css replace.sh
-./sedcolorhigh.sh 
-./sedcolorlow.sh 
+./_sedcolorhigh.sh 
+./_sedcolorlow.sh 
 
 cp replace.sh base-$1-$2-$3/base.css
 

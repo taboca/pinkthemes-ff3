@@ -1,2 +1,9 @@
-jobcolor R G B slicesup slicesdown
+./10_job.sh R G B slicesup slicesdown
+
+fixcss.sh and base.css are the normative files, src - do not remove and depends on them
+keep replace.sh as temp files and othe
+
+copy resulting base-r-g-b/base.css ../src/theme/svg/biblioteca/base.css
+
+copy resulting base-r-g-b/fixcss.sh ..
 
