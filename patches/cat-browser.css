@@ -92,7 +92,6 @@
 
 #identity-popup {
   -moz-border-image: url(chrome://browser/skin/hud-panel.png) 26 18 22 50 / 26px 18px 22px 50px repeat;
-  -moz-border-radius:4px; 
 }
 
 

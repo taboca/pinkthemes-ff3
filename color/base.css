@@ -235,11 +235,11 @@
 /* Urlbar active */ 
 
 .urlbar-active-top-color {
-        stop-color:colorlow1;
+        stop-color:colorhighnormal;
         stop-opacity:1;
 }
 .urlbar-active-bottom-color {
-        stop-color:colorhigh1;
+        stop-color:colorhigh4;
         stop-opacity:1;
 }
 
