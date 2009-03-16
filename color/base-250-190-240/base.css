@@ -198,7 +198,7 @@
 }
 
 .tabbrowsertabs-from-color-dark {
-        stop-color:rgb(175,133,168):
+        stop-color:rgb(175,133,168); 
         stop-opacity:1;
 }
 .tabbrowsertabs-from-color {
