@@ -297,6 +297,15 @@ popup > menuitem[_moz-menuactive="true"] {
    background-color:white;
 }
 
+/* menu arrows */
 
-
+.menu-right {
+  list-style-image: url("chrome://global/skin/menu/menu-arrow.png");
+}
+.menu-right[_moz-menuactive="true"] {
+  list-style-image: url("chrome://global/skin/menu/menu-arrow-hov.png");
+}
+.menu-right[disabled="true"] {
+  list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.png") !important;
+}
 
