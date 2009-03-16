@@ -7,3 +7,7 @@ Release Notes
 
 * 1.0 released - before february
 
+
+Notes
+===
+This project has no update key and means the AMO version - AMO shall put all the keys in it 
