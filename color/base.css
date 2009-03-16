@@ -198,7 +198,7 @@
 }
 
 .tabbrowsertabs-from-color-dark {
-        stop-color:colorlow3:
+        stop-color:colorlow3; 
         stop-opacity:1;
 }
 .tabbrowsertabs-from-color {
