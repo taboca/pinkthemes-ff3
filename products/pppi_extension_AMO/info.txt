@@ -3,3 +3,7 @@ How to generate the PinkPaulaPack extension
 * edit src-base version with the right version number
 * 
 
+Release Notes
+
+* 1.0 released - before february
+
