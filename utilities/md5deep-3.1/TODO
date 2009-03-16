@@ -1,0 +1,10 @@
+*** Create FAQ
+  - Why nothing happens when I double click it
+  - Why is this better than one line of shell
+
+*** Add support for hashdeep to use NSRL files and other types?
+
+*** Add timestamp mode (-t) to hashdeep
+
+*** Add 'make test' directive to run compiled programs on test files 
+    and ensure compilation was successful. 

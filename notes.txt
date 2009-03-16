@@ -1,11 +1,12 @@
 
 
-== Changes ==
 
+== Generate Color maps ==
 
-* buttons - check the patches/cat-button.css - added a -moz-appearance none to removed the default OS setting
-* hud panel works but the identity popup panel and the new bookmarks popup is not showing with transparent background on linux
+cd ./color
 
+./10_job.sh R G B step_color_up step_color_down
+Sync the fixcss.sh and ./src/theme/svg/biblioteca/base.css 
 
 == BEFORE you run ANT DISTRIB ==
 
