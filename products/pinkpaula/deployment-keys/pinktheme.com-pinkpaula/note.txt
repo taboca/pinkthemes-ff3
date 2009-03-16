@@ -1,4 +1,4 @@
 OLD = 2D2C9C94-D29B-11DD-82B1-A0A556D89593
  new = pinkpaula@pinktheme.com
 
-The sha1 generated with sha1deep based on the generated distribution XPI file. 
+The sha1 generated with sha1deep based on the generated distribution theme.jar file. 
