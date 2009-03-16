@@ -1,1 +1,2 @@
+copy the src to root dir project build-package to be able to ant distrib
 put the latest in the release-latest in order to export to pinkpack
