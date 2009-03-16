@@ -38,7 +38,7 @@ findbar {
 .findbar-find-previous,
 .findbar-highlight {
   -moz-appearance: none;
-  border: 1px solid rgb(150,114,144);
+  border: 1px solid rgb(120,141,152);
   -moz-border-radius: 10px;
   background: url("chrome://global/skin/icons/white-gray-gradient.gif") #A09E9D repeat-x top center;
   margin: 0 4px 1px 4px;
@@ -52,7 +52,7 @@ findbar {
 
 .findbar-container > toolbarbutton[disabled],
 .findbar-container > hbox > toolbarbutton[disabled] {
-  border-color: rgb(200,152,192) !important;
+  border-color: rgb(160,185,202) !important;
   color: graytext;
 }
 
@@ -109,7 +109,7 @@ findbar {
   -moz-binding: url("chrome://global/content/bindings/findbar.xml#findbar-textbox");
   -moz-appearance: none;
   border: 3px solid;
-  -moz-border-top-colors: rgb(150,114,144) #CFCFCF -moz-Field;
+  -moz-border-top-colors: rgb(120,141,152) #CFCFCF -moz-Field;
   -moz-border-bottom-colors: #9F9F9F #EEE -moz-Field;
   -moz-border-right-colors: #7F7F7F #EEE -moz-Field;
   -moz-border-left-colors: #7F7F7F #EFEFEF -moz-Field;
@@ -127,7 +127,7 @@ findbar {
 }
 
 findbar[flash="true"] > .findbar-container > .find-field-container > .findbar-textbox {
-  -moz-border-top-colors: rgb(150,114,144) #F7E379 #F7E379;
+  -moz-border-top-colors: rgb(120,141,152) #F7E379 #F7E379;
   -moz-border-bottom-colors: #9F9F9F #F7E379 #F7E379;
   -moz-border-right-colors: #7F7F7F #F7E379 #F7E379;
   -moz-border-left-colors: #7F7F7F #F7E379 #F7E379;
@@ -135,7 +135,7 @@ findbar[flash="true"] > .findbar-container > .find-field-container > .findbar-te
 }
 
 .findbar-textbox[status="notfound"] {
-  -moz-border-top-colors: rgb(150,114,144) #FD919B #FD919B;
+  -moz-border-top-colors: rgb(120,141,152) #FD919B #FD919B;
   -moz-border-bottom-colors: #9F9F9F #FD919B #FD919B;
   -moz-border-right-colors: #7F7F7F #FD919B #FD919B;
   -moz-border-left-colors: #7F7F7F #FD919B #FD919B;

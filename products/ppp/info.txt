@@ -1,4 +1,9 @@
+This is the combo version, a multipack
+
+
 Clean
 change the rdf to match the aboutpink and the pinkpaula
 join
 cp the build-distrib to the releases dir
+
+

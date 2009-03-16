@@ -1,0 +1,5 @@
+How to generate the PinkPaulaPack extension
+
+* edit src-base version with the right version number
+* 
+

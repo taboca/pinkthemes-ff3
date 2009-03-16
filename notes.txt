@@ -1,8 +1,10 @@
 
+
 == Changes ==
 
 
-buttons - check the patches/cat-button.css - added a -moz-appearance none to removed the default OS setting
+* buttons - check the patches/cat-button.css - added a -moz-appearance none to removed the default OS setting
+* hud panel works but the identity popup panel and the new bookmarks popup is not showing with transparent background on linux
 
 
 == BEFORE you run ANT DISTRIB ==
