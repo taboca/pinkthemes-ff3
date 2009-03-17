@@ -115,11 +115,11 @@ button {
   -moz-border-bottom-colors: rgba(130,130,130,.7) rgba(130,130,130,.5);
   -moz-border-right-colors: rgba(130,130,130,.7) rgba(130,130,130,.5);
   -moz-border-radius:4px;
-  background: rgb(200,229,252) url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
+  background: rgb(223,190,255) url("chrome://global/skin/icons/button-bg.png") repeat-x 0 0;
 }
 
 button:focus {
-  background: rgb(200,229,252) url("chrome://global/skin/icons/button-bg-focused.png") repeat-x 0 0;
+  background: rgb(223,190,255) url("chrome://global/skin/icons/button-bg-focused.png") repeat-x 0 0;
 }
 
 button:hover:active,

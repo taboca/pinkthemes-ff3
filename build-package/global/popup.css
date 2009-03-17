@@ -92,12 +92,12 @@ menulist > menupopup,
 menupopup,
 popup,
 panel {
-   background: rgb(200,229,252) url(chrome://global/skin/popup-bg.png) 0 0;
+   background: rgb(223,190,255) url(chrome://global/skin/popup-bg.png) 0 0;
    border-top:1px solid white;
    border-left:1px solid white;
    border-right:1px solid #ccc;
    border-bottom:1px solid #ccc;
-   background-color:rgb(200,229,252) !important;
+   background-color:rgb(223,190,255) !important;
    -moz-appearance:none;
 }
 
