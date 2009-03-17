@@ -17,6 +17,7 @@
   background-position: bottom right;
   padding: 0 4px;
   border-top:none;
+  -moz-appearance:none;
   border-bottom:none;
 }
 
