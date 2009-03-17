@@ -76,7 +76,7 @@
 
 #placesView > splitter {
   -moz-border-start: none !important;
-  -moz-border-end: 1px solid rgb(135,114,155);
+  -moz-border-end: 1px solid rgb(120,141,152);
   min-width: 1px;
   width: 1px;
   background-image: none !important;       
@@ -236,7 +236,7 @@
 
 #placesList {
   -moz-appearance: none;
-  background-color: rgb(201,171,230);
+  background-color: rgb(180,207,227);
   width: 160px;
   margin: 0px;
   border: 0px;

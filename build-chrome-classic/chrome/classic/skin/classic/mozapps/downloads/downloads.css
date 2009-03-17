@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   border-width: 0;
-  border-bottom: 1px solid rgb(135,114,155);
+  border-bottom: 1px solid rgb(120,141,152);
 }
 
 /* Download View Items */
@@ -148,7 +148,7 @@ richlistitem[type="download"] button {
 }
 
 richlistitem[type="download"][alternate="true"]:not([selected="true"]) {
-  background-color: rgb(247,242,255);
+  background-color: rgb(244,249,252);
 }
 
 

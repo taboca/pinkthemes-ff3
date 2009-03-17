@@ -1054,7 +1054,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 #editBookmarkPanel > hbox > vbox > hbox > button,
 #editBookmarkPanel > #editBookmarkPanelBottomButtons > button {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(229,203,255) center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(211,234,252) center center;
   border-width: 3px;
   border-style: solid;
   -moz-border-radius: 20px;
@@ -1082,7 +1082,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBookmarkPanel > #editBookmarkPanelBottomButtons > button[default="true"] {
-  background-color: rgb(229,203,255);
+  background-color: rgb(211,234,252);
 }
 
 #editBookmarkPanel > #editBookmarkPanelContent {
@@ -1137,7 +1137,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBookmarkPanel #editBMPanel_folderMenuList {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(229,203,255) center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(211,234,252) center center;
   border: 3px solid;
   -moz-border-radius: 5px;
   -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
@@ -1177,7 +1177,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 /**** folder tree ****/
 
 #editBookmarkPanel #editBMPanel_folderTree {
-  background-color: rgb(201,171,230);
+  background-color: rgb(180,207,227);
   border-top: 2px solid !important;
   border-right: 0 !important;
   border-bottom: 0 !important;
@@ -1219,7 +1219,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBookmarkPanel #editBMPanel_tagsSelector {
   -moz-appearance: none;
-  background-color: rgb(201,171,230);
+  background-color: rgb(180,207,227);
   border-top: 2px solid !important;
   border-right: 0 !important;
   border-bottom: 2px solid !important;
@@ -1255,7 +1255,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-row(selected) {
-  background-color: rgb(223,190,255) !important;
+  background-color: rgb(200,229,252) !important;
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-cell-text(selected),
@@ -1264,12 +1264,12 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-row(selected, focus) {
-  background-color: rgb(223,190,255) !important;
+  background-color: rgb(200,229,252) !important;
 }
 
 #editBookmarkPanel #editBMPanel_tagsSelector > listitem[selected="true"] {
   color: #222222;
-  background-color: rgb(223,190,255);
+  background-color: rgb(200,229,252);
 }
 
 /**** expanders ****/
@@ -1277,7 +1277,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 #editBookmarkPanel .expander-up,
 #editBookmarkPanel .expander-down {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(229,203,255) center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(211,234,252) center center;
   border: 3px solid;
   -moz-border-radius: 5px;
   -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
@@ -1347,7 +1347,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   -moz-border-left-colors: #1c1c1c #636363;
   -moz-border-radius: 1px;
   padding: 0;
-  background-color: rgb(229,203,255);
+  background-color: rgb(211,234,252);
   color: black;
 }
 
@@ -2109,7 +2109,7 @@ tabpanels.plain {
 /* Popup Buttons */
 #identity-popup-more-info-button {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(229,203,255) center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(211,234,252) center center;
   border: 3px solid;
   -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
   -moz-border-right-colors: rgba(53,53,53,1) rgba(53,53,53,1) rgba(162,162,162,1);
