@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="lovelylilac@taboca.com"
+                   em:version="3.5.0"
+                   em:name="LovelyLilac 3.5.0"
+                   em:description="Welcome to LovelyLilac for upcoming Firefox 3.5. This work is based on SVGplanet Firefox Theme and PinkTheme.com projects "
+                   em:creator="lovelylilac.taboca.com"
+                   em:homepageURL="http://lovelylilac.taboca.comm"
+                   em:internalName="lovelylilac_taboca"
+                   >
+
+    <em:targetApplication RDF:resource="rdf:#$Zz+3b2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$Zz+3b2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.1b3"
+                   em:maxVersion="3.1b4" />
+</RDF:RDF>
