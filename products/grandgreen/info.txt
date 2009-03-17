@@ -1,0 +1,4 @@
+This is just a theme
+sync the src file to the project root dir build-package
+compile
+ant distrib
