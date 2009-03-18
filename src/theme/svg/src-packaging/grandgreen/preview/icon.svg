@@ -9,8 +9,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="225"
-   height="250"
+   width="64"
+   height="64"
    id="svg2"
    sodipodi:version="0.32"
    inkscape:version="0.46"
@@ -88,17 +88,16 @@
       </feMerge>
     </filter>
     <radialGradient
-       gradientTransform=""
        id="radialGradient3676"
        gradientUnits="objectBoundingBox"
        spreadMethod="repeat"
        xlink:show="other"
        xlink:type="simple"
-       r="50%"
-       cx="50%"
-       fx="50%"
-       cy="50%"
-       fy="50%"
+       r="0.5"
+       cx="0.5"
+       fx="0.5"
+       cy="0.5"
+       fy="0.5"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#ff6600;stop-opacity:1;"
@@ -106,17 +105,16 @@
          id="stop3678" />
     </radialGradient>
     <radialGradient
-       gradientTransform=""
        id="radialGradient3680"
        gradientUnits="objectBoundingBox"
        spreadMethod="pad"
        xlink:show="other"
        xlink:type="simple"
-       r="111%"
-       cx="7%"
-       fx="111%"
-       cy="97%"
-       fy="111%"
+       r="1.11"
+       cx="0.07"
+       fx="1.11"
+       cy="0.97000003"
+       fy="1.11"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#b3a0a3;stop-opacity:1;"
@@ -205,17 +203,16 @@
       </feMerge>
     </filter>
     <radialGradient
-       gradientTransform=""
        id="radialGradient5754"
        gradientUnits="objectBoundingBox"
        spreadMethod="repeat"
        xlink:show="other"
        xlink:type="simple"
-       r="50%"
-       cx="50%"
-       fx="50%"
-       cy="50%"
-       fy="50%"
+       r="0.5"
+       cx="0.5"
+       fx="0.5"
+       cy="0.5"
+       fy="0.5"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#ff6600;stop-opacity:1;"
@@ -223,17 +220,16 @@
          id="stop5756" />
     </radialGradient>
     <radialGradient
-       gradientTransform=""
        id="radialGradient5758"
        gradientUnits="objectBoundingBox"
        spreadMethod="pad"
        xlink:show="other"
        xlink:type="simple"
-       r="111%"
-       cx="7%"
-       fx="111%"
-       cy="97%"
-       fy="111%"
+       r="1.11"
+       cx="0.07"
+       fx="1.11"
+       cy="0.97000003"
+       fy="1.11"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
@@ -320,7 +316,7 @@
     <radialGradient
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.184344,0,0,1.308737,-35.03059,-39.8183)"
-       r="163.20313"
+       r="163.20312"
        fy="167.11029"
        fx="207.39059"
        cy="167.11029"
@@ -330,17 +326,16 @@
        inkscape:collect="always" />
     <radialGradient
        xlink:actuate="onLoad"
-       fy="111%"
-       cy="97%"
-       fx="111%"
-       cx="7%"
-       r="111%"
+       fy="1.11"
+       cy="0.97000003"
+       fx="1.11"
+       cx="0.07"
+       r="1.11"
        xlink:type="simple"
        xlink:show="other"
        spreadMethod="pad"
        gradientUnits="objectBoundingBox"
-       id="radial1"
-       gradientTransform="">
+       id="radial1">
       <stop
          id="stop2106"
          offset="0"
@@ -356,17 +351,16 @@
     </radialGradient>
     <radialGradient
        xlink:actuate="onLoad"
-       fy="50%"
-       cy="50%"
-       fx="50%"
-       cx="50%"
-       r="50%"
+       fy="0.5"
+       cy="0.5"
+       fx="0.5"
+       cx="0.5"
+       r="0.5"
        xlink:type="simple"
        xlink:show="other"
        spreadMethod="repeat"
        gradientUnits="objectBoundingBox"
-       id="radial0"
-       gradientTransform="">
+       id="radial0">
       <stop
          id="stop2103"
          offset="0"
@@ -722,17 +716,16 @@
       </feMerge>
     </filter>
     <radialGradient
-       gradientTransform=""
        id="radialGradient4219"
        gradientUnits="objectBoundingBox"
        spreadMethod="repeat"
        xlink:show="other"
        xlink:type="simple"
-       r="50%"
-       cx="50%"
-       fx="50%"
-       cy="50%"
-       fy="50%"
+       r="0.5"
+       cx="0.5"
+       fx="0.5"
+       cy="0.5"
+       fy="0.5"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#ff6600;stop-opacity:1;"
@@ -740,17 +733,16 @@
          id="stop4221" />
     </radialGradient>
     <radialGradient
-       gradientTransform=""
        id="radialGradient4213"
        gradientUnits="objectBoundingBox"
        spreadMethod="pad"
        xlink:show="other"
        xlink:type="simple"
-       r="111%"
-       cx="7%"
-       fx="111%"
-       cy="97%"
-       fy="111%"
+       r="1.11"
+       cx="0.07"
+       fx="1.11"
+       cy="0.97000003"
+       fy="1.11"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
@@ -879,7 +871,7 @@
     <radialGradient
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.184344,0,0,1.308737,-35.03059,-39.8183)"
-       r="163.20313"
+       r="163.20312"
        fy="167.11029"
        fx="207.39059"
        cy="167.11029"
@@ -889,17 +881,16 @@
        inkscape:collect="always" />
     <radialGradient
        xlink:actuate="onLoad"
-       fy="111%"
-       cy="97%"
-       fx="111%"
-       cx="7%"
-       r="111%"
+       fy="1.11"
+       cy="0.97000003"
+       fx="1.11"
+       cx="0.07"
+       r="1.11"
        xlink:type="simple"
        xlink:show="other"
        spreadMethod="pad"
        gradientUnits="objectBoundingBox"
-       id="radialGradient4181"
-       gradientTransform="">
+       id="radialGradient4181">
       <stop
          id="stop4183"
          offset="0"
@@ -915,17 +906,16 @@
     </radialGradient>
     <radialGradient
        xlink:actuate="onLoad"
-       fy="50%"
-       cy="50%"
-       fx="50%"
-       cx="50%"
-       r="50%"
+       fy="0.5"
+       cy="0.5"
+       fx="0.5"
+       cx="0.5"
+       r="0.5"
        xlink:type="simple"
        xlink:show="other"
        spreadMethod="repeat"
        gradientUnits="objectBoundingBox"
-       id="radialGradient4169"
-       gradientTransform="">
+       id="radialGradient4169">
       <stop
          id="stop4171"
          offset="0"
@@ -1314,17 +1304,16 @@
       </feMerge>
     </filter>
     <radialGradient
-       gradientTransform=""
        id="radialGradient4916"
        gradientUnits="objectBoundingBox"
        spreadMethod="repeat"
        xlink:show="other"
        xlink:type="simple"
-       r="50%"
-       cx="50%"
-       fx="50%"
-       cy="50%"
-       fy="50%"
+       r="0.5"
+       cx="0.5"
+       fx="0.5"
+       cy="0.5"
+       fy="0.5"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#ff6600;stop-opacity:1;"
@@ -1332,17 +1321,16 @@
          id="stop4918" />
     </radialGradient>
     <radialGradient
-       gradientTransform=""
        id="radialGradient4902"
        gradientUnits="objectBoundingBox"
        spreadMethod="pad"
        xlink:show="other"
        xlink:type="simple"
-       r="111%"
-       cx="7%"
-       fx="111%"
-       cy="97%"
-       fy="111%"
+       r="1.11"
+       cx="0.07"
+       fx="1.11"
+       cy="0.97000003"
+       fy="1.11"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#b3a0a3;stop-opacity:1;"
@@ -1431,17 +1419,16 @@
       </feMerge>
     </filter>
     <radialGradient
-       gradientTransform=""
        id="radialGradient4878"
        gradientUnits="objectBoundingBox"
        spreadMethod="repeat"
        xlink:show="other"
        xlink:type="simple"
-       r="50%"
-       cx="50%"
-       fx="50%"
-       cy="50%"
-       fy="50%"
+       r="0.5"
+       cx="0.5"
+       fx="0.5"
+       cy="0.5"
+       fy="0.5"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#ff6600;stop-opacity:1;"
@@ -1449,17 +1436,16 @@
          id="stop4880" />
     </radialGradient>
     <radialGradient
-       gradientTransform=""
        id="radialGradient4872"
        gradientUnits="objectBoundingBox"
        spreadMethod="pad"
        xlink:show="other"
        xlink:type="simple"
-       r="111%"
-       cx="7%"
-       fx="111%"
-       cy="97%"
-       fy="111%"
+       r="1.11"
+       cx="0.07"
+       fx="1.11"
+       cy="0.97000003"
+       fy="1.11"
        xlink:actuate="onLoad">
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
@@ -1588,7 +1574,7 @@
     <radialGradient
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.184344,0,0,1.308737,-35.03059,-39.8183)"
-       r="163.20313"
+       r="163.20312"
        fy="167.11029"
        fx="207.39059"
        cy="167.11029"
@@ -1598,17 +1584,16 @@
        inkscape:collect="always" />
     <radialGradient
        xlink:actuate="onLoad"
-       fy="111%"
-       cy="97%"
-       fx="111%"
-       cx="7%"
-       r="111%"
+       fy="1.11"
+       cy="0.97000003"
+       fx="1.11"
+       cx="0.07"
+       r="1.11"
        xlink:type="simple"
        xlink:show="other"
        spreadMethod="pad"
        gradientUnits="objectBoundingBox"
-       id="radialGradient4840"
-       gradientTransform="">
+       id="radialGradient4840">
       <stop
          id="stop4842"
          offset="0"
@@ -1624,17 +1609,16 @@
     </radialGradient>
     <radialGradient
        xlink:actuate="onLoad"
-       fy="50%"
-       cy="50%"
-       fx="50%"
-       cx="50%"
-       r="50%"
+       fy="0.5"
+       cy="0.5"
+       fx="0.5"
+       cx="0.5"
+       r="0.5"
        xlink:type="simple"
        xlink:show="other"
        spreadMethod="repeat"
        gradientUnits="objectBoundingBox"
-       id="radialGradient4828"
-       gradientTransform="">
+       id="radialGradient4828">
       <stop
          id="stop4830"
          offset="0"
@@ -2045,7 +2029,7 @@
     <radialGradient
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.184344,0,0,1.308737,-35.03059,-39.8183)"
-       r="163.20313"
+       r="163.20312"
        fy="167.11029"
        fx="207.39059"
        cy="167.11029"
@@ -2055,17 +2039,16 @@
        inkscape:collect="always" />
     <radialGradient
        xlink:actuate="onLoad"
-       fy="111%"
-       cy="97%"
-       fx="111%"
-       cx="7%"
-       r="111%"
+       fy="1.11"
+       cy="0.97000003"
+       fx="1.11"
+       cx="0.07"
+       r="1.11"
        xlink:type="simple"
        xlink:show="other"
        spreadMethod="pad"
        gradientUnits="objectBoundingBox"
-       id="radialGradient5865"
-       gradientTransform="">
+       id="radialGradient5865">
       <stop
          id="stop5867"
          offset="0"
@@ -2081,17 +2064,16 @@
     </radialGradient>
     <radialGradient
        xlink:actuate="onLoad"
-       fy="50%"
-       cy="50%"
-       fx="50%"
-       cx="50%"
-       r="50%"
+       fy="0.5"
+       cy="0.5"
+       fx="0.5"
+       cx="0.5"
+       r="0.5"
        xlink:type="simple"
        xlink:show="other"
        spreadMethod="repeat"
        gradientUnits="objectBoundingBox"
-       id="radialGradient5853"
-       gradientTransform="">
+       id="radialGradient5853">
       <stop
          id="stop5855"
          offset="0"
@@ -2629,9 +2611,9 @@
      objecttolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="120.26698"
-     inkscape:cy="137.02608"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="79.252077"
+     inkscape:cy="62.465804"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2658,7 +2640,7 @@
      id="layer1">
     <g
        id="g6060"
-       transform="matrix(3.5708214,0,0,3.5708214,-1290.4916,-352.70374)">
+       transform="matrix(0.9846146,0,0,0.9846146,-354.34145,-100.23342)">
       <path
          sodipodi:type="arc"
          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:22;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter6052)"
@@ -2671,7 +2653,7 @@
          transform="matrix(1.1836735,0,0,1.1836735,54.063777,-59.349273)" />
     </g>
     <g
-       transform="matrix(3.3389499,0,0,3.3389499,-979.93186,-472.30231)"
+       transform="matrix(0.9206785,0,0,0.9206785,-268.70802,-133.2114)"
        id="g6092"
        style="fill:#ffffff">
       <path
@@ -2697,7 +2679,7 @@
     </g>
     <g
        id="g6006"
-       transform="matrix(3.5658444,0,0,3.5658444,-324.23782,-65.297911)">
+       transform="matrix(0.9832422,0,0,0.9832422,-87.907628,-20.984433)">
       <g
          id="g5954"
          transform="matrix(0.1366234,0,0,0.1366234,95.432455,26.740233)">
@@ -2762,31 +2744,31 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:15.47195625px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Dimnah;-inkscape-font-specification:Dimnah Bold"
-       x="55.552322"
-       y="176.54977"
+       style="font-size:4.26622105px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Dimnah;-inkscape-font-specification:Dimnah Bold"
+       x="16.815308"
+       y="45.702396"
        id="text6218"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan6220"
-         x="55.552322"
-         y="176.54977"
-         style="font-size:15.47195625px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Dimnah;-inkscape-font-specification:Dimnah Bold" /></text>
+         x="16.815308"
+         y="45.702396"
+         style="font-size:4.26622105px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Dimnah;-inkscape-font-specification:Dimnah Bold" /></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="174.75639"
-       y="200.50252"
+       style="font-size:11.02955818px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="49.684509"
+       y="52.307106"
        id="text6230"><tspan
          sodipodi:role="line"
          id="tspan6232"
-         x="174.75639"
-         y="200.50252" /></text>
+         x="49.684509"
+         y="52.307106" /></text>
     <g
        id="g6314"
-       transform="translate(153.03811,17.172593)">
+       transform="matrix(0.2757389,0,0,0.2757389,43.695938,1.755898)">
       <g
-         style="fill:#ffffff;filter:url(#filter6368);opacity:0.55"
+         style="opacity:0.55;fill:#ffffff;filter:url(#filter6368)"
          transform="translate(-129.8046,-9.5964493)"
          id="g6372">
         <text
@@ -2805,7 +2787,7 @@
     </g>
     <g
        id="g3042"
-       transform="translate(231.83001,31.819805)"
+       transform="matrix(0.2757389,0,0,0.2757389,65.421935,5.7947054)"
        style="fill:#000000" />
   </g>
 </svg>
