@@ -32,7 +32,9 @@
 	
     <target name="gera-png">
 
-      <rasterize result="image/png" dest="build-package/preview.png" src="src/theme/svg/src-products/pinkpaula/preview/preview.svg">
+      <rasterize result="image/png" dest="build-package/preview.png" src="src/theme/svg/src-packaging/pinkpaula/preview/preview.svg">
+      </rasterize>
+      <rasterize result="image/png" dest="build-package/preview.png" src="src/theme/svg/src-packaging/pinkpaula/preview/icon.svg">
       </rasterize>
 
  	</target>
