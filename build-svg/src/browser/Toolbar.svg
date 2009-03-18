@@ -61,16 +61,16 @@
 
 <g opacity=".5">
 <image x="144" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
-<image x="144" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-home.svg"> </image>
+<image x="144" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-gg/icone-home.svg"> </image>
 </g>
 
 <image x="144" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
-<image x="144" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-home.svg"> </image>
+<image x="144" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-gg/icone-home.svg"> </image>
 
 <!-- Download --> 
 
 <image x="180" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
-<image x="180" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-download.svg"> </image>
+<image x="180" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-gg/icone-download.svg"> </image>
 
 <g opacity=".5">
 <image x="180" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-glassy.svg"> </image>
