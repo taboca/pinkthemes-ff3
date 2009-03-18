@@ -1,0 +1,23 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="67px" height="69px"  viewBox="0 0 67 69" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+<g>
+
+<!-- integrated small --> 
+
+<image x="0" y="0"  width="67px" height="22px" xlink:href="../../../biblioteca/Buttons/base-button-integrated-small.svg"> </image>
+<image x="7" y="0"  width="22px" height="22px" xlink:href="../../../biblioteca/Buttons/icone-back.svg"> </image>
+<image x="33" y="0" width="3px"  height="22px" xlink:href="../../../biblioteca/Buttons/base-vertdash.svg"> </image>
+<image x="40" y="0" width="22px" height="22px" xlink:href="../../../biblioteca/Buttons/icone-forward.svg"> </image>
+
+<image x="0" y="23"  width="67px" height="22px" xlink:href="../../../biblioteca/Buttons/base-button-integrated-small.svg"> </image>
+<image x="7" y="23"  width="22px" height="22px" xlink:href="../../../biblioteca/Buttons/icone-back.svg"     opacity=".3"> </image>
+<image x="33" y="23" width="3px"  height="22px" xlink:href="../../../biblioteca/Buttons/base-vertdash.svg"  opacity=".3"> </image>
+<image x="40" y="23" width="22px" height="22px" xlink:href="../../../biblioteca/Buttons/icone-forward.svg"  opacity=".3"> </image>
+
+<image x="0" y="46"  width="67px" height="22px" xlink:href="../../../biblioteca/Buttons/base-button-integrated-small-opaque.svg"> </image>
+<image x="7" y="46"  width="22px" height="22px" xlink:href="../../../biblioteca/Buttons/icone-back.svg"> </image>
+<image x="33" y="46" width="3px"  height="22px" xlink:href="../../../biblioteca/Buttons/base-vertdash.svg"> </image>
+<image x="40" y="46" width="22px" height="22px" xlink:href="../../../biblioteca/Buttons/icone-forward.svg"> </image>
+
+</g>
+
+</svg>

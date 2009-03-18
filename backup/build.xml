@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+
+<project name="fftheme" default="gera-png" basedir=".">
+	
+	<property file="build.properties" />
+	
+		<taskdef name="rasterize" classname="org.apache.tools.ant.taskdefs.optional.RasterizerTask" >
+
+        <classpath>
+         <pathelement location="./lib/*.jar" />
+          <pathelement location="./lib/batik-parser.jar" />
+          <pathelement location="./lib/batik-awt-util.jar" />
+          <pathelement location="./lib/batik-script.jar" />
+          <pathelement location="./lib/batik-xml.jar" />
+          <pathelement location="./lib/batik-codec.jar" />
+          <pathelement location="./lib/batik-ext.jar" />
+          <pathelement location="./lib/batik-css.jar" />
+          <pathelement location="./lib/batik-anim.jar" />
+          <pathelement location="./lib/batik-svg-dom.jar" />
+          <pathelement location="./lib/batik-svggen.jar" />
+          <pathelement location="./lib/batik-gvt.jar" />
+          <pathelement location="./lib/batik-bridge.jar" />
+          <pathelement location="./lib/batik-dom.jar" />
+          <pathelement location="./lib/batik-util.jar" />
+          <pathelement location="./lib/batik-transcoder.jar" />
+          <pathelement location="./lib/batik-rasterizer.jar" />
+          <pathelement location="./lib/xml-apis-ext.jar" />
+          <pathelement location="./lib/RasterizerTask.jar" />
+        </classpath>
+
+	</taskdef>
+	
+    <target name="gera-png">
+
+      <rasterize result="image/png" destdir="build-chrome-png/classic/browser">
+	    <fileset dir="src/theme/svg/src/browser">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/browser/tabbrowser">
+	    <fileset dir="src/theme/svg/src/browser/tabbrowser">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/browser/urlbar">
+	    <fileset dir="src/theme/svg/src/browser/urlbar">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+      <rasterize  
+            result="image/png"
+            destdir="build-chrome-png/classic/browser/places">
+            <fileset dir="src/theme/svg/src/browser/places">
+                <include name="*.svg" />
+            </fileset>
+      </rasterize>
+
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/browser/preferences">
+	    <fileset dir="src/theme/svg/src/browser/preferences">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/mozapps/downloads">
+	    <fileset dir="src/theme/svg/src/mozapps/downloads">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/mozapps/extensions">
+	    <fileset dir="src/theme/svg/src/mozapps/extensions">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+  <rasterize
+            result="image/png"
+            destdir="build-chrome-png/classic/global">
+            <fileset dir="src/theme/svg/src/global">
+                <include name="*.svg" />
+            </fileset>
+      </rasterize>
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/global/menu">
+	    <fileset dir="src/theme/svg/src/global/menu">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/global/toolbar">
+	    <fileset dir="src/theme/svg/src/global/toolbar">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/global/icons">
+	    <fileset dir="src/theme/svg/src/global/icons">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+<!--
+       
+      <rasterize  
+	    result="image/png"
+	    destdir="build-chrome-png/classic/browser/safebrowsing">
+	    <fileset dir="src/theme/svg/src/browser/safebrowsing">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+    	
+      <rasterize  
+	    result="image/png" width="24" height="24"
+	    destdir="build-throbber-animation/">
+	    <fileset dir="src/theme/svg/throbber-animation/">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+    	
+-->
+
+	</target>
+	
+		<!-- Copy the png images to an output classic folder -->
+	<target name="copia-css" >
+		<!-- copy classes -->
+
+        <mkdir dir="build-chrome-classic/chrome" />
+    	
+		<copy todir="build-chrome-classic/chrome/classic" 
+			overwrite="yes">
+			<fileset dir="src/ff3-chrome-classic-reference-3.1b4-march-13" includes="**/*" /> 
+<!-- Backups
+ <fileset dir="src/ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16" includes="**/*" />
+ <fileset dir="src/ff3-chrome-classic-update-merge-31b3" includes="**/*" />
+ -->
+		</copy>
+
+	</target>
+	
+	
+	<!-- Copy the png images to an output classic folder -->
+	<target name="copia-png" >
+		<!-- copy classes -->
+
+ 
+		<copy todir="build-chrome-classic/chrome/classic/skin/classic"  overwrite="yes">
+			<fileset dir="build-chrome-png/classic" includes="**/*" />
+		</copy>
+		
+	</target>
+	
+      
+     	<target name="zipjar">
+		 <zip destfile="build-distrib/classic.jar" basedir="build-chrome-classic/chrome/classic" />
+ 	</target> 
+
+        <target name="install" >
+                <copy todir="/usr/local/firefox/chrome/" overwrite="yes">
+                        <fileset dir="build-distrib" includes="**" />
+                </copy>
+                <copy todir="/usr/local/firefox-3.1b3/firefox/chrome/" overwrite="yes">
+                        <fileset dir="build-distrib" includes="**" />
+                </copy>
+                <copy todir="/usr/local/firefox-3.1b3-feb17/chrome/" overwrite="yes">
+                        <fileset dir="build-distrib" includes="**" />
+                </copy>
+                <copy todir="/usr/local/firefox-3.1b4-march13/firefox/chrome/" overwrite="yes">
+                        <fileset dir="build-distrib" includes="**" />
+                </copy>
+        </target>
+  
+ 	<target name="distrib"  >
+		<copy todir="build-package"  overwrite="yes">
+			<fileset dir="build-chrome-classic/chrome/classic/skin/classic" includes="**/*" />
+		</copy>
+                <zip destfile="build-package-installer/theme.jar" basedir="build-package" />
+
+ 	</target>
+
+
+	
+</project>

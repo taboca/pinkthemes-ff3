@@ -33,7 +33,7 @@
     <target name="gera-png">
 
       <rasterize result="image/png" destdir="build-chrome-png/classic/browser">
-	    <fileset dir="src/theme/svg/src/browser">
+	    <fileset dir="build-svg/src/browser">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
@@ -42,7 +42,7 @@
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/browser/tabbrowser">
-	    <fileset dir="src/theme/svg/src/browser/tabbrowser">
+	    <fileset dir="build-svg/src/browser/tabbrowser">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
@@ -51,7 +51,7 @@
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/browser/urlbar">
-	    <fileset dir="src/theme/svg/src/browser/urlbar">
+	    <fileset dir="build-svg/src/browser/urlbar">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
@@ -59,7 +59,7 @@
       <rasterize  
             result="image/png"
             destdir="build-chrome-png/classic/browser/places">
-            <fileset dir="src/theme/svg/src/browser/places">
+            <fileset dir="build-svg/src/browser/places">
                 <include name="*.svg" />
             </fileset>
       </rasterize>
@@ -68,7 +68,7 @@
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/browser/preferences">
-	    <fileset dir="src/theme/svg/src/browser/preferences">
+	    <fileset dir="build-svg/src/browser/preferences">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
@@ -76,7 +76,7 @@
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/mozapps/downloads">
-	    <fileset dir="src/theme/svg/src/mozapps/downloads">
+	    <fileset dir="build-svg/src/mozapps/downloads">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
@@ -84,7 +84,7 @@
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/mozapps/extensions">
-	    <fileset dir="src/theme/svg/src/mozapps/extensions">
+	    <fileset dir="build-svg/src/mozapps/extensions">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
@@ -92,7 +92,7 @@
   <rasterize
             result="image/png"
             destdir="build-chrome-png/classic/global">
-            <fileset dir="src/theme/svg/src/global">
+            <fileset dir="build-svg/src/global">
                 <include name="*.svg" />
             </fileset>
       </rasterize>
@@ -100,7 +100,7 @@
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/global/menu">
-	    <fileset dir="src/theme/svg/src/global/menu">
+	    <fileset dir="build-svg/src/global/menu">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
@@ -109,7 +109,7 @@
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/global/toolbar">
-	    <fileset dir="src/theme/svg/src/global/toolbar">
+	    <fileset dir="build-svg/src/global/toolbar">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
@@ -117,30 +117,10 @@
       <rasterize  
 	    result="image/png"
 	    destdir="build-chrome-png/classic/global/icons">
-	    <fileset dir="src/theme/svg/src/global/icons">
+	    <fileset dir="build-svg/src/global/icons">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
-
-<!--
-       
-      <rasterize  
-	    result="image/png"
-	    destdir="build-chrome-png/classic/browser/safebrowsing">
-	    <fileset dir="src/theme/svg/src/browser/safebrowsing">
-	        <include name="*.svg" />
-	    </fileset>
-      </rasterize>
-    	
-      <rasterize  
-	    result="image/png" width="24" height="24"
-	    destdir="build-throbber-animation/">
-	    <fileset dir="src/theme/svg/throbber-animation/">
-	        <include name="*.svg" />
-	    </fileset>
-      </rasterize>
-    	
--->
 
 	</target>
 	
