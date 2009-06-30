@@ -153,3 +153,15 @@
 .searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {
   font-weight: bold;
 }
+/* marcio override */
+
+
+/* I need to understand this better. The 1px at the top is a hack... */
+
+.searchbar-textbox > .autocomplete-textbox-container > .textbox-input-box {
+}
+
+.search-go-container {
+}
+
+
