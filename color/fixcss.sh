@@ -11,6 +11,10 @@ echo "Table - 125,90,120  - medium "
 echo "Table - 100,70,95   - dark "
 
 
+echo "******************** Searchbar ******************************************"
+cat ./build-chrome-classic/chrome/classic/skin/classic/browser/searchbar.css ./patches/cat-searchbar.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/searchbar.css
+
 
 echo "******************** March 14th - global/tabbox.css ******************************************"
 cat ./build-chrome-classic/chrome/classic/skin/classic/global/tabbox.css ./patches/cat-tabbox.css > ./temp/temp.css  

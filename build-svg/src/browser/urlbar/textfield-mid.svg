@@ -3,12 +3,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    width="3"
-   height="26"
-   viewBox="0 0 3 26"
+   height="28"
+   viewBox="0 0 3 28"
    version="1.1"
    >
  
-<image x="-50" y="0" width="100px" height="26px"
+<image x="-50" y="0" width="100px" height="28px"
                  xlink:href="../../../biblioteca/Urlbar/urlbar.svg">
 </image>
 

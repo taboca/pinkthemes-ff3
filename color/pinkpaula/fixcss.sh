@@ -11,6 +11,10 @@ echo "Table - 125,90,120  - medium "
 echo "Table - 100,70,95   - dark "
 
 
+echo "******************** Searchbar ******************************************"
+cat ./build-chrome-classic/chrome/classic/skin/classic/browser/searchbar.css ./patches/cat-searchbar.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/searchbar.css
+
 
 echo "******************** March 14th - global/tabbox.css ******************************************"
 cat ./build-chrome-classic/chrome/classic/skin/classic/global/tabbox.css ./patches/cat-tabbox.css > ./temp/temp.css  
@@ -42,7 +46,7 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/do
 
 echo "Download panel border fixes .. "
 
-sed -e "s/#404040/rgb(150,114,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
+sed -e "s/#404040/rgb(50,38,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
 
 echo "!!! Replacing cecece - required from the cat-downloads.css "
@@ -104,7 +108,7 @@ echo "Doing regexp on console.css - we might consider moving this to the new cat
 echo "Found: 686868? " 
 cat  ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css  | grep "#686868"
 
-sed -e "s/#686868/rgb(200,152,192)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
+sed -e "s/#686868/rgb(150,114,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
 echo "Changed to: "
@@ -112,12 +116,12 @@ cat  ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.c
 
 echo " !!!! todo console "
 
-sed -e "s/#404040/rgb(150,114,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
+sed -e "s/#404040/rgb(50,38,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
 echo "=========== pageInfo border fix ==============="
 
-sed -e "s/#404040/rgb(150,114,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css > ./temp/temp.css
+sed -e "s/#404040/rgb(50,38,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css
 
 
@@ -134,7 +138,7 @@ cat ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extens
 
 echo "Now replacing 404040 with color: "
 
-sed -e "s/#404040/rgb(150,114,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css > ./temp/temp.css
+sed -e "s/#404040/rgb(50,38,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css
 
 echo "color changed to: "
@@ -176,7 +180,7 @@ echo "!!! Color settings .... "
 sed -e "s/#666666/rgb(251,203,243)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
-sed -e "s/#333333/rgb(225,171,216)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+sed -e "s/#333333/rgb(200,152,192)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
 sed -e "s/#b3b3b3/rgb(250,190,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
@@ -261,12 +265,12 @@ echo "--------------------------------------------------"
 
 echo "======== dark border topbar for the places ========"
 
-sed -e "s/#404040/rgb(150,114,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
+sed -e "s/#404040/rgb(50,38,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css
 
 echo "----------- background semi light for the places left tree --------------"
 
-sed -e "s/#d2d8e2/rgb(225,171,216)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
+sed -e "s/#d2d8e2/rgb(200,152,192)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css
 
 echo "-------------- in the selected element in the tree for the places,the #fff to black -----"
@@ -276,18 +280,18 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/pl
 
 echo "======== medium ========"   
 
-sed -e "s/#808080/rgb(175,133,168)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
+sed -e "s/#808080/rgb(100,76,96)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css
 
 echo "======== medium ========"   
 
-sed -e "s/#8F8F8F/rgb(200,152,192)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
+sed -e "s/#8F8F8F/rgb(150,114,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css
 
 
 echo "======== dark ========"   
 
-sed -e "s/#5F5F5F/rgb(150,114,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
+sed -e "s/#5F5F5F/rgb(50,38,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css
 
 

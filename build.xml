@@ -172,6 +172,9 @@
                 <copy todir="/usr/local/firefox-3.1b4-march13/firefox/chrome/" overwrite="yes">
                         <fileset dir="build-distrib" includes="**" />
                 </copy>
+                <copy todir="/usr/local/ff35/chrome/" overwrite="yes">
+                        <fileset dir="build-distrib" includes="**" />
+                </copy>
         </target>
   
  	<target name="distrib"  >

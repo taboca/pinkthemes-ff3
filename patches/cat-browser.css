@@ -104,3 +104,9 @@
   background: transparent none !important;
 */
 
+
+#identity-box { 
+
+	min-width:44px;
+} 
+

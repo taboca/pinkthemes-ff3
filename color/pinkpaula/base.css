@@ -23,7 +23,7 @@
 }
 
 .downloadbar-dark {
-   stop-color: rgb(175,133,168);
+   stop-color: rgb(100,76,96);
    stop-opacity: 1;
 }
 /* Check the global CSS background color via rgb values in global.css */
@@ -99,7 +99,7 @@
 }
 
 .findbar-button-from-color {
-        stop-color:rgb(175,133,168);
+        stop-color:rgb(100,76,96);
         stop-opacity:1
 }
 .findbar-button-to-color {
@@ -136,7 +136,7 @@
 /* Other toolbar */
 
 .toolbar-inactive-from-color {
-        stop-color:rgb(225,171,216);
+        stop-color:rgb(200,152,192);
         stop-opacity:1
 }
 .toolbar-inactive-to-color {
@@ -145,12 +145,12 @@
 }
 
 .toolbar-from-color-dark {
-        stop-color:rgb(200,152,192);
+        stop-color:rgb(150,114,144);
         stop-opacity:.8;
 }
 
 .toolbar-from-color-dark-transparent {
-        stop-color:rgb(175,133,168);
+        stop-color:rgb(100,76,96);
         stop-opacity:0;
 }
 
@@ -178,7 +178,7 @@
         stop-opacity:1;
 }
 .bookmarks-toolbar-inactive-to-color {
-        stop-color:rgb(225,171,216);
+        stop-color:rgb(200,152,192);
         stop-opacity:1;
 }
 
@@ -198,15 +198,15 @@
 }
 
 .tabbrowsertabs-from-color-dark {
-        stop-color:rgb(175,133,168); 
+        stop-color:rgb(100,76,96); 
         stop-opacity:1;
 }
 .tabbrowsertabs-from-color {
-        stop-color:rgb(200,152,192);
+        stop-color:rgb(150,114,144);
         stop-opacity:1;
 }
 .tabbrowsertabs-to-color {
-        stop-color:rgb(225,171,216);
+        stop-color:rgb(200,152,192);
         stop-opacity:1;
 }
 
@@ -217,7 +217,7 @@
         stop-opacity:1;
 }
 .urlbarstart-to-color {
-        stop-color:rgb(225,171,216);
+        stop-color:rgb(200,152,192);
         stop-opacity:1;
 }
 
