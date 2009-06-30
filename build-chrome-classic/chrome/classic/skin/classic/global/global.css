@@ -150,15 +150,12 @@ iframe {
 /* ::::: statusbar ::::: */
 
 statusbar {
-  border-top: 1px solid #505050 !important;
-  
   min-width: 1px; /* DON'T DELETE!
   Prevents hiding of scrollbars in browser when window is made smaller.*/
   min-height: 15px !important;
-  background: url("chrome://global/skin/statusbar-background.gif") #949393 repeat-x top left;
   margin: 0px !important;
   padding: 0px 16px 1px 1px;
-  -moz-appearance: none;
+  -moz-appearance: statusbar;
   text-shadow: rgba(255, 255, 255, 0.4) 0 1px;
 }
 
@@ -332,6 +329,10 @@ notification > button:hover:active {
   font: message-box;
 }
 
+notification > button:focus {
+  -moz-box-shadow: 0 0 3px 3px -moz-mac-focusring;
+}
+
 /* :::::: autoscroll popup ::::: */
 
 #autoscroller {
@@ -363,7 +364,7 @@ dialog,
 wizard,
 prefwindow {
   -moz-appearance: none;
-  background-color: rgb(200,250,215);
+  background-color: rgb(250,190,240);
 }
 
 

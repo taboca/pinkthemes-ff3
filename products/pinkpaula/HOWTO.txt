@@ -1,0 +1,5 @@
+1) When you generate the theme, from the root, check that you are inporting the install.rdf and manifest from this project .src directory
+2) put your release in the releases
+3) put the latest in the release latest
+4) then you are fine to go to the pinkpack product which will imoprt the latest from here
+

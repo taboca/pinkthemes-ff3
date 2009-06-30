@@ -132,9 +132,10 @@
     	
 		<copy todir="build-chrome-classic/chrome/classic" 
 			overwrite="yes">
-			<fileset dir="src/ff3-chrome-classic-reference-3.1b4-march-13" includes="**/*" /> 
+			<fileset dir="src/ff3.5-candidate-official" includes="**/*" /> 
 <!-- Backups
  <fileset dir="src/ff3-chrome-classic-reference-3.1b3-pinstripe-feb-16" includes="**/*" />
+			<fileset dir="src/ff3-chrome-classic-reference-3.1b4-march-13" includes="**/*" /> 
  <fileset dir="src/ff3-chrome-classic-update-merge-31b3" includes="**/*" />
  -->
 		</copy>

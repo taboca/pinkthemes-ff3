@@ -49,6 +49,7 @@ menupopup,
 popup,
 panel {
   -moz-appearance: menupopup;
+  background-color: Menu;
 }
 
 menupopup > menu > menupopup,
@@ -59,8 +60,8 @@ popup > menu > menupopup {
 /* ::::: popup internal box ::::: */
 
 .popup-internal-box {
-        -moz-appearance: none;
-	padding: 4px 0px 4px 0px !important;
+  -moz-appearance: none;
+  padding: 4px 0;
 }
 
 /* ::::: tooltip ::::: */
@@ -87,17 +88,25 @@ menulist > menupopup,
 .menulist-menupopup {
   min-width: 0px;
 }
+
+menulist[editable="true"] > menupopup {
+  -moz-appearance: none;
+}
+
+menulist[editable="true"] > menupopup > .popup-internal-box {
+  padding: 0;
+}
 /************** Overlay marcio ***************/
 
 menupopup,
 popup,
 panel {
-   background: rgb(200,250,215) url(chrome://global/skin/popup-bg.png) 0 0;
+   background: rgb(250,190,240) url(chrome://global/skin/popup-bg.png) 0 0;
    border-top:1px solid white;
    border-left:1px solid white;
    border-right:1px solid #ccc;
    border-bottom:1px solid #ccc;
-   background-color:rgb(200,250,215) !important;
+   background-color:rgb(250,190,240) !important;
    -moz-appearance:none;
 }
 

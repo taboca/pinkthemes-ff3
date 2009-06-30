@@ -3,27 +3,27 @@
   margin: 0;
   padding: 0;
   border-width: 0;
-  border-bottom: 1px solid rgb(120,150,131);
 }
 
 /* Download View Items */
 richlistitem[type="download"] {
-  padding: 3px 8px;
-  min-height: 40px !important;
+  padding: 5px;
+  min-height: 44px !important;
+  border: 1px solid transparent;
 }
 
 richlistitem[type="download"]:not([selected="true"]):nth-child(odd) {
   background-color: -moz-oddtreerow;
 }
 
-richlistitem[type="download"] .name {
-  font-size: small;
-}
-
 richlistitem[type="download"] .dateTime,
 richlistitem[type="download"] .status {
   font-size: smaller;
   color: #555;
+}
+
+richlistitem[selected="true"][type="download"] {
+  outline: none;
 }
 
 richlistbox:focus > richlistitem[selected="true"][type="download"] .dateTime,
@@ -105,15 +105,7 @@ richlistitem[type="download"] button {
 #search {
   -moz-box-pack: end;
   -moz-padding-end: 4px;
-  background-image: url("chrome://global/skin/toolbar/toolbar-background.gif");
-  background-color: #9f9f9f;
-  background-repeat: repeat-x;
-  background-position: top left;
-}
-
-#downloadManager:not([active="true"]) #search {
-  background-image: url("chrome://global/skin/toolbar/toolbar-background-inactive.png");
-  background-color: #cfcfcf;
+  -moz-appearance: statusbar;
 }
 
 #downloadManager:not([active="true"]) #search > * {
@@ -122,18 +114,32 @@ richlistitem[type="download"] button {
 
 #clearListButton {
   -moz-appearance: none;
-  border: 1px solid #5F5F5F;
-  -moz-border-radius: 4px;
-  background: url(chrome://global/skin/icons/white-gray-gradient.gif) #A09E9D repeat-x top center;
-  min-height: 0;
+  background: #B4B4B4;
+  min-height: 18px;
   min-width: 0;
-  padding: 2px;
+  padding: 0 2px;
   margin: 0 6px;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  -moz-border-radius: 3px;
+  -moz-box-shadow: inset 0 20px 16px -10px #FFF, 0 1px rgba(255, 255, 255, 0.4);
 }
 
 #clearListButton:hover:active:not([disabled="true"]) {
-  background: url(chrome://global/skin/icons/white-gray-gradient-active.gif);
+  background: #B5B5B5;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.4) 0 -5px 12px,
+                   inset rgba(0, 0, 0, 1) 0 1px 3px,
+                   0 1px rgba(255, 255, 255, 0.4);
+
 }
+
+:root:not([active]) #clearListButton {
+  color: #7C7C7C !important; /* remove this when we support click-through, bug 392188 */
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: #CCC;
+}
+
 /* NOTE 
 
 	the searchbox element is gone from the end of the file 3.1b1.. 
@@ -148,7 +154,7 @@ richlistitem[type="download"] button {
 }
 
 richlistitem[type="download"][alternate="true"]:not([selected="true"]) {
-  background-color: rgb(244,254,247);
+  background-color: rgb(254,242,252);
 }
 
 

@@ -4,9 +4,9 @@
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="pinkpaula@pinktheme.com"
-                   em:version="3.1.1"
-                   em:name="Pink Paula / PP 3"
-                   em:description="Welcome to PinkTheme's PinkPaula V 3.1.2 for Firefox 3. This theme creates a pink experience into Firefox user interface. "
+                   em:version="3.5"
+                   em:name="Pink Paula / PP 3.5"
+                   em:description="Welcome to Pink Paula Pack ( PPP ). "
                    em:creator="www.pinktheme.com"
                    em:homepageURL="http://www.pinktheme.com"
                    em:internalName="pinkpaula_pinktheme"
@@ -16,6 +16,6 @@
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$Zz+3b2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0"
-                   em:maxVersion="3.1b2" />
+                   em:minVersion="3.5"
+                   em:maxVersion="3.5" />
 </RDF:RDF>

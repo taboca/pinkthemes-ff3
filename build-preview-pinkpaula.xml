@@ -34,7 +34,7 @@
 
       <rasterize result="image/png" dest="build-package/preview.png" src="src/theme/svg/src-packaging/pinkpaula/preview/preview.svg">
       </rasterize>
-      <rasterize result="image/png" dest="build-package/preview.png" src="src/theme/svg/src-packaging/pinkpaula/preview/icon.svg">
+      <rasterize result="image/png" dest="build-package/icon.png" src="src/theme/svg/src-packaging/pinkpaula/preview/icon.svg">
       </rasterize>
 
  	</target>
