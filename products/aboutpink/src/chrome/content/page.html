@@ -1,75 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
 <html>
-
 <head>
-
-<script type="text/javascript">
-
-function testSearch() { 
-
-	try { 
-      var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
-                          .getService(Components.interfaces.nsIWindowMediator);
-
-      gWin = wm.getMostRecentWindow("navigator:browser");
-
-      gWin.pinkSearchTest("http://www.pinktheme.com/p/start/en/link.html?q=Pink Paula" );
-
-
-	} catch (i) { alert(i) } 
-
-} 
-
-
-	var listFlips=["searchpanel","projectpanel", "startpanel", "tuningpanel", "helppanel" ];
-
-	function flip(iid) { 
-		for ( var i=0; i<listFlips.length; i++) { 
-			var curr = listFlips[i];
-			if(curr==iid) { 
-				document.getElementById(curr).style.display="block";
-			} else { 
-				document.getElementById(curr).style.display="none";
-			} 
-		} 	
-	} 
-
-
-</script>
-<title>Welcome!</title>
-<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/base.css" rel="stylesheet">
-<style>
-
-a { color:rgb(100,10,90) } 
-a:hover { color:rgb(200,0,0) } 
-.sidepanel { 
-	width:500px;
-	display:none;
-} 
-
-</style>
+<title>about:pink</title>
+	<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/base.css" rel="stylesheet">
+	<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/tabs.css" rel="stylesheet">
+	<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/button.css" rel="stylesheet">
+	<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/article.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<script type="text/javascript" src="chrome://aboutpink/content/script/jquery.js"></script>
+	<script type="text/javascript" src="chrome://aboutpink/content/script/site.js"></script>
+	<script type="text/javascript" src="chrome://aboutpink/content/script/page.js"></script>
 </head>
 <body>
+
+<div id="backheader">
 <div id="topheader">
-<div id="header">
+
+<table id="tabs-header" border="0" cellpadding="0" cellmargin="0">
+<tr>
+<td width="360">
+</td>
+<td valign="top">
+<div class="tab over"><span class="verdb linkexec" /><a class="type_externallink" href="http://www.pinktheme.com">PinkTheme</a></div>
+</td>
+</tr>
+<tr><td colspan="5">
+<div id="logo" style="float:right;text-align:left;">
+<a href="/" class="headerlink">
+Pink Paula Pack for Firefox
+</a>
+</div>
+</td>
+</tr>
+</table>
+
 </div>
 </div>
 
-<div id="content">
+<div id="topheader-section"><a href="http://www.flickr.com/photos/pilax/38287568/"> Design Credits </a></div>
+<div id="topheader-section-shadow"> </div>
+
+<div class="content">
+
+
+
+
+
+
 
 <p style="color:gray">
 This is a first time <b style="color:green;font-size:130%">welcome!</b> page. You can easily return to this page if you type <b style="color:rgb(230,150,210);font-size:130%">about:pink</b> in the address bar. PinkTheme's PinkPaula now supports <b style="font-size:120%;color:orange">Firefox 3.5</b>. This theme version is inspired in elements of our nature for a peaceful and enjoyable Web experience. We hope you enjoy and support this project. 
 </p>
 
-
 <table><tr>
 
 <td valign="top">
 
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('searchpanel');return false" >Pink Search</a> </div>
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('projectpanel');return false">Release Notes</a></div>
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('tuningpanel');return false">Tuning</a></div>
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('startpanel');return false">Start page</a></div>
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('helppanel');return false">Help</a></div>
+<div class="button button-green navigation" id="button_search" ><a href="#flip-searchpanel" class="navigation-link">Pink Search</a></div>
+<div class="button button-green navigation" id="button_release"><a href="#flip-projectpanel" class="navigation-link">Release Notes</a></div>
+<div class="button button-green navigation" id="button_help" ><a href="#flip-helppanel" class="navigation-link">Help</a></div>
 
 
 </td>
@@ -98,12 +89,6 @@ The long awaited PinkPaula v3.5 is now in its candidate public release. Many tha
 <li>3.0.9 has pinklized download progress bar and fixes to download buttons</li>
 <li>3.0.8 color adjusts - removed a bit the too much white in the bars - user feedback</li>
 <li>3.0.7 Preferences panel, Bookmarks inline panel, Page Info is beautiful</li>
-<li>3.0.6 Love to buttons backgrounds, the rounded borders now mathematically implemented</li>
-<li>3.0.5 Findbar, better pref icons</li>
-<li>3.0.4 Icons work</li>
-<li>3.0.3 UrlBar much better</li>
-<li>3.0.2 nightmare!</li>
-<li>3.0.1 initial toolbar - inspiration, Dec 24th</li>
 
 </ul>
 <p style="color:gray">
@@ -146,16 +131,55 @@ If you wish to feedback for upcoming releases please use pinktheme@taboca.com su
 </tr>
 </table>
 
+
+
+
+
+
+
+
 </div>
 
-<p class="dotted" />
+<div class="separator" ></div>
+
+<div id="bottomfooter">
+
+<table width="820" cellpadding="10" cellspacing="0">
+<tr>
+<td valign="top" width="300">
+Copyright &copy; 2009 LPeU<br />
+Marcio dos Santos Galli Informática - Brasil<br />
+mgalli at taboca dot com - write to us!
+
+</td>
+<td valign="top">
+<h3 >
+Online Projects 
+</h3>
+<ul>
+<li><a href="http://www.lpeu.com.br">LPeu.com.br ( pt-BR ) </a></li>
+<li><a href="http://www.svgplanet.com/p/featherator">SVGPlanet's Featherator</a></li>
+<li><a href="http://fotos.mixar.com.br">AJAX Search API from Google with CC-based Photos</a></li>
+<li><a href="http://dev2.taboca.com">Dev2 - GitHub-hosted Open Articles</a></li>
+</ul>
+</td>
+<td valign="top">
+<h3>
+Our links..
+</h3>
+<ul>
+ <li><a href="http://www.taboca.com">Taboca.com</a></li>
+ <li><a href="corporate.html">Corporate</a></li>
+ <li><a href="open.html">Open Projects</a></li>
+ <li><a href="who.html">Who We Are</a></li>
+</ul>
+</td>
 
 
-<div id="footer">
-Copyright &copy; 2008 - PinkTheme(.com) and Taboca ArtworK. The Pink Paula theme project is based in the SVGPlanet SVG-based theme graphics build system. To learn more about this SVG-based theme generator project checkout svgplanet.com.
+</tr>
+</table>
+
 </div>
-
-<p class="dotted" />
 
 </body>
 </html>
