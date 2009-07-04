@@ -38,7 +38,7 @@ findbar {
 .findbar-find-previous,
 .findbar-highlight {
   -moz-appearance: none;
-  border: 1px solid rgb(50,38,48);
+  border: 1px solid rgb(44,38,51);
   -moz-border-radius: 100%;
   background: url("chrome://global/skin/icons/white-gray-gradient.gif") #A09E9D repeat-x top center;
   margin: 0 4px 1px 4px;
@@ -60,7 +60,7 @@ findbar {
 }
 
 .findbar-container > toolbarbutton[disabled] {
-  border-color: rgb(150,114,144) !important;
+  border-color: rgb(132,114,153) !important;
   color: graytext;
 }
 
