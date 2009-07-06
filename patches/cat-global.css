@@ -40,4 +40,6 @@ button[dlgtype="help"] > .button-box > .button-text {
   display: none !important;
 }
 
-
+statusbar { 
+	display:none;
+} 
