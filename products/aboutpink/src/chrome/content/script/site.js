@@ -1,4 +1,4 @@
-var overSnippets = "snippets/";
+var overSnippets = "chrome://aboutpink/content/snippets/";
 
 
  // New onload 
@@ -6,9 +6,7 @@ var overSnippets = "snippets/";
  $(document).ready(function() {
 	
 	overDrive();
-
-
-	overAspects(); 
+	//checkStart();
 
 	$(".menu-link").click(function () { 
 	});
@@ -26,19 +24,6 @@ var overSnippets = "snippets/";
    });
 
  });
-
-
- 	function overAspects() { 
-
-		var allAnnotations = $(".over");
-
-		allAnnotations.each( function() {
-
-		 	var currentAnnotation = $(this);
-			var verb = currentAnnotation.find("span.verb");
-
-		} 
-	} 
 
 	var checkCount = 0; 
 
@@ -82,6 +67,7 @@ var overSnippets = "snippets/";
 			// marcio-navigation  = navigator-tabs - panel-load
 
 			template_navigation_set(instanceDriver);  // hover = highlight id
+			template_panelload_set(instanceDriver); // hover = show id
 		});      
 	} 
 
@@ -104,7 +90,9 @@ var overSnippets = "snippets/";
 
 	function template_panelload_set( commandId ) { 
 		var commandSrc = overSnippets +commandId.split("navigation-")[1] +".html";
+alert(commandSrc);
 		$.ajax({
+
 			url: commandSrc ,
 			cache: false,
 			error: function () { alert(2) },

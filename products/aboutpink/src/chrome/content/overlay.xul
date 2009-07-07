@@ -3,6 +3,13 @@
 <overlay id="aboutpinktasksOverlay"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+
+
 <script type="application/x-javascript" src="aboutpink.js"/>
   
+<stringbundleset>
+     <stringbundle id="aboutpink_stringsbundle" src="chrome://aboutpink/locale/aboutpink.properties"/>
+</stringbundleset>
+
+
 </overlay>

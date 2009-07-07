@@ -1,3 +1,4 @@
+
 /* These are used to the side panels */
 
 h4 { 
@@ -106,8 +107,7 @@ table td > img {
 .section { 
 	width:100%;
 	text-alignment:justify;
-	border-top:1px solid gray;
-	border-bottom:1px solid gray;
+	margin-top:2em;
 	background: url(../output/component-section-pattern/bg.png) repeat 0 0; 
 	min-height:30px;
 } 
@@ -178,14 +178,14 @@ h1 {
 		#backheader { 
                         width:100%;
                         background: black url(../output/component-topbanner/backheader.png) 0px 0px repeat-x;
-			height:190px;
+			height:150px;
 		} 
                 #topheader {
                         width:100%;
                         margin:0px;
-                        height:280px;
+                        height:180px;
 			overflow:hidden;
-                        background: url(../output/component-topbanner/image-fader.png) 0px 30px no-repeat;
+                        background: url(../output/component-topbanner/image-fader.png) 0px 0px no-repeat;
                 }
 		#topheader-section { 
                         background: transparent url(../output/component-topbanner/backheader.png) 0px -160px repeat-x;
@@ -203,14 +203,16 @@ h1 {
 		#topheader-section-shadow { 
                         background:url(../output/component-header-shadow/bg.png) 0px -10px repeat-x;
 		
-			height:2em;
+			height:1em;
 			margin:0;
 		} 
 
                 #logo {
                         margin:auto;
-                        background:url(../output/component-topbanner/bg.png) -40px -50px no-repeat;
-			padding-top:60px;
+                        background:url(../output/component-topbanner/bg.png) -40px -60px no-repeat;
+			padding-top:00px;
+			height:60px;
+			width:210px;
 			padding-left:20px;
 	
                 }

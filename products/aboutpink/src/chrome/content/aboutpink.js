@@ -19,6 +19,7 @@ if(!com.taboca.aboutpink) com.taboca.aboutpink={};
 
 addEventListener("load", function () { com.taboca.aboutpink.pinkSearchStartup() } , false);
 
+
 com.taboca.aboutpink = { 
 
 	////
@@ -27,10 +28,32 @@ com.taboca.aboutpink = {
 	obsSvc: Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService),
 	prefService: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch),
 	searchService: Components.classes["@mozilla.org/browser/search-service;1"].getService(Components.interfaces.nsIBrowserSearchService),
+ 	stringsBundle: null, 
+
 	////
 	///	
 	//
  	pinkTheme_pinkTab: null, 
+
+
+	////
+	///  This is used by the about:pink 'page.html' chrome-level web page.
+	//
+	export_getString: function ( propertyId ) {
+                try {
+                        return this.stringsBundle.getString( propertyId );
+                } catch(i) { alert(i) }
+	},
+
+
+	////
+	///
+	//
+	export_getLocale: function () { 
+		
+		var currentLocale = this.prefService.getCharPref("general.useragent.locale");
+		return currentLocale;
+	} 
 
 	////
 	///	
@@ -100,7 +123,14 @@ com.taboca.aboutpink = {
 	},
 
 	pinkSearchStartup: function () { 
+
+
+                this.stringsBundle    = document.getElementById("aboutpink_stringsbundle");
+
        	 	this.pinkSearchCheckFirstTime();
+
+		
+
 	},
 	pinkSearchInstallSearch: function () { 
 		this.pinkSearchAddSearch();
