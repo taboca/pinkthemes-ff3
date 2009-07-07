@@ -28,8 +28,9 @@ body {
 
 #toppanel { 
 
-	width:300px; 
+	width:480px; 
 	margin:auto;
+	padding-bottom:1em;
 	padding-top:120px;
 } 
 
