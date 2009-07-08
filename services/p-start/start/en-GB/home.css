@@ -1,0 +1,42 @@
+.button {
+        width:250px;
+        margin:0px;
+        padding:0px;
+        padding-top:20px;
+        text-align:center;
+        font-size:120%;
+        font-weight:bold;
+        color:black;
+        height:50px;
+}
+
+.button-pinklarge {
+        background:url(../images/pinklarge.png) no-repeat 0 0;
+        width:550px;
+	margin-bottom:2em;
+}
+
+#toppanel-home { 
+
+    width:550px;
+	padding:1em;
+        margin:auto;
+        padding-bottom:1em;
+        text-align:left;
+
+}
+
+#innerpanel { 
+	margin-top:140px;
+	width:550px;
+	border:1px solid pink;
+	-moz-border-radius:14px;
+	padding:1em;
+	text-align:right;
+}
+
+.searchpanel { 
+	width:420px;
+	margin:auto;
+} 
+

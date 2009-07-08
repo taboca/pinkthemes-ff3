@@ -27,11 +27,11 @@ body {
 } 
 
 #toppanel { 
-
-	width:480px; 
+	width:550px;
 	margin:auto;
 	padding-bottom:1em;
 	padding-top:120px;
+	text-align:left;
 } 
 
 #content  {
