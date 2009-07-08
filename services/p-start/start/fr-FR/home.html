@@ -130,14 +130,9 @@ function changeStyle() {
 
 
     function mq() {
-	
-                var keywords = document.location.search;
-                keywords=keywords.split("&q=")[1];
-                keywords=keywords.split("&")[0];
-	
-                //document.forms[0].q.value=decode(keywords);
 
-		document.title=decode(keywords);
+                document.forms[0].q.focus();
+
 
         }
 
