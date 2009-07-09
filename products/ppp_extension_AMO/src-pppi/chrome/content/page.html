@@ -1,161 +1,161 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
 
+<html>
 <head>
 
-<script type="text/javascript">
+	<title>About:Pink</title>
 
-function testSearch() { 
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 
-	try { 
-      var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
-                          .getService(Components.interfaces.nsIWindowMediator);
+	<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/base.css" rel="stylesheet">
+	<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/tabs.css" rel="stylesheet">
+	<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/button.css" rel="stylesheet">
+	<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/article.css" rel="stylesheet">
 
-      gWin = wm.getMostRecentWindow("navigator:browser");
+	<script type="text/javascript" src="chrome://aboutpink/content/script/strings.js"></script>
+	<script type="text/javascript" src="chrome://aboutpink/content/script/jquery.js"></script>
+	<script type="text/javascript" src="chrome://aboutpink/content/script/page.js"></script>
+	<script type="text/javascript" src="chrome://aboutpink/content/script/app.js"></script>
 
-      gWin.pinkSearchTest("http://www.pinktheme.com/p/start/en/link.html?q=Pink Paula" );
-
-
-	} catch (i) { alert(i) } 
-
-} 
-
-
-	var listFlips=["searchpanel","projectpanel", "startpanel", "tuningpanel", "helppanel" ];
-
-	function flip(iid) { 
-		for ( var i=0; i<listFlips.length; i++) { 
-			var curr = listFlips[i];
-			if(curr==iid) { 
-				document.getElementById(curr).style.display="block";
-			} else { 
-				document.getElementById(curr).style.display="none";
-			} 
-		} 	
-	} 
-
-
-</script>
-<title>Welcome!</title>
-<link media="screen, projection" type="text/css" href="chrome://aboutpink/content/style/base.css" rel="stylesheet">
-<style>
-
-a { color:rgb(100,10,90) } 
-a:hover { color:rgb(200,0,0) } 
-.sidepanel { 
-	width:500px;
-	display:none;
-} 
-
-</style>
 </head>
-<body>
+
+<body onload="">
+
+<div id="backheader">
 <div id="topheader">
-<div id="header">
+
+<table id="tabs-header" border="0" cellpadding="0" cellmargin="0">
+<tr>
+</tr>
+<tr><td colspan="5">
+<div id="logo" style="float:right;text-align:left;">
+
+</div>
+</td>
+</tr>
+</table>
+
 </div>
 </div>
 
-<div id="content">
+<div id="topheader-section"><a href="http://www.flickr.com/photos/pilax/38287568/" class="str" id="link_designcredits"> Design Credits </a></div>
+<div id="topheader-section-shadow"> </div>
 
-<p style="color:gray">
-This is a first time <b style="color:green;font-size:130%">welcome!</b> page. You can easily return to this page if you type <b style="color:rgb(230,150,210);font-size:130%">about:pink</b> in the address bar. PinkTheme's PinkPaula now supports <b style="font-size:120%;color:orange">Firefox 3.5</b>. This theme version is inspired in elements of our nature for a peaceful and enjoyable Web experience. We hope you enjoy and support this project. 
-</p>
+<div class="content">
 
 
-<table><tr>
+
+<div id="navigation-menu" >
+
+<table>
+
+<tr>
 
 <td valign="top">
 
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('searchpanel');return false" >Pink Search</a> </div>
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('projectpanel');return false">Release Notes</a></div>
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('tuningpanel');return false">Tuning</a></div>
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('startpanel');return false">Start page</a></div>
-<div class="installbutton" ><img class="fixverticalalign" src="chrome://aboutpink/content/output/transparent.png" /><a href="javascript:" onclick="flip('helppanel');return false">Help</a></div>
+<div id="menus" >
+
+<div class="button button-pink navigation over" id="navigation-search" ><span class="str navigation-link" id="button_search" >Search</span></div>
+
+<div class="button button-pink navigation over" id="navigation-home" ><span class="str navigation-link" id="button_home" >Home</span></div>
+
+<div class="button button-pink navigation over" id="navigation-custom" ><span class="str navigation-link" id="button_custom">Custom</span></div>
 
 
+</div>
 </td>
-
 <td valign="top">
 
-<div id="searchpanel" class="sidepanel" style="display:block" >
-<h3>Search Engine got Pink</h3>
+<div  id="panel-container" >
 
-<p style="color:gray">
-To access the pink search engine you can simply press CTRL+K ( or command K in your Mac ) and type your query, or click in the right hand corner search box. The custom PinkTheme search uses Google Search Web service and <strong>does not</strong> modify results. To change the theme style you can click the little <img src="http://www.pinktheme.com/icon.png" /> heart icon located in the pink search results page at the right hand corner.
-</p>
-<img src="chrome://aboutpink/content/output/pinksearch.png" width="490" />
-
-</div>
-
-<div id="projectpanel" class="sidepanel">
-<h3>This includes PinkPaula 3.5</h3>
-<p style="color:gray">
-The long awaited PinkPaula v3.5 is now in its candidate public release. Many thanks to everybody that supported this project and lovers of the previous version, PP 2. Thanks to Paula for the support and quality QA work, Felipe Gomes, Marcio Galli, Dietrich Ayala ( session store help ), and Archaeopteryx ( help getting rid of the multipack more ).
-</p>
-<ul>
-<li>3.5 - compatibility to Firefox 3.5 </li>
-<li>3.1.1 Fixed autocomplete field </li>
-<li>3.1.0 Fixed personal toolbar size</li>
-<li>3.0.9 has pinklized download progress bar and fixes to download buttons</li>
-<li>3.0.8 color adjusts - removed a bit the too much white in the bars - user feedback</li>
-<li>3.0.7 Preferences panel, Bookmarks inline panel, Page Info is beautiful</li>
-<li>3.0.6 Love to buttons backgrounds, the rounded borders now mathematically implemented</li>
-<li>3.0.5 Findbar, better pref icons</li>
-<li>3.0.4 Icons work</li>
-<li>3.0.3 UrlBar much better</li>
-<li>3.0.2 nightmare!</li>
-<li>3.0.1 initial toolbar - inspiration, Dec 24th</li>
-
-</ul>
-<p style="color:gray">
-If you wish to feedback for upcoming releases please use pinktheme@taboca.com subject PPP thanks. If you like the product please add a review in the AMO project page - <a href="http://www.pinktheme.com/en/themes/ppp#review">add your review</a>
+<p class="str" id="p_welcome">
+This is a first time welcome! page. You can easily return to this page if you type about:pink in the address bar. PinkTheme's PinkPaula now supports Firefox 3.5. This theme version is inspired in elements of our nature for a peaceful and enjoyable Web experience. We hope you enjoy and support this project. 
 </p>
 
-<h3>More from pinkTheme</h3>
-<p style="color:gray">You are welcome to try out our other themes and Lab projects from PinkTheme. PPP is available in beta and we appreciate your feedback - please write to pinktheme @ taboca.com subject - PINK</p>
-<ul>
-<li><a href="http://www.pinktheme.com">PinkTheme Home Page</a></li>
-<li><a href="http://www.pinktheme.com/en/themes/pinkpaula/">Pink Paula Project Page</a></li>
-<li><a href="http://www.pinktheme.com/pinkstart2/custom.html">Pink Search Engine Customizer</a></li>
-</ul>
+<div class="panel" id="panel-search">
+<h2 class="str" id="title_search">Search</h2>
+
+<p class="str" id="description_search"></p>
+
+<table><tr><td valign="top" style="padding-top:11px;font-size:110%;">
+<div class="str button button-green" id="button_activate">Activate</div>
+</td><td valign="top" style="font-size:110%">
+<p class="str" id="description_2_search"></p>
+</td></tr>
+</table>
+
+<img src="chrome://aboutpink/content/images/pinksearch.png" >
+</div>
+
+<div class="panel" id="panel-home">
+<h2 class="str" id="title_home" >Home</h2>
+<p class="str" id="description_home"></p>
+
+<div class="str button button-green" id="button_installhome">Enable home</div>
+
+<div id="home_detail">
+
+<span class="str" id="field_currenthome"></span> <input style="width:350px"  id="home_detailcurrent"></input>
+<p>
+<a id="button_testhome" class="str"></a>
+</p>
+<p>
+<a id="button_recoverhome" class="str"></a>
+</p>
+</div>
 
 </div>
 
-<div id="startpanel" class="sidepanel">
+<div class="panel" id="panel-custom">
+<h2 class="str" id="title_custom" >Custom</h2>
+<p class="str" id="description_custom"></p>
+</div>
 
-<h3>Pink Start page - coming soon</h3>
-<p style="color:gray">Coming soon - the pink start page offers a custom start page with clean elegant style and a new decoration every day. This page shows when you start Firefox and allows you to start searching the Web.</p>
+<div class="panel" id="panel-search-installed">
+<h2 class="str" id="title_searchinstalled" >Search</h2>
+<p class="str" id="description_searchinstalled"></p>
 </div>
 
 
-<div id="tuningpanel" class="sidepanel">
 
-<h3>Fine Tuning for you Theme</h3>
-<p style="color:gray">Coming soon - Ability to change the theme color variation and add your touch to the experience.</p>
 </div>
-
-<div id="helppanel" class="sidepanel">
-
-<h3>Help</h3>
-<p style="color:gray">If you don't see the pink skin in your browser please check if you have another theme installed. If so, disable the other theme or select Firefox 3 default theme - Firelight. </p>
-<p style="color:gray">For now other support questions please write to pinktheme @ taboca.com </p>
-</div>
-
 
 </td>
 
+</tr>
+
+</table>
+
+</div>
+
+
+</div>
+
+
+
+<div class="content">
+
+
+</div>
+
+<div class="section"></div>
+
+<div id="bottomfooter">
+
+<table width="820" cellpadding="10" cellspacing="0">
+<tr>
+<td valign="top" width="300">
+Copyright &copy; 2009 PinkTheme.com<br />
+Marcio dos Santos Galli Informática - Brasil<br />
+mgalli at taboca dot com - write to us!
+
+</td>
 </tr>
 </table>
 
 </div>
 
-<p class="dotted" />
-
-
-<div id="footer">
-Copyright &copy; 2008 - PinkTheme(.com) and Taboca ArtworK. The Pink Paula theme project is based in the SVGPlanet SVG-based theme graphics build system. To learn more about this SVG-based theme generator project checkout svgplanet.com.
-</div>
-
-<p class="dotted" />
 
 </body>
 </html>

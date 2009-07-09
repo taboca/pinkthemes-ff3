@@ -3,19 +3,17 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="{1fbc217a-b88b-11db-8314-0800200c9a66}"
+                   em:id="pinkpaula@pinktheme.com"
                    em:version="3.5.1"
-                   em:name="LovelyLilac 3.5.1"
-                   em:description="Welcome to LovelyLilac for upcoming Firefox 3.5. This work is based on SVGplanet Firefox Theme and PinkTheme.com projects "
-                   em:creator="lovelylilac.taboca.com"
-                   em:homepageURL="http://lovelylilac.taboca.comm"
-                   em:internalName="lovelylilac_taboca"
-                   >
-
+                   em:name="Pink Paula / PP 3.5.1"
+                   em:description="Welcome to Pink Paula Pack ( PPP ). "
+                   em:creator="www.pinktheme.com"
+                   em:homepageURL="http://www.pinktheme.com"
+                   em:internalName="pinkpaula_pinktheme">
     <em:targetApplication RDF:resource="rdf:#$Zz+3b2"/>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$Zz+3b2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.1b3"
+                   em:minVersion="3.5"
                    em:maxVersion="3.5" />
 </RDF:RDF>

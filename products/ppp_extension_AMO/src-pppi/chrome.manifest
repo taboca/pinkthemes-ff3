@@ -1,5 +1,12 @@
+
+locale  aboutpink   en-US chrome/locale/en-US/
+locale  aboutpink   pt-BR chrome/locale/pt-BR/
+
+
 content aboutpink chrome/content/
 overlay	chrome://browser/content/browser.xul	chrome://aboutpink/content/overlay.xul
+
+
 
 skin global classic/1.0 jar:classic.jar!/global/
 skin browser classic/1.0 jar:classic.jar!/browser/

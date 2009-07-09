@@ -1356,11 +1356,11 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 /* ----- SIDEBAR ELEMENTS ----- */
 
 #sidebar { 
-  background-color: #d4dde5;
+  background-color: rgb(250,190,240);
 }
 
 sidebarheader { 
-  background-color: #d4dde5;
+  background-color: rgb(250,190,240);
   padding: 2px;
 }
 

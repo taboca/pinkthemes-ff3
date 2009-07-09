@@ -1,109 +1,257 @@
-p { 
+a { text-decoration: underline } 
 
-	margin-right:1em; 
+a:hover { color: #ccc } 
 
+/* These are used to the side panels */
+
+h4 { 
+	font-size:140%;
+	margin:.5em;
+	margin-top:0;
+}
+
+.headerlink { 
+	color:rgb(255,100,150);
+	color:rgb(100,110,255);
+	font-size:150%;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a:hover { 
 } 
+
+
+.thumbimg { 
+	border:7px solid #ddd;
+} 
+
+#panel-container { 
+	width:570px;
+	background-color:#eee;
+	-moz-border-radius:12px;
+	font-size:110%;	
+	padding:1em;
+	padding-top:0em;
+	float:right;
+}
+.items-description h2 { 
+}
+
+.items-description { margin-bottom:2em } 
+.items-description td { 
+	font-size:90%;
+	color:gray;
+	padding-left:1em;
+	text-alignment:justify;
+} 
+
+.thumb { 	
+	border:1px solid gray;
+	margin-right:10px;	
+	padding:1px;
+} 
+
+#overdrive-buffers { 
+
+	display:none;
+} 
+#panel-container { 
+  padding-left:1em;
+} 
+#tabs-header { 
+	margin:auto;
+	margin-top:-4px;
+	width:820px;
+	padding:0;
+} 
+div.tr { 
+	font-size:85%
+}
+
+div.tr * { color:#555 } 
+
+div.tr h3 { 
+	margin:0 0 .6em 0;
+}
+
+#bottomfooter { 
+	color:black;
+	height:180px;
+	padding:1em;
+        background: white url(../output/component-footer/bottom.png) 0px 0px repeat-x;
+} 
+
+#bottomfooter table { 
+	margin:auto;
+	width:840px;
+}
+
+#bottomfooter td { 
+	font-size:87%;
+}
+
+#bottomfooter ul { 
+	margin:0px;
+}
+
+#bottomfooter h3 { 
+	margin:0;
+}
+
+
+
+table td { 
+	font-size:78%;
+} 
+
+table td > img { 
+ 	border:2px solid #bbb;
+	padding:1px;;
+} 
+
+.section { 
+	width:100%;
+	text-alignment:justify;
+	margin-top:2em;
+	background: url(../output/component-section-pattern/bg.png) repeat 0 0; 
+	min-height:30px;
+} 
+
+.section a { 
+	color:black;
+	text-decoration:none;
+}
+
+.section a:hover { 
+	text-decoration:underline;
+}  
+
+
 .fixverticalalign { 
 
-  width:1px;height:88px;vertical-align:middle;
+  width:1px;height:68px;vertical-align:middle;
    position:relative;
 
 } 
 
-.installbutton {
-        width:270px;
-        height:90;x
+
+.tab-plain {
+        width:350px;
+        height:80;x
         margin:0px;
         padding:0px;
-        background:url(../output/installbutton.png) no-repeat 0 0;
+        background:url(../output/component-fixed-tab-plain/image.png) no-repeat 0 0;
         text-align:center;
-	font-size:120%;	
-	font-weight:bold;
 }
 
 
-.footertable { 
- 	width:720px;
-	margin:auto;
-} 
-
-
 html { 
- 	font-family:georgia; 
-	font-size:90%;
+ 	font-family: georgia, sans-serif; 
+	font-size:100%;
+	color:black;
+	margin:0px;
 } 
 
 h1,h2,h3 { 
-	color:green;
+ 	color:rgb(0,80,100);
 } 
 
-.dotted { 
-	margin:auto; 
-        height:6px;
-	margin-top:2em;
-	border-top:1px solid pink;
-  	margin-bottom:2em;
-   
+
+
+h2 { 
+} 
+h1 { 
+	margin-top:0;
+}
+
+.section h2 { 
+	color:blue;
 } 
 
             html, body {
                         padding:0px;
                         margin:0px;
                 }
+
+		.separator  {
+                        background: white url(../output/component-footer/bg-odd.png) -350px -50px repeat-x;
+			width:100%;
+
+			margin-top:1em;
+		} 
+
+		#backheader { 
+                        width:100%;
+                        background: black url(../output/component-topbanner/backheader.png) 0px 0px repeat-x;
+			height:150px;
+		} 
                 #topheader {
                         width:100%;
                         margin:0px;
-                        height:140px;
-                        background:url(../output/bgtop-shade.png) -350px 0 repeat-x;
+                        height:180px;
+			overflow:hidden;
+                        background: url(../output/component-topbanner/image-fader.png) 0px 0px no-repeat;
                 }
-                #header {
+		#topheader-section { 
+                        background: transparent url(../output/component-topbanner/backheader.png) 0px -160px repeat-x;
+		
+			text-align:right;
+			padding:.5em;
+			margin:0;
+			color:blue;
+		} 
+		#topheader-section a { 
+			color:blue;
+			text-decoration:none;
+			opacity:.5;
+		} 
+		#topheader-section-shadow { 
+                        background:url(../output/component-header-shadow/bg.png) 0px -10px repeat-x;
+		
+			height:1em;
+			margin:0;
+		} 
+
+                #logo {
                         margin:auto;
-                        background:url(../output/topbanner.png) 0 10px no-repeat;
-                        width:800px;
-                        height:140px;
+                        background:url(../output/component-topbanner/bg.png) -40px -20px no-repeat;
+			height:90px;
+			width:210px;
+			padding-left:20px;
+	
                 }
 
 
-.t {background: url(../output/boxshade.png) 0 0 repeat-x; width: 100%; }
-.b {background: url(../output/dot.png) 0 100% repeat-x}
-.l {background: url(../output/dot.png) 0 0 repeat-y}
-.r {background: url(../output/dot.png) 100% 0 repeat-y}
-.bl {background: url(../output/q5.png) 0 100% no-repeat}
-.br {background: url(../output/q4.png) 100% 100% no-repeat}
-.tl {background: url(../output/q1.png) 0 0 no-repeat}
-.tr {background: url(../output/q3.png) 100% 0 no-repeat; padding:10px}
+.t {background: url(../output/component-box/boxshade.png) 0 0 repeat-x; width: 100%; }
+.b {background: url(../output/component-box/dot.png) 0 100% repeat-x}
+.l {background: url(../output/component-box/dot.png) 0 0 repeat-y}
+.r {background: url(../output/component-box/dot.png) 100% 0 repeat-y}
+.bl {background: url(../output/component-box/q5.png) 0 100% no-repeat}
+.br {background: url(../output/component-box/q4.png) 100% 100% no-repeat}
+.tl {background: url(../output/component-box/q1.png) 0 0 no-repeat}
+.tr {background: url(../output/component-box/q3.png) 100% 0 no-repeat; padding:10px}
 
-
-h2 { 
-  color:darkred;
-  font-family:verdana; 
-  font-size:95%;
-  margin-top:.1em;
-} 
+.ot {background: url(../output/component-box-odd/oddboxshade.png) 0 0 repeat-x; width: 100%; }
+.ob {background: url(../output/component-box-odd/odddot.png) 0 100% repeat-x}
+.ol {background: url(../output/component-box-odd/odddot.png) 0 0 repeat-y}
+.or {background: url(../output/component-box-odd/odddot.png) 100% 0 repeat-y}
+.obl {background: url(../output/component-box-odd/o5.png) 0 100% no-repeat}
+.obr {background: url(../output/component-box-odd/o4.png) 100% 100% no-repeat}
+.otl {background: url(../output/component-box-odd/o1.png) 0 0 no-repeat}
+.otr {background: url(../output/component-box-odd/o3.png) 100% 0 no-repeat; padding:10px}
 
 ul { 
  margin:0px;
  padding:1em;
 } 
 
-#content { 
- 	width:720px;
+.content { 
+ 	width:820px;
 	margin:auto;
  	padding:.2em;	
+	text-align:justify;
 } 
 
-.footercontent { 
- 	width:720px;
-	margin:auto;
-	padding:1em;
-} 
 
-#footer { 
- 	color:gray;
-	font-spacing:2px;
-	font-size:77%;
-	margin:auto;
- 	width:720px;
-	margin-top:2em;
-} 
 
