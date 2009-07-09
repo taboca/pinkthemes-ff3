@@ -31,12 +31,12 @@
 
 
 .shadeselected-from-color {
-   stop-color: rgb(250,190,240);
+   stop-color: rgb(100,76,96);
    stop-opacity: 1;
 }
 
 .shadeselected-to-color {
-   stop-color: rgb(253,229,249);
+   stop-color: rgb(250,190,240);
    stop-opacity: 1;
 }
 

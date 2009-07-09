@@ -31,12 +31,12 @@
 
 
 .shadeselected-from-color {
-   stop-color: colorhighnormal;
+   stop-color: colorlow3;
    stop-opacity: 1;
 }
 
 .shadeselected-to-color {
-   stop-color: colorhigh3;
+   stop-color: colorhighnormal;
    stop-opacity: 1;
 }
 

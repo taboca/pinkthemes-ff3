@@ -28,6 +28,6 @@
 <rect x="0" y="2" rx="10" ry="10" width="99" height="22" style="stroke-width:1px;stroke:white;;fill:none"  />
 <rect x="0" y="1" rx="10" ry="10" width="99" height="24" style="stroke-width:1px;stroke:white;opacity:.6;fill:none"  />
 
-<rect x="35" y="5" rx="7" ry="7" width="48" height="17" style="fill:yellow"  />
+<rect x="35" y="5" rx="7" ry="7" width="48" height="17" style="fill:white"  />
 
 </svg>

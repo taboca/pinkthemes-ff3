@@ -1,0 +1,45 @@
+/* We took this from the 3.1b2 */
+/* We may need to review this */
+
+/* marcio button dlgttype section added... */
+
+button[dlgtype="help"] {
+  min-width: 1px !important;
+  padding: 0px 0px 0px 0px !important;
+  -moz-appearance: none;
+  -moz-box-align: start !important;
+  height: 24px;
+  width: 24px;
+  margin: 4px;
+  border:0px;
+  background: transparent;
+}
+
+button[dlgtype="help"][disabled] {
+  opacity: 0.5;
+}
+
+button[dlgtype="help"]:focus {
+  outline: 2px solid white;
+  outline-offset: -2px;
+  -moz-outline-radius: 100%;
+}
+
+button[dlgtype="help"] > .button-box > .button-icon {
+  list-style-image: url("chrome://global/skin/icons/question-mark.png");
+  -moz-image-region: rect(0 24px 24px 0);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+button[dlgtype="help"]:active > .button-box > .button-icon {
+  -moz-image-region: rect(0 48px 24px 24px);
+}
+
+button[dlgtype="help"] > .button-box > .button-text {
+  display: none !important;
+}
+
+statusbar { 
+	-moz-appearance:none;
+} 

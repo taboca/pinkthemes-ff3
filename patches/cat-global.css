@@ -41,5 +41,6 @@ button[dlgtype="help"] > .button-box > .button-text {
 }
 
 statusbar { 
-	display:none;
+/*	background-color: colorhighnormal ! important;
+*/
 } 

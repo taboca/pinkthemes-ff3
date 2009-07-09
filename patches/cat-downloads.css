@@ -47,4 +47,7 @@ richlistitem[type="download"] button {
   background-image: url("chrome://global/skin/toolbar/toolbar-background.png");
 }
 
+richlistitem[type="download"]:not([selected="true"]):nth-child(odd) {
+  background-color: #cfcfcf;
+}
 
