@@ -419,6 +419,5 @@ button[dlgtype="help"] > .button-box > .button-text {
 }
 
 statusbar { 
-/*	background-color: colorhighnormal ! important;
-*/
+	-moz-appearance: none;
 } 
