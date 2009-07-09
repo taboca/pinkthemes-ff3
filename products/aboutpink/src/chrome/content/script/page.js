@@ -20,17 +20,43 @@ function appStart() {
 		command_location="settings";
 	}
 
-
 	components_selector_binding();
 
-
 	if(command_location.indexOf("welcome")>-1)  {
-
 		runEvents( $("#p_welcome"), "welcome");
-
+	//	runEvents( $("#navigation_search"), "togglePanel");
 	} 
-	
 
+
+	refreshHome();
+} 
+
+
+function refreshHome() { 
+
+   if(app_isHomeInstalled()) {
+                $("#button_recoverhome").css("display","block");
+                $("#button_recoverhome").click( function () {
+                        app_revertHome();
+                        refreshHome();
+                } );
+                $("#button_testhome").click( function () {
+                        app_launchTestHome();
+                } );
+                $("#button_installhome").css("display","none");
+
+                $("#home_detail").css("display","block");
+                document.getElementById("home_detailcurrent").value =  app_getCurrentHome();
+   } else { 
+
+                $("#home_detail").css("display","none");
+                $("#button_installhome").css("display","block");
+		$("#button_recoverhome").click( function () {
+                } );
+                $("#button_testhome").click( function () {
+                } );
+
+   } 
 
 } 
 
@@ -41,12 +67,26 @@ function appStart() {
 
 function components_selector_binding() { 
 
+
+	/* We can move all this to be events-based. So then if you need to kick start a bunch of things
+ 	in startup time, yu just kick the events */
+
+	components_apply(".panel", class_components_hide);
 	components_apply("#p_welcome", class_components_hide);
+
 	events_apply( "welcome", class_components_enablePanel, "id" ); 
 	events_apply( "togglePanel", class_components_togglePanel, "id" ); 
-	components_apply("div.button", class_components_hoverEntry, "togglePanel");
-	components_apply(".panel", class_components_hide);
 
+	// we need to move this to state-machine based. Notice that sometimes we want to toggle a panel with state A 
+	// some other itmes with some other state...  So the ability to change event states is very important.
+
+	components_apply("div.button.navigation", class_components_hoverEntry, "togglePanel" );
+
+	components_apply("#button_activate", class_components_hoverEntry, null);
+	components_apply("#button_activate", class_components_clickInner, { callback: app_installSearch } ) ;
+
+	components_apply("#button_installhome", class_components_hoverEntry, null);
+	components_apply("#button_installhome", class_components_clickInner, { callback: function () { app_installHome(); refreshHome()}  } ) ;
 
 } 
 
@@ -74,6 +114,17 @@ function runEvents( evtObj, typeEvent )  {
 } 
 
 
+function class_components_clickInner ( currObj, followObj ) { 
+  currObj.click(function() {
+
+	if(followObj) { 
+		followObj.callback();
+	} 
+   });
+
+	
+}  
+
 function class_components_enablePanel ( id ) { 
 	$("#"+id).css("display","block");
 } 
@@ -93,7 +144,9 @@ function class_components_hoverEntry( currObj, event) {
 
    currObj.hover(function() {
                 $(this).addClass("button-highlight");
+			if(event) { 
 			addEvent( $(this) , event);
+			}
                 },function(){
         $(this).removeClass("button-highlight");
    });
@@ -103,20 +156,6 @@ function class_components_hoverEntry( currObj, event) {
 
 } 
 
-function testSearch() { 
-
-	try { 
-      var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
-                          .getService(Components.interfaces.nsIWindowMediator);
-
-      gWin = wm.getMostRecentWindow("navigator:browser");
-
-      gWin.pinkSearchTest("http://www.pinktheme.com/p/start/en/link.html?q=Pink Paula" );
-
-
-	} catch (i) { alert(i) } 
-
-} 
 
 
 

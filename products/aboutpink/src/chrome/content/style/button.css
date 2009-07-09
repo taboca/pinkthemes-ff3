@@ -6,14 +6,14 @@
 } 
 .button {
         width:250px;
-        margin:0px;
         padding:0px;
 	padding-top:20px;
         background:url(../output/component-fixed-button/gray.png) no-repeat 0 0;
         text-align:center;
-	font-size:120%;
+	font-size:140%;
 	font-weight:bold;
 	color:black;
+	margin-bottom:.6em;
         height:50px;
 }
 .button-highlight {

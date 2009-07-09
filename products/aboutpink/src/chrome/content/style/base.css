@@ -1,3 +1,6 @@
+a { text-decoration: underline } 
+
+a:hover { color: #ccc } 
 
 /* These are used to the side panels */
 
@@ -16,7 +19,6 @@ h4 {
 }
 
 a:hover { 
-	text-decoration:underline;
 } 
 
 
@@ -25,7 +27,12 @@ a:hover {
 } 
 
 #panel-container { 
-	width:520px;
+	width:570px;
+	background-color:#eee;
+	-moz-border-radius:12px;
+	font-size:110%;	
+	padding:1em;
+	padding-top:0em;
 	float:right;
 }
 .items-description h2 { 
@@ -52,7 +59,6 @@ a:hover {
 #panel-container { 
   padding-left:1em;
 } 
-a {  } 
 #tabs-header { 
 	margin:auto;
 	margin-top:-4px;
@@ -209,9 +215,8 @@ h1 {
 
                 #logo {
                         margin:auto;
-                        background:url(../output/component-topbanner/bg.png) -40px -60px no-repeat;
-			padding-top:00px;
-			height:60px;
+                        background:url(../output/component-topbanner/bg.png) -40px -20px no-repeat;
+			height:90px;
 			width:210px;
 			padding-left:20px;
 	
@@ -242,7 +247,7 @@ ul {
 } 
 
 .content { 
- 	width:790px;
+ 	width:820px;
 	margin:auto;
  	padding:.2em;	
 	text-align:justify;

@@ -16,6 +16,7 @@
 	<script type="text/javascript" src="chrome://aboutpink/content/script/strings.js"></script>
 	<script type="text/javascript" src="chrome://aboutpink/content/script/jquery.js"></script>
 	<script type="text/javascript" src="chrome://aboutpink/content/script/page.js"></script>
+	<script type="text/javascript" src="chrome://aboutpink/content/script/app.js"></script>
 
 </head>
 
@@ -26,9 +27,6 @@
 
 <table id="tabs-header" border="0" cellpadding="0" cellmargin="0">
 <tr>
-<td valign="top">
-<div class="tab"  id="testemunho" ><a class="str menu-link" id="tab_credits"  href="/extras/testimonial.html">Obrigado</a></div>
-</td>
 </tr>
 <tr><td colspan="5">
 <div id="logo" style="float:right;text-align:left;">
@@ -46,12 +44,9 @@
 
 <div class="content">
 
-<p class="str" id="p_welcome">
-This is a first time welcome! page. You can easily return to this page if you type about:pink in the address bar. PinkTheme's PinkPaula now supports Firefox 3.5. This theme version is inspired in elements of our nature for a peaceful and enjoyable Web experience. We hope you enjoy and support this project. 
-</p>
 
 
-<div id="navigation-menu" style="font-size:130%">
+<div id="navigation-menu" >
 
 <table>
 
@@ -74,19 +69,52 @@ This is a first time welcome! page. You can easily return to this page if you ty
 
 <div  id="panel-container" >
 
+<p class="str" id="p_welcome">
+This is a first time welcome! page. You can easily return to this page if you type about:pink in the address bar. PinkTheme's PinkPaula now supports Firefox 3.5. This theme version is inspired in elements of our nature for a peaceful and enjoyable Web experience. We hope you enjoy and support this project. 
+</p>
+
 <div class="panel" id="panel-search">
-<h1 class="str" id="title_search">Search</h1>
+<h2 class="str" id="title_search">Search</h2>
+
 <p class="str" id="description_search"></p>
+
+<table><tr><td valign="top" style="padding-top:11px;font-size:110%;">
+<div class="str button button-green" id="button_activate">Activate</div>
+</td><td valign="top" style="font-size:110%">
+<p class="str" id="description_2_search"></p>
+</td></tr>
+</table>
+
+<img src="chrome://aboutpink/content/images/pinksearch.png" >
 </div>
 
 <div class="panel" id="panel-home">
-<h1 class="str" id="title_home" >Home</h1>
+<h2 class="str" id="title_home" >Home</h2>
 <p class="str" id="description_home"></p>
+
+<div class="str button button-green" id="button_installhome">Enable home</div>
+
+<div id="home_detail">
+
+<span class="str" id="field_currenthome"></span> <input style="width:350px"  id="home_detailcurrent"></input>
+<p>
+<a id="button_testhome" class="str"></a>
+</p>
+<p>
+<a id="button_recoverhome" class="str"></a>
+</p>
+</div>
+
 </div>
 
 <div class="panel" id="panel-custom">
-<h1 class="str" id="title_custom" >Custom</h1>
+<h2 class="str" id="title_custom" >Custom</h2>
 <p class="str" id="description_custom"></p>
+</div>
+
+<div class="panel" id="panel-search-installed">
+<h2 class="str" id="title_searchinstalled" >Search</h2>
+<p class="str" id="description_searchinstalled"></p>
 </div>
 
 

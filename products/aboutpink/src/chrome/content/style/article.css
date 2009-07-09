@@ -1,3 +1,13 @@
+
+#button_activate, #button_installhome { 
+	cursor:pointer;
+} 
+#home_detail { 
+	display:none;
+} 
+#recover_home { 
+	display:none;
+} 
 #p_welcome { 
 	color:gray
 }

@@ -22,6 +22,9 @@ addEventListener("load", function () { com.taboca.aboutpink.pinkSearchStartup() 
 
 com.taboca.aboutpink = { 
 
+
+	validLocales : "en-US,en-GB,es-ES,es-AR,pt-PT,pt-BR,it-IT,fr-FR,de-DE" ,
+
 	////
 	/// services
 	//
@@ -49,11 +52,75 @@ com.taboca.aboutpink = {
 	////
 	///
 	//
+	export_launchInstalledHomePage: function () { 
+                var currentHome = this.prefService.getCharPref("browser.startup.homepage");
+		var homeURI = this.makeURI(currentHome);
+                try {
+                        testHomeTab = Application.activeWindow.open( homeURI );
+                        testHomeTab.focus();
+                } catch (i) {
+                }
+	},
+	
+	export_revertHomePage: function () { 
+		var backupHome = this.prefService.getCharPref("extensions.aboutpink.homebackup");
+		var currentHomeInstall = this.prefService.getBoolPref("extensions.aboutpink.homeinstalled");
+                if( currentHomeInstall) {
+                        this.prefService.setBoolPref("extensions.aboutpink.homeinstalled",false);
+                        this.prefService.setCharPref("browser.startup.homepage", backupHome);
+                }
+	},
+	export_getBackupHome: function () { 
+		var backupHome = this.prefService.getCharPref("extensions.aboutpink.homebackup");
+		return backupHome;
+	},
+	export_getCurrentHome: function () { 
+		var currentHome = this.prefService.getCharPref("browser.startup.homepage");
+		return currentHome;
+	},
+
+	////
+	///
+	//
+	export_isAboutPinkInstalledHome: function () { 
+                var currentHomeInstall = this.prefService.getBoolPref("extensions.aboutpink.homeinstalled");
+		return currentHomeInstall;
+	},
+
+	////
+	///
+	//
+	export_installHome: function () { 
+                var currentHomeSettings = this.prefService.getCharPref("browser.startup.homepage");
+                var currentHomeInstall = this.prefService.getBoolPref("extensions.aboutpink.homeinstalled");
+		if( ! currentHomeInstall) { 
+			this.prefService.setBoolPref("extensions.aboutpink.homeinstalled",true);
+			this.prefService.setCharPref("extensions.aboutpink.homebackup", currentHomeSettings);
+		} 		
+		var currLocale = "en-US";
+		var userLocale = this.export_getLocale();
+		if(this.validLocales.indexOf(userLocale)>-1) {
+			currLocale = userLocale;
+		}
+		this.prefService.setCharPref("browser.startup.homepage", "http://www.pinktheme.com/p/start/"+currLocale+"/home.html");
+	}, 
+
+	////
+	/// Used by the about:pink ./page.html chrome-level web page
+	//
+
+	export_installSearch: function () { 
+		this.pinkSearchAddSearch();
+ 	}, 
+
+	////
+	///
+	//
 	export_getLocale: function () { 
 		
 		var currentLocale = this.prefService.getCharPref("general.useragent.locale");
 		return currentLocale;
-	} 
+	}, 
 
 	////
 	///	
@@ -88,7 +155,7 @@ com.taboca.aboutpink = {
 				this.prefService.setBoolPref("extensions.aboutpink.installed",true);
 				this.prefService.setCharPref("extensions.aboutpink.background","chrome://aboutpink/skin/suggestion-1.jpg");
 				this.pinkSearchPrepareToLaunch();
-				this.pinkSearchInstallSearch();
+				//this.pinkSearchInstallSearch();
 			}
 		}
 		catch(e) { this.dumpConsole(e) }
@@ -112,7 +179,7 @@ com.taboca.aboutpink = {
 	///	
 	//
 	pinkSearchTryLaunchAboutPink: function () { 
-		var aboutURI = this.makeURI("about:pink"); 
+		var aboutURI = this.makeURI("about:pink?welcome"); 
 		try { 
 			this.pinkTheme_pinkTab = Application.activeWindow.open( aboutURI );
 			this.pinkTheme_pinkTab.focus();
@@ -132,24 +199,32 @@ com.taboca.aboutpink = {
 		
 
 	},
-	pinkSearchInstallSearch: function () { 
-		this.pinkSearchAddSearch();
-	},
 
 	////
 	///
 	//
 	pinkSearchAddSearch:function() {
+
+		var currLocale = "en-US";
+		var userLocale = this.export_getLocale();
+		if(this.validLocales.indexOf(userLocale)>-1) { 
+			currLocale = userLocale; 
+		} else { 
+			// default is the above.. "en-US"
+		}  
+	 		
 		try {
-			this.searchService.addEngineWithDetails("Pink Search", "http://www.pinktheme.com/p/start/en/icon.png", "","", "GET", "http://www.pinktheme.com/p/start/en/link.html");
+
+			this.searchService.addEngineWithDetails( "PinkTheme Search", "http://www.pinktheme.com/p/start/"+ currLocale +"/icon.png", "","", "GET", "http://www.pinktheme.com/p/start/"+ currLocale  +"/link.html");
+		
 		} catch(e) {
 			this.dumpConsole(e);
 		}
-		var addedEngine = this.searchService.getEngineByName("Pink Search");
+		var addedEngine = this.searchService.getEngineByName( "PinkTheme Search" );
 		addedEngine.addParam("q", "{searchTerms}", null);
 		try {
 			var origEngineObj = addedEngine.wrappedJSObject;
-			origEngineObj._searchForm = "http://www.pinktheme.com/p/start/en/link.html";
+			origEngineObj._searchForm = "http://www.pinktheme.com/p/start/"+currLocale+"/link.html";
 			origEngineObj._queryCharset = "UTF-8";
 			origEngineObj._serializeToFile();
 		} catch (i) { dumpConsole(e) } 
