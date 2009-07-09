@@ -82,6 +82,16 @@ com.taboca.aboutpink = {
 	////
 	///
 	//
+	export_isAboutPinkInstalledSearch: function () { 
+
+		var addedEngine = this.searchService.getEngineByName( "PinkTheme Search" );
+		if(addedEngine) { 
+			return true; 
+		} else { 
+			return false; 
+		} 
+
+	},
 	export_isAboutPinkInstalledHome: function () { 
                 var currentHomeInstall = this.prefService.getBoolPref("extensions.aboutpink.homeinstalled");
 		return currentHomeInstall;
@@ -214,6 +224,8 @@ com.taboca.aboutpink = {
 		}  
 	 		
 		try {
+
+                	this.prefService.setBoolPref( "extensions.aboutpink.searchinstalled", true);
 
 			this.searchService.addEngineWithDetails( "PinkTheme Search", "http://www.pinktheme.com/p/start/"+ currLocale +"/icon.png", "","", "GET", "http://www.pinktheme.com/p/start/"+ currLocale  +"/link.html");
 		

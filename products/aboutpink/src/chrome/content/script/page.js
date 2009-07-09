@@ -29,9 +29,23 @@ function appStart() {
 
 
 	refreshHome();
+	refreshSearch();
 } 
 
 
+function refreshSearch() { 
+	if(app_isSearchInstalled()) { 
+
+                $("#box_searchnotinstalled").css("display","none");
+                $("#box_searchinstalled").css("display","block");
+
+	} else { 
+
+                $("#box_searchnotinstalled").css("display","block");
+                $("#box_searchinstalled").css("display","none");
+
+	} 
+} 
 function refreshHome() { 
 
    if(app_isHomeInstalled()) {
@@ -73,6 +87,7 @@ function components_selector_binding() {
 
 	components_apply(".panel", class_components_hide);
 	components_apply("#p_welcome", class_components_hide);
+	components_apply("#box_searchinstalled", class_components_hide);
 
 	events_apply( "welcome", class_components_enablePanel, "id" ); 
 	events_apply( "togglePanel", class_components_togglePanel, "id" ); 
