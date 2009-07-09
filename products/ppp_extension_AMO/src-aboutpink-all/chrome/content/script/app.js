@@ -17,6 +17,12 @@ function app_installHome() {
 
 function app_installSearch() { 
 	getWindow().com.taboca.aboutpink.export_installSearch();	
+
+	refreshSearch(); // hack
+} 
+
+function app_isSearchInstalled() { 
+ 	return getWindow().com.taboca.aboutpink.export_isAboutPinkInstalledSearch();	
 } 
 
 function app_isHomeInstalled() { 
