@@ -3,13 +3,13 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="{1fbc217a-b88b-11db-8314-0800200c9a66}"
-                   em:version="3.5.2"
-                   em:name="LovelyLilac 3.5.2"
-                   em:description="Welcome to LovelyLilac for upcoming Firefox 3.5. This work is based on SVGplanet Firefox Theme and PinkTheme.com projects "
-                   em:creator="lovelylilac.taboca.com"
-                   em:homepageURL="http://lovelylilac.taboca.comm"
-                   em:internalName="lovelylilac_taboca"
+                   em:id="babyblue@taboca.com"
+                   em:version="3.5.1"
+                   em:name="BabyBlue"
+                   em:description="Welcome to BabyBlue for upcoming Firefox 3.5. This work is based on SVGplanet Firefox Theme and PinkTheme.com projects "
+                   em:creator="babyblue.taboca.com"
+                   em:homepageURL="http://babyblue.taboca.comm"
+                   em:internalName="babyblue_taboca"
                    >
 
     <em:targetApplication RDF:resource="rdf:#$Zz+3b2"/>

@@ -5,28 +5,28 @@
 
   <!-- List all the skins being supplied by this theme -->
   <Seq about="urn:mozilla:skin:root">
-    <li resource="urn:mozilla:skin:lovelylilac_taboca"/>
+    <li resource="urn:mozilla:skin:babyblue_taboca"/>
   </Seq>
 
   <!-- classic Information -->
-  <Description about="urn:mozilla:skin:lovelylilac_taboca"  chrome:name="lovelylilac_taboca">
+  <Description about="urn:mozilla:skin:babyblue_taboca"  chrome:name="babyblue_taboca">
     <chrome:packages>
-      <Seq about="urn:mozilla:skin:lovelylilac_taboca:packages">
-	<li resource="urn:mozilla:skin:lovelylilac_taboca:global"/>
-	<li resource="urn:mozilla:skin:lovelylilac_taboca:communicator"/>
-	<li resource="urn:mozilla:skin:lovelylilac_taboca:browser"/>
-	<li resource="urn:mozilla:skin:lovelylilac_taboca:mozapps"/>
-	<li resource="urn:mozilla:skin:lovelylilac_taboca:help"/>
+      <Seq about="urn:mozilla:skin:babyblue_taboca:packages">
+	<li resource="urn:mozilla:skin:babyblue_taboca:global"/>
+	<li resource="urn:mozilla:skin:babyblue_taboca:communicator"/>
+	<li resource="urn:mozilla:skin:babyblue_taboca:browser"/>
+	<li resource="urn:mozilla:skin:babyblue_taboca:mozapps"/>
+	<li resource="urn:mozilla:skin:babyblue_taboca:help"/>
       </Seq>
     </chrome:packages>
   </Description>
 
   <!-- Version Information.  State that we work only with major version 1 of this
        package. -->
-  <RDF:Description about="urn:mozilla:skin:lovelylilac_taboca:global"   chrome:skinVersion="2.0"/>
-  <RDF:Description about="urn:mozilla:skin:lovelylilac_taboca:communicator"   chrome:skinVersion="2.0"/>
-  <RDF:Description about="urn:mozilla:skin:lovelylilac_taboca:browser"  chrome:skinVersion="2.0"/>
-  <RDF:Description about="urn:mozilla:skin:lovelylilac_taboca:mozapps"  chrome:skinVersion="2.0"/>
-  <RDF:Description about="urn:mozilla:skin:lovelylilac_taboca:help"     chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:babyblue_taboca:global"   chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:babyblue_taboca:communicator"   chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:babyblue_taboca:browser"  chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:babyblue_taboca:mozapps"  chrome:skinVersion="2.0"/>
+  <RDF:Description about="urn:mozilla:skin:babyblue_taboca:help"     chrome:skinVersion="2.0"/>
 
 </RDF:RDF>

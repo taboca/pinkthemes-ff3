@@ -46,15 +46,15 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/do
 
 echo "Download panel border fixes .. "
 
-sed -e "s/#404040/colorlow4/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
+sed -e "s/#404040/rgb(36,42,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
 
 echo "!!! Replacing cecece - required from the cat-downloads.css "
 
-sed -e "s/#cecece/colorhigh4/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
+sed -e "s/#cecece/rgb(240,246,252)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
 
-sed -e "s/#cfcfcf/colorhigh2/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
+sed -e "s/#cfcfcf/rgb(210,228,246)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
 
 echo "******************** Initiatind patches to Global  CSS *********************** "
@@ -111,7 +111,7 @@ echo "Doing regexp on console.css - we might consider moving this to the new cat
 echo "Found: 686868? " 
 cat  ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css  | grep "#686868"
 
-sed -e "s/#686868/colorlow2/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
+sed -e "s/#686868/rgb(108,126,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
 echo "Changed to: "
@@ -119,12 +119,12 @@ cat  ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.c
 
 echo " !!!! todo console "
 
-sed -e "s/#404040/colorlow4/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
+sed -e "s/#404040/rgb(36,42,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/console/console.css
 
 echo "=========== pageInfo border fix ==============="
 
-sed -e "s/#404040/colorlow4/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css > ./temp/temp.css
+sed -e "s/#404040/rgb(36,42,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/pageInfo.css
 
 
@@ -141,7 +141,7 @@ cat ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extens
 
 echo "Now replacing 404040 with color: "
 
-sed -e "s/#404040/colorlow4/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css > ./temp/temp.css
+sed -e "s/#404040/rgb(36,42,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/extensions/extensions.css
 
 echo "color changed to: "
@@ -180,19 +180,19 @@ cp ./patches/marcio*.xml ./build-chrome-classic/chrome/classic/skin/classic/brow
 
 echo "!!! Color settings .... " 
 
-sed -e "s/#666666/colorhigh1/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+sed -e "s/#666666/rgb(195,219,243)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
-sed -e "s/#d4dde5/colorhighnormal/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+sed -e "s/#d4dde5/rgb(180,210,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
-sed -e "s/#333333/colorlow1/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+sed -e "s/#333333/rgb(144,168,192)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
-sed -e "s/#b3b3b3/colorhighnormal/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+sed -e "s/#b3b3b3/rgb(180,210,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
-sed -e "s/#666/colorhigh1/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+sed -e "s/#666/rgb(195,219,243)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
 echo "!!! Bookmarks Dropdown menu popup ...."
@@ -201,7 +201,7 @@ echo "!!! Bookmarks Dropdown menu popup ...."
 sed -e "s/#ffffff/black/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
-sed -e "s/#464646/colorhigh1/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+sed -e "s/#464646/rgb(195,219,243)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
 sed -e "s/0,0,0/0,0,0/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
@@ -227,7 +227,7 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/pop
 
 
 echo "!!! doing dedede changes on top of cat-popup.css... "
-sed -e "s/#dedede/colorhighnormal/g" ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css > ./temp/temp.css
+sed -e "s/#dedede/rgb(180,210,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/popup.css
 
 
@@ -247,7 +247,7 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/but
 echo "Color changes... "
 
 
-sed -e "s/#eeeeee/colorhighnormal/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
+sed -e "s/#eeeeee/rgb(180,210,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/button.css
 
 sed -e "s/#dadada/rgba(255,255,255,.7)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/button.css > ./temp/temp.css
@@ -271,12 +271,12 @@ echo "--------------------------------------------------"
 
 echo "======== dark border topbar for the places ========"
 
-sed -e "s/#404040/colorlow4/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
+sed -e "s/#404040/rgb(36,42,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css
 
 echo "----------- background semi light for the places left tree --------------"
 
-sed -e "s/#d2d8e2/colorlow1/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
+sed -e "s/#d2d8e2/rgb(144,168,192)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/places/organizer.css
 
 echo "-------------- in the selected element in the tree for the places,the #fff to black -----"
@@ -286,18 +286,18 @@ cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/pl
 
 echo "======== medium ========"   
 
-sed -e "s/#808080/colorlow3/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
+sed -e "s/#808080/rgb(72,84,96)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css
 
 echo "======== medium ========"   
 
-sed -e "s/#8F8F8F/colorlow2/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
+sed -e "s/#8F8F8F/rgb(108,126,144)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css
 
 
 echo "======== dark ========"   
 
-sed -e "s/#5F5F5F/colorlow4/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
+sed -e "s/#5F5F5F/rgb(36,42,48)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/findBar.css
 
 
@@ -308,7 +308,7 @@ echo "You may need to remove the XBL bindings in the beginning of the global.css
 
 
 
-sed -e "s/rgb(250,190,240)/colorhighnormal/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
+sed -e "s/rgb(250,190,240)/rgb(180,210,240)/g" ./build-chrome-classic/chrome/classic/skin/classic/global/global.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/global.css
 
 
