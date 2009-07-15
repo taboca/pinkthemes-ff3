@@ -8,12 +8,12 @@
 */
 
 .progress-background {
-   fill: rgb(250,190,240);
+   fill: rgb(220,190,255);
    stop-opacity: 1;
 }
 
 .downloadbar-color {
-   stop-color: rgb(250,190,240);
+   stop-color: rgb(220,190,255);
    stop-opacity: 1;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .downloadbar-dark {
-   stop-color: rgb(100,76,96);
+   stop-color: rgb(88,76,102);
    stop-opacity: 1;
 }
 /* Check the global CSS background color via rgb values in global.css */
@@ -32,12 +32,12 @@
 /* Used in the extensions panel */
 
 .bigshadeselected-from-color {
-   stop-color: rgb(200,152,192);
+   stop-color: rgb(176,152,204);
    stop-opacity: 1;
 }
 
 .bigshadeselected-to-color {
-   stop-color: rgb(252,216,246);
+   stop-color: rgb(234,216,255);
    stop-opacity: 1;
 }
 
@@ -45,12 +45,12 @@
 
 
 .shadeselected-from-color {
-   stop-color: rgb(100,76,96);
+   stop-color: rgb(88,76,102);
    stop-opacity: 1;
 }
 
 .shadeselected-to-color {
-   stop-color: rgb(250,190,240);
+   stop-color: rgb(220,190,255);
    stop-opacity: 1;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .tab-outer { 
-  stroke: rgb(250,190,240); 
+  stroke: rgb(220,190,255); 
   stroke-width:10; 
   fill:none;
 } 
@@ -74,17 +74,17 @@
 } 
 
 .tab-from-color { 
-   stop-color: rgb(250,190,240); 
+   stop-color: rgb(220,190,255); 
    stop-opacity: 1;
 } 
 
 .tab-to-color { 
-   stop-color: rgb(253,229,249); 
+   stop-color: rgb(241,229,255); 
    stop-opacity: 1;
 } 
 
 .color-white { 
-   stop-color: rgb(253,229,249);
+   stop-color: rgb(241,229,255);
    stop-opacity:1; 
 } 
 .color-black { 
@@ -93,55 +93,55 @@
 } 
 
 .popup-from-color { 
-	stop-color:rgb(253,229,249);
+	stop-color:rgb(241,229,255);
 	stop-opacity:1
 }
 .popup-to-color { 
-	stop-color:rgb(250,190,240); 
+	stop-color:rgb(220,190,255); 
  	stop-opacity:1; 
 } 
 
 /* Browserr find bar */
 
 .findbar-from-color {
-        stop-color:rgb(253,229,249);
+        stop-color:rgb(241,229,255);
         stop-opacity:1
 }
 .findbar-to-color {
-        stop-color:rgb(250,190,240);
+        stop-color:rgb(220,190,255);
         stop-opacity:1;
 }
 
 .findbar-button-from-color {
-        stop-color:rgb(100,76,96);
+        stop-color:rgb(88,76,102);
         stop-opacity:1
 }
 .findbar-button-to-color {
-        stop-color:rgb(252,216,246);
+        stop-color:rgb(234,216,255);
         stop-opacity:1;
 }
 
 /* button general */
 
 .button-from-color {
-        stop-color:rgb(253,229,249);
+        stop-color:rgb(241,229,255);
         stop-opacity:1;
 }
 .button-to-color {
-        stop-color:rgb(250,190,240);
+        stop-color:rgb(220,190,255);
         stop-opacity:1;
 }
 .button-focused-color {
-        stop-color:rgb(252,216,246);
+        stop-color:rgb(234,216,255);
         stop-opacity:1;
 }
 
 .button-active-from-color {
-        stop-color:rgb(253,229,249);
+        stop-color:rgb(241,229,255);
         stop-opacity:1;
 }
 .button-active-to-color {
-        stop-color:rgb(252,216,246);
+        stop-color:rgb(234,216,255);
         stop-opacity:1;
 }
 
@@ -150,59 +150,59 @@
 /* Other toolbar */
 
 .toolbar-inactive-from-color {
-        stop-color:rgb(200,152,192);
+        stop-color:rgb(176,152,204);
         stop-opacity:1
 }
 .toolbar-inactive-to-color {
-        stop-color:rgb(252,216,246);
+        stop-color:rgb(234,216,255);
         stop-opacity:1;
 }
 
 .toolbar-from-color-dark {
-        stop-color:rgb(150,114,144);
+        stop-color:rgb(132,114,153);
         stop-opacity:.8;
 }
 
 .toolbar-from-color-dark-transparent {
-        stop-color:rgb(100,76,96);
+        stop-color:rgb(88,76,102);
         stop-opacity:0;
 }
 
 .toolbar-from-color {
-        stop-color:rgb(250,190,240);
+        stop-color:rgb(220,190,255);
         stop-opacity:1;
 }
 .toolbar-to-color {
-        stop-color:rgb(253,229,249);
+        stop-color:rgb(241,229,255);
         stop-opacity:1;
 }
 
 
 .bookmarks-toolbar-from-color {
-        stop-color:rgb(253,229,249);
+        stop-color:rgb(241,229,255);
         stop-opacity:1;
 }
 .bookmarks-toolbar-to-color {
-        stop-color:rgb(250,190,240);
+        stop-color:rgb(220,190,255);
         stop-opacity:1;
 }
 
 .bookmarks-toolbar-inactive-from-color {
-        stop-color:rgb(253,229,249);
+        stop-color:rgb(241,229,255);
         stop-opacity:1;
 }
 .bookmarks-toolbar-inactive-to-color {
-        stop-color:rgb(200,152,192);
+        stop-color:rgb(176,152,204);
         stop-opacity:1;
 }
 
 
 .toolbarbutton-from-color {
-        stop-color:rgb(253,229,249);
+        stop-color:rgb(241,229,255);
         stop-opacity:1;
 }
 .toolbarbutton-to-color {
-        stop-color:rgb(252,216,246);
+        stop-color:rgb(234,216,255);
         stop-opacity:1;
 }
 
@@ -212,48 +212,48 @@
 }
 
 .tabbrowsertabs-from-color-dark {
-        stop-color:rgb(100,76,96); 
+        stop-color:rgb(88,76,102); 
         stop-opacity:1;
 }
 .tabbrowsertabs-from-color {
-        stop-color:rgb(150,114,144);
+        stop-color:rgb(132,114,153);
         stop-opacity:1;
 }
 .tabbrowsertabs-to-color {
-        stop-color:rgb(200,152,192);
+        stop-color:rgb(176,152,204);
         stop-opacity:1;
 }
 
 /* Standard urlbar - notice this is called urlbarstart but refers to urlbar entirelly */
 
 .urlbarstart-from-color {
-        stop-color:rgb(253,229,249);
+        stop-color:rgb(241,229,255);
         stop-opacity:1;
 }
 .urlbarstart-to-color {
-        stop-color:rgb(200,152,192);
+        stop-color:rgb(176,152,204);
         stop-opacity:1;
 }
 
 /* Urlbar focused */
 
 .urlbar-focused-top-color {
-        stop-color:rgb(250,190,240);
+        stop-color:rgb(220,190,255);
         stop-opacity:1;
 }
 .urlbar-focused-bottom-color {
-        stop-color:rgb(252,216,246);
+        stop-color:rgb(234,216,255);
         stop-opacity:1;
 }
 
 /* Urlbar active */ 
 
 .urlbar-active-top-color {
-        stop-color:rgb(250,190,240);
+        stop-color:rgb(220,190,255);
         stop-opacity:1;
 }
 .urlbar-active-bottom-color {
-        stop-color:rgb(254,242,252);
+        stop-color:rgb(248,242,255);
         stop-opacity:1;
 }
 
@@ -264,7 +264,7 @@
         stop-opacity:1;
 }
 .urlbarstart-secure-bottom-color {
-        stop-color:rgb(251,203,243);
+        stop-color:rgb(227,203,255);
         stop-opacity:1;
 }
 

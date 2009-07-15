@@ -54,6 +54,9 @@ echo "!!! Replacing cecece - required from the cat-downloads.css "
 sed -e "s/#cecece/rgb(248,242,255)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
 
+sed -e "s/#cfcfcf/rgb(234,216,255)/g" ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/mozapps/downloads/downloads.css
+
 echo "******************** Initiatind patches to Global  CSS *********************** "
 
 
@@ -178,6 +181,9 @@ cp ./patches/marcio*.xml ./build-chrome-classic/chrome/classic/skin/classic/brow
 echo "!!! Color settings .... " 
 
 sed -e "s/#666666/rgb(227,203,255)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
+
+sed -e "s/#d4dde5/rgb(220,190,255)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css
 
 sed -e "s/#333333/rgb(176,152,204)/g" ./build-chrome-classic/chrome/classic/skin/classic/browser/browser.css > ./temp/temp.css

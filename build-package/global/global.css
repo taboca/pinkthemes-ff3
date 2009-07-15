@@ -364,7 +364,7 @@ dialog,
 wizard,
 prefwindow {
   -moz-appearance: none;
-  background-color: rgb(250,190,240);
+  background-color: rgb(220,190,255);
 }
 
 

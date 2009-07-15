@@ -1040,7 +1040,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 #editBookmarkPanelHeader > vbox > hbox > button,
 #editBookmarkPanelBottomButtons > button {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(251,203,243) center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(227,203,255) center center;
   border-width: 3px;
   border-style: solid;
   -moz-border-radius: 20px;
@@ -1068,7 +1068,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBookmarkPanelBottomButtons > button[default="true"] {
-  background-color: rgb(251,203,243);
+  background-color: rgb(227,203,255);
 }
 
 #editBookmarkPanelHeader {
@@ -1128,7 +1128,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBMPanel_folderMenuList {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(251,203,243) center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(227,203,255) center center;
   border: 3px solid;
   -moz-border-radius: 5px;
   -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
@@ -1168,7 +1168,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 /**** folder tree ****/
 
 #editBMPanel_folderTree {
-  background-color: rgb(200,152,192);
+  background-color: rgb(176,152,204);
   border-top: 2px solid !important;
   border-right: 0 !important;
   border-bottom: 0 !important;
@@ -1210,7 +1210,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBMPanel_tagsSelector {
   -moz-appearance: none;
-  background-color: rgb(200,152,192);
+  background-color: rgb(176,152,204);
   border-top: 2px solid !important;
   border-right: 0 !important;
   border-bottom: 2px solid !important;
@@ -1246,7 +1246,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-row(selected) {
-  background-color: rgb(250,190,240) !important;
+  background-color: rgb(220,190,255) !important;
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-cell-text(selected),
@@ -1255,12 +1255,12 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 }
 
 #editBMPanel_folderTree treechildren::-moz-tree-row(selected, focus) {
-  background-color: rgb(250,190,240) !important;
+  background-color: rgb(220,190,255) !important;
 }
 
 #editBMPanel_tagsSelector > listitem[selected="true"] {
   color: #222222;
-  background-color: rgb(250,190,240);
+  background-color: rgb(220,190,255);
 }
 
 /**** expanders ****/
@@ -1268,7 +1268,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 #editBookmarkPanel .expander-up,
 #editBookmarkPanel .expander-down {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(251,203,243) center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(227,203,255) center center;
   border: 3px solid;
   -moz-border-radius: 5px;
   -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
@@ -1324,7 +1324,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
   -moz-border-bottom-colors: #1c1c1c #797979 !important;
   -moz-border-left-colors: #1c1c1c #636363 !important;
   -moz-border-radius: 1px !important;
-  background-color: rgb(251,203,243) !important;
+  background-color: rgb(227,203,255) !important;
   color: #fff !important;
 }
 
@@ -1356,11 +1356,11 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 /* ----- SIDEBAR ELEMENTS ----- */
 
 #sidebar { 
-  background-color: rgb(250,190,240);
+  background-color: rgb(220,190,255);
 }
 
 sidebarheader { 
-  background-color: rgb(250,190,240);
+  background-color: rgb(220,190,255);
   padding: 2px;
 }
 
@@ -2105,7 +2105,7 @@ tabpanels.plain {
 /* Popup Buttons */
 #identity-popup-more-info-button {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(251,203,243) center center;
+  background: url("chrome://browser/skin/hud-style-button-middle-background.png") repeat-x rgb(227,203,255) center center;
   border: 3px solid;
   -moz-border-top-colors: rgba(0,0,0,0.35) rgba(26,26,26,0.5) rgba(255,255,255,0.4);
   -moz-border-right-colors: rgba(53,53,53,1) rgba(53,53,53,1) rgba(162,162,162,1);

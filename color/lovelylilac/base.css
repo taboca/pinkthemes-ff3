@@ -29,14 +29,28 @@
 /* Check the global CSS background color via rgb values in global.css */
 
 
+/* Used in the extensions panel */
+
+.bigshadeselected-from-color {
+   stop-color: rgb(176,152,204);
+   stop-opacity: 1;
+}
+
+.bigshadeselected-to-color {
+   stop-color: rgb(234,216,255);
+   stop-opacity: 1;
+}
+
+/* Used in the download panel */
+
 
 .shadeselected-from-color {
-   stop-color: rgb(220,190,255);
+   stop-color: rgb(88,76,102);
    stop-opacity: 1;
 }
 
 .shadeselected-to-color {
-   stop-color: rgb(241,229,255);
+   stop-color: rgb(220,190,255);
    stop-opacity: 1;
 }
 
