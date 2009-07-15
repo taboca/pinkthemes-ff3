@@ -13,8 +13,8 @@
 
 <defs>
    <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="10%" class="shadeselected-from-color"  />
-     <stop offset="100%" class="shadeselected-from-color"  />
+     <stop offset="10%" class="bigshadeselected-from-color"  />
+     <stop offset="100%" class="bigshadeselected-from-color"  />
    </linearGradient>
 
 </defs>
