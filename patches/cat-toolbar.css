@@ -4,8 +4,10 @@
 /* marcio */ 
 
 
-menubar { 
+#toolbar-menubar { 
 	min-height:28px; 
+  background: transparent url(chrome://global/skin/toolbar/toolbar-background-topshade.png) 0 0;
+
 }
 
 toolbar { 

@@ -1,0 +1,249 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="767px" height="165px"  viewBox="0 0 767 165" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+<g>
+
+<image x="0" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="0" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-back.svg"> </image>
+
+<g opacity=".5">
+<image x="0" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="0" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-back.svg"> </image>
+</g>
+
+<image x="0" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="0" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-back.svg"> </image>
+
+
+<!-- botoes da direita -->
+
+<image x="36" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="36" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-forward.svg"> </image>
+
+<g opacity=".5">
+<image x="36" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="36" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-forward.svg"> </image>
+</g>
+
+<image x="36" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="36" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-forward.svg"> </image>
+
+
+<!-- botoes reload -->
+
+<image x="72" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="72" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-reload.svg"> </image>
+
+<g opacity=".5">
+<image x="72" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="72" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-reload.svg"> </image>
+</g>
+
+<image x="72" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="72" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-reload.svg"> </image>
+
+
+<!-- botoes stop -->
+
+<image x="108" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="108" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-stop.svg"> </image>
+
+<g opacity=".5">
+<image x="108" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="108" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-stop.svg"> </image>
+</g>
+
+<image x="108" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="108" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-stop.svg"> </image>
+
+<!-- botoes home -->
+
+<image x="144" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="144" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-home.svg"> </image>
+
+<g opacity=".5">
+<image x="144" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="144" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-home.svg"> </image>
+</g>
+
+<image x="144" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="144" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar-deepblue/icone-home.svg"> </image>
+
+<!-- Download --> 
+
+<image x="180" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="180" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-download.svg"> </image>
+
+<g opacity=".5">
+<image x="180" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="180" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-download.svg"> </image>
+</g>
+
+<image x="180" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="180" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-download.svg"> </image>
+
+<!-- Time history -->
+
+<image x="216" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="216" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-history.svg"> </image>
+
+<g opacity=".5">
+<image x="216" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="216" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-history.svg"> </image>
+</g>
+
+<image x="216" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="216" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-history.svg"> </image>
+
+<image x="216" y="69" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-activated.svg"> </image>
+<image x="216" y="69" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-history.svg"> </image>
+
+<image x="216" y="92" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-activated.svg"> </image>
+<image x="216" y="92" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-history.svg"> </image>
+
+
+<!-- Bookmarks button -->
+
+<image x="252" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="252" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+
+<g opacity=".5">
+<image x="252" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="252" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+</g>
+
+<image x="252" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="252" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+
+<image x="252" y="69" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-activated.svg"> </image>
+<image x="252" y="69" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+
+<image x="252" y="92" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-activated.svg"> </image>
+<image x="252" y="92" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-bookmarks.svg"> </image>
+
+<!-- printer --> 
+
+<image x="288" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="288" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-printer.svg"> </image>
+
+<g opacity=".5">
+<image x="288" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="288" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-printer.svg"> </image>
+</g>
+
+<image x="288" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="288" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-printer.svg"> </image>
+
+
+<!-- new tab --> 
+
+
+<image x="324" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="324" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newtab.svg"> </image>
+
+<g opacity=".5">
+<image x="324" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="324" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newtab.svg"> </image>
+</g>
+
+<image x="324" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="324" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newtab.svg"> </image>
+
+
+<!-- new window --> 
+
+<image x="360" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="360" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newwindow.svg"> </image>
+
+<g opacity=".5">
+<image x="360" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="360" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newwindow.svg"> </image>
+</g>
+
+<image x="360" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="360" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-newwindow.svg"> </image>
+
+
+<!-- cut --> 
+
+
+<image x="396" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="396" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-cut.svg"> </image>
+
+<g opacity=".5">
+<image x="396" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="396" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-cut.svg"> </image>
+</g>
+
+<image x="396" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="396" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-cut.svg"> </image>
+
+
+<!-- copy --> 
+
+
+<image x="432" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="432" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-copy.svg"> </image>
+
+<g opacity=".5">
+<image x="432" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="432" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-copy.svg"> </image>
+</g>
+
+<image x="432" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="432" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-copy.svg"> </image>
+
+<!-- paste --> 
+
+
+<image x="468" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="468" y="0" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-paste.svg"> </image>
+
+<g opacity=".5">
+<image x="468" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="468" y="23" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-paste.svg"> </image>
+</g>
+
+<image x="468" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button.svg"> </image>
+<image x="468" y="46" width="36px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-paste.svg"> </image>
+
+<!--  Integrated button --> 
+
+<image x="504" y="0" width="78px" height="33px"
+	         xlink:href="../../biblioteca/Toolbar-deepblue/buttons-integrated-new.svg">
+</image>
+<image x="504" y="33" width="78px" height="33px" opacity=".5"
+	         xlink:href="../../biblioteca/Toolbar-deepblue/buttons-integrated-new.svg">
+</image>
+<image x="504" y="66" width="78px" height="33px"
+	         xlink:href="../../biblioteca/Toolbar-deepblue/buttons-integrated-new-active.svg">
+</image>
+
+
+<!-- integrated small --> 
+
+<image x="582" y="0" width="82px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-integrated-small.svg"> </image>
+<image x="589" y="0" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-back.svg"> </image>
+<image x="616" y="0" width="3px" height="22px" xlink:href="../../biblioteca/Toolbar/base-vertdash.svg"> </image>
+<image x="622" y="0" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-forward.svg"> </image>
+<image x="646" y="0" width="3px" height="22px" xlink:href="../../biblioteca/Toolbar/base-vertdash.svg"> </image>
+<image x="644" y="0" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-droparrow.svg"> </image>
+
+
+<image x="582" y="23" width="82px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-integrated-small.svg"> </image>
+<image x="589" y="23" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-back.svg" opacity=".4"> </image>
+<image x="616" y="23" width="3px" height="22px" xlink:href="../../biblioteca/Toolbar/base-vertdash.svg"> </image>
+<image x="622" y="23" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-forward.svg" opacity=".4"> </image>
+<image x="646" y="23" width="3px" height="22px" xlink:href="../../biblioteca/Toolbar/base-vertdash.svg"> </image>
+<image x="644" y="23" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-droparrow.svg" opacity=".4"> </image>
+
+<image x="582" y="46" width="82px" height="22px" xlink:href="../../biblioteca/Toolbar/base-button-integrated-small-opaque.svg"> </image>
+<image x="589" y="46" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-back.svg"> </image>
+<image x="616" y="46" width="3px" height="22px" xlink:href="../../biblioteca/Toolbar/base-vertdash.svg"> </image>
+<image x="622" y="46" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-forward.svg"> </image>
+<image x="646" y="46" width="3px" height="22px" xlink:href="../../biblioteca/Toolbar/base-vertdash.svg"> </image>
+<image x="644" y="46" width="22px" height="22px" xlink:href="../../biblioteca/Toolbar/icone-droparrow.svg"> </image>
+
+
+
+</g>
+
+</svg>
