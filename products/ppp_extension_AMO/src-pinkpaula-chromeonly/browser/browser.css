@@ -1168,7 +1168,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 /**** folder tree ****/
 
 #editBMPanel_folderTree {
-  background-color: rgb(200,152,192);
+  background-color: rgb(225,171,216);
   border-top: 2px solid !important;
   border-right: 0 !important;
   border-bottom: 0 !important;
@@ -1210,7 +1210,7 @@ richlistitem[selected="true"][current="true"] > hbox > .ac-result-type-bookmark,
 
 #editBMPanel_tagsSelector {
   -moz-appearance: none;
-  background-color: rgb(200,152,192);
+  background-color: rgb(225,171,216);
   border-top: 2px solid !important;
   border-right: 0 !important;
   border-bottom: 2px solid !important;

@@ -11,6 +11,10 @@ echo "Table - 125,90,120  - medium "
 echo "Table - 100,70,95   - dark "
 
 
+echo "******************** Autocomplete ******************************************"
+cat ./build-chrome-classic/chrome/classic/skin/classic/global/autocomplete.css ./patches/cat-autocomplete.css > ./temp/temp.css  
+cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/global/autocomplete.css
+
 echo "******************** Searchbar ******************************************"
 cat ./build-chrome-classic/chrome/classic/skin/classic/browser/searchbar.css ./patches/cat-searchbar.css > ./temp/temp.css  
 cp ./temp/temp.css ./build-chrome-classic/chrome/classic/skin/classic/browser/searchbar.css
