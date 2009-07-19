@@ -364,7 +364,7 @@ dialog,
 wizard,
 prefwindow {
   -moz-appearance: none;
-  background-color: rgb(250,190,240);
+  background-color: rgba(255,255,255,0);
 }
 
 
@@ -421,3 +421,13 @@ button[dlgtype="help"] > .button-box > .button-text {
 statusbar { 
 	-moz-appearance: none;
 } 
+
+window,
+page,
+dialog,
+wizard,
+prefwindow {
+  background-color: rgb(250,190,240);
+}
+
+
