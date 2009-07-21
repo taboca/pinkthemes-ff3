@@ -4,8 +4,8 @@
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="{1fbc217a-b88b-11db-8314-0800200c9a66}"
-                   em:version="3.5.2"
-                   em:name="LovelyLilac 3.5.2"
+                   em:version="3.5.3"
+                   em:name="LovelyLilac"
                    em:description="Welcome to LovelyLilac for upcoming Firefox 3.5. This work is based on SVGplanet Firefox Theme and PinkTheme.com projects "
                    em:creator="lovelylilac.taboca.com"
                    em:homepageURL="http://lovelylilac.taboca.comm"
@@ -17,5 +17,5 @@
   <RDF:Description RDF:about="rdf:#$Zz+3b2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.1b3"
-                   em:maxVersion="3.5" />
+                   em:maxVersion="3.5.*" />
 </RDF:RDF>

@@ -23,20 +23,34 @@
 }
 
 .downloadbar-dark {
-   stop-color: rgb(88,76,102);
+   stop-color: rgb(154,133,180);
    stop-opacity: 1;
 }
 /* Check the global CSS background color via rgb values in global.css */
 
 
+/* Used in the extensions panel */
+
+.bigshadeselected-from-color {
+   stop-color: rgb(198,171,230);
+   stop-opacity: 1;
+}
+
+.bigshadeselected-to-color {
+   stop-color: rgb(234,216,255);
+   stop-opacity: 1;
+}
+
+/* Used in the download panel */
+
 
 .shadeselected-from-color {
-   stop-color: rgb(220,190,255);
+   stop-color: rgb(154,133,180);
    stop-opacity: 1;
 }
 
 .shadeselected-to-color {
-   stop-color: rgb(241,229,255);
+   stop-color: rgb(220,190,255);
    stop-opacity: 1;
 }
 
@@ -99,7 +113,7 @@
 }
 
 .findbar-button-from-color {
-        stop-color:rgb(88,76,102);
+        stop-color:rgb(154,133,180);
         stop-opacity:1
 }
 .findbar-button-to-color {
@@ -136,7 +150,7 @@
 /* Other toolbar */
 
 .toolbar-inactive-from-color {
-        stop-color:rgb(176,152,204);
+        stop-color:rgb(198,171,230);
         stop-opacity:1
 }
 .toolbar-inactive-to-color {
@@ -145,12 +159,12 @@
 }
 
 .toolbar-from-color-dark {
-        stop-color:rgb(132,114,153);
+        stop-color:rgb(176,152,205);
         stop-opacity:.8;
 }
 
 .toolbar-from-color-dark-transparent {
-        stop-color:rgb(88,76,102);
+        stop-color:rgb(154,133,180);
         stop-opacity:0;
 }
 
@@ -178,7 +192,7 @@
         stop-opacity:1;
 }
 .bookmarks-toolbar-inactive-to-color {
-        stop-color:rgb(176,152,204);
+        stop-color:rgb(198,171,230);
         stop-opacity:1;
 }
 
@@ -198,15 +212,15 @@
 }
 
 .tabbrowsertabs-from-color-dark {
-        stop-color:rgb(88,76,102); 
+        stop-color:rgb(154,133,180); 
         stop-opacity:1;
 }
 .tabbrowsertabs-from-color {
-        stop-color:rgb(132,114,153);
+        stop-color:rgb(176,152,205);
         stop-opacity:1;
 }
 .tabbrowsertabs-to-color {
-        stop-color:rgb(176,152,204);
+        stop-color:rgb(198,171,230);
         stop-opacity:1;
 }
 
@@ -217,7 +231,7 @@
         stop-opacity:1;
 }
 .urlbarstart-to-color {
-        stop-color:rgb(176,152,204);
+        stop-color:rgb(198,171,230);
         stop-opacity:1;
 }
 
