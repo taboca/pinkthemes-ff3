@@ -1,0 +1,14 @@
+The new color alpha test base and fix is in ./color/alpha
+
+You need to execute the fixcss-alpha after the fixcss
+ 
+
+new chrome alpha
+
+ 1442  ./00_clean.sh 
+ 1443  ./10_pick_theme.sh alpha
+ 1444  ./20_clean.sh 
+ 1445  ./30_precompile.sh 
+ 1446  ./fixcss-alpha.sh 
+ 1447  ./30_zipinstall.sh 
+ 1448  ./40_launch.sh

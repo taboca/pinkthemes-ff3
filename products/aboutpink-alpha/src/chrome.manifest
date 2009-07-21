@@ -1,0 +1,7 @@
+
+locale  aboutpink   en-US chrome/locale/en-US/
+locale  aboutpink   pt-BR chrome/locale/pt-BR/
+
+content aboutpink chrome/content/
+skin	aboutpink classic/1.0 chrome/skin/classic/
+overlay	chrome://browser/content/browser.xul	chrome://aboutpink/content/overlay.xul

@@ -1,0 +1,109 @@
+p { 
+
+	margin-right:1em; 
+
+} 
+.fixverticalalign { 
+
+  width:1px;height:88px;vertical-align:middle;
+   position:relative;
+
+} 
+
+.installbutton {
+        width:270px;
+        height:90;x
+        margin:0px;
+        padding:0px;
+        background:url(../output/installbutton.png) no-repeat 0 0;
+        text-align:center;
+	font-size:120%;	
+	font-weight:bold;
+}
+
+
+.footertable { 
+ 	width:720px;
+	margin:auto;
+} 
+
+
+html { 
+ 	font-family:georgia; 
+	font-size:90%;
+} 
+
+h1,h2,h3 { 
+	color:green;
+} 
+
+.dotted { 
+	margin:auto; 
+        height:6px;
+	margin-top:2em;
+	border-top:1px solid pink;
+  	margin-bottom:2em;
+   
+} 
+
+            html, body {
+                        padding:0px;
+                        margin:0px;
+                }
+                #topheader {
+                        width:100%;
+                        margin:0px;
+                        height:140px;
+                        background:url(../output/bgtop-shade.png) -350px 0 repeat-x;
+                }
+                #header {
+                        margin:auto;
+                        background:url(../output/topbanner.png) 0 10px no-repeat;
+                        width:800px;
+                        height:140px;
+                }
+
+
+.t {background: url(../output/boxshade.png) 0 0 repeat-x; width: 100%; }
+.b {background: url(../output/dot.png) 0 100% repeat-x}
+.l {background: url(../output/dot.png) 0 0 repeat-y}
+.r {background: url(../output/dot.png) 100% 0 repeat-y}
+.bl {background: url(../output/q5.png) 0 100% no-repeat}
+.br {background: url(../output/q4.png) 100% 100% no-repeat}
+.tl {background: url(../output/q1.png) 0 0 no-repeat}
+.tr {background: url(../output/q3.png) 100% 0 no-repeat; padding:10px}
+
+
+h2 { 
+  color:darkred;
+  font-family:verdana; 
+  font-size:95%;
+  margin-top:.1em;
+} 
+
+ul { 
+ margin:0px;
+ padding:1em;
+} 
+
+#content { 
+ 	width:720px;
+	margin:auto;
+ 	padding:.2em;	
+} 
+
+.footercontent { 
+ 	width:720px;
+	margin:auto;
+	padding:1em;
+} 
+
+#footer { 
+ 	color:gray;
+	font-spacing:2px;
+	font-size:77%;
+	margin:auto;
+ 	width:720px;
+	margin-top:2em;
+} 
+
