@@ -1,4 +1,11 @@
 
+function app_linkToDonate() { 
+
+	// This now launches the donations normalizided URL on AMO
+	getWindow().com.taboca.aboutpink.export_launchDonationsPage();
+
+} 
+
 function app_launchTestHome() { 
 	getWindow().com.taboca.aboutpink.export_launchInstalledHomePage();
 } 

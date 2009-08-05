@@ -30,6 +30,7 @@ function appStart() {
 
 	refreshHome();
 	refreshSearch();
+
 } 
 
 
@@ -99,6 +100,9 @@ function components_selector_binding() {
 
 	components_apply("#button_activate", class_components_hoverEntry, null);
 	components_apply("#button_activate", class_components_clickInner, { callback: app_installSearch } ) ;
+
+	components_apply("#button_donate", class_components_hoverEntry, null);
+	components_apply("#button_donate", class_components_clickInner, { callback: app_linkToDonate } ) ;
 
 	components_apply("#button_installhome", class_components_hoverEntry, null);
 	components_apply("#button_installhome", class_components_clickInner, { callback: function () { app_installHome(); refreshHome()}  } ) ;
