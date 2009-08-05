@@ -17,7 +17,7 @@ if(!com) var com={};
 if(!com.taboca) com.taboca={};
 if(!com.taboca.aboutpink) com.taboca.aboutpink={};
 
-addEventListener("load", function () { com.taboca.aboutpink.pinkSearchStartup() } , false);
+addEventListener("load", function () { com.taboca.aboutpink.appStartup() } , false);
 
 
 com.taboca.aboutpink = { 
@@ -154,11 +154,37 @@ com.taboca.aboutpink = {
  	}, 
 
 
+        getHex: function convert (d) {return d.toString(16);},
+
+        runCosmetics: function () {
+
+		/* This applies to Mac OSX - but at some point this may work 
+		   with other OSes too, so we just set the attribute in there
+                   for now, it should not hurt Linux and Mac OSX */
+
+                var rrHex = this.getHex(250);
+                var ggHex = this.getHex(165);
+                var bbHex = this.getHex(240);
+                var va = "#"+rrHex+ggHex+bbHex;
+                this.changeTitleBar( va, va, va);
+                this.stringsBundle    = document.getElementById("aboutpink_stringsbundle");
+        },
+
+        changeTitleBar: function (gg, ii, aa) {
+                this._header = document.getElementById("main-window");
+                 document.documentElement.setAttribute("titlebarcolor", gg);
+                 document.documentElement.setAttribute("activetitlebarcolor", aa);
+                 document.documentElement.setAttribute("inactivetitlebarcolor", ii);
+        },
+
+
 	////
 	///	
 	//
- 	pinkSearchCheckFirstTime: function () { 
+ 	checkFirstTime: function () { 
 
+
+		this.runCosmetics();
 		try {
 			var install = this.prefService.getBoolPref("extensions.aboutpink.installed");
 			if(!install) {
@@ -199,16 +225,12 @@ com.taboca.aboutpink = {
 		} 
 	},
 
-	pinkSearchStartup: function () { 
-
-
-                this.stringsBundle    = document.getElementById("aboutpink_stringsbundle");
-
-       	 	this.pinkSearchCheckFirstTime();
-
-		
-
+	appStartup: function () { 
+                this.stringsBundle = document.getElementById("aboutpink_stringsbundle");
+       	 	this.checkFirstTime();
 	},
+
+
 
 	////
 	///
