@@ -49,6 +49,17 @@ com.taboca.aboutpink = {
 	},
 
 
+	export_launchDonationsPage: function () { 
+
+		var homeURI = this.makeURI("https://addons.mozilla.org/firefox/addon/10284/developers");
+                try {
+                        testHomeTab = Application.activeWindow.open( homeURI );
+                        testHomeTab.focus();
+                } catch (i) {
+                }
+
+	},
+
 	////
 	///
 	//
