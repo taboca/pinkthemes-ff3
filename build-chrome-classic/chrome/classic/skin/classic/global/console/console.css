@@ -151,7 +151,7 @@
 #ToolbarEval {
   -moz-appearance: none;
   background: url("chrome://global/skin/icons/find-bar-background.png") repeat-x top center #D0D0D0;
-  border-bottom: 1px solid rgb(176,152,205);
+  border-bottom: 1px solid rgb(200,152,192);
   padding: 2px;
 }
 
