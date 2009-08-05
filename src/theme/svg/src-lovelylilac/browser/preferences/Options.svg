@@ -4,64 +4,64 @@
 
 
 <image x="0" y="0" width="32px" height="32px" 
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-main.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-main.svg">
 </image>
 
 <image x="0" y="32" width="32px" height="32px" 
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-main.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-main.svg">
 </image>
 
 
 <image x="32" y="0" width="32px" height="32px"
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-tabs.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-tabs.svg">
 </image>
 
 <image x="32" y="32" width="32px" height="32px"
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-tabs.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-tabs.svg">
 </image>
 
 <image x="64" y="0" width="32px" height="32px" 
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-content.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-content.svg">
 </image>
 
 <image x="64" y="32" width="32px" height="32px"
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-content.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-content.svg">
 </image>
 
 <image x="96" y="0" width="32px" height="32px" 
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-feeds.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-feeds.svg">
 </image>
 
 <image x="96" y="32" width="32px" height="32px"
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-feeds.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-feeds.svg">
 </image>
 
 
 <image x="128" y="0" width="32px" height="32px" 
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-privacy.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-privacy.svg">
 </image>
 
 <image x="128" y="32" width="32px" height="32px"
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-privacy.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-privacy.svg">
 </image>
 
 
 
 <image x="160" y="0" width="32px" height="32px" 
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-security.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-security.svg">
 </image>
 
 <image x="160" y="32" width="32px" height="32px"
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-security.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-security.svg">
 </image>
 
 
 <image x="192" y="0" width="32px" height="32px"
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-advanced.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-advanced.svg">
 </image>
 
 <image x="192" y="32" width="32px" height="32px"
-	         xlink:href="../../../biblioteca/Preferences-gg/icone-advanced.svg">
+	         xlink:href="../../../biblioteca/Preferences/icone-advanced.svg">
 </image>
 
 
