@@ -5,7 +5,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="aboutpink@pinktheme.com"
                    em:name="AboutPink"
-                   em:version="1.2"
+                   em:version="1.3"
                    em:description="This is about:Pink - extra package options for Pink Paula Pack edition"
                    em:creator="pinkTheme.com Labs"
                    em:homepageURL="http://www.pinktheme.com/"
