@@ -200,6 +200,7 @@ com.taboca.aboutpink = {
 			var install = this.prefService.getBoolPref("extensions.aboutpink.installed");
 			if(!install) {
 				this.prefService.setBoolPref("extensions.aboutpink.installed",true);
+				this.prefService.setCharPref("general.skins.selectedSkin","classic/1.0");
 				this.prefService.setCharPref("extensions.aboutpink.background","chrome://aboutpink/skin/suggestion-1.jpg");
 				this.pinkSearchPrepareToLaunch();
 				//this.pinkSearchInstallSearch();
