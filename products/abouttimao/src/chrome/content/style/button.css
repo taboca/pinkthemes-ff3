@@ -25,8 +25,9 @@
 .button-lightblue {
         background:url(../output/component-fixed-button/lightblue.png) no-repeat 0 0;
 }
-.button-green {
-        background:url(../output/component-fixed-button/green.png) no-repeat 0 0;
+.button-black {
+        background:url(../output/component-fixed-button/black.png) no-repeat 0 0;
+	color:white;
 }
 .button-odd {
         background:url(../output/component-fixed-button/image.png) no-repeat 0 0;

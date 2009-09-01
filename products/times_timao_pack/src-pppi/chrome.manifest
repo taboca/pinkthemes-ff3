@@ -1,10 +1,10 @@
 
-locale  aboutpink   en-US chrome/locale/en-US/
-locale  aboutpink   pt-BR chrome/locale/pt-BR/
+locale  abouttimao   en-US chrome/locale/en-US/
+locale  abouttimao   pt-BR chrome/locale/pt-BR/
 
 
-content aboutpink chrome/content/
-overlay	chrome://browser/content/browser.xul	chrome://aboutpink/content/overlay.xul
+content abouttimao chrome/content/
+overlay	chrome://browser/content/browser.xul	chrome://abouttimao/content/overlay.xul
 
 
 

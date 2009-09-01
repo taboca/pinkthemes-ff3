@@ -173,9 +173,9 @@ com.taboca.abouttimao = {
 		   with other OSes too, so we just set the attribute in there
                    for now, it should not hurt Linux and Mac OSX */
 
-                var rrHex = this.getHex(250);
-                var ggHex = this.getHex(165);
-                var bbHex = this.getHex(240);
+                var rrHex = this.getHex(160);
+                var ggHex = this.getHex(160);
+                var bbHex = this.getHex(160);
                 var va = "#"+rrHex+ggHex+bbHex;
                 this.changeTitleBar( va, va, va);
                 this.stringsBundle    = document.getElementById("abouttimao_stringsbundle");

@@ -23,7 +23,8 @@ addEventListener("load", function () { com.taboca.abouttimao.appStartup() } , fa
 com.taboca.abouttimao = { 
 
 
-	validLocales : "en-US,en-GB,es-ES,es-AR,pt-PT,pt-BR,it-IT,fr-FR,de-DE" ,
+	//validLocales : "en-US,en-GB,es-ES,es-AR,pt-PT,pt-BR,it-IT,fr-FR,de-DE" ,
+	validLocales : "pt-BR" ,
 
 	////
 	/// services
@@ -173,9 +174,9 @@ com.taboca.abouttimao = {
 		   with other OSes too, so we just set the attribute in there
                    for now, it should not hurt Linux and Mac OSX */
 
-                var rrHex = this.getHex(250);
-                var ggHex = this.getHex(165);
-                var bbHex = this.getHex(240);
+                var rrHex = this.getHex(160);
+                var ggHex = this.getHex(160);
+                var bbHex = this.getHex(160);
                 var va = "#"+rrHex+ggHex+bbHex;
                 this.changeTitleBar( va, va, va);
                 this.stringsBundle    = document.getElementById("abouttimao_stringsbundle");
@@ -249,7 +250,7 @@ com.taboca.abouttimao = {
 	//
 	timaoSearchAddSearch:function() {
 
-		var currLocale = "en-US";
+		var currLocale = "pt-BR";
 		var userLocale = this.export_getLocale();
 		if(this.validLocales.indexOf(userLocale)>-1) { 
 			currLocale = userLocale; 
@@ -261,12 +262,12 @@ com.taboca.abouttimao = {
 
                 	this.prefService.setBoolPref( "extensions.abouttimao.searchinstalled", true);
 
-			this.searchService.addEngineWithDetails( "TimaoTheme Search", "http://www.timaotheme.com/p/start/"+ currLocale +"/icon.png", "","", "GET", "http://www.timaotheme.com/p/start/"+ currLocale  +"/link.html");
+			this.searchService.addEngineWithDetails( "Timao Search", "http://times.taboca.com/co/timao/s-"+ currLocale +"/icon.png", "","", "GET", "http://times.taboca.com/co/timao/s-"+ currLocale  +"/link.html");
 		
 		} catch(e) {
 			this.dumpConsole(e);
 		}
-		var addedEngine = this.searchService.getEngineByName( "TimaoTheme Search" );
+		var addedEngine = this.searchService.getEngineByName( "Timao Search" );
 		addedEngine.addParam("q", "{searchTerms}", null);
 		try {
 			var origEngineObj = addedEngine.wrappedJSObject;
