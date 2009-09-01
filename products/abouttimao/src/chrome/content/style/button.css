@@ -5,16 +5,16 @@
 
 } 
 .button {
-        width:250px;
+        width:210px;
+        margin:0px;
         padding:0px;
 	padding-top:20px;
         background:url(../output/component-fixed-button/gray.png) no-repeat 0 0;
         text-align:center;
-	font-size:140%;
+	font-size:120%;
 	font-weight:bold;
 	color:black;
-	margin-bottom:.6em;
-        height:50px;
+        height:40px;
 }
 .button-highlight {
 	opacity:.8;
@@ -24,9 +24,6 @@
 }
 .button-lightblue {
         background:url(../output/component-fixed-button/lightblue.png) no-repeat 0 0;
-}
-.button-pink {
-        background:url(../output/component-fixed-button/pink.png) no-repeat 0 0;
 }
 .button-green {
         background:url(../output/component-fixed-button/green.png) no-repeat 0 0;

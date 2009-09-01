@@ -1,16 +1,7 @@
-
-#button_activate, #button_installhome { 
-	cursor:pointer;
-} 
-#home_detail { 
-	display:none;
-} 
-#recover_home { 
-	display:none;
-} 
-#p_welcome { 
-	color:gray
+.vendor-bgletter {
+	background: url(../output/vendor-lpeu-background/letter.png) 0 0 ;
 }
+
 .content-article { 
 	text-align:justify;
 	padding-right:2em;

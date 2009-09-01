@@ -1,0 +1,24 @@
+
+#button_activate, #button_installhome { 
+	cursor:pointer;
+} 
+#home_detail { 
+	display:none;
+} 
+#recover_home { 
+	display:none;
+} 
+#p_welcome { 
+	color:gray
+}
+.content-article { 
+	text-align:justify;
+	padding-right:2em;
+} 
+
+.content-title { 
+	font-size:130%;
+	font-weight:bold;
+} 
+
+h2 { font-size:120% } 
