@@ -1,0 +1,49 @@
+a.menu-link { 
+	text-decoration: none;
+	color:black;
+	font-size:120%;
+}
+.tab {
+        width:145px;
+        height:50px;
+        background:url(../output/component-tabs-upsidedown/tab-gray.png) no-repeat -3px -25px;
+        margin:0px;
+        padding:0px;
+        text-align:center;
+        font-size:110%;
+        font-weight:bold;
+        color:black;
+	padding-top:16px;
+}
+
+.orange {
+        background:url(../output/component-tabs-upsidedown/tab-orange.png) no-repeat -3px -25px;
+}
+
+.tabverticalalign {
+  width:1px;height:52px;vertical-align:middle;
+}
+
+.tab-blue {
+        background:url(../output/component-tabs-upsidedown/tab-blue.png) no-repeat 0 0;
+        opacity:.5;
+}
+.tab-highlight {
+        background:url(../output/component-tabs-upsidedown/tab-highlight.png) no-repeat -3px -20px;
+        height:50px;
+}
+.tab-selected {
+        background:url(../output/component-tabs-upsidedown/tab-highlight.png) no-repeat -3px -20px;
+        height:50px;
+}
+
+.tab-disabled {
+        background:url(../output/component-tabs-upsidedown/tab-gray.png) no-repeat 0 0;
+        opacity:.5;
+}
+
+.tab-odd {
+        background:url(../output/component-tabs-upsidedown/tab-odd.png) no-repeat 0 0;
+}
+
+

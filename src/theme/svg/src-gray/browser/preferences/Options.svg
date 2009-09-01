@@ -1,0 +1,70 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink"  width="224px" height="64px"  viewBox="0 0 224 64"  xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+<g>
+
+
+<image x="0" y="0" width="32px" height="32px" 
+	         xlink:href="../../../biblioteca/Preferences/icone-main.svg">
+</image>
+
+<image x="0" y="32" width="32px" height="32px" 
+	         xlink:href="../../../biblioteca/Preferences/icone-main.svg">
+</image>
+
+
+<image x="32" y="0" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-tabs.svg">
+</image>
+
+<image x="32" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-tabs.svg">
+</image>
+
+<image x="64" y="0" width="32px" height="32px" 
+	         xlink:href="../../../biblioteca/Preferences/icone-content.svg">
+</image>
+
+<image x="64" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-content.svg">
+</image>
+
+<image x="96" y="0" width="32px" height="32px" 
+	         xlink:href="../../../biblioteca/Preferences/icone-feeds.svg">
+</image>
+
+<image x="96" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-feeds.svg">
+</image>
+
+
+<image x="128" y="0" width="32px" height="32px" 
+	         xlink:href="../../../biblioteca/Preferences/icone-privacy.svg">
+</image>
+
+<image x="128" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-privacy.svg">
+</image>
+
+
+
+<image x="160" y="0" width="32px" height="32px" 
+	         xlink:href="../../../biblioteca/Preferences/icone-security.svg">
+</image>
+
+<image x="160" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-security.svg">
+</image>
+
+
+<image x="192" y="0" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-advanced.svg">
+</image>
+
+<image x="192" y="32" width="32px" height="32px"
+	         xlink:href="../../../biblioteca/Preferences/icone-advanced.svg">
+</image>
+
+
+</g>
+
+</svg>

@@ -320,3 +320,71 @@ popup > menuitem[_moz-menuactive="true"] {
   list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.png") !important;
 }
 
+
+menu,
+menuitem {
+  -moz-appearance: none !important;
+  color: black;
+  font: -moz-pull-down-menu;
+}
+
+
+
+menu[disabled="true"], menuitem[disabled="true"],
+menu[_moz-menuactive="true"][disabled="true"],
+menuitem[_moz-menuactive="true"][disabled="true"] {
+  color: gray;
+}
+
+
+.menu-description {
+  color:gray;
+}
+
+
+menubar > menu {
+  -moz-appearance: none !important;
+  padding: 1px 5px 2px 6px;
+  -moz-border-radius-topleft:4px;
+  -moz-border-radius-topright:4px;
+  margin: 3px 0px 1px 0px;
+}
+
+
+
+/* this is new appraoch in the f 3.1b4 march 13 build verified... 
+
+menubar > menu[_moz-menuactive="true"][open="true"] {
+  -moz-appearance: menuitem !important;
+  color: -moz-mac-menutextselect !important
+}
+
+*/
+
+
+menubar > menu[_moz-menuactive="true"][open="true"] {
+  -moz-appearance: none !important;
+  background: black;
+  color:white !important;
+}
+
+menupopup > menu[_moz-menuactive="true"],
+menupopup > menuitem[_moz-menuactive="true"],
+popup > menu[_moz-menuactive="true"],
+popup > menuitem[_moz-menuactive="true"] {
+   color: white;
+   background-color:black;
+}
+
+/* menu arrows */
+
+.menu-right {
+  list-style-image: url("chrome://global/skin/menu/menu-arrow.png");
+}
+.menu-right[_moz-menuactive="true"] {
+  list-style-image: url("chrome://global/skin/menu/menu-arrow-hov.png");
+}
+.menu-right[disabled="true"] {
+  list-style-image: url("chrome://global/skin/menu/menu-arrow-dis.png") !important;
+}
+

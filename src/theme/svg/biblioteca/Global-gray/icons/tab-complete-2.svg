@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../../base.css" type="text/css" ?>
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="240"
+   height="750"
+   viewBox="0 0 240 750"
+   version="1.1"
+   >
+<defs>
+   <linearGradient id="whitetocolor" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="tab-from-color" style="stop-color:white"  />
+     <stop offset="50%" class="tab-from-color" />
+     <stop offset="100%" class="tab-to-color"  />
+   </linearGradient>
+
+   <linearGradient id="whitetoblack" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"   class="color-black" />
+     <stop offset="70%"   class="color-black" />
+     <stop offset="100%" class="color-white" />
+   </linearGradient>
+
+   <mask id="shademask">
+      <rect x="0" y="0" width="240" height="750"    style="fill:url(#whitetoblack)" />
+   </mask>
+
+</defs>
+ 
+<rect x="30" y="30" rx="30" ry="30" width="180" height="690"  style="fill:url(#whitetocolor)" />
+<rect x="20" y="20" rx="30" ry="30" width="200" height="710"  class="tab-outer" mask="url(#shademask)"/>
+
+</svg>

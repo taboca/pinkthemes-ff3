@@ -101,12 +101,12 @@ menulist[editable="true"] > menupopup > .popup-internal-box {
 menupopup,
 popup,
 panel {
-   background: rgb(250,190,240) url(chrome://global/skin/popup-bg.png) 0 0;
+   background: rgb(80,80,80) url(chrome://global/skin/popup-bg.png) 0 0;
    border-top:1px solid white;
    border-left:1px solid white;
    border-right:1px solid #ccc;
    border-bottom:1px solid #ccc;
-   background-color:rgb(250,190,240) !important;
+   background-color:rgb(80,80,80) !important;
    -moz-appearance:none;
 }
 

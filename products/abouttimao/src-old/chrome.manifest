@@ -1,0 +1,3 @@
+content aboutpink chrome/content/
+skin	aboutpink classic/1.0 chrome/skin/classic/
+overlay	chrome://browser/content/browser.xul	chrome://aboutpink/content/overlay.xul

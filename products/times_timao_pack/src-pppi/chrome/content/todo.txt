@@ -1,0 +1,4 @@
+en-US, nl-NL, fr-FR, it-IT, de-DE, es-ES, tr-TR, ko-KR, pl-PL, cs-CZ, bg-BG, pt-PT, sl-SI, zh-CN, sk-SK, ru-RU, fy-NL, zh-TW, pt-BR, da-DK, lt-LT, ja-JP-mac, gl-ES, sq-AL, he-IL, en-GB, fa-IR, km-KH, uk-UA, hr-HR, be-BY, ro-RO, es-AR, hu-HU, nb-NO, fi-FI, ca-AD, ar, ml-IN, wa-BE, is-IS, mk-MK
+
+
+Fix the callback of the search install button to call the refresh state

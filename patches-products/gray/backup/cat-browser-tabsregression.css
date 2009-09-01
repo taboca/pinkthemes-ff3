@@ -1,0 +1,54 @@
+.tab-image-left,
+.tab-image-right {
+  width: 8px;
+  height:27px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tabbrowser-tab > .tab-image-right,
+.tabbrowser-tab[chromedir="rtl"] > .tab-image-left {
+  background: url("chrome://browser/skin/tabbrowser/tab-right.png") no-repeat;
+}
+
+.tabbrowser-tab:not([selected="true"]) > .tab-image-right,
+.tabbrowser-tab:not([selected="true"])[chromedir="rtl"] > .tab-image-left {
+  background: url("chrome://browser/skin/tabbrowser/tab-right-bkgnd.png") no-repeat;
+}
+
+.tabbrowser-tab > .tab-image-left,
+.tabbrowser-tab[chromedir="rtl"] > .tab-image-right {
+  background: url("chrome://browser/skin/tabbrowser/tab-left.png") no-repeat;
+}
+
+.tabbrowser-tab:not([selected="true"]) > .tab-image-left,
+.tabbrowser-tab:not([selected="true"])[chromedir="rtl"] > .tab-image-right {
+  background: url("chrome://browser/skin/tabbrowser/tab-left-bkgnd.png") no-repeat;
+}
+
+.tabbrowser-tab > .tab-image-middle,
+.tabbrowser-tab > .tab-close-button {
+  -moz-box-pack: center;
+  height:27px;
+  background: url("chrome://browser/skin/tabbrowser/tab-middle.png") repeat-x ;
+}
+
+.tabbrowser-tab:not([selected="true"]) > .tab-image-middle,
+.tabbrowser-tab:not([selected="true"]) > .tab-close-button {
+  background: url("chrome://browser/skin/tabbrowser/tab-middle-bkgnd.png");
+}
+
+
+/* March 15 - problem happened on top of B4... this is a fix 
+   to have the close button remove the top margin 1px - search original 
+   browser.css like .tab-close-button { and margin: 1px 0 0; 
+*/
+
+/* March 15 - problem happened on top of B4... this is a fix 
+   to have the close button remove the top margin 1px - search original 
+   browser.css like .tab-close-button { and margin: 1px 0 0; 
+*/
+
+.tab-close-button { 
+ 	margin:0px;
+} 
