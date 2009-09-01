@@ -13,7 +13,7 @@ function getWindow() {
 function stringsApply() { 
         $(".str").each( function() {
 		var stringId = $(this).attr("id").toString();
-		_do( stringId, getWindow().com.taboca.aboutpink.export_getString(stringId)); 
+		_do( stringId, getWindow().com.taboca.abouttimao.export_getString(stringId)); 
           } 
        )
 }

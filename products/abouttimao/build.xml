@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 
-<project name="aboutpink" default="distrib" basedir=".">
+<project name="abouttimao" default="distrib" basedir=".">
 	
  	<target name="distrib"  >
-                <zip destfile="build-package-installer/aboutpink.xpi" basedir="src" />
+                <zip destfile="build-package-installer/abouttimao.xpi" basedir="src" />
  	</target>
 	
 </project>

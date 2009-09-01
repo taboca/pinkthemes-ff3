@@ -1,53 +1,40 @@
 
 function app_linkToDonate() { 
-
 	// This now launches the donations normalizided URL on AMO
-	getWindow().com.taboca.aboutpink.export_launchDonationsPage();
-
+	getWindow().com.taboca.abouttimao.export_launchDonationsPage();
 } 
 
 function app_launchTestHome() { 
-	getWindow().com.taboca.aboutpink.export_launchInstalledHomePage();
+	getWindow().com.taboca.abouttimao.export_launchInstalledHomePage();
 } 
 function app_revertHome() { 
-	getWindow().com.taboca.aboutpink.export_revertHomePage();
+	getWindow().com.taboca.abouttimao.export_revertHomePage();
 } 
 function app_getBackupHome() { 
- 	return getWindow().com.taboca.aboutpink.export_getBackupHome();	
+ 	return getWindow().com.taboca.abouttimao.export_getBackupHome();	
 } 
 function app_getCurrentHome() { 
- 	return getWindow().com.taboca.aboutpink.export_getCurrentHome();	
+ 	return getWindow().com.taboca.abouttimao.export_getCurrentHome();	
 } 
 function app_installHome() { 
-	getWindow().com.taboca.aboutpink.export_installHome();	
+	getWindow().com.taboca.abouttimao.export_installHome();	
 } 
 
 function app_installSearch() { 
-	getWindow().com.taboca.aboutpink.export_installSearch();	
+	getWindow().com.taboca.abouttimao.export_installSearch();	
 
 	refreshSearch(); // hack
 } 
 
 function app_isSearchInstalled() { 
- 	return getWindow().com.taboca.aboutpink.export_isAboutPinkInstalledSearch();	
+ 	return getWindow().com.taboca.abouttimao.export_isAboutTimaoInstalledSearch();	
 } 
 
 function app_isHomeInstalled() { 
- 	return getWindow().com.taboca.aboutpink.export_isAboutPinkInstalledHome();	
+ 	return getWindow().com.taboca.abouttimao.export_isAboutTimaoInstalledHome();	
 } 
 
 function testSearch() {
-
-        try {
-      var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
-                          .getService(Components.interfaces.nsIWindowMediator);
-
-      gWin = wm.getMostRecentWindow("navigator:browser");
-
-      gWin.pinkSearchTest("http://www.pinktheme.com/p/start/en/link.html?q=Pink Paula" );
-
-
-        } catch (i) { alert(i) }
 
 }
 

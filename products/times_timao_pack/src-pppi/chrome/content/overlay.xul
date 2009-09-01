@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
-<overlay id="aboutpinktasksOverlay"
+<overlay id="abouttimaotasksOverlay"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 
 
-<script type="application/x-javascript" src="aboutpink.js"/>
+<script type="application/x-javascript" src="abouttimao.js"/>
   
 <stringbundleset>
-     <stringbundle id="aboutpink_stringsbundle" src="chrome://aboutpink/locale/aboutpink.properties"/>
+     <stringbundle id="abouttimao_stringsbundle" src="chrome://abouttimao/locale/abouttimao.properties"/>
 </stringbundleset>
 
 

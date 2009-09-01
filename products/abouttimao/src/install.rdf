@@ -5,7 +5,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="abouttimao@timaotheme.com"
                    em:name="AboutTimao"
-                   em:version="1.3"
+                   em:version="0.1"
                    em:description="This is about:Timao - extra package options for Timao Paula Pack edition"
                    em:creator="timaoTheme.com Labs"
                    em:homepageURL="http://www.timaotheme.com/"

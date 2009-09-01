@@ -1,1 +1,1 @@
-cp build-package-installer/aboutpink.xpi release-latest
+cp build-package-installer/abouttimao.xpi release-latest

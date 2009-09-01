@@ -1,3 +1,3 @@
-pref('extensions.aboutpink.installed', false);
-pref('extensions.aboutpink.homeinstalled', false);
-pref('extensions.aboutpink.searchinstalled', false);
+pref('extensions.abouttimao.installed', false);
+pref('extensions.abouttimao.homeinstalled', false);
+pref('extensions.abouttimao.searchinstalled', false);

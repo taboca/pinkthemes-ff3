@@ -1,8 +1,23 @@
-a { text-decoration: underline } 
+#tabs-header { 
+} 
+.taboca-logomini {
+	width:60px;
+	height:60px;
+	padding:1px;
+ 	border:1px solid white;
+        margin-top:.5em;
+        background: white url(../output/vendor-taboca/logomini.png) 0px 0px repeat-x;
+}
 
-a:hover { color: #ccc } 
+
+.prefooter { 
+ 	width:900px;
+	margin:auto;
+	color:gray;
+} 
 
 /* These are used to the side panels */
+
 
 h4 { 
 	font-size:140%;
@@ -11,14 +26,12 @@ h4 {
 }
 
 .headerlink { 
-	color:rgb(255,100,150);
-	color:rgb(100,110,255);
-	font-size:150%;
 	font-weight:bold;
 	text-decoration:none;
 }
 
 a:hover { 
+	text-decoration:underline;
 } 
 
 
@@ -27,12 +40,7 @@ a:hover {
 } 
 
 #panel-container { 
-	width:570px;
-	background-color:#eee;
-	-moz-border-radius:12px;
-	font-size:110%;	
-	padding:1em;
-	padding-top:0em;
+	width:520px;
 	float:right;
 }
 .items-description h2 { 
@@ -59,10 +67,12 @@ a:hover {
 #panel-container { 
   padding-left:1em;
 } 
+a {  } 
+
 #tabs-header { 
 	margin:auto;
 	margin-top:-4px;
-	width:820px;
+	width:850px;
 	padding:0;
 } 
 div.tr { 
@@ -113,10 +123,28 @@ table td > img {
 .section { 
 	width:100%;
 	text-alignment:justify;
-	margin-top:2em;
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
 	background: url(../output/component-section-pattern/bg.png) repeat 0 0; 
 	min-height:30px;
 } 
+.section-hot { 
+	width:100%;
+	text-alignment:justify;
+	border-top:2px solid lightblue;
+	border-bottom:1px solid white;
+	background: url(../output/component-section-pattern/hot.png) repeat 0 0; 
+	min-height:30px;
+} 
+
+.section-shadowtop { 
+	width:100%;
+	text-alignment:justify;
+	border-bottom:2px solid white;
+	background: url(../output/component-topbanner/image-fader-up.png) bottom center ; 
+	min-height:60px;
+} 
+
 
 .section a { 
 	color:black;
@@ -147,14 +175,14 @@ table td > img {
 
 
 html { 
- 	font-family: georgia, sans-serif; 
-	font-size:100%;
+ 	font-family: verdana, sans-serif; 
+	font-size:90%;
 	color:black;
 	margin:0px;
 } 
 
 h1,h2,h3 { 
- 	color:rgb(0,80,100);
+ 	color:rgb(90,60,0);
 } 
 
 
@@ -181,44 +209,26 @@ h1 {
 			margin-top:1em;
 		} 
 
+/*
 		#backheader { 
                         width:100%;
-                        background: black url(../output/component-topbanner/backheader.png) 0px 0px repeat-x;
-			height:150px;
+                        background: white url(../output/component-topbanner/backheader.png) 0px 0px repeat-x;
 		} 
+*/
                 #topheader {
                         width:100%;
                         margin:0px;
-                        height:180px;
-			overflow:hidden;
-                        background: url(../output/component-topbanner/image-fader.png) 0px 0px no-repeat;
+                        background: url(../output/component-topbanner/image-fader.png) top center repeat-x;
                 }
-		#topheader-section { 
-                        background: transparent url(../output/component-topbanner/backheader.png) 0px -160px repeat-x;
-		
-			text-align:right;
-			padding:.5em;
-			margin:0;
-			color:blue;
-		} 
 		#topheader-section a { 
-			color:blue;
+			color:white;
 			text-decoration:none;
 			opacity:.5;
 		} 
-		#topheader-section-shadow { 
-                        background:url(../output/component-header-shadow/bg.png) 0px -10px repeat-x;
-		
-			height:1em;
-			margin:0;
-		} 
-
                 #logo {
-                        margin:auto;
-                        background:url(../output/component-topbanner/bg.png) -40px -20px no-repeat;
-			height:90px;
-			width:210px;
-			padding-left:20px;
+			padding-top:65px;
+			width:410px;	
+			height:114px;
 	
                 }
 
@@ -232,6 +242,17 @@ h1 {
 .tl {background: url(../output/component-box/q1.png) 0 0 no-repeat}
 .tr {background: url(../output/component-box/q3.png) 100% 0 no-repeat; padding:10px}
 
+.boxt_t {background: url(../output/component-box-transparent/boxshade.png) 0 0 repeat-x; width: 100%; }
+.boxt_b {background: url(../output/component-box-transparent/dot.png) 0 100% repeat-x}
+.boxt_l {background: url(../output/component-box-transparent/dot.png) 0 0 repeat-y}
+.boxt_r {background: url(../output/component-box-transparent/dot.png) 100% 0 repeat-y}
+.boxt_bl {background: url(../output/component-box-transparent/q5.png) 0 100% no-repeat}
+.boxt_br {background: url(../output/component-box-transparent/q4.png) 100% 100% no-repeat}
+.boxt_tl {background: url(../output/component-box-transparent/q1.png) 0 0 no-repeat}
+.boxt_tr {background: url(../output/component-box/q3.png) 100% 0 no-repeat; padding:10px}
+
+
+
 .ot {background: url(../output/component-box-odd/oddboxshade.png) 0 0 repeat-x; width: 100%; }
 .ob {background: url(../output/component-box-odd/odddot.png) 0 100% repeat-x}
 .ol {background: url(../output/component-box-odd/odddot.png) 0 0 repeat-y}
@@ -241,17 +262,22 @@ h1 {
 .otl {background: url(../output/component-box-odd/o1.png) 0 0 no-repeat}
 .otr {background: url(../output/component-box-odd/o3.png) 100% 0 no-repeat; padding:10px}
 
+
 ul { 
  margin:0px;
  padding:1em;
 } 
 
 .content { 
- 	width:820px;
+ 	width:790px;
 	margin:auto;
- 	padding:.2em;	
 	text-align:justify;
+	background: url(../output/component-content/content-shadow.png) top center no-repeat;
+	padding:50px;
+	top:90px;
+	padding-top:10px;
 } 
+
 
 
 
