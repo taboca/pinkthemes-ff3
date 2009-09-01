@@ -1,0 +1,82 @@
+<html>
+
+  <head>
+	<script>
+	function start() {
+
+
+		try {
+			if(document.location.search) {
+
+				var value=document.location.search.split("?q=");
+	
+	
+				var queryVal = value[1];
+
+				queryVal = queryVal.split("&q=")[0];
+
+
+				queryVal = decode(queryVal);
+
+				document.forms[0].q.value=queryVal;
+				document.forms[0].submit();
+
+	
+			}
+			else { 
+			document.forms[0].q.value="";
+			document.forms[0].submit();
+
+			} 
+		} catch(i) { 
+			document.forms[0].q.value="test";
+			document.forms[0].submit();
+		} 
+
+
+		document.forms[0].q.focus();
+	}
+
+function decode(value) {
+	var encoded = value;
+	return  unescape(encoded.replace(/\+/g,  " "));
+}
+
+	</script>
+
+  </head>
+
+  <body onload="start()">
+<div id="toppanel" style="z-index:1000;background-color:white;width:500px;height:500px;opacity:0" />
+
+
+
+<div class="cse-branding-right" style="background-color:#FFFFFF;color:#000000">
+  <div class="cse-branding-form">
+    <form action="http://www.pinktheme.com/p/start/en-US/" id="cse-search-box">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-9686684582089121:izu8ogf80a1" />
+        <input type="hidden" name="cof" value="FORID:10" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" size="31" />
+        <input type="submit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+  <div class="cse-branding-logo">
+    <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+  </div>
+  <div class="cse-branding-text">
+    Custom Search
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+  </body>
+</html>
+

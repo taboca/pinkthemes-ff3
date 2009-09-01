@@ -1,0 +1,121 @@
+<html>
+
+  <head>
+  <link media="screen, projection" type="text/css" href="base.css" rel="stylesheet">
+
+	<meta name=" p Search 0.1" />
+
+	<title></title>
+
+	<script>
+
+
+styleCounter = 1;
+function changeStyle() {
+	 
+
+	if(styleCounter<listBg.length) {
+
+		globalStorage["www.pinktheme.com"].background=listBg[styleCounter];
+		styleCounter++;
+	} else {
+		styleCounter=0;
+		globalStorage["www.pinktheme.com"].background=listBg[styleCounter];
+		styleCounter++;
+	}
+
+	aa = globalStorage["www.pinktheme.com"].background;
+	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(images/"+aa+")";
+}
+
+
+	var listBg = ["hearts.jpg","bgtop-shade.png","bg-pattern.jpg","bg-love.jpg","bg-stars.jpg","f3.png","f4.png","f8.png","bg-seahorse2.jpg"];
+
+aa = globalStorage["www.pinktheme.com"].background;
+
+if(aa) {
+
+
+	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(images/"+aa+")";
+
+ 
+}
+
+    function mq() {
+	
+                var keywords = document.location.search;
+                keywords=keywords.split("&")[0];
+                keywords=keywords.split("?q=")[1];
+
+                document.forms[0].q.value=decode(keywords);
+
+		document.title=decode(keywords);
+
+        }
+
+function decode(value) {
+        var encoded = value;
+        return  unescape(encoded.replace(/\+/g,  " "));
+}
+
+	</script>
+
+  </head>
+
+<body onload="mq()">
+
+<div style="position:absolute;top:2px;right:2px;border:1px solid gray;width:16px;height:16px;border:1px solid white;padding:1px">
+<a href="javascript:" onclick="changeStyle();return false;"><img src="/icon.png" border="0" /></a>
+</div>
+ 
+
+<div id="toppanel">
+
+<style type="text/css">
+@import url(http://www.google.com/cse/api/branding.css);
+</style>
+<div class="cse-branding-bottom" style="background-color:#FFFFFF;color:#000000">
+  <div class="cse-branding-form">
+    <form action="http://www.pinktheme.com/p/start/en/" id="cse-search-box">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-9686684582089121:3hp6m0-woom" />
+        <input type="hidden" name="cof" value="FORID:9" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" size="31" />
+        <input type="submit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+  <div class="cse-branding-logo">
+    <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+  </div>
+  <div class="cse-branding-text">
+    Custom Search
+  </div>
+</div>
+
+</div>
+
+
+<div id="content">
+
+<div id="cse-search-results"></div>
+<script type="text/javascript">
+  var googleSearchIframeName = "cse-search-results";
+  var googleSearchFormName = "cse-search-box";
+  var googleSearchFrameWidth = 800;
+  var googleSearchDomain = "www.google.com";
+  var googleSearchPath = "/cse";
+</script>
+<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+
+</div>
+
+<div id="footer">
+Copyright (C) 2009 PinkTheme - This page uses Google Coop services Search Engine with no modification to results. To Change the style click the little heart icon <img src="/icon.png" /> located at the right hand corner.
+</div>
+
+
+</BODY>
+
+</html>
