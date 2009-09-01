@@ -3,17 +3,16 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="abouttimao@timaotheme.com"
-                   em:name="AboutTimao"
-                   em:version="0.1"
-                   em:description="This is about:Timao - extra package options for Timao Paula Pack edition"
-                   em:creator="timaoTheme.com Labs"
-                   em:homepageURL="http://www.timaotheme.com/"
+                   em:id="times_timao@times.taboca.com"
+                   em:name="Timao"
+                   em:version="0.2"
+                   em:description="Timao "
+                   em:creator="times.taboca.com"
+                   em:homepageURL="http://times.taboca.com/co/timao/"
                    em:optionsURL="chrome://abouttimao/content/options.xul"
                    em:iconURL="chrome://abouttimao/skin/icon.png"
 		   em:type="2"
-                   em:internalName="abouttimao"
-                   >
+                   em:internalName="abouttimao" >
     <em:targetApplication RDF:resource="rdf:#$1oL67"/>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$1oL67"
