@@ -1,9 +1,9 @@
 
+function app_linkToReviews() { 
+	getWindow().com.taboca.aboutpink.export_launchReviewsPage();
+} 
 function app_linkToDonate() { 
-
-	// This now launches the donations normalizided URL on AMO
 	getWindow().com.taboca.aboutpink.export_launchDonationsPage();
-
 } 
 
 function app_launchTestHome() { 

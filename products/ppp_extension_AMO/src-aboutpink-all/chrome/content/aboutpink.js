@@ -49,9 +49,34 @@ com.taboca.aboutpink = {
 	},
 
 
+	export_launchReviewsPage: function () { 
+
+alert("This will take you to AMO reviews page"); 
+
+		var homeURI = this.makeURI("https://addons.mozilla.org/en-US/firefox/users/login?to=%2Freviews%2Fadd%2F10284");
+                try {
+                        testHomeTab = Application.activeWindow.open( homeURI );
+                        testHomeTab.focus();
+                } catch (i) {
+                }
+
+	},
+
+
+        export_launchAboutPink: function () {
+                var homeURI = this.makeURI("about:pink");
+                try {
+                        testHomeTab = Application.activeWindow.open( homeURI );
+                        testHomeTab.focus();
+                } catch (i) {                }
+
+        },
+
+
+
 	export_launchDonationsPage: function () { 
 
-		var homeURI = this.makeURI("https://addons.mozilla.org/firefox/addon/10284/developers");
+		var homeURI = this.makeURI("https://addons.mozilla.org/en-US/firefox/addon/10284/about");
                 try {
                         testHomeTab = Application.activeWindow.open( homeURI );
                         testHomeTab.focus();

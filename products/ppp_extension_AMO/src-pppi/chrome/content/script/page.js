@@ -103,6 +103,8 @@ function components_selector_binding() {
 
 	components_apply("#button_donate", class_components_hoverEntry, null);
 	components_apply("#button_donate", class_components_clickInner, { callback: app_linkToDonate } ) ;
+	components_apply("#button_review", class_components_hoverEntry, null);
+	components_apply("#button_review", class_components_clickInner, { callback: app_linkToReviews } ) ;
 
 	components_apply("#button_installhome", class_components_hoverEntry, null);
 	components_apply("#button_installhome", class_components_clickInner, { callback: function () { app_installHome(); refreshHome()}  } ) ;
