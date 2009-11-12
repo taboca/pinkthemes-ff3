@@ -1,4 +1,13 @@
-new fr, it, 
-en is the old from 2008-2009 check on that. 
-en-US is the new
+fr,  1.2
+de, 1.2
+it, 1.2
+en, ??
+en-US, 1,2
+en-GB, 1.2
+pt-BR, 1.2
+es-ES
+es-AR
+pt-PT
+
+
 

@@ -1,0 +1,2 @@
+* We need to cleanup all the images in each directory 
+
