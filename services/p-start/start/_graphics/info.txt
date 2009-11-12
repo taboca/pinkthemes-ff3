@@ -1,0 +1,1 @@
+This is the same structure, for the filenames we had. However with the production one ( Nov 12th 2009 ) we hjad these images at p/start/country-CODE/images/* - we gotta make sure we map the production users from that URL to the new structure URL
