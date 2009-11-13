@@ -1,23 +1,26 @@
 <html>
-
   <head>
+
   <script type="text/javascript" src="../_script/1.2.1/link.js"></script>
+
   </head>
+
   <body onload="start()">
 <div id="toppanel" style="z-index:1000;background-color:white;width:500px;height:500px;opacity:0" />
 
 
 
 
+
 <div class="cse-branding-right" style="background-color:#FFFFFF;color:#000000">
   <div class="cse-branding-form">
-    <form action="http://www.pinktheme.com/p/start/it/" id="cse-search-box">
+    <form action="http://www.pinktheme.com/p/start/de/" id="cse-search-box">
       <div>
-        <input type="hidden" name="cx" value="partner-pub-9686684582089121:b38t5g40drt" />
+        <input type="hidden" name="cx" value="partner-pub-9686684582089121:4jgb7sazni6" />
         <input type="hidden" name="cof" value="FORID:10" />
         <input type="hidden" name="ie" value="UTF-8" />
         <input type="text" name="q" size="31" />
-        <input type="submit" name="sa" value="Cerca" />
+        <input type="submit" name="sa" value="Suche" />
       </div>
     </form>
   </div>
@@ -25,9 +28,11 @@
     <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
   </div>
   <div class="cse-branding-text">
-    Ricerca personalizzata
+    Benutzerdefinierte Suche
   </div>
 </div>
+
+
 
 
 

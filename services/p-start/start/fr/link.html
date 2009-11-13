@@ -1,51 +1,8 @@
 <html>
 
   <head>
-	<script>
-	function start() {
-
-
-		try {
-			if(document.location.search) {
-
-				var value=document.location.search.split("?q=");
-	
-	
-				var queryVal = value[1];
-
-				queryVal = queryVal.split("&q=")[0];
-
-
-				queryVal = decode(queryVal);
-
-				document.forms[0].q.value=queryVal;
-				document.forms[0].submit();
-
-	
-			}
-			else { 
-			document.forms[0].q.value="";
-			document.forms[0].submit();
-
-			} 
-		} catch(i) { 
-			document.forms[0].q.value="test";
-			document.forms[0].submit();
-		} 
-
-
-		document.forms[0].q.focus();
-	}
-
-function decode(value) {
-	var encoded = value;
-	return  unescape(encoded.replace(/\+/g,  " "));
-}
-
-	</script>
-
+  <script type="text/javascript" src="../_script/1.2.1/link.js"></script>
   </head>
-
   <body onload="start()">
 <div id="toppanel" style="z-index:1000;background-color:white;width:500px;height:500px;opacity:0" />
 
