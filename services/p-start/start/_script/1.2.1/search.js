@@ -97,9 +97,10 @@ function changeStyle() {
 var listBg = ["hearts.jpg","bgtop-shade.png","bg-pattern.jpg","bg-love.jpg","bg-stars.jpg","f3.png","f4.png","f8.png","bg-seahorse2.jpg"];
 
 /* We initiate checking if the background is in the globalStorage object, if no, then we kick a message */
-aa = globalStorage["www.pinktheme.com"].background;
+var aa = globalStorage["www.pinktheme.com"].background;
+
 if(aa && aa!="") {
-	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(images/"+aa+")";
+	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../_graphics/1.2.1/"+aa+")";
 } else {
 	setTimeout("animateFlip()",3000);
 	globalStorage["www.pinktheme.com"].background=listBg[1];

@@ -1,2 +1,6 @@
-* We need to cleanup all the images in each directory 
+[x] done * We need to cleanup all the images in each directory 
+[x] done - created new _graphics, _script, _style with branch versions for code
 
+Migrating users to new image approach
+
+! need to check the right point to put the production legacy support to that existing users will not have problems with images. We want existing user script to properly replace the global [www.pinktheme.com] value with the new value. This should be a fix function that runs for at least one year. 

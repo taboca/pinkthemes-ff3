@@ -1,9 +1,11 @@
+
+/* CAUTION CAUTION THE ORDER OF THESE ELEMENTS ARE VERY VERY IMPORTANT */
 /* This needs to be here at position 0  */
 
 #content-master { 
 	width:100%;
 	margin:0; padding:0;
-	background: url(images/bgtop-shade.png) 0 0 repeat-x;
+	background: url(../../_graphics/1.2.1/bgtop-shade.png) 0 0 repeat-x;
 }
 
 /* this needss to be here at position 1 */
