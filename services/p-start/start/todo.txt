@@ -1,5 +1,6 @@
 [x] done * We need to cleanup all the images in each directory 
 [x] done - created new _graphics, _script, _style with branch versions for code
+[x] done - clearn up to images in each country directory
 
 Migrating users to new image approach
 

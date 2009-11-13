@@ -60,7 +60,7 @@
 		for(var i=0;i<listBg.length;i++) { 
 			var nameEl = listBg[i];
 			var imgEl = document.createElement("div");
-			imgEl.setAttribute("style","cursor:pointer;background: white url(images/"+nameEl+") repeat-x 0 0 ;width:80px;height:80px;border:1px solid black" );
+			imgEl.setAttribute("style","cursor:pointer;background: white url(../_graphics/1.2.1/"+nameEl+") repeat-x 0 0 ;width:80px;height:80px;border:1px solid black" );
 			imgEl.setAttribute("onclick","setStyle('"+nameEl+"');return false;");
 			var tdElement = document.createElement("td");
 			tdElement.appendChild(imgEl);
@@ -75,7 +75,7 @@
 	} 
 
 	function refreshBackground(backgroundImage) { 
-		document.styleSheets[0].cssRules[0].style.backgroundImage= "url(images/"+backgroundImage+")";
+		document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../_graphics/1.2.1/"+backgroundImage+")";
 	} 
 
 function changeStyle() {
@@ -89,7 +89,7 @@ function changeStyle() {
 		styleCounter++;
 	}
 	aa = globalStorage["www.pinktheme.com"].background;
-	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(images/"+aa+")";
+	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../_graphics/1.2.1/"+aa+")";
 }
 
 /* This is the startup script */
