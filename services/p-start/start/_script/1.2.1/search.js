@@ -75,7 +75,7 @@
 	} 
 
 	function refreshBackground(backgroundImage) { 
-		document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../_graphics/1.2.1/"+backgroundImage+")";
+		document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../../_graphics/1.2.1/"+backgroundImage+")";
 	} 
 
 function changeStyle() {
@@ -89,7 +89,7 @@ function changeStyle() {
 		styleCounter++;
 	}
 	aa = globalStorage["www.pinktheme.com"].background;
-	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../_graphics/1.2.1/"+aa+")";
+	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../../_graphics/1.2.1/"+aa+")";
 }
 
 /* This is the startup script */
@@ -100,7 +100,7 @@ var listBg = ["hearts.jpg","bgtop-shade.png","bg-pattern.jpg","bg-love.jpg","bg-
 var aa = globalStorage["www.pinktheme.com"].background;
 
 if(aa && aa!="") {
-	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../_graphics/1.2.1/"+aa+")";
+	document.styleSheets[0].cssRules[0].style.backgroundImage= "url(../../_graphics/1.2.1/"+aa+")";
 } else {
 	setTimeout("animateFlip()",3000);
 	globalStorage["www.pinktheme.com"].background=listBg[1];
