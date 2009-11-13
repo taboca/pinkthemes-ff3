@@ -107,10 +107,12 @@ if(aa && aa!="") {
 }
 
 function mq() {
+	try {
 	var keywords = document.location.search;
 	keywords=keywords.split("&q=")[1];
 	keywords=keywords.split("&")[0];
 	document.title=decode(keywords);
+	} catch (i) { } 
 }
 
 function decode(value) {
@@ -118,3 +120,6 @@ function decode(value) {
         return  unescape(encoded.replace(/\+/g,  " "));
 }
 
+function home() { 
+        document.forms[0].q.focus();
+} 
